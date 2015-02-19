@@ -1,0 +1,24 @@
+---
+layout: post
+title: Bamboo Push Notifications
+date: 2014-01-30 23:20:14.000000000 -05:00
+categories:
+- Developer
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '12972779'
+  _wpas_skip_3138877: '1'
+author:
+  login: stanlemon
+  email: stosh1985@gmail.com
+  display_name: stanlemon
+  first_name: ''
+  last_name: ''
+---
+<p>For awhile now I've wished that <a href="http://atlassian.com/software/bamboo">Bamboo</a> had an app, or something that could deliver a push notification when a build starts or finishes. Sure there is email, but that means my build notifications will get lost in all of the other junk I am quietly ignoring in my inbox.  What I want is a targeted notification for my builds. So I got to thinking, why not leverage <a href="http://pushover.net">Pushover</a>?</p>
+<p>I decided to setup some inline script tasks on one of my bamboo plans using the following code (supply your credentials accordingly), in order to give Bamboo push notifications.</p>
+<p>https://gist.github.com/stanlemon/8726494</p>
+<p>Of course you can kick this up a notch by changing the message, using additional variables and throwing other notifications in at very stages of your build plans.</p>

@@ -1,0 +1,30 @@
+---
+layout: post
+title: Symfony\ICU and CentOS
+date: 2013-05-24 05:00:49.000000000 -04:00
+categories:
+- Developer
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '12972779'
+  _publicize_pending: '1'
+  publicize_reach: a:2:{s:7:"twitter";a:1:{i:3138877;i:287;}s:2:"wp";a:1:{i:0;i:2;}}
+  publicize_twitter_user: stanlemon
+  _wpas_done_3138877: '1'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:14147682;b:1;}}
+  _wpas_skip_3138857: '1'
+  _wpas_skip_3138877: '1'
+author:
+  login: stanlemon
+  email: stosh1985@gmail.com
+  display_name: stanlemon
+  first_name: ''
+  last_name: ''
+---
+<p>I use CentOS for most of my development environments and I also use it in a number of production scenarios as well.  Where I don't use it I am most likely running something else RHEL based, like Amazon Linux over on AWS.  All of these distributions use an older version of the ICU library, 4.2 to be specific. Symfony has a component called ICU, which has a check for 4.4 or greater.  In my situation I don't need ICU, I just need composer to install it so I can move on with development. Running composer.phar install on the <a href="https://github.com/symfony/symfony-standard">symfony-standard</a> caused me problems with lib-ICU compatibility.  <em>So what to do?</em></p>
+<p>Well, <a href="https://github.com/symfony/symfony/pull/7386">this Pull Request</a> provided me with a lot of helpful information in figuring out what to do.  The solution I went with was to change my composer.json and added this to it:</p>
+<blockquote><p> "symfony/icu": "1.0.*@dev",</p></blockquote>
+<p>This will use an older version of the ICU library that doesn't necessitate an updated lib-ICU.  It's less then ideal, but it'll get composer.phar to install the standard edition packages so you can get to work.</p>

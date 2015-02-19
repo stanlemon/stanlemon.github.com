@@ -1,0 +1,27 @@
+---
+layout: post
+title: MySQL Strict Mode on OS X
+date: 2013-03-23 06:00:52.000000000 -04:00
+categories:
+- Developer
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '12972779'
+  _publicize_pending: '1'
+  _wpas_done_3138857: '1'
+  _publicize_done_external: a:1:{s:8:"facebook";a:1:{i:145900411;b:1;}}
+  publicize_twitter_user: stanlemon
+  _wpas_done_3138877: '1'
+  tagazine-media: a:7:{s:7:"primary";s:0:"";s:6:"images";a:0:{}s:6:"videos";a:0:{}s:11:"image_count";i:0;s:6:"author";s:8:"12972779";s:7:"blog_id";s:8:"12603744";s:9:"mod_stamp";s:19:"2013-03-16
+    21:20:43";}
+author:
+  login: stanlemon
+  email: stosh1985@gmail.com
+  display_name: stanlemon
+  first_name: ''
+  last_name: ''
+---
+<p>If you are a web developer on OS X you probably are sporting your own installation of your database server.  If you are running MySQL you might be haunted by strict mode.  MySQL has modes <a href="http://dev.mysql.com/doc/refman/5.1/en/server-sql-mode.html">as documented here</a> that effect the behavior of various parts of the system.  In strict mode values do not get casted between types, which is where I ran into issues.  My favorite ORM was passing a boolean <em>true</em> into a <em>tinyint(1)</em> and causing the transaction to abort.  This is thanks to <a href="http://dev.mysql.com/doc/refman/5.1/en/server-sql-mode.html#sqlmode_strict_trans_tables">STRICT_TRANS_TABLES</a> in my case.  The first thing I checked was my <em>/etc/my.cnf</em> to see if "sql_mode" was set in the [mysqld] section.  It was not.  So I tried setting it to something other than <em>STRICT_TRANS_TABLES</em> and restarted MySQL.  No luck, the setting was still on.  After a lot of poking around I found out that MySQL for OS X from Oracle ships with a <em>/usr/local/mysql/my.cnf</em> which is loaded on startup. In this file is a sole configuration directive for <em>sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES.</em>  Once I commented this out and restarted the server strict mode was off, my ORM worked and I was happy.</p>
