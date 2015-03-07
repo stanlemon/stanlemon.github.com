@@ -8,25 +8,6 @@ tags: []
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '12972779'
-  _publicize_pending: '1'
-  publicize_facebook_url: https://facebook.com/604193395890
-  _wpas_done_3138857: '1'
-  _publicize_done_external: a:1:{s:8:"facebook";a:1:{i:145900411;b:1;}}
-  publicize_google_plus_url: https://plus.google.com/113947804306116461605/posts/4WTD4dmeWXZ
-  _wpas_done_5042546: '1'
-  publicize_twitter_user: stanlemon
-  publicize_twitter_url: http://t.co/0nMbr5i0nz
-  _wpas_done_3138877: '1'
-  publicize_linkedin_url: http://www.linkedin.com/updates?discuss=&scope=95029839&stype=M&topic=5800788403616239616&type=U&a=czLr
-  _wpas_done_5042547: '1'
-author:
-  login: stanlemon
-  email: stosh1985@gmail.com
-  display_name: stanlemon
-  first_name: ''
-  last_name: ''
 ---
 <p>There were some great articles today about ORMs, specifically "<a href="http://programmingarehard.com/2013/10/21/is-orm-abstraction-a-pipe-dream.html">Is ORM abstraction a pipe dream?</a>" by David Adam and then "<a href="http://paul-m-jones.com/archives/4757">Publish Your Failure; or, The Way Of All Frameworks</a>" by Paul Jones (the man who led me to good BBQ in Memphis).</p>
 <p>I've been thinking about ORMs a lot lately and I've been wanting to write something about what I consider to be the DataMapper farce. I should be clear up front, I'm big Doctrine 2 fan.  <strong>BIG.</strong> It's my ORM of choice every single time, or maybe it was... On principal I love Doctrine 2. My days as a Java developer made me grow fond of Hibernate and with time I've come to really appreciate object hydration via the DataMapper pattern alongside the Repository pattern.  What I've appreciated most is the fact that I can write a model with no implicit dependencies, meaning my class "Foo" does not extend <em>ActiveFoo</em> or <em>QueryFoo</em> or <em>BaseFoo</em> or <em>FooTable</em> or <em>GatewayFoo</em> or <em>FooPeer</em> or <em>MagicHotSauceFoo</em>, it simply stands on it's own.  In the case of Doctrine 2 my model usually gets some love from annotations or maybe Yaml if I'm looking to spice up my day.</p>

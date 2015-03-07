@@ -7,27 +7,6 @@ tags: []
 status: publish
 type: post
 published: true
-meta:
-  _wpas_done_3138877: '1'
-  publicize_linkedin_url: http://www.linkedin.com/updates?discuss=&scope=95029839&stype=M&topic=5861160628101591040&type=U&a=r_ic
-  _publicize_done_external: a:1:{s:8:"facebook";a:1:{i:145900411;b:1;}}
-  publicize_google_plus_url: https://plus.google.com/113947804306116461605/posts/h6UocSpaW6n
-  _wpas_done_6642642: '1'
-  publicize_twitter_user: stanlemon
-  publicize_twitter_url: http://t.co/2YbFDXPS66
-  _wpas_done_6642621: '1'
-  publicize_facebook_url: https://facebook.com/622691929680
-  _publicize_pending: '1'
-  _wpas_done_6642648: '1'
-  publicize_tumblr_url: http://stanlemon.tumblr.com.tumblr.com/post/82596645913
-  _wpas_done_6642646: '1'
-  _edit_last: '12972779'
-author:
-  login: stanlemon
-  email: stosh1985@gmail.com
-  display_name: stanlemon
-  first_name: ''
-  last_name: ''
 ---
 <p>My love affair with <a href="http://symfony.com" target="_blank">Symfony</a> 2 has hit a rocky spot. I have an atomic deployment system for a Symfony 2 app that I've been working on.  Basically it works like this... The app gets built on my CI server, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Bamboo</a>. That build results in an artifact, a tarball of the entire application.  This tarball is intended to represent the final product, meaning tests have all been run - they passed - and any compilation steps have been executed.  But I've got a problem.  It comes when I try to warm the cache or more generally if I run any Symfony console command on the build system before the artifact is made. This includes things like installing <a href="http://symfony.com/doc/current/cookbook/assetic/index.html" target="_blank">Assetic</a> dependencies.  To work around my problem I've been making sure my 'cache' folder is empty before I build the tarball.  I wind up crossing my fingers on the deploy step and trusting that things will work themselves out when the cache is warmed and the container is compiled on the application server.  This is a horrible solute.  It's one I'm forced to deal with because of the way Symfony 2 dumps it's dependency injection container.  The container dump compiles references to <em>%kernel.root_dir%</em> which is an absolute path to the application root. That path is different on my CI server than it is on my production application server. If I compile the container on the CI server I wind up with a dump file that has the wrong absolute paths, resulting in a non-function app.</p>
 <p>Some may want to question not doing the build on the application server if this is a problem. That may work for some people, but I think it's wrong to assume it's going to be possible in every deployment scenario.  There are simply a lot of regulated industries where building on the application server simply is not going to pass an audit. In my experience both in the PCI and Hippa worlds this simply wouldn't have worked.  You may disagree, but the reality is when you get into sorts of regulated environments you are playing by someone else's rules, even if they're silly rules. Furthermore, this solution does not scale.  It works for small clusters, but there's a point at which it simply is too long to roll that sort of deployment process out across a datacenter.  I've spent a fair amount of time solving software problems in these sort of regulated environments, so now I am admittedly wired to consider such things even when they're not being mandated by a regulatory body.  My build system involves Bamboo and <a href="http://www.ansible.com/" target="_blank">Ansible</a>.  Out of this system a singular artifact of the application is produced for deployment. It's a clean system and I can pull the artifact down from the CI server at any point and work with the exact distribution that will hit my application server at any time. Well, identical so long as the cache is not built. Here lies my beef with the way Symfony works.</p>

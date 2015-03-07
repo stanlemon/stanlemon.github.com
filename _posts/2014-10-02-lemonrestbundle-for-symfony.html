@@ -7,28 +7,6 @@ tags: []
 status: publish
 type: post
 published: true
-meta:
-  publicize_facebook_url: https://facebook.com/
-  _wpas_done_6642642: '1'
-  _publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113947804306116461605";b:1;}}
-  publicize_twitter_user: stanlemon
-  publicize_twitter_url: http://t.co/T03BmPV3a7
-  _wpas_done_3138877: '1'
-  publicize_tumblr_url: http://stanlemon.tumblr.com.tumblr.com/post/99003961425
-  _wpas_done_6642646: '1'
-  _wpas_skip_path: '1'
-  _publicize_pending: '1'
-  publicize_google_plus_url: https://plus.google.com/113947804306116461605/posts/ASU9honpDrf
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _wpas_skip_linkedin: '1'
-  _wpas_facebook_publicize_failure: O:13:"Keyring_Error":2:{s:16:"
-author:
-  login: stanlemon
-  email: stosh1985@gmail.com
-  display_name: stanlemon
-  first_name: ''
-  last_name: ''
 ---
 <p>For a little while now I’ve been working on a bundle for Symfony to easily create REST apis for <a href="http://www.doctrine-project.org/projects/orm.html" target="_blank">Doctrine</a> entities. My goal was to be able to create a REST api with nothing more than a Doctrine entity and it’s metadata, including custom metadata from bundles like <a href="http://jmsyst.com/libs/serializer" target="_blank">JMS Serializer</a>. I wanted to invest very little time in the actual api part, and get to writing applications that used it. I’ve hit this wall before, and inevitably what happens is I make a valiant effort at rolling a REST api and then get distracted or bored and walk away leaving the project to rot.</p>
 <p>Recently I was resurrecting an older project and wanting to do right by it and decided I could mask a lot of my database worts by leveraging some of Doctrine’s more advanced features. Specifically I added <a href="http://doctrine-orm.readthedocs.org/en/latest/cookbook/custom-mapping-types.html" target="_blank">custom types</a> to ensure I had good data structures, leveraged some <a href="http://doctrine-orm.readthedocs.org/en/latest/reference/events.html" target="_blank">lifecycle events</a> and implemented <a href="http://doctrine-orm.readthedocs.org/en/latest/tutorials/embeddables.html" target="_blank">Doctrine 2.5’s recent addition of Embeddables</a>. I had also added a bunch of validation to my entities using <a href="http://symfony.com/doc/current/book/validation.html" target="_blank">Symfony’s Validation component</a>, so they were well defined and could be validated easily with meaningful responses when things weren't right. I wound up with a clean set of objects that did what I wanted well, but there was one problem, I needed an api! Having been down this road before I wanted to solve my problem for the last time, or at the very least make the problem more interesting to solve.</p>

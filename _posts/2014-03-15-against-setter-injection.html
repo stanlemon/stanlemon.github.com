@@ -8,27 +8,6 @@ tags: []
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '12972779'
-  _publicize_pending: '1'
-  publicize_facebook_url: https://facebook.com/619815209650
-  _wpas_done_6642621: '1'
-  _publicize_done_external: a:1:{s:8:"facebook";a:1:{i:145900411;b:1;}}
-  publicize_google_plus_url: https://plus.google.com/113947804306116461605/posts/YfaXzjo57eM
-  _wpas_done_6642642: '1'
-  publicize_twitter_user: stanlemon
-  publicize_twitter_url: http://t.co/ftRxZ3xXaz
-  _wpas_done_3138877: '1'
-  publicize_linkedin_url: http://www.linkedin.com/updates?discuss=&scope=95029839&stype=M&topic=5850592403508965376&type=U&a=cPiD
-  _wpas_done_6642648: '1'
-  publicize_tumblr_url: http://stanlemon.tumblr.com.tumblr.com/post/79650039988
-  _wpas_done_6642646: '1'
-author:
-  login: stanlemon
-  email: stosh1985@gmail.com
-  display_name: stanlemon
-  first_name: ''
-  last_name: ''
 ---
 <p>I recently read Richard Miller's post  <a href="http://richardmiller.co.uk/2014/03/12/avoiding-setter-injection/">Avoiding Setter Injection</a> and I in large part agree with his sentiments. My conversion to constructor injection over setter injection is a fairly recent one and when I was initially deliberating the differences I found a lot of explanations online with little concrete code to show why this practice is less productive to good object oriented design. I thought I would try to illustrate with some concrete code examples I agree with Miller that ultimately constructor injection is a more worthy approach and why you should avoid using setter injection whenever possible.</p>
 <p>First, let's consider two interfaces <em>FooService</em> and <em>FooNotifier. FooService</em> will use a <em>FooNotifier </em>which contains a method <em>notify(). </em>We have two implementations of <em>FooNotifier</em> the <em>BarNotifier</em> and the <em>BazNotifier. </em> Fundamentally they do two completely different things, though they agree to the same contract.  Here's what these things look like:</p>

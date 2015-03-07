@@ -8,22 +8,6 @@ tags: []
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '12972779'
-  _publicize_pending: '1'
-  _wpas_done_3138857: '1'
-  publicize_twitter_user: stanlemon
-  _publicize_done_external: a:1:{s:8:"facebook";a:1:{i:145900411;b:1;}}
-  _wpas_done_3138877: '1'
-  publicize_reach: a:3:{s:7:"twitter";a:1:{i:3138877;i:288;}s:2:"fb";a:1:{i:3138857;i:826;}s:2:"wp";a:1:{i:0;i:2;}}
-  tagazine-media: a:7:{s:7:"primary";s:0:"";s:6:"images";a:0:{}s:6:"videos";a:0:{}s:11:"image_count";i:0;s:6:"author";s:8:"12972779";s:7:"blog_id";s:8:"12603744";s:9:"mod_stamp";s:19:"2013-05-23
-    14:26:01";}
-author:
-  login: stanlemon
-  email: stosh1985@gmail.com
-  display_name: stanlemon
-  first_name: ''
-  last_name: ''
 ---
 <p>If you're using <a href="http://s3tools.org/"><em>s3cmd</em></a> to put files into an s3 bucket and need to do so into <a href="http://aws.amazon.com/govcloud-us/">GovCloud</a> you can, but you need to override the end point URL's used for s3.  I had a hard time finding documentation for this, so hopefully this saves someone sometime in the future.</p>
 <p><em>s3cmd</em> writes a configuration file, likely at ~/.s3cfg and in it are two options that you are not prompted for when going through the setup process, but are relevant when connecting to GovCloud.  Specifically 'host_base' and 'host_bucket' need to be changed from the default s3 end points, they need to be set like so:</p>

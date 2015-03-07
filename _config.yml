@@ -1,14 +1,14 @@
-# Site settings
-title: Lemon Bytes
-email: me@stanlemon.net
-description: Husband, Dad, Steelers fan and Software Engineer at Pardot, a Salesforce company. My opinions are just mine!
-baseurl: "" # the subpath of your site, e.g. /blog/
+title: lemonbytes
+description: husband, dad, steelers fan and software engineer
+baseurl: ""
 permalink: /:year/:month/:day/:title/
 paginate: 5
 paginate_path: "page/:num/"
-url: "http://stanlemon.net" # the base hostname & protocol for your site
+url: "http://stanlemon.net"
 twitter_username: stanlemon
 github_username: stanlemon
+linkedin_username: stanlemon
+google_analytics: UA-33072694-1
 
 # Build settings
 markdown: kramdown

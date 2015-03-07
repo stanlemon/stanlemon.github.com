@@ -2,39 +2,44 @@
 layout: default
 ---
 
-<div class="home">
+{% for page in paginator.posts %}
+  {% include post.html %}
+  <div class="spacer"></div>
+{% endfor %}
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
+
+{% if paginator.total_pages > 1 %}
+<nav class="text-center">
+  <ul class="pagination">
+    {% if paginator.previous_page %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h1>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h1>
-
-        <article class="post-content">
-          {{ post.content }}
-        </article>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
       </li>
+    {% else %}
+      <li>
+        <span>&laquo; Prev</span>
+      </li>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <li class="active"><a>{{ page }}</a></li>
+      {% elsif page == 1 %}
+        <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+      {% else %}
+        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+      {% endif %}
     {% endfor %}
+
+    {% if paginator.next_page %}
+      <li>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      </li>
+    {% else %}
+      <li>
+        <span>Next &raquo;</span>
+      </li>
+    {% endif %}
   </ul>
-
-	<!-- Pagination links -->
-	<div class="pagination">
-	  {% if paginator.previous_page %}
-	    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-	  {% else %}
-	    <span class="previous">Previous</span>
-	  {% endif %}
-	  <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-	  {% if paginator.next_page %}
-	    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-	  {% else %}
-	    <span class="next ">Next</span>
-	  {% endif %}
-	</div>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</nav>
+{% endif %}

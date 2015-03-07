@@ -8,21 +8,6 @@ tags: []
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '12972779'
-  _publicize_pending: '1'
-  tagazine-media: a:7:{s:7:"primary";s:0:"";s:6:"images";a:0:{}s:6:"videos";a:0:{}s:11:"image_count";i:0;s:6:"author";s:8:"12972779";s:7:"blog_id";s:8:"12603744";s:9:"mod_stamp";s:19:"2013-03-23
-    13:12:14";}
-  _wpas_done_3138857: '1'
-  _publicize_done_external: a:1:{s:8:"facebook";a:1:{i:145900411;b:1;}}
-  publicize_twitter_user: stanlemon
-  _wpas_done_3138877: '1'
-author:
-  login: stanlemon
-  email: stosh1985@gmail.com
-  display_name: stanlemon
-  first_name: ''
-  last_name: ''
 ---
 <p>MySQL is one of the most widely used database servers for web development.  It's <em>free</em>, has a wide range of support and is easy to get up and going.  Add to this native bindings in just about every language and you've got a pretty powerful databasing tool at your hands.  <a href="http://www.percona.com">Percona</a> is a MySQL consulting company with a super-awesome distribution of MySQL tuned for performance. For the most part Percona packages should be a drop-in replacement with MySQL. When it comes to system administration tasks I like to throw <a href="https://puppetlabs.com">Puppet</a> at the problem, it makes it easier to replay the configuration down the road and I can track the configuration changes in git. But there's a problem when you change the package name for the defacto-standard <a href="https://github.com/puppetlabs/puppetlabs-mysql">Puppet MySQL module</a>.  The referencing of the service and the default pid file in the Percona distribution and subsequently the reload following install fails, as well as anything downstream of those items. This was unsatisfactory to me so I poked around to figure out a way to make this work, <a href="http://projects.puppetlabs.com/issues/19562">despite the bug in module</a>. Below is a Puppet manifest with some hackey'ness if you're using Percona that will get it working and allow you to use the rest of the Puppet MySQL module without problems.</p>
 <p>https://gist.github.com/stanlemon/5178407</p>
