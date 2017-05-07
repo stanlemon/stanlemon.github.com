@@ -19,8 +19,12 @@ author:
   first_name: ''
   last_name: ''
 ---
-My name is Stan Lemon, I am a husband, father, software engineer and Steelers fan.
+My name is Stan Lemon, I am a husband, father, software engineer, Star Wars aficionado and Steelers fan.
 
-I live with my wife and two (soon to be three) kids in Southern Indiana.  We recently moved here after a seven year stint in Pittsburgh where I learned how to wave a Terrible Towel and bleed black and gold - _Go Steelers_!  I studied Theology and Biblical Languages at Concordia University River Forest where I received my Bachelor of Arts degree.  After college I took up software development and by day I work as software engineer for salesforce.com.
+I live with my wife and three kids in Southern Indiana.  I studied Theology and Biblical Languages at Concordia University River Forest, where I received my Bachelor of Arts degree.  After college I took up software development and currently work as a Princiapl Engineer for [Salesforce](http://salesforce.com) working on [Pardot](http://pardot.com).  When I'm not coding I enjoy spending time with my kids, reading Star Wars books and watching the Pittsburgh Steelers.
 
-You can find out more about my software development background from poking around at [GitHub](http://github.com/stanlemon) and [BitBucket](http://bitbucket.org/stanlemon).
+More about my professional background can be found at my [LinkedIn profile](http://linkedin.com/in/stanlemon).
+
+You can find some of my hobby projects over at [GitHub](http://github.com/stanlemon).
+
+From time to time I post on [Twitter @stanlemon](http://twitter.com/stanlemon).
