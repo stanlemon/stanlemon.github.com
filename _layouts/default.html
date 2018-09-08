@@ -30,13 +30,9 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <li>
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          </li>
-          {% endif %}
-        {% endfor %}
+        <li><a href="{{ site.baseurl }}/about/">About</a></li>
+        <li><a href="https://twistoflemonpod.com/" target="_window">Podcast</a></li>
+        <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
       </ul>
     </nav>
   </div>
