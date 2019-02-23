@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Gillette Won
+title: React, Relay & Mutations
 date: 2019-01-23 07:30:00.000000000 -04:00
-status: draft
 type: post
 published: true
 categories:
