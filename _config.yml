@@ -1,7 +1,9 @@
 
 incremental: true
 
-title: lemonbytes
+name: lemonbytes
+author: Stan Lemon
+title: lemonbytes by Stan Lemon
 description: husband, dad, steelers fan and software engineer
 baseurl: ""
 permalink: /:year/:month/:day/:title/

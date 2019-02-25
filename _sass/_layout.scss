@@ -39,6 +39,10 @@ footer a:link, footer a:active, footer a:visited {
 	.lead {
 			margin-top: 7px;
 	}
+
+	.byline {
+		font-size: 16px;
+	}
  
 	h1 {
 		font-size: 55px;
@@ -165,4 +169,9 @@ a,a:hover {
 	opacity:.9;
 	padding:6px;
 	color:#fff;
+}
+
+hr {
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
