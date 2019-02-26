@@ -11,14 +11,15 @@ body {
 
 h1,h2,h3,h4,.highlight,.navbar a,#masthead h4 {
 	font-family:'Oswald',arial narrow,sans-serif;
+	font-display: fallback;
 }
 
 .highlight code {
 	font-family: "Source Code Pro", "Monaco", "Courier New", "monospaced";
+	font-display: swap;
 }
 
 footer {
-
 	margin-top:40px;
 	padding-top:40px;
 	padding-bottom:40px;
