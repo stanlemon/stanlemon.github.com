@@ -23,4 +23,5 @@ When we attempt to budget without compromise, bad things tend to follow. We buy 
 
 Curbs are good, they keep cars on the road. Curbs provide the external boundaries for our path forward. This is the function of compromise, and our budget is really just that road we’re cruising down from month to month.
 
+*Want to hear more budgeting banter? [Check out Episode 25 of Life with a Twist of Lemon](https://twistoflemonpod.com/episode-25-the-budget-episode/).*
 
