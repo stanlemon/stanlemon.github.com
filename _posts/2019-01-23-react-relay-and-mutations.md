@@ -32,27 +32,27 @@ A mutation in and of itself is not complicated, there are really two parts to it
 import { graphql, commitMutation } from 'react-relay'
 
 const mutation = graphql`
-    mutation AppCreatePersonMutation($input: CreatePersonInput!) {
-        createPerson(input: $input) {
-            person {
-                id
-                firstName
-                lastName
-            }
-        }
+  mutation AppCreatePersonMutation($input: CreatePersonInput!) {
+    createPerson(input: $input) {
+      person {
+        id
+        firstName
+        lastName
+      }
     }
+  }
 `
 
 commitMutation(environment, {
-    mutation,
-    variables: {
-        input: {
-            person: {
-                firstName: "Stan",
-                lastName: "Lemon"
-            }
-        }
+  mutation,
+  variables: {
+    input: {
+      person: {
+        firstName: "Stan",
+        lastName: "Lemon"
+      }
     }
+  }
 })
 ```
 
@@ -60,13 +60,13 @@ In the app I built I had already loaded all of the person records from my databa
 
 ```javascript
 query AppQuery {
-    allPeople {
-        nodes {
-            id
-            firstName
-            lastName
-        }
+  allPeople {
+    nodes {
+      id
+      firstName
+      lastName
     }
+  }
 }
 ```
 
