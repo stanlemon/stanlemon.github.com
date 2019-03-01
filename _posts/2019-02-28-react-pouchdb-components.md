@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React PouchDB Components
-date: 2019-02-28 21:47:00.000000000 -04:00
+date: 2019-02-28 21:47:00.000000000 +0000
 status: publish
 type: post
 published: true
