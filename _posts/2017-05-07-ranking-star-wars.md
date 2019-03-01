@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ranking Star Wars
-date: 2017-05-07 15:06:00.000000000 -04:00
+date: 2017-05-07 15:06:00.000000000 +0000
 categories:
 - Rant
 - Star Wars

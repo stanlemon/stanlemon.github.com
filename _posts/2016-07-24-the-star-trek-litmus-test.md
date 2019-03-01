@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Star Trek Litmus Test
-date: 2016-07-24 14:00:00.000000000 -04:00
+date: 2016-07-24 14:00:00.000000000 +0000
 categories:
 - Rant
 tags:

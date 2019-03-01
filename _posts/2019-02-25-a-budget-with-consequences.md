@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Budget with Consequences
-date: 2019-02-25 19:05:00.000000000 -04:00
+date: 2019-02-25 19:05:00.000000000 +0000
 status: publish
 type: post
 published: true

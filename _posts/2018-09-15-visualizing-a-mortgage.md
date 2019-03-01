@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visualizing a Mortgage
-date: 2018-09-15 10:24:00.000000000 -04:00
+date: 2018-09-15 10:24:00.000000000 +0000
 categories:
 - Podcast
 tags:

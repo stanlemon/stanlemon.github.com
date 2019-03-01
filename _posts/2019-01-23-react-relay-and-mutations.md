@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React, Relay & Mutations
-date: 2019-01-23 07:30:00.000000000 -04:00
+date: 2019-01-23 07:30:00.000000000 +0000
 type: post
 published: true
 categories:

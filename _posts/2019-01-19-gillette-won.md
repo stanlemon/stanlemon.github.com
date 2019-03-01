@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gillette Won
-date: 2019-01-19 13:30:00.000000000 -04:00
+date: 2019-01-19 13:30:00.000000000 +0000
 status: publish
 type: post
 published: true

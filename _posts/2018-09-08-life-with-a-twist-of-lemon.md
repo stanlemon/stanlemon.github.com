@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Life with a Twist of Lemon
-date: 2018-09-08 12:45:00.000000000 -04:00
+date: 2018-09-08 12:45:00.000000000 +0000
 categories:
 - Projects
 - Podcast
