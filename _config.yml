@@ -9,7 +9,7 @@ baseurl: ""
 permalink: /:year/:month/:day/:title/
 paginate: 5
 paginate_path: /page/:num/
-url: "https://stanlemon.net"
+url: "https://stanlemon.com"
 twitter_username: stanlemon
 github_username: stanlemon
 linkedin_username: stanlemon
