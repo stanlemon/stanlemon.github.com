@@ -6,10 +6,12 @@ categories:
 - Rant
 - Star Wars
 - Science Fiction
+- Movies
 tags:
 - rant
 - starwars
 - scifi
+- movies
 status: publish
 type: post
 published: true

@@ -18,5 +18,5 @@ google_analytics: UA-33072694-1
 # Build settings
 markdown: kramdown
 highlighter: rouge
-gems:
+plugins:
   - jekyll-paginate

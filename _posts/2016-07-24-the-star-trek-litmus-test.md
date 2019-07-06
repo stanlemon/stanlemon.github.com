@@ -4,10 +4,12 @@ title: The Star Trek Litmus Test
 date: 2016-07-24 14:00:00.000000000 +0000
 categories:
 - Rant
+- Movies
 tags:
 - rant
 - star trek
 - scifi
+- movies
 status: publish
 type: post
 published: true
