@@ -24,7 +24,7 @@ footer {
 	padding-top:40px;
 	padding-bottom:40px;
 	background-color:#cecece;
- 
+
 }
 
 footer a:link, footer a:active, footer a:visited {
@@ -81,8 +81,12 @@ footer a:link, footer a:active, footer a:visited {
 }
 
 a,a:hover {
+	color:#111166;
+}
+
+h2 a, h2 a:hover {
 	color:#223344;
-	text-decoration:none;
+	text-decoration: none;
 }
 
 .icon-bar {
