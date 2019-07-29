@@ -17,6 +17,8 @@ We really had no idea what the podcast would be about. There was no plan. We wer
 
 This week Jon and I released an [episode reflecting back on the year’s highlights](https://twistoflemonpod.com/one-year-with-a-twist-of-lemon/). I thought in the spirit of our anniversary celebration I would list out my top 5 episodes, the ones you really shouldn’t miss.
 
+<img src="{{ site.url }}/assets/life-with-a-twist-of-lemon.jpg" width="384" height="384" alt="Life with a Twist of Lemon" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; height: auto; margin-top: 25px; margin-bottom: 25px;" />
+
 --------
 
 **Honorable Mention:** In December we began running a crawl before the show where I made a pitch to raise donations for our friend, [Pastor Joel Fritsche, who serves as a missionary in the Dominican Republic](https://www.lcms.org/Fritsche). The pitch was simple: Donate $50 and I’ll match it and send you a sticker. We raised money and sent out stickers; it was pretty awesome.
