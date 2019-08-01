@@ -58,12 +58,6 @@ footer a:link, footer a:active, footer a:visited {
 	}
 }
 
-.navbar.affix {
-	position:fixed;
-	top:0;
-	width:100%;
-}
-
 .top-spacer {
 	margin-top: 35px;
 	background-color:#ffffff;
@@ -138,15 +132,6 @@ h2 a, h2 a:hover {
 .panel {
 	border-color:transparent;
 	border-radius:0;
-}
-
-.thumbnail {
-	margin-bottom:8px;
-}
-
-.panel .lead {
-	overflow:hidden;
-	height:90px;
 }
 
 hr {
