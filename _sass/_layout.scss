@@ -1,7 +1,6 @@
 $bright: #111166;
 $dark: #223344;
 
-/* override bootstrap styles */
 body {
 	margin: 0px;
 	line-height: 1.5em;
@@ -29,27 +28,29 @@ footer {
 	padding-top:40px;
 	padding-bottom:40px;
 	background-color:#cecece;
-
 }
 
 footer a:link, footer a:active, footer a:visited {
 	color: rgb(100, 100, 100);
 }
 
-	
+footer a:hover {
+	text-decoration: none;
+}
+
 #masthead {
 	min-height:199px;
 	background-color:#000044;
 	color:#aaaacc;
-	
+
 	.lead {
-			margin-top: 7px;
+		margin-top: 7px;
 	}
 
 	.byline {
 		font-size: 16px;
 	}
- 
+
 	h1 {
 		font-size: 55px;
 		line-height: 1;
@@ -70,13 +71,11 @@ footer a:link, footer a:active, footer a:visited {
 }
 
 .pagination>li>a, .pagination>li>a:hover, .pagination>li>a:focus,
-a,a:hover 
-{
+a,a:hover {
 	color: $bright;
 }
 
-.pagination>li>span, .pagination>li>span:hover, .pagination>li>span:focus
-{
+.pagination>li>span, .pagination>li>span:hover, .pagination>li>span:focus {
 	color: inherit;
 	background-color: inherit;
 }
