@@ -1,12 +1,17 @@
-/* override bootstrap styles */
-.navbar-form input, .form-inline input {
-	width:auto;
-}
+$bright: #111166;
+$dark: #223344;
 
+/* override bootstrap styles */
 body {
+	margin: 0px;
+	line-height: 1.5em;
 	padding-top:50px;
 	color:#646464;
 	background-color:#efefef;
+}
+
+pre {
+	border: none;
 }
 
 h1,h2,h3,h4,.highlight,.navbar a,#masthead h4 {
@@ -53,16 +58,6 @@ footer a:link, footer a:active, footer a:visited {
 	}
 }
 
-#topPanel {
-	padding-top:0px;
-	padding-left:22px;
-	padding-right:22px;
-
-	.panel-body {
-		padding-top:0px;
-	}
-}
-
 .navbar.affix {
 	position:fixed;
 	top:0;
@@ -80,12 +75,27 @@ footer a:link, footer a:active, footer a:visited {
 	min-height: 40px;
 }
 
-a,a:hover {
-	color:#111166;
+.pagination>li>a, .pagination>li>a:hover, .pagination>li>a:focus,
+a,a:hover 
+{
+	color: $bright;
+}
+
+.pagination>li>span, .pagination>li>span:hover, .pagination>li>span:focus
+{
+	color: inherit;
+	background-color: inherit;
+}
+
+.pagination>.active>a, .pagination>.active>a:hover, .pagination>.active>a:focus,
+.pagination>.active>span, .pagination>.active>span:hover, .pagination>.active>span:focus 
+{
+	background-color: $bright;
+	border-color: $bright;
 }
 
 h2 a, h2 a:hover {
-	color:#223344;
+	color: $dark;
 	text-decoration: none;
 }
 
@@ -93,14 +103,8 @@ h2 a, h2 a:hover {
 	background-color:#fff;
 }
 
-@media screen and (min-width: 768px) {
-	#masthead h1 {
-		font-size: 80px;
-	}
-}
-
 .navbar-bright {
-	background-color:#111166;
+	background-color: $bright;
 	color:#fff;
 	margin-bottom: 0;
 	border-width: 0;
@@ -113,25 +117,22 @@ h2 a, h2 a:hover {
 	letter-spacing:.08em;
 }
 
+/* first covers the brand icon */
+.navbar-bright a:hover,
 .navbar-bright li > a:hover {
 	background-color:#000044;
 }
 
-.dropdown-menu {
-	min-width: 250px;
-}
-
-.caret {
-	color:#fff;
-}
-
 .navbar-toggle {
-	color:#fff;
-	border-width:0;
+	border-width: 0;
 }
 
 .navbar-toggle:hover {
 	background-color:#fff;
+}
+
+.navbar-toggle:hover .icon-bar {
+	background-color: $bright;
 }
 
 .panel {
@@ -143,37 +144,9 @@ h2 a, h2 a:hover {
 	margin-bottom:8px;
 }
 
-.img-container {
-	overflow:hidden;
-	height:170px;
-
-	img {
-		min-width:280px;
-		min-height:180px;
-		max-width:380px;
-		max-height:280px;
-	}
-}
-
-.txt-container {
-	overflow:hidden;
-	height:100px;
-}
-
 .panel .lead {
 	overflow:hidden;
 	height:90px;
-}
-
-.label-float{
-	margin:0 auto;
-	position: absolute;
-	top: 0;
-	z-index: 1;
-	width:100%;
-	opacity:.9;
-	padding:6px;
-	color:#fff;
 }
 
 hr {
@@ -181,8 +154,66 @@ hr {
 	margin-bottom: 15px;
 }
 
+/* centers an image and gives it some spacing above and below it */
+img.post-img {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: 25px; 
+	margin-bottom: 25px;
+	height: auto; 
+	max-width: 75%;
+}
+
+#nav {
+	background-color: $bright;
+}
+
 @media screen and (min-width: 768px) {
+
+	#nav {
+		max-height: 1000px;
+		overflow: visible;
+	}
+
 	.post-date {
 		text-align: right;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	#nav {
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+		position: absolute;
+		border-top: .5px #666 solid;
+	}
+
+	#nav {
+		-moz-transition: -moz-transform .5s;
+		-o-transition: -o-transform .5s;
+		-webkit-transition: -webkit-transform .5s;
+		-moz-transform-origin: top;
+		-ms-transform-origin: top;
+		-o-transform-origin: top;
+		-webkit-transform-origin: top;
+		transform-origin: top;
+		transition: transform .4s;
+	}
+	
+	.updown {
+		-moz-transform: scaleY(0);
+		-ms-transform: scaleY(0);
+		-o-transform: scaleY(0);
+		-webkit-transform: scaleY(0);
+		transform: scaleY(0);
+	}
+
+	#masthead h1 {
+		font-size: 80px;
 	}
 }

@@ -17,7 +17,7 @@ We really had no idea what the podcast would be about. There was no plan. We wer
 
 This week Jon and I released an [episode reflecting back on the year’s highlights](https://twistoflemonpod.com/one-year-with-a-twist-of-lemon/). I thought in the spirit of our anniversary celebration I would list out my top 5 episodes, the ones you really shouldn’t miss.
 
-<img src="{{ site.url }}/assets/life-with-a-twist-of-lemon.jpg" width="384" height="384" alt="Life with a Twist of Lemon" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; height: auto; margin-top: 25px; margin-bottom: 25px;" />
+<img src="/assets/life-with-a-twist-of-lemon.jpg" srcset="/assets/life-with-a-twist-of-lemon.jpg, /assets/life-with-a-twist-of-lemon@2x.jpg 2x" alt="Life with a Twist of Lemon" class="post-img" />
 
 --------
 

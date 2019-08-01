@@ -20,3 +20,5 @@ markdown: kramdown
 highlighter: rouge
 plugins:
   - jekyll-paginate
+
+future: true
