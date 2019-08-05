@@ -30,15 +30,15 @@ If you’re gainfully employed identifying your income should be pretty straight
 
 For the sake of illustrating my point let’s say my after taxes pay check is $2,000. This means that for any given month my total budget is $4,000, and thus I’m going to write this at the very top of my budget.
 ￼
-<img alt="A drawing of income for a budget" class="post-img" src="/assets/how-to-start-budgeting-income.png" srcset="/assets/how-to-start-budgeting-income.png, /assets/how-to-start-budgeting-income@2x.png 2x" />
+<img alt="A drawing of income for a budget" class="post-img" src="{{site.url}}/assets/how-to-start-budgeting-income.png" srcset="{{site.url}}/assets/how-to-start-budgeting-income.png, {{site.url}}/assets/how-to-start-budgeting-income@2x.png 2x" />
 
 Next I need to think about all the things that I spend money on every month, like my cell phone bill, my mortgage and my car insurance.  Your list might look something like this:
 
-<img alt="A drawing of expenses for a budget" class="post-img" src="/assets/how-to-start-budgeting-expenses.png" srcset="/assets/how-to-start-budgeting-expenses.png, /assets/how-to-start-budgeting-expenses@2x.png 2x" />
+<img alt="A drawing of expenses for a budget" class="post-img" src="{{site.url}}/assets/how-to-start-budgeting-expenses.png" srcset="{{site.url}}/assets/how-to-start-budgeting-expenses.png, {{site.url}}/assets/how-to-start-budgeting-expenses@2x.png 2x" />
 ￼
 These expenses never change, or at least not until something radical happens like I get rid of my car or cancel Netflix. There’s another category of recurring transactions that can be harder to pin down and those are your utilities, such as gas, water, electric and sewer. If your utility company offers a budget plan you should use it. The budget plan is designed to standardize your monthly payment and cover the spikes that can occur seasonally when, say, it’s cold outside and you need more gas for your furnace. If your utility company does not offer a budget plan then my best recommendation is to use one of three things: (1) Your highest bill, (2) Your average bill, or my personal favorite (3) Your average bill plus its standard deviation.
 ￼
-<img alt="A spreadsheet table of numbers showing standard deviation" class="post-img" src="/assets/how-to-start-budgeting-std-dev.png" srcset="/assets/how-to-start-budgeting-std-dev.png, /assets/how-to-start-budgeting-std-dev@2x.png 2x" />
+<img alt="A spreadsheet table of numbers showing standard deviation" class="post-img" src="{{site.url}}/assets/how-to-start-budgeting-std-dev.png" srcset="{{site.url}}/assets/how-to-start-budgeting-std-dev.png, {{site.url}}/assets/how-to-start-budgeting-std-dev@2x.png 2x" />
 
 You’re probably thinking, standard deviation, are you kidding me?!? Nope. Here’s the thing, if you use the highest bill then most months you’re over budgeting. If you use the average then most months you’re under budgeting. You need to give yourself some sort of buffer, and the standard deviation can help do that in a rationale way. If you don’t want to mess with the math though, simply average your bill out over 12 months and call it a day.
 
@@ -48,7 +48,7 @@ Once you’ve dealt with your utilities you’re down to the truly variable stuf
 
 Let’s take a look at the whole budget together now:
 
-<img alt="A drawing of a full budget" class="post-img" src="/assets/how-to-start-budgeting-full-budget.png" srcset="/assets/how-to-start-budgeting-full-budget.png, /assets/how-to-start-budgeting-full-budget@2x.png 2x" />
+<img alt="A drawing of a full budget" class="post-img" src="{{site.url}}/assets/how-to-start-budgeting-full-budget.png" srcset="{{site.url}}/assets/how-to-start-budgeting-full-budget.png, {{site.url}}/assets/how-to-start-budgeting-full-budget@2x.png 2x" />
 ￼
 Based upon our back of the napkin math here, we appear to have $2,873.01 leftover after our recurring expenses. Now the trick is to make sure you don’t spend more than that!
 

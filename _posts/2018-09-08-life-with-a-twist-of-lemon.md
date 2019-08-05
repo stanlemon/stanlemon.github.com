@@ -13,7 +13,7 @@ type: post
 published: true
 ---
 
-<img src="/assets/life-with-a-twist-of-lemon.jpg" srcset="/assets/life-with-a-twist-of-lemon.jpg, /assets/life-with-a-twist-of-lemon@2x.jpg 2x" alt="Life with a Twist of Lemon" class="post-img" />
+<img src="{{site.url}}/assets/life-with-a-twist-of-lemon.jpg" srcset="/assets/life-with-a-twist-of-lemon.jpg, /assets/life-with-a-twist-of-lemon@2x.jpg 2x" alt="Life with a Twist of Lemon" class="post-img" />
 
 For more than a couple of years now my friend [Jon Kohlmeier](http://jonkohlmeier.net/about/) has been trying to persuade me to start a podcast with him. We’ve routinely joked about it, but I’ve resisted getting it started because of time and other trivial things. Jon and I have been friends for well over a decade now and our roots to podcasting go way back. Jon was the cohost and producer of the [Higher Things Radio podcast](https://itunes.apple.com/us/podcast/ht-legacy-cast/id1424483387) with another friend of mine, [Rev. George Borghardt](https://twitter.com/revborghardt). I appeared a number of times on that podcast, and there are more than a [couple of episodes](https://itunes.apple.com/us/podcast/ht-legacy-cast/id1424483387#) where it is just Borghardt and I just shooting the breeze. I think that’s where the idea for Jon’s and my podcast came from, because really [Life with a Twist of Lemon](http://twistoflemonpod.com) is just the two of us shooting the breeze. Jon likes to say we’re just recording the conversations we were going to have anyway, and if it wasn’t for the fact that we schedule the recording that’d probably be spot on.
 
