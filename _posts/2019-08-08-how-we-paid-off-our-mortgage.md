@@ -13,7 +13,7 @@ tags:
 - mortgage
 ---
 
-<img src="{{site.url}}/assets/mortgage-paid.jpg" srcset="/assets/mortgage-paid.jpg, /assets/mortgage-paid@2x.jpg 2x" alt="Mrs. Lemon and I standing in front of our home with our mortgage visualization fully colored in because we had just paid the mortgage off." class="post-img" />
+<img src="{{site.url}}/assets/mortgage-paid.jpg" srcset="{{site.url}}/assets/mortgage-paid.jpg, {{site.url}}/assets/mortgage-paid@2x.jpg 2x" alt="Mrs. Lemon and I standing in front of our home with our mortgage visualization fully colored in because we had just paid the mortgage off." class="post-img" />
 
 Awhile back I wrote an article about [visualizing my mortgage]({{site.url}}/2018/09/15/visualizing-a-mortgage/) after my buddy Jon and I [discussed buying a house](https://twistoflemonpod.com/episode-8-if-you-dont-buy-milkshakes-with-your-money-save-for-a-house/) on our [podcast](http://twistoflemonpod.com/). Since then my wife and I have aggressively gone after our mortgage and I was happy to report (on Facebook) that at the end of June we made the final payment. I hesitated posting about this on Facebook (I don’t post often), but I was pretty proud and happy and wanted to share that joy. Yes, it was a brag and it was anything but humble, but sometimes you earn a little bit of that. :)
 
