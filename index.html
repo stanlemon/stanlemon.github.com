@@ -2,20 +2,21 @@
 layout: default
 ---
 
-{% for page in paginator.posts %}
-  <div class="row">
-    <div class="col-md-offset-1 col-md-10">
-      <div><strong>If you don't read anything else, check out:</strong></div>
-      <ul>
-        <li><a href="/2019/08/08/how-we-paid-off-our-mortgage/">How We Paid Off Our Mortgage</a> <em>(for the finance nerd)</em></li>
-        <li><a href="/2019/07/26/life-with-a-twist-of-lemon-the-first-year/">Life with a Twist of Lemon - The First Year</a> <em>(for the person with nothing to do)</em></li>
-        <li><a href="/2019/02/28/react-pouchdb-components/">React PouchDB Components</a> <em>(for the programmer)</em></li>
-        <li><a href="/2019/07/06/my-favorite-marvel-movies/">My Favorite Marvel Movies</a> <em>(for the pop culture nerd)</em></li>
-      </ul>
+<div class="row">
+  <div class="col-md-offset-1 col-md-10">
+    <div><strong>If you don't read anything else, check out:</strong></div>
+    <ul>
+      <li><a href="/2019/08/08/how-we-paid-off-our-mortgage/">How We Paid Off Our Mortgage</a> <em>(for the finance nerd)</em></li>
+      <li><a href="/2019/07/26/life-with-a-twist-of-lemon-the-first-year/">Life with a Twist of Lemon - The First Year</a> <em>(for the person with nothing to do)</em></li>
+      <li><a href="/2019/02/28/react-pouchdb-components/">React PouchDB Components</a> <em>(for the programmer)</em></li>
+      <li><a href="/2019/07/06/my-favorite-marvel-movies/">My Favorite Marvel Movies</a> <em>(for the pop culture nerd)</em></li>
+    </ul>
 
-      <hr>
-    </div>
+    <hr>
   </div>
+</div>
+
+{% for page in paginator.posts %}
   {% include post.html %}
   <div class="spacer"></div>
 {% endfor %}
