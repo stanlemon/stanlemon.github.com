@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Pizza Night at the Lemon's
-date: 2020-04-19 13:00:00.000000000 +0000
+date: 2020-04-19T13:00-04:00
 status: publish
 type: post
 published: true
+permalink: /2020/04/19/pizza-night-at-the-lemons/
 ---
 
 As long as my wife and I have been married we've been making our own pizza, every Friday night. I grew up in a suburb of Chicago where pizza and Friday nights were pretty much synonymous. Ordering pizza from your local parlour was just what you did. For my family most Fridays we ordered pizza from Campagna's, which made a crispy and often very salty thin crust. Later in life we'd frequent Dominick's and then [Pal Joey's](https://www.paljoeys.com), which sadly is the only one of these restaurants still in business today.

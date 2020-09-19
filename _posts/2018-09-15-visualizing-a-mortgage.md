@@ -1,16 +1,17 @@
 ---
 layout: post
 title: Visualizing a Mortgage
-date: 2018-09-15 10:24:00.000000000 +0000
+date: 2018-09-15T10:24-04:00
 categories:
-- Podcast
+  - Podcast
 tags:
-- podcast
-- twist
-- mortgage
+  - podcast
+  - twist
+  - mortgage
 status: publish
 type: post
 published: true
+permalink: /2018/09/15/visualizing-a-mortgage/
 ---
 
 <img src="{{site.url}}/assets/visualizing-a-mortgage.jpg" srcset="/assets/visualizing-a-mortgage.jpg, /assets/visualizing-a-mortgage@2x.jpg 2x" alt="A drawing of the Lemon home representing our mortgage and showing our progress paying it off." class="post-img" />

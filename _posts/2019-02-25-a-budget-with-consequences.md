@@ -1,10 +1,11 @@
 ---
 layout: post
 title: A Budget with Consequences
-date: 2019-02-25 19:05:00.000000000 +0000
+date: 2019-02-25T19:05-05:00
 status: publish
 type: post
 published: true
+permalink: /2019/02/25/a-budget-with-consequences/
 ---
 
 _Author's Note: I originally wrote this during the government shutdown earlier this year, but thankfully that's now over and I can maintain my streak of not writing about politics._

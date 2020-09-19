@@ -1,17 +1,18 @@
 ---
 layout: post
 title: React, Relay & Mutations
-date: 2019-01-23 07:30:00.000000000 +0000
+date: 2019-01-23T07:30-05:00
 type: post
 published: true
 categories:
-- Developer
+  - Developer
 tags:
-- javascript
-- react
-- relay
-- graphql
-- postgraphile
+  - javascript
+  - react
+  - relay
+  - graphql
+  - postgraphile
+permalink: /2019/01/23/react-relay-and-mutations/
 ---
 
 A working example of what I'm going to describe here can be found at https://github.com/stanlemon/example-relay-app.
