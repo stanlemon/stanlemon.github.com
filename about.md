@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-date: 2010-03-14 01:47:58.000000000 -05:00
+date: 2010-03-14 01:47:58.000000000 +0000
 categories: []
 tags: []
 status: publish
