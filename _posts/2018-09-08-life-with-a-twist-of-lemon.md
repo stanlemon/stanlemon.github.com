@@ -1,16 +1,17 @@
 ---
 layout: post
 title: Life with a Twist of Lemon
-date: 2018-09-08 12:45:00.000000000 +0000
+date: 2018-09-08T12:45-04:00
 categories:
-- Projects
-- Podcast
+  - Projects
+  - Podcast
 tags:
-- podcast
-- twist
+  - podcast
+  - twist
 status: publish
 type: post
 published: true
+permalink: /2018/09/08/life-with-a-twist-of-lemon/
 ---
 
 <img src="{{site.url}}/assets/life-with-a-twist-of-lemon.jpg" srcset="/assets/life-with-a-twist-of-lemon.jpg, /assets/life-with-a-twist-of-lemon@2x.jpg 2x" alt="Life with a Twist of Lemon" class="post-img" />

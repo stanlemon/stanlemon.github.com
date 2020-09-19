@@ -1,16 +1,17 @@
 ---
 layout: post
 title: My Favorite Marvel Movies
-date: 2019-07-06 11:01:00.000000000 +0000
+date: 2019-07-06T11:01-04:00
 status: publish
 type: post
 published: true
 categories:
-- Marvel
-- Movies
+  - Marvel
+  - Movies
 tags:
-- marvel
-- movies
+  - marvel
+  - movies
+permalink: /2019/07/06/my-favorite-marvel-movies/
 ---
 
 I’m a big fan of the Marvel Cinematic Universe. I don’t hesitate to get a baby sitter and see new releases in the theater and I’ve pretty much preordered every release (sans Guardians 2). I love the genre, but even more so I think the MCU represents some of the best movie writing of my lifetime. Consistently the MCU rolls out great content, so that even the worst MCU movie is still a great movie. Not even Star Wars can rival the consistent greatness of the MCU’s story telling.

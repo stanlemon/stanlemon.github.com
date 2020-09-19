@@ -1,15 +1,16 @@
 ---
 layout: post
 title: Budgeting the NFLPA Way
-date: 2019-08-17 13:17:00.000000000 +0000
+date: 2019-08-17T13:17-04:00
 status: publish
 type: post
 published: true
 categories:
-- Finance
+  - Finance
 tags:
-- finance
-- budget
+  - finance
+  - budget
+permalink: /2019/08/17/budgeting-the-nfpla-way/
 ---
 
 Lately I’ve been writing a lot about personal finance, especially topics related to budgeting. Lots of people think we’re on the verge of a recession, but my eyes have been set solely on the NFL, where my favorite team, the Pittsburgh Steelers, are gearing up for a run at another Lombardi. I love football, and the idea of a players' strike is entirely disconcerting to me. So while the finance world is worrying about a recession, I’m worried about whether or not the 2021 season will get played.

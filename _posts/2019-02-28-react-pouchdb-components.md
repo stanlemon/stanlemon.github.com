@@ -1,17 +1,18 @@
 ---
 layout: post
 title: React PouchDB Components
-date: 2019-02-28 21:47:00.000000000 +0000
+date: 2019-02-28T21:47-05:00
 status: publish
 type: post
 published: true
 categories:
-- Developer
+  - Developer
 tags:
-- javascript
-- react
-- pouchdb
-- couchdb
+  - javascript
+  - react
+  - pouchdb
+  - couchdb
+permalink: /2019/02/28/react-pouchdb-components/
 ---
 
 Last night I released a new library to [GitHub](https://github.com/stanlemon/react-pouchdb) and [npm](https://www.npmjs.com/package/@stanlemon/react-pouchdb) called React PouchDB components. I'm excited to share this library, which started as an experiment to illustrate to my friend [Jon](http://jonkohlmeier.net) how easy it could be to leverage [PouchDB](http://pouchdb.com) in [React](https://reactjs.org). After enough tooling around I suspected that the pieces could be extracted and shared more broadly.
