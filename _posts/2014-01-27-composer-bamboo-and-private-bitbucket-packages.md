@@ -4,10 +4,6 @@ title: Composer, Bamboo and private Bitbucket packages
 date: 2014-01-27T21:28-05:00
 categories:
   - Developer
-tags: []
-status: publish
-type: post
-published: true
 permalink: /2014/01/27/composer-bamboo-and-private-bitbucket-packages/
 ---
 I use Atlassian's [Bamboo](http://www.atlassian.com/software/bamboo) for continuous integration on a lot of projects. I'm a huge fan, it's a solid product with a lot of flexibility and the OnDemand service coupled with EC2 instances and custom EBS volume make for a really robust cloud based solution to continuous integration. Almost every project I put into Bamboo involves a call to load [composer](https://getcomposer.org) and install dependencies. Many of the projects I dabble with belong to other people and so they're locked down with some form of authentication and not normally in [Packagist](http://packagist.org). In the past this has created some challenges with installing my composer dependencies, but this past weekend I think I finally found a tolerable solution to my dilemma.

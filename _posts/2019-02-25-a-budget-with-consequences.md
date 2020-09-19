@@ -2,9 +2,8 @@
 layout: post
 title: A Budget with Consequences
 date: 2019-02-25T19:05-05:00
-status: publish
-type: post
-published: true
+categories:
+  - Finance
 permalink: /2019/02/25/a-budget-with-consequences/
 ---
 

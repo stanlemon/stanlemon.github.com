@@ -2,13 +2,8 @@
 layout: post
 title: Life with a Twist of Lemon - The First Year
 date: 2019-07-26T08:01-04:00
-status: publish
-type: post
-published: true
 categories:
   - Podcast
-tags:
-  - podcast
 permalink: /2019/07/26/life-with-a-twist-of-lemon-the-first-year/
 ---
 

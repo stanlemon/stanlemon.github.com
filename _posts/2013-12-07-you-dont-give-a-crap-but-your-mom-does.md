@@ -2,11 +2,8 @@
 layout: post
 title: You don't give a crap, but your mom does!
 date: 2013-12-07T09:32-05:00
-categories: []
-tags: []
-status: publish
-type: post
-published: true
+categories:
+  - Technology
 permalink: /2013/12/07/you-dont-give-a-crap-but-your-mom-does/
 ---
 _So you don’t give a crap that your data gets exposed or hacked?_ You don’t have anything to hide, so the potential leak isn’t worth the added effort of complex passwords and password management systems.  You want a simple, easy to remember password.  Fair enough.  I get it.  You don’t give a crap, but here’s the thing… **Your mom might.** Or your dad, or your sister or your great Aunt Bertha or your Cousin’s best friend that you just recently added on Facebook.  _And that’s the point_!

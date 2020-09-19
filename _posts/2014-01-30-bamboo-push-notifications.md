@@ -4,10 +4,6 @@ title: Bamboo Push Notifications
 date: 2014-01-30T23:20-05:00
 categories:
   - Developer
-tags: []
-status: publish
-type: post
-published: true
 permalink: /2014/01/30/bamboo-push-notifications/
 ---
 For awhile now I've wished that [Bamboo](http://atlassian.com/software/bamboo) had an app, or something that could deliver a push notification when a build starts or finishes. Sure there is email, but that means my build notifications will get lost in all of the other junk I am quietly ignoring in my inbox.  What I want is a targeted notification for my builds. So I got to thinking, why not leverage [Pushover](http://pushover.net)?

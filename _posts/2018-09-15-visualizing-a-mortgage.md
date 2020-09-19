@@ -4,13 +4,7 @@ title: Visualizing a Mortgage
 date: 2018-09-15T10:24-04:00
 categories:
   - Podcast
-tags:
-  - podcast
-  - twist
-  - mortgage
-status: publish
-type: post
-published: true
+  - Finance
 permalink: /2018/09/15/visualizing-a-mortgage/
 ---
 

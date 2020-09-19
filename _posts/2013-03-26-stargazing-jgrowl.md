@@ -4,10 +4,6 @@ title: Stargazing jGrowl
 date: 2013-03-26T07:00-04:00
 categories:
   - Developer
-tags: []
-status: publish
-type: post
-published: true
 permalink: /2013/03/26/stargazing-jgrowl/
 ---
 I get a fair number of emails about jGrowl each week. Two common requests are 1.) Can you include a compressed version? 2.) Do you have a CDN?

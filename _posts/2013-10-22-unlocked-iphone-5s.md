@@ -3,11 +3,7 @@ layout: post
 title: Unlocked iPhone 5S
 date: 2013-10-22T00:00-04:00
 categories:
-  - Husband
-tags: []
-status: publish
-type: post
-published: true
+  - Life
 permalink: /2013/10/22/unlocked-iphone-5s/
 ---
 When I went to order my wife a new phone I couldn't get a straight answer as to whether or not the T-Mobile full-price version would be unlocked or not. The general consensus was that the device would ship with a T-Mobile SIM and be bound to T-Mobile's prepaid service at least for a couple of months.  The whole thing was terribly confusing because you could order an iPhone 5C without a SIM in it at all, which is what I was hoping I could do with the 5S.

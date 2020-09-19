@@ -4,10 +4,6 @@ title: The DataMapper Ruse
 date: 2013-10-28T23:01-04:00
 categories:
   - Developer
-tags: []
-status: publish
-type: post
-published: true
 permalink: /2013/10/28/the-datamapper-ruse/
 ---
 There were some great articles today about ORMs, specifically "[Is ORM abstraction a pipe dream?](http://programmingarehard.com/2013/10/21/is-orm-abstraction-a-pipe-dream.html)" by David Adam and then "[Publish Your Failure; or, The Way Of All Frameworks](http://paul-m-jones.com/archives/4757)" by Paul Jones (the man who led me to good BBQ in Memphis).

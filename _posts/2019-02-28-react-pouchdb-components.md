@@ -2,16 +2,8 @@
 layout: post
 title: React PouchDB Components
 date: 2019-02-28T21:47-05:00
-status: publish
-type: post
-published: true
 categories:
   - Developer
-tags:
-  - javascript
-  - react
-  - pouchdb
-  - couchdb
 permalink: /2019/02/28/react-pouchdb-components/
 ---
 

@@ -2,9 +2,8 @@
 layout: post
 title: Red Sauce for Pizza, Spaghetti and Other Pasta
 date: 2020-05-17T15:00-04:00
-status: publish
-type: post
-published: true
+categories:
+  - Life
 permalink: /2020/05/17/red-sauce-for-pizza-spaghetti-and-other-pasta/
 ---
 

@@ -2,16 +2,8 @@
 layout: post
 title: React, Relay & Mutations
 date: 2019-01-23T07:30-05:00
-type: post
-published: true
 categories:
   - Developer
-tags:
-  - javascript
-  - react
-  - relay
-  - graphql
-  - postgraphile
 permalink: /2019/01/23/react-relay-and-mutations/
 ---
 

@@ -2,14 +2,8 @@
 layout: post
 title: How to Start Budgeting
 date: 2019-08-01T07:00-04:00
-status: publish
-type: post
-published: true
 categories:
   - Finance
-tags:
-  - finance
-  - budget
 permalink: /2019/08/01/how-to-start-budgeting/
 ---
 
