@@ -2,15 +2,8 @@
 layout: post
 title: How We Paid Off Our Mortgage
 date: 2019-08-08T21:00-04:00
-status: publish
-type: post
-published: true
 categories:
   - Finance
-tags:
-  - finance
-  - budget
-  - mortgage
 permalink: /2019/08/08/how-we-paid-off-our-mortgage/
 ---
 

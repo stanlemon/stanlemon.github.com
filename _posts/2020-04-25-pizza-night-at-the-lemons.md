@@ -2,9 +2,8 @@
 layout: post
 title: Pizza Night at the Lemon's
 date: 2020-04-19T13:00-04:00
-status: publish
-type: post
-published: true
+categories:
+  - Life
 permalink: /2020/04/19/pizza-night-at-the-lemons/
 ---
 

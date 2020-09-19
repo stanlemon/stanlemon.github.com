@@ -3,18 +3,7 @@ layout: post
 title: Ranking Star Wars
 date: 2017-05-07T15:06-04:00
 categories:
-  - Rant
-  - Star Wars
-  - Science Fiction
   - Movies
-tags:
-  - rant
-  - starwars
-  - scifi
-  - movies
-status: publish
-type: post
-published: true
 permalink: /2017/05/07/ranking-star-wars/
 ---
 Recently a friend of mine, [Rev. George Borghardt](https://twitter.com/revborghardt) asked the internet to rank Star Wars movies, best to last. Presumably this was inspired by a discussion he and I had over some of Kentucky's finest just the week before.

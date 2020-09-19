@@ -2,11 +2,8 @@
 layout: post
 title: How Google is making Gmail Insecure
 date: 2013-12-06T06:23-05:00
-categories: []
-tags: []
-status: publish
-type: post
-published: true
+categories:
+  - Technology
 permalink: /2013/12/06/why-google-is-making-gmail-insecure/
 ---
 [Last winter, about a year ago, Google did a round of house cleaning](http://googleblog.blogspot.ca/2012/12/winter-cleaning.html).  When they did this they consequently opened the flood gates to making Gmail a less secure product.  _How you say_?  Let me explain...

@@ -2,9 +2,8 @@
 layout: post
 title: What the last episode of Seinfeld and the flu have in common
 date: 2020-04-19T13:00-04:00
-status: publish
-type: post
-published: true
+categories:
+  - Life
 permalink: /2020/04/19/what-the-last-episode-of-seinfeld-and-the-flu-have-in-common/
 ---
 

@@ -4,10 +4,6 @@ title: s3cmd and GovCloud
 date: 2013-05-23T05:00-04:00
 categories:
   - Developer
-tags: []
-status: publish
-type: post
-published: true
 permalink: /2013/05/23/s3cmd-and-govcloud/
 ---
 If you're using [_s3cmd_](http://s3tools.org/) to put files into an s3 bucket and need to do so into [GovCloud](http://aws.amazon.com/govcloud-us/) you can, but you need to override the end point URL's used for s3.  I had a hard time finding documentation for this, so hopefully this saves someone sometime in the future.

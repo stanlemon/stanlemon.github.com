@@ -4,10 +4,6 @@ title: Naked Domain Workaround
 date: 2013-03-19T06:00-04:00
 categories:
   - Developer
-tags: []
-status: publish
-type: post
-published: true
 permalink: /2013/03/19/naked-domain-workaround/
 ---
 I've become a pretty big fan of Red Hat's [OpenShift](http://openshift.com) platform.  I **love** the idea of doing deployments based off of DVCS operations. Almost two years ago when I was working for Wizzard Software we came up with a deployment process not to far off from this concept.  We were a Mercurial based team so the DVCS system was different, but we basically issuing pull's from repositories on the effected systems and out rolled new software that way.  OpenShift is a whole lot better then that though, because it's push triggered and deploys to the cloud and Red Hat has a bunch of awesome hooks tied in to make it even more powerful.  Did I mention it's _FREE_?  Yes, free hosting driven by git in the cloud - it doesn't get much better then this!

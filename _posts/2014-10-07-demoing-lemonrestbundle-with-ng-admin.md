@@ -4,15 +4,6 @@ title: Demoing LemonRestBundle with ng-admin
 date: 2014-10-07T21:40-04:00
 categories:
   - Developer
-tags:
-  - angular
-  - ng-admin
-  - php
-  - rest
-  - symfony
-status: publish
-type: post
-published: true
 permalink: /2014/10/07/demoing-lemonrestbundle-with-ng-admin/
 ---
 tl;dr [You can try out LemonRestBundle with ng-admin here.](http://restdemo-stanlemon.rhcloud.com/#)

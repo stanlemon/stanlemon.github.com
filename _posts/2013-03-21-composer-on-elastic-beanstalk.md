@@ -4,10 +4,6 @@ title: Composer on Elastic Beanstalk
 date: 2013-03-21T06:00-04:00
 categories:
   - Developer
-tags: []
-status: publish
-type: post
-published: true
 permalink: /2013/03/21/composer-on-elastic-beanstalk/
 ---
 [Amazon's Elastic Beanstalk](http://aws.amazon.com/elasticbeanstalk/) is another git-driven deployment service, this time directly to EC2 and RDS instances on Amazon Web Services.  It's similar to what Red Hat is doing with OpenShift conceptually.

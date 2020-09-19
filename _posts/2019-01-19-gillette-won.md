@@ -2,9 +2,8 @@
 layout: post
 title: Gillette Won
 date: 2019-01-19T13:30-05:00
-status: publish
-type: post
-published: true
+categories:
+  - Life
 permalink: /2019/01/19/gillette-won/
 ---
 

@@ -2,14 +2,8 @@
 layout: post
 title: Budgeting the NFLPA Way
 date: 2019-08-17T13:17-04:00
-status: publish
-type: post
-published: true
 categories:
   - Finance
-tags:
-  - finance
-  - budget
 permalink: /2019/08/17/budgeting-the-nfpla-way/
 ---
 

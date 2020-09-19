@@ -3,14 +3,7 @@ layout: post
 title: Life with a Twist of Lemon
 date: 2018-09-08T12:45-04:00
 categories:
-  - Projects
   - Podcast
-tags:
-  - podcast
-  - twist
-status: publish
-type: post
-published: true
 permalink: /2018/09/08/life-with-a-twist-of-lemon/
 ---
 
