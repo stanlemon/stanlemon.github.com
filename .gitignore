@@ -1,5 +1,8 @@
-_site
-.sass-cache
 .DS_Store
-.jekyll-metadata
 .vscode
+
+## Dependencies
+node_modules/
+
+## Generated Site Data
+_site

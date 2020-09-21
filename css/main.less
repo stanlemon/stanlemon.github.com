@@ -1,5 +1,10 @@
-$bright: #111166;
-$dark: #223344;
+@import "bootstrap3.less";
+@import "font-awesome.less";
+// Import this as less so that it's included in the resulting CSS file
+@import (less) "../node_modules/prismjs/themes/prism-tomorrow.css";
+
+@bright: #111166;
+@dark: #223344;
 
 body {
 	margin: 0px;
@@ -70,9 +75,14 @@ footer a:hover {
 	min-height: 40px;
 }
 
+.spacer-sm {
+	height: 20px;
+	min-height: 20px;
+}
+
 .pagination>li>a, .pagination>li>a:hover, .pagination>li>a:focus,
 a,a:hover {
-	color: $bright;
+	color: @bright;
 }
 
 .pagination>li>span, .pagination>li>span:hover, .pagination>li>span:focus {
@@ -83,12 +93,12 @@ a,a:hover {
 .pagination>.active>a, .pagination>.active>a:hover, .pagination>.active>a:focus,
 .pagination>.active>span, .pagination>.active>span:hover, .pagination>.active>span:focus 
 {
-	background-color: $bright;
-	border-color: $bright;
+	background-color: @bright;
+	border-color: @bright;
 }
 
 h2 a, h2 a:hover {
-	color: $dark;
+	color: @dark;
 	text-decoration: none;
 }
 
@@ -97,7 +107,7 @@ h2 a, h2 a:hover {
 }
 
 .navbar-bright {
-	background-color: $bright;
+	background-color: @bright;
 	color:#fff;
 	margin-bottom: 0;
 	border-width: 0;
@@ -125,7 +135,7 @@ h2 a, h2 a:hover {
 }
 
 .navbar-toggle:hover .icon-bar {
-	background-color: $bright;
+	background-color: @bright;
 }
 
 .panel {
@@ -150,7 +160,7 @@ img.post-img {
 }
 
 #nav {
-	background-color: $bright;
+	background-color: @bright;
 }
 
 @media screen and (min-width: 768px) {
@@ -160,7 +170,7 @@ img.post-img {
 		overflow: visible;
 	}
 
-	.post-date {
+	.post-date, .keep-reading {
 		text-align: right;
 	}
 }
