@@ -1,0 +1,22 @@
+{
+  "name": "stanlemon-com",
+  "version": "3.0.0",
+  "description": "Stan Lemon's personal website.",
+  "main": ".eleventy.js",
+  "dependencies": {
+    "prismjs": "^1.21.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "less": "^3.12.2"
+  },
+  "scripts": {
+    "serve": "eleventy --serve",
+    "build": "eleventy",
+    "less": "lessc ./css/main.less ./_site/css/main.css",
+    "clean": "rm -rf ./_site/**"
+  },
+  "author": "Stan Lemon",
+  "license": "MIT"
+}

@@ -41,14 +41,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="{{ "/" | prepend: site.baseurl }}" class="navbar-brand">Home</a>
+      <a href="/" class="navbar-brand">Home</a>
     </div>
     <div id="nav" class="updown" role="navigation">
       <ul class="nav navbar-nav">
-        <li><a href="{{ site.baseurl }}/about/">About</a></li>
+        <li><a href="/about/">About</a></li>
         <li><a href="https://twistoflemonpod.com/" target="_window">Podcast</a></li>
         <li><a href="https://eepurl.com/gvEkEL" target="_window">Subscribe</a></li>
-        <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -96,17 +96,17 @@
       <div class="col-sm-6">
         <ul class="list-inline">
           <li>
-            <a href="http://twitter.com/{{ site.twitter_username }}">
+            <a href="http://twitter.com/{{ site.social.twitter }}">
               <i class="icon-twitter icon-2x"></i>
             </a>
           </li>
           <li>
-            <a href="http://linkedin.com/in/{{ site.linkedin_username }}">
+            <a href="http://linkedin.com/in/{{ site.social.linkedin }}">
               <i class="icon-linkedin icon-2x"></i>
             </a>
           </li>
           <li>
-            <a href="http://github.com/{{ site.github_username }}">
+            <a href="http://github.com/{{ site.social.github }}">
               <i class="icon-github icon-2x"></i>
             </a>
           </li>

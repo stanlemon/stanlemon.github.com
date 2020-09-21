@@ -1,12 +1,13 @@
+
 <div class="row">    
   <div class="col-sm-offset-1 col-sm-7">
     <h2>
-      <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      <a href="{{ url }}">{{ title }}</a>
     </h2>
     <h4>by Stan Lemon</h4>
   </div>
   <div class="col-sm-3 post-date">
-    <h3>{{ page.date | date: "%b %-d, %Y" }}</h3>
+      <h3>{{ date | date: "%b %d, %Y" }}</h3>
   </div>
 </div>
 
@@ -14,7 +15,13 @@
   <div class="col-sm-offset-1 col-sm-10">
     <article class="post-content">
       <hr>
-      {{ page.content }}
+      {{ content }}
+      {% if keepReading %}
+        <div class="spacer-sm"></div>
+        <div class="keep-reading">
+          <em><a href="{{url}}">Keep Reading</a></em>
+        </div>
+      {% endif %}
       <hr>
     </article>
   </div>

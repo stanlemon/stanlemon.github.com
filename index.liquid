@@ -1,5 +1,10 @@
 ---
 layout: default
+pagination:
+  data: collections.posts
+  reverse: true
+  size: 5
+permalink: "/{% if pagination.pageNumber>0 %}page/{{ pagination.pageNumber | plus: 1 }}{% endif %}/index.html"
 ---
 
 <div class="row">
@@ -16,18 +21,22 @@ layout: default
   </div>
 </div>
 
-{% for page in paginator.posts %}
-  {% include post.html %}
+{%- for page in pagination.items -%}
+  {%- if page.data.page.excerpt -%}
+    {%- assign pageContent = page.data.page.excerpt -%}
+  {%- else -%}
+    {%- assign pageContent = page.templateContent -%}
+  {%- endif -%}
+
+  {% include article with url: page.url, title: page.data.title, date: page.data.date, content: pageContent, keepReading: page.data.page.excerpt %}
   <div class="spacer"></div>
 {% endfor %}
 
-
-{% if paginator.total_pages > 1 %}
 <nav class="text-center">
   <ul class="pagination">
-    {% if paginator.previous_page %}
+    {% if pagination.href.previous %}
       <li>
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+        <a href="{{ pagination.href.previous }}">&laquo; Prev</a>
       </li>
     {% else %}
       <li>
@@ -35,19 +44,17 @@ layout: default
       </li>
     {% endif %}
 
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <li class="active"><a>{{ page }}</a></li>
-      {% elsif page == 1 %}
-        <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+    {% for href in pagination.hrefs %}
+      {% if page.url == href %}
+        <li class="active"><a>{{ forloop.index }}</a></li>
       {% else %}
-        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+        <li><a href="{{ href }}">{{ forloop.index }}</a></li>
       {% endif %}
     {% endfor %}
 
-    {% if paginator.next_page %}
+    {% if pagination.href.next %}
       <li>
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+        <a href="{{ pagination.next.previous }}">Next &raquo;</a>
       </li>
     {% else %}
       <li>
@@ -56,4 +63,3 @@ layout: default
     {% endif %}
   </ul>
 </nav>
-{% endif %}

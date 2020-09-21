@@ -1,0 +1,13 @@
+{
+    "name": "lemonbytes",
+    "title": "lemonbytes by Stan Lemon",
+    "author": "Stan Lemon",
+    "description": "husband, dad, steelers fan and software engineer",
+    "url": "http://localhost:8080",
+    "social": {
+        "twitter": "stanlemon",
+        "github": "stanlemon",
+        "linkedin": "stanlemon"
+    },
+    "google_analytics": "UA-33072694-1"
+}
