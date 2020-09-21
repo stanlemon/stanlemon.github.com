@@ -16,7 +16,6 @@ You can find some of my projects over at [GitHub](http://github.com/stanlemon).
 From time to time I post on [Twitter @stanlemon](http://twitter.com/stanlemon).
 
 I also actively volunteer in several non profit organizations:
-- CASA for Marion County with [Child Advocates](http://www.childadvocates.org)
-- Financial Secretary at [St. Peter's Lutheran Church, Indianapolis, IN](https://www.stpetersindy.org)
-- Treasurer & Board Member for the [Indiana District LCMS](https://in.lcms.org)
 
+- CASA for Marion County with [Child Advocates](http://www.childadvocates.org)
+- Treasurer & Board Member for the [Indiana District LCMS](https://in.lcms.org)
