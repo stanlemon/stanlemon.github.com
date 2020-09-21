@@ -2,11 +2,6 @@
 layout: page
 title: About
 permalink: /about/
-categories: []
-tags: []
-status: publish
-type: page
-published: true
 ---
 My name is Stan Lemon, I am a husband, dad, Steelers fan and software engineer.
 
