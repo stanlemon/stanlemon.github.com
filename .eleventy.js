@@ -29,7 +29,7 @@ module.exports = (eleventyConfig) => {
                 // Render markdown content
                 const content = markdown.render(value);
                 // Render the variable as liquid
-                return liquidEngine.parseAndRender(content, scope);
+                return liquidEngine.parseAndRender(content, scope.contexts[0], scope.opts);
             }
         }
     });
