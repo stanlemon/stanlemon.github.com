@@ -11,10 +11,10 @@ permalink: "/{% if pagination.pageNumber>0 %}page/{{ pagination.pageNumber | plu
   <div class="col-md-offset-1 col-md-10">
     <div><strong>If you don't read anything else, check out:</strong></div>
     <ul>
-      <li><a href="/2019/08/08/how-we-paid-off-our-mortgage/">How We Paid Off Our Mortgage</a> <em>(for the finance nerd)</em></li>
-      <li><a href="/2019/07/26/life-with-a-twist-of-lemon-the-first-year/">Life with a Twist of Lemon - The First Year</a> <em>(for the person with nothing to do)</em></li>
-      <li><a href="/2019/02/28/react-pouchdb-components/">React PouchDB Components</a> <em>(for the programmer)</em></li>
-      <li><a href="/2019/07/06/my-favorite-marvel-movies/">My Favorite Marvel Movies</a> <em>(for the pop culture nerd)</em></li>
+      <li><a href="{{ site.url }}/2019/08/08/how-we-paid-off-our-mortgage/">How We Paid Off Our Mortgage</a> <em>(for the finance nerd)</em></li>
+      <li><a href="{{ site.url }}/2019/07/26/life-with-a-twist-of-lemon-the-first-year/">Life with a Twist of Lemon - The First Year</a> <em>(for the person with nothing to do)</em></li>
+      <li><a href="{{ site.url }}/2019/02/28/react-pouchdb-components/">React PouchDB Components</a> <em>(for the programmer)</em></li>
+      <li><a href="{{ site.url }}/2019/07/06/my-favorite-marvel-movies/">My Favorite Marvel Movies</a> <em>(for the pop culture nerd)</em></li>
     </ul>
 
     <hr>
@@ -23,12 +23,14 @@ permalink: "/{% if pagination.pageNumber>0 %}page/{{ pagination.pageNumber | plu
 
 {%- for page in pagination.items -%}
   {%- if page.data.page.excerpt -%}
-    {%- assign pageContent = page.data.page.excerpt -%}
+    {%- capture pageContent -%}
+      {%- liquidify page.data.page.excerpt -%}
+    {%- endcapture -%}
   {%- else -%}
     {%- assign pageContent = page.templateContent -%}
   {%- endif -%}
 
-  {% include article with url: page.url, title: page.data.title, date: page.data.date, content: pageContent, keepReading: page.data.page.excerpt %}
+  {% include article with site: site, url: page.url, title: page.data.title, date: page.data.date, content: pageContent, keepReading: page.data.page.excerpt %}
   <div class="spacer"></div>
 {% endfor %}
 
@@ -36,7 +38,7 @@ permalink: "/{% if pagination.pageNumber>0 %}page/{{ pagination.pageNumber | plu
   <ul class="pagination">
     {% if pagination.href.previous %}
       <li>
-        <a href="{{ pagination.href.previous }}">&laquo; Prev</a>
+        <a href="{{ site.url }}{{ pagination.href.previous }}">&laquo; Prev</a>
       </li>
     {% else %}
       <li>
@@ -48,13 +50,13 @@ permalink: "/{% if pagination.pageNumber>0 %}page/{{ pagination.pageNumber | plu
       {% if page.url == href %}
         <li class="active"><a>{{ forloop.index }}</a></li>
       {% else %}
-        <li><a href="{{ href }}">{{ forloop.index }}</a></li>
+        <li><a href="{{ site.url }}{{ href }}">{{ forloop.index }}</a></li>
       {% endif %}
     {% endfor %}
 
     {% if pagination.href.next %}
       <li>
-        <a href="{{ pagination.next.previous }}">Next &raquo;</a>
+        <a href="{{ site.url }}{{ pagination.next.previous }}">Next &raquo;</a>
       </li>
     {% else %}
       <li>

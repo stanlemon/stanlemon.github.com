@@ -1,7 +1,10 @@
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const SyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const MarkdownIt = require("markdown-it");
+
+const markdown = new MarkdownIt({ html: true });
 
 module.exports = (eleventyConfig) => {
-    eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(SyntaxHighlight);
 
     eleventyConfig.addPassthroughCopy("assets");
 
@@ -12,6 +15,23 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.setFrontMatterParsingOptions({
         excerpt: true,
         excerpt_separator: "<!-- excerpt -->"
+    });
+
+    // Treat a variable or string as liquid and render it (rather than simply print it)
+    eleventyConfig.addLiquidTag("liquidify", (liquidEngine) => {
+        return {
+            parse: (tagToken, remainingTokens) => {
+                this.str = tagToken.args;
+            },
+            render: (scope, hash) => {
+                // Resolve variables
+                const value = liquidEngine.evalValue(this.str, scope);
+                // Render markdown content
+                const content = markdown.render(value);
+                // Render the variable as liquid
+                return liquidEngine.parseAndRender(content, scope);
+            }
+        }
     });
 
     return {

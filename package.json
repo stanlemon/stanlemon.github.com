@@ -12,7 +12,7 @@
     "less": "^3.12.2"
   },
   "scripts": {
-    "serve": "eleventy --serve",
+    "serve": "SITE_URL=http://localhost:8081 eleventy --serve  --port 8081",
     "build": "eleventy",
     "less": "lessc ./css/main.less ./_site/css/main.css",
     "clean": "rm -rf ./_site/**"

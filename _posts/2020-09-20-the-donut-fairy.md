@@ -7,7 +7,7 @@ categories:
 permalink: /2020/09/20/the-donut-fairy/
 ---
 
-<img src="/assets/the-donut-fairy.jpeg" srcset="/assets/the-donut-fairy.jpeg, /assets/the-donut-fairy@2x.jpeg 2x" alt="Dunkin Donuts delivered to the house via Door Dash" class="post-img" />
+<img src="{{site.url}}/assets/the-donut-fairy.jpeg" srcset="{{site.url}}/assets/the-donut-fairy.jpeg, {{site.url}}/assets/the-donut-fairy@2x.jpeg 2x" alt="Dunkin Donuts delivered to the house via Door Dash" class="post-img" />
 
 Evelyn is the household donut connoisseur. She’s the one responsible for getting me out of bed early to go get donuts, and she also usually decides where to get the donuts. She’ll tell you the best donuts in Indianapolis are at Long’s Bakery, but that Jack’s Donuts is closer; and if you want one of the cinnamon twists they’re bigger at Jacks, but Long’s has the better cake donuts. She’s got it all down; this is her thing.
 
@@ -17,7 +17,7 @@ One day Henry (age 8) is sitting back watching reruns of the epic show Myth Bust
 
 I was sitting on the deck reading when the Dunkin Donuts ad popped up, and Evelyn rushed outside to tell me about. She told me we could get free donuts, the TV said so. She was excited and rambling a bit and also mentioned something about dashing. It took me a bit, but I figured out that the ad was talking about Door Dash.
 
-<img src="/assets/the-donut-fairy-ad.png" srcset="/assets/the-donut-fairy-ad.png, /assets/the-donut-fairy-ad@2x.png 2x" alt="Dunkin Donuts ad inside of the Door Dash app, note the free munchkins" class="post-img" />
+<img src="{{site.url}}/assets/the-donut-fairy-ad.png" srcset="{{site.url}}/assets/the-donut-fairy-ad.png, {{site.url}}/assets/the-donut-fairy-ad@2x.png 2x" alt="Dunkin Donuts ad inside of the Door Dash app, note the free munchkins" class="post-img" />
 
 Maybe this is a good time to explain that in Evelyn’s 6 long years of life we’ve had food delivered to our house exactly one time. It was right after we moved to Indianapolis, on day 2, and we ordered pizza from Donatos. The kids declared it a disaster and to this day when I mention it they don’t recall it, the scar of bad pizza having been blocked out due to the trauma of the whole thing.
 
@@ -31,4 +31,4 @@ This was a truly mind blowing event for Evelyn. Donuts could be delivered?!? To 
 
 Technology is pretty cool.
 
-<img src="/assets/the-donut-fairy-evelyn.jpeg" srcset="/assets/the-donut-fairy-evelyn.jpeg, /assets/the-donut-fairy-evelyn@2x.jpeg 2x" alt="Evelyn devouring a Dunkin Donut from The Donut Fairy" class="post-img" />
+<img src="{{site.url}}/assets/the-donut-fairy-evelyn.jpeg" srcset="{{site.url}}/assets/the-donut-fairy-evelyn.jpeg, {{site.url}}/assets/the-donut-fairy-evelyn@2x.jpeg 2x" alt="Evelyn devouring a Dunkin Donut from The Donut Fairy" class="post-img" />
