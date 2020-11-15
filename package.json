@@ -2,21 +2,21 @@
   "name": "stanlemon-com",
   "version": "3.0.0",
   "description": "Stan Lemon's personal website.",
+  "author": "Stan Lemon",
+  "license": "MIT",
   "main": ".eleventy.js",
-  "dependencies": {
-    "prismjs": "^1.21.0"
-  },
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "less": "^3.12.2"
-  },
   "scripts": {
     "serve": "SITE_URL=http://localhost:8081 eleventy --serve  --port 8081",
     "build": "eleventy",
     "less": "lessc ./css/main.less ./_site/css/main.css",
     "clean": "rm -rf ./_site/**"
   },
-  "author": "Stan Lemon",
-  "license": "MIT"
+  "dependencies": {
+    "prismjs": "^1.22.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "less": "^3.12.2"
+  }
 }
