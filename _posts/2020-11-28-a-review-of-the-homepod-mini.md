@@ -9,6 +9,10 @@ categories:
 permalink: /2020/11/28/a-review-of-the-homepod-mini/
 ---
 
+The HomePod Mini is the culmination of a long hard road for Siri. For those of us loyal Mac-addicts and Apple fanboys it's the fruition of a long slog to the ubiquitous smart assistant that many of us have been hoping for. Finally we have a smart speaker that lives up to the dream and at a price that any Mac aficionado can deploy into their home.
+
+<!-- excerpt -->
+
 When I look back at iPhones it was the 4 that really amplified the potential power and beauty of a personal computer in your pocket. It was the 4 that introduced the retina screen, which was the first time we stopped seeing pixelation on our screens. It also included Apple’s first processor, the A4, and it brought multi-tasking to the iPhone. I waited for hours in line on launch morning at a mall in Pittsburgh with my wife and my eight month older daughter to get iPhone 4’s for the Mrs. and myself. It was a great phone.
 
 When the iPhone 4S was released it seemed a bit anti-climactic because the 4 had been such a transformative release for the iPhone. The 4S headline feature was this weird "virtual assistant" called Siri. At this point in time, 9 years ago, computers didn’t talk to you, let alone parse and process requests. It would be 3 more years before Amazon released the Alexa.
