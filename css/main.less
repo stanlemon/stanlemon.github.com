@@ -10,7 +10,7 @@ body {
 	margin: 0px;
 	line-height: 1.5em;
 	padding-top:50px;
-	color:#646464;
+	color: #333;
 	background-color:#efefef;
 }
 
@@ -159,6 +159,27 @@ img.post-img {
 	max-width: 75%;
 }
 
+img.post-img.half {
+	width: 50%;
+}
+
+img.post-img.third {
+	width: 33%;
+}
+
+img.post-img.quarter {
+	width: 25%;
+}
+
+figcaption {
+	display: block;
+	text-align: center;
+	margin-top: -20px; 
+	margin-bottom: 25px;
+	font-size: .9em;
+	color: #666;
+}
+
 #nav {
 	background-color: @bright;
 }
@@ -184,7 +205,6 @@ article li {
 }
 
 @media screen and (max-width: 768px) {
-
 	#nav {
 		margin-left: -15px;
 		margin-right: -15px;
@@ -217,5 +237,17 @@ article li {
 
 	#masthead h1 {
 		font-size: 80px;
+	}
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+	img.post-img.half, img.post-img.third, img.post-img.quarter {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 844px) and (orientation: landscape) {
+	img.post-img.half, img.post-img.third, img.post-img.quarter {
+		width: 50%;
 	}
 }
