@@ -14,7 +14,7 @@ In March, 2019 Apple released their “Apple Card”, a credit card with a truly
 <!-- excerpt -->
 
 <figure>
-<img src="{{site.url}}/assets/apple-card-overview.jpg" srcset="{{site.url}}/assets/apple-card-overview.jpg, {{site.url}}/assets/apple-card-overview@2x.jpg 2x" alt="Apple Card is an entire expierence available from the Wallet app." class="post-img third" />
+<img width="585" height="1266" src="{{site.url}}/assets/apple-card-overview.jpg" srcset="{{site.url}}/assets/apple-card-overview.jpg, {{site.url}}/assets/apple-card-overview@2x.jpg 2x" alt="Apple Card is an entire expierence available from the Wallet app." class="post-img third" />
 <figcaption>Apple Card is an entire expierence available from the Wallet app.</figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ Separate cards are not inherently bad, and I suspect that for a lot of couples t
 One of the coolest features of the Apple Card is the visuals around transactions. Apple Card categorizes them automatically for you and has great little graphs for how much you’ve spent over the month. The thing about two separate cards when your family accounting is unified is that these graphs are essentially useless because they only show part of the picture.
 
 <figure>
-<img src="{{site.url}}/assets/apple-card-monthly-spending.jpg" srcset="{{site.url}}/assets/apple-card-monthly-spending.jpg, {{site.url}}/assets/apple-card-monthly-spending@2x.jpg 2x" alt="Apple Card clearly shows you what you've spent each month broken down by categories." class="post-img third" />
+<img width="585" height="1266" src="{{site.url}}/assets/apple-card-monthly-spending.jpg" srcset="{{site.url}}/assets/apple-card-monthly-spending.jpg, {{site.url}}/assets/apple-card-monthly-spending@2x.jpg 2x" alt="Apple Card clearly shows you what you've spent each month broken down by categories." class="post-img third" />
 <figcaption>Apple Card clearly shows you what you've spent each month broken down by categories.</figcaption>
 </figure>
 
@@ -41,14 +41,14 @@ One of the coolest features of the Apple Card is the visuals around transactions
 Drilling into a particular merchant will show you all of the transactions for that merchant. If I want to see everything I’ve bought at Apple it’s extremely easy to pull up the list. This is nice compared to most services that show barely legible names for charges which are often varied and irregular. In those other services its hard to pull up everything you’ve spent at a specific place. In addition to the date and amount you can also see what percentage you got cash back from each transaction. Everything you buy at Apple earns 3%, if you used Apple Pay with your Apple Card at a non Apple retailer it’s 2% and everything else is 1%. This is crazy simple to wrap your head around compared to other credit cards, and there are no monthly promos to sign up for to unlock different percentages. The best part about Apple’s cash back, though, is that you don’t have to wait until the end of the billing cycle to get that benefit. As soon as a charge clears you receive your cash back award in your Apple Cash account.
 
 <figure>
-<img src="{{site.url}}/assets/apple-card-transactions.jpg" srcset="{{site.url}}/assets/apple-card-transactions.jpg, {{site.url}}/assets/apple-card-transactions@2x.jpg 2x" alt="Apple Card allows you to see all of the transactions for a particular merchant." class="post-img third" />
+<img width="585" height="1266" src="{{site.url}}/assets/apple-card-transactions.jpg" srcset="{{site.url}}/assets/apple-card-transactions.jpg, {{site.url}}/assets/apple-card-transactions@2x.jpg 2x" alt="Apple Card allows you to see all of the transactions for a particular merchant." class="post-img third" />
 <figcaption>Apple Card allows you to see all of the transactions for a particular merchant.</figcaption>
 </figure>
 
 If you want to make a payment on your Apple Card you can set it up to happen automatically or do it manually from within the Wallet app on your iPhone. If you want to pay manually you’re presented with a pretty cool circular image of the amount you can pay. You can drag the control dot around the circle to change how much you’re going to pay. The circle visualizes exactly what your balance is and what needs to be paid to avoid interest. The first time you make a payment you can choose to use the debit card that’s paired to your Apple Cash. This is novel because when you pay your card it’s instant, as opposed to online bill bay using an ETF withdrawal from your checking account that takes days to clear. The immediacy of this payment is a really nice improvement to the credit card payment experience.
 
 <figure>
-<img src="{{site.url}}/assets/apple-card-payment.jpg" srcset="{{site.url}}/assets/apple-card-payment.jpg, {{site.url}}/assets/apple-card-payment@2x.jpg 2x" alt="Apple Card payments are easy and clear with a clever circular control for derterming how much to pay." class="post-img third" />
+<img width="585" height="1266" src="{{site.url}}/assets/apple-card-payment.jpg" srcset="{{site.url}}/assets/apple-card-payment.jpg, {{site.url}}/assets/apple-card-payment@2x.jpg 2x" alt="Apple Card payments are easy and clear with a clever circular control for derterming how much to pay." class="post-img third" />
 <figcaption>Apple Card payments are easy and clear with a clever circular control for derterming how much to pay.</figcaption>
 </figure>
 
