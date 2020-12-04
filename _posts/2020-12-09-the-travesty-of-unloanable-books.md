@@ -12,6 +12,11 @@ Recently my oldest daughter, Lucy, asked me if she could let a friend borrow a b
 
 <!-- excerpt -->
 
+<figure>
+<img src="{{site.url}}/assets/kindle-by-fireplace.jpg" srcset="{{site.url}}/assets/kindle-by-fireplace.jpg, {{site.url}}/assets/kindle-by-fireplace@2x.jpg 2x" alt="Money: The True Story of a Made-Up Thing was one of my favorite 2020 reads and I so badly want to loan it to my friend Jon." class="post-img half" />
+<figcaption><a href="https://amzn.to/37CtUTW" target="_blan">Money: The True Story of a Made-Up Thing</a> was one of my favorite 2020 reads and I so badly want to loan it to my friend Jon.</figcaption>
+</figure>
+
 It is no secret that I’m a huge fan of the Kindle and reading digitally. It’s something my wife can’t understand and my best friend Jon insists misses out on part of the experience of reading: the physical book in your hand and the crisp pages between your fingers. I’ve had a Kindle since the first generation, and I’ve read using the Kindle app on my iPhone and iPad since it launched. Even before the Kindle I remember reading over-priced books on my Palm LifeDrive.
 
 I went to college intending to be a Pastor, and if you’ve ever met anyone who has studied theology you know they collect books as if it were a bad addiction. This was just as true for me, and right at the point in my life where I was embracing minimalism I started to amass books at an alarming rate. When I moved from dorm to dorm on campus I could fit everything but my books into a single piece of luggage, but there were boxes and boxes of books, mostly theological ones. 
