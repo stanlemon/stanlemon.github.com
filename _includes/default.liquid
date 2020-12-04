@@ -28,7 +28,10 @@
   <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">  
 
-  <link href="//fonts.googleapis.com/css?family=Oswald|Source+Code+Pro" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/74e9143cc4.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -97,22 +100,22 @@
         <ul class="list-inline">
           <li>
             <a href="http://twitter.com/{{ site.social.twitter }}">
-              <i class="icon-twitter icon-2x"></i>
+              <i class="fab fa-twitter fa-2x" title="Twitter"></i>
             </a>
           </li>
           <li>
             <a href="http://linkedin.com/in/{{ site.social.linkedin }}">
-              <i class="icon-linkedin icon-2x"></i>
+              <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
             </a>
           </li>
           <li>
             <a href="http://github.com/{{ site.social.github }}">
-              <i class="icon-github icon-2x"></i>
+              <i class="fab fa-github fa-2x" title="GitHub"></i>
             </a>
           </li>
           <li>
-            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-              <i class="icon-rss icon-2x"></i>
+            <a href="{{site.url}}/feed.xml"">
+              <i class="fas fa-rss-square fa-2x" title="Subscribe via RSS"></i>
             </a>
           </li>
 
