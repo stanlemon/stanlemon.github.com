@@ -8,10 +8,11 @@
   "scripts": {
     "serve": "SITE_URL=http://localhost:8081 eleventy --serve  --port 8081",
     "build": "eleventy",
-    "less": "lessc -x --source-map-no-annotation ./css/main.less ./_site/css/main.css",
+    "less": "lessc --source-map-no-annotation ./css/main.less ./_site/css/main.css; cp ./node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 ./_site/css/",
     "clean": "rm -rf ./_site/**"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "prismjs": "^1.22.0"
   },
   "devDependencies": {
