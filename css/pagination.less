@@ -1,3 +1,5 @@
+@import "_variables.less";
+
 .pagination {
   display: inline-block;
   padding-left: 0;
@@ -16,7 +18,7 @@
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #428bca;
+  color: @bright;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -39,7 +41,7 @@
 .pagination>li>span:hover,
 .pagination>li>a:focus,
 .pagination>li>span:focus {
-  color: #2a6496;
+  color: @bright;
   background-color: #eee;
   border-color: #ddd;
 }
@@ -53,8 +55,8 @@
   z-index: 2;
   color: #fff;
   cursor: default;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: @bright;
+  border-color: @bright;
 }
 
 .pagination>.disabled>span,

@@ -53,74 +53,52 @@
 </header>
 
 <div id="masthead">  
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>
-          {{ site.name }}<span class="byline"> by {{ site.author }}</span>
-          <p class="lead">{{ site.description }}</p>
-        </h1>
-      </div>
-    </div> 
+  <div class="title container">
+    <h1>
+      {{ site.name }}<span class="byline"> by {{ site.author }}</span>
+      <p class="lead">{{ site.description }}</p>
+    </h1>
   </div>
   
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="top-spacer"> </div>
-      </div>
-    </div> 
+    <div class="top-spacer"> </div>
   </div>
 </div>
-
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-12"> 
-      <div class="panel">
-        <div class="panel-body">
-          {{ content }}
-        </div>
-      </div>
-   	</div>
+  <div class="content">
+    {{ content }}
   </div>
 </div>
 
-<div class="spacer"></div>
-
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <ul class="list-inline">
-          <li>
-            <a href="http://twitter.com/{{ site.social.twitter }}">
-              <i class="fab fa-twitter fa-2x" title="Twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://linkedin.com/in/{{ site.social.linkedin }}">
-              <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://github.com/{{ site.social.github }}">
-              <i class="fab fa-github fa-2x" title="GitHub"></i>
-            </a>
-          </li>
-          <li>
-            <a href="{{site.url}}/feed.xml"">
-              <i class="fas fa-rss-square fa-2x" title="Subscribe via RSS"></i>
-            </a>
-          </li>
-
-        </ul>
-      </div>
-      <div class="col-md-6">
-          <p class="pull-right">
-            &copy; {{ "now" | date:"%Y" }} Stan Lemon
-          </p>
-      </div>
+  <div class="container columns is-vcentered">
+    <div class="column">
+      <ul>
+        <li>
+          <a href="http://twitter.com/{{ site.social.twitter }}">
+            <i class="fab fa-twitter fa-2x" title="Twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://linkedin.com/in/{{ site.social.linkedin }}">
+            <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://github.com/{{ site.social.github }}">
+            <i class="fab fa-github fa-2x" title="GitHub"></i>
+          </a>
+        </li>
+        <li>
+          <a href="{{site.url}}/feed.xml"">
+            <i class="fas fa-rss-square fa-2x" title="Subscribe via RSS"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="column copyright">
+      &copy; {{ "now" | date:"%Y" }} Stan Lemon
     </div>
   </div>
 </footer>
