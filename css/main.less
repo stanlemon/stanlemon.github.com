@@ -36,7 +36,8 @@ body {
   font-family: -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: @bright;
 }
@@ -263,7 +264,8 @@ h2 a:hover {
   background-color: @bright;
 }
 
-.title, .content {
+.title,
+.content {
   padding: 15px;
 }
 
@@ -320,14 +322,22 @@ figcaption {
 
 article {
   margin-bottom: 30px;
-}
 
-article ul {
-  margin-top: 1.25em;
-}
+  a {
+    font-weight: 550;
+  }
 
-article li {
-  margin-bottom: 1.25em;
+  strong {
+    font-weight: 800;
+  }
+
+  ul {
+    margin-top: 1.25em;
+
+    li {
+      margin-bottom: 1.25em;
+    }
+  }
 }
 
 .sr-only {
