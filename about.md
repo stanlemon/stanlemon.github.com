@@ -3,9 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
-My name is Stan Lemon, I am a husband, dad, Steelers fan and software engineer.
+My name is Stan Lemon, I am a [husband](https://saralemon.com), dad, Steelers fan and software engineer.
 
-I live with my wife and three kids in Indianapolis, Indiana.  I studied Theology and Biblical Languages at Concordia University River Forest, where I received a Bachelor of Arts degree.  After college I took up software development and currently work as a Software Architect for [Salesforce](http://salesforce.com), working on [Pardot](http://pardot.com).  When I'm not working I enjoy spending time with my kids, reading Star Wars books and watching the [Pittsburgh Steelers](https://steelers.com).
+I live with my [wife](https://saralemon.com) and three kids in Indianapolis, Indiana.  I studied Theology and Biblical Languages at Concordia University River Forest, where I received a Bachelor of Arts degree.  After college I took up software development and currently work as a Software Architect for [Salesforce](http://salesforce.com), working on [Pardot](http://pardot.com).  When I'm not working I enjoy spending time with my kids, reading Star Wars books and watching the [Pittsburgh Steelers](https://steelers.com).
 
 You can catch me every week with my friend [Jon Kohlmeir](http://jonkohlmeier.net/about/) on our podcast, [Life with a Twist of Lemon](http://twistoflemonpod.com). 
 
