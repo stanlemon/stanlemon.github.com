@@ -1,0 +1,34 @@
+---
+layout: post
+title: The Travesty of Unloanable Books
+date: 2020-12-09T10:00-04:00
+categories:
+  - Life
+  - Technology
+permalink: /2020/12/09/the-travesty-of-unloanable-books/
+---
+
+Recently my oldest daughter, Lucy, asked me if she could let a friend borrow a book she had. “Of course”, I said, ”why wouldn’t you be able to?” What I didn’t realize at first is that she was referring to a book we had recently bought on Amazon Kindle, which she had plowed through in record time. It was the latest book in a series that this particular friend of hers had first introduced to her. Her friend was waiting for her physical copy to arrive, and Lucy was anxious to start talking to her about the story. I had to explain to Lucy that it was almost certainly not possible. Lucy was disappointed, and perhaps I was even more so.
+
+<!-- excerpt -->
+
+<figure>
+<img src="{{site.url}}/assets/kindle-by-fireplace.jpg" srcset="{{site.url}}/assets/kindle-by-fireplace.jpg, {{site.url}}/assets/kindle-by-fireplace@2x.jpg 2x" alt="Money: The True Story of a Made-Up Thing was one of my favorite 2020 reads and I so badly want to loan it to my friend Jon." class="post-img half" />
+<figcaption><a href="https://amzn.to/37CtUTW" target="_blan">Money: The True Story of a Made-Up Thing</a> was one of my favorite 2020 reads and I so badly want to loan it to my friend Jon.</figcaption>
+</figure>
+
+It is no secret that I’m a huge fan of the Kindle and reading digitally. It’s something my wife can’t understand and my best friend Jon insists misses out on part of the experience of reading: the physical book in your hand and the crisp pages between your fingers. I’ve had a Kindle since the first generation, and I’ve read using the Kindle app on my iPhone and iPad since it launched. Even before the Kindle I remember reading over-priced books on my Palm LifeDrive.
+
+I went to college intending to be a Pastor, and if you’ve ever met anyone who has studied theology you know they collect books as if it were a bad addiction. This was just as true for me, and right at the point in my life where I was embracing minimalism I started to amass books at an alarming rate. When I moved from dorm to dorm on campus I could fit everything but my books into a single piece of luggage, but there were boxes and boxes of books, mostly theological ones. 
+
+When I finally left college I emptied my apartment into a 2004 Dodge Neon, and I just assumed it was normal that the passenger seat and back seat were piled high with boxes of books. My first year after college in Pittsburgh didn’t slow me down any either, I bought more and more books that year so that when my wife and I moved into our first home we had more boxes of books than we did for clothes and dishes combined.
+
+I think it was at this point that I started to become annoyed with the physical presence of my book collection. Many of the books I was lugging around I had read and was unlikely to read again. I had never been much of a collector, but that’s really what my books had become. Most of the books I had either weren’t that good or they were single purpose books, something I needed to read to answer a particular pressing question or scratch a particular itch. I determined that some of my books might best be served in other people’s hands, so I started the long process of culling my library. I gave some to friends and I sold others, and the ones that weren’t valuable enough to sell and uninteresting to friends I donated to the local library.
+
+At first the Kindle didn’t have the books I was looking for. That was because Concordia Publishing House (CPH), the publisher of many of the theology books I was interested in, dragged their feet on the digital book experience. When CPH did finally join the fray they priced their books absurdly high, too. Despite that I was also reading fiction, books by Jeff Schaara and Star Trek novels, which were easily available for $9.99 on Amazon.
+
+While embracing the digital book I found that, for me, it was actually easier to read than physical books. I hated books that wouldn’t lay flat, and it repulsed me to damage their spine to force them into submission. I found the typeface of older books offensive to my eyes, and even though my eyes are not bad I preferred a bigger type than most are printed with. I also really loathe book lights, but I like to read while in bed before falling asleep. As the Kindle experience translated to the iPhone and iPad I found I could read anywhere. I could read on my Kindle in bed at night with its backlight, or I could pull out my iPhone and read while waiting in line at the grocery store. I ended up reading a lot on my iPhone too, and reading became the thing that laced the gaps of my day together. I never had this portability with physical books, and for me it was the killer feature that leveled up my reading game.
+
+Digital reading has only gotten better with time, especially as libraries got on board and services like OverDrive became common place. When our family moved to Indiana I got a library card, largely out of peer pressure (my wife and kids being a formidable force), and began making extensive use of the digital loans. When it’s available to borrow digitally from the library that’s what I do, only buying a book if it’s not available or the wait is too long to satiate my need to read.
+
+What I’ve noticed lately though is that I’ve amassed a lot of one-time reads, books that I am likely never to look at again. They were great the first time, but hardly the sort of book I’ll find myself re-reading over and over again. In fact, there are actually few of those types of books on my shelf, virtual or physical. The problem is I can’t do anything with them. I had a sunk cost in buying them, and most of them I can’t give to friends to borrow. Kindle actually offers a loan feature, but it’s up to the publisher to enable. This is stupid because the publisher doesn’t own that copy of the book, and they really should have no say in what I do with it. If I want to loan it to a friend, that should be exclusively my choice and the publisher should have zero say in my ability to do so. Likewise, I should be able to resell that digital book. Amazon could facilitate this on their platform and even take a cut on the sale, just like they do when I sell a physical book on their marketplace. This lack of freedom with my books stinks, as Lucy learned the other day when she wanted to let a friend borrow one. Yet as much as I want to be able to loan and sell digital books, I also want to donate them. I really want to be able to give them to my local library after I’m done with them, just as I have done with so many physical books over the years. If Amazon (or Apple for that matter) were to make one major improvement to the digital book experience that’s the one I would want them to make: **Let me donate my gently used digital books to the public library.**
