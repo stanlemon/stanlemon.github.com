@@ -9,6 +9,8 @@ permalink: /2019/07/06/my-favorite-marvel-movies/
 
 I’m a big fan of the Marvel Cinematic Universe. I don’t hesitate to get a baby sitter and see new releases in the theater and I’ve pretty much preordered every release (sans Guardians 2). I love the genre, but even more so I think the MCU represents some of the best movie writing of my lifetime. Consistently the MCU rolls out great content, so that even the worst MCU movie is still a great movie. Not even Star Wars can rival the consistent greatness of the MCU’s story telling.
 
+<!-- excerpt -->
+
 Because I’m such an MCU nerd I often get asked to rank the movies from my favorite to least. That’s no easy task! I’ve tried this before with Star Trek and Star Wars where the disparity between a great movie and the bottom of the barrel is stark. In the MCU that disparity is narrow and sometimes hard to navigate.  The middle of the list of also especially difficult to decide because they’re on such even ground with each other. Nonetheless for you, dear reader, I shall endeavor to order these movies. Please note, this list is fluid and I have no reservations about updating this list over time.
 
 Lastly… don’t ever watch these movies in this order! The MCU should **always** be watched chronologically, period. Unlike Star Wars the release order matters, with but a few exceptions that, quite honestly, are not worth taking out of release order (looking at you Captain America: First Avenger and Captain Marvel).

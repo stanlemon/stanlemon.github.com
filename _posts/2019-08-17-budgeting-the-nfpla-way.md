@@ -9,6 +9,8 @@ permalink: /2019/08/17/budgeting-the-nfpla-way/
 
 Lately I’ve been writing a lot about personal finance, especially topics related to budgeting. Lots of people think we’re on the verge of a recession, but my eyes have been set solely on the NFL, where my favorite team, the Pittsburgh Steelers, are gearing up for a run at another Lombardi. I love football, and the idea of a players' strike is entirely disconcerting to me. So while the finance world is worrying about a recession, I’m worried about whether or not the 2021 season will get played.
 
+<!-- excerpt -->
+
 CBS Sports posted an article this week citing communication from the NFL Players Association (via ESPN) and in it were ten _recommendations_ for the players as they _budget_ for a strike. At first I laughed, but then I thought hey these are actually pretty good (even the outlandish ones). Here are the ten items from [that post on CBS Sports](https://www.cbssports.com/nfl/news/nflpa-reportedly-sends-work-stoppage-guide-to-players-preps-for-possible-lockout/):
 
 

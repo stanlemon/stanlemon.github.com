@@ -1,6 +1,12 @@
-@import "bootstrap3.less";
+@import "container.less";
+
+@import "columns.less";
+
+@import "images.less";
 
 @import "pagination.less";
+
+@import "navigation.less";
 
 // Import this as less so that it's included in the resulting CSS file
 @import (less) "../node_modules/prismjs/themes/prism-tomorrow.css";
@@ -114,27 +120,31 @@ h6 {
   margin-bottom: 10px;
 }
 
-.lead {
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.4;
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eee;
 }
 
-@media (min-width: 768px) {
-  .lead {
-    font-size: 21px;
-  }
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
 }
 
 h1,
 h2,
 h3,
 h4,
-.highlight,
 .navbar a,
 #masthead h4 {
   font-family: 'Oswald', arial narrow, sans-serif;
+}
+
+h2 a,
+h2 a:hover {
+  text-decoration: none;
 }
 
 ul,
@@ -150,8 +160,11 @@ ol ol {
   margin-bottom: 0;
 }
 
-.text-center {
-  text-align: center;
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 footer {
@@ -162,6 +175,31 @@ footer {
   padding-bottom: 40px;
   background-color: #cecece;
 
+  @media screen and (max-width: 767px) {
+    margin-top: 0px;
+  }
+
+  // This reverses the default column behavior
+  @media screen and (max-width: 767px) {
+    .columns {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    .columns {
+      display: block;
+    }
+  }
+
+  .copyright {
+    text-align: right;
+
+    @media screen and (max-width: 370px) {
+      text-align: center;
+    }
+  }
+
   a:link,
   a:active,
   a:visited {
@@ -170,23 +208,23 @@ footer {
 
   a:hover {
     text-decoration: none;
-  }
+  }  
 
   ul {
     display: block;
     padding-left: 0;
     margin-bottom: 0px;
     list-style: none;
-  }
 
-  li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
+    @media screen and (max-width: 374px) {
+      text-align: center;
+    }
 
-  .copyright {
-    text-align: right;
+    li {
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px;
+    }  
   }
 }
 
@@ -209,6 +247,14 @@ footer {
 
   .lead {
     margin-top: 7px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+
+    @media (min-width: 768px) {
+      font-size: 21px;
+    }    
   }
 
   .byline {
@@ -216,18 +262,13 @@ footer {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 .top-spacer {
   background-color: #ffffff;
   height: 40px;
-}
-
-h2 a,
-h2 a:hover {
-  text-decoration: none;
-}
-
-.icon-bar {
-  background-color: #fff;
 }
 
 .navbar-bright {
@@ -277,40 +318,6 @@ h2 a:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid #eee;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* centers an image and gives it some spacing above and below it */
-img.post-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  height: auto;
-  max-width: 75%;
-}
-
-img.post-img.half {
-  width: 50%;
-}
-
-img.post-img.third {
-  width: 33%;
-}
-
-img.post-img.quarter {
-  width: 25%;
-}
-
 figcaption {
   display: block;
   text-align: center;
@@ -351,30 +358,6 @@ article {
   border: 0;
 }
 
-.columns {
-  display: flex;
-
-  &.is-vcentered {
-    align-items: center;
-  }
-
-  &.is-vbottom {
-    align-items: baseline;
-  }
-
-  .column {
-    display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-
-  .column.quarter {
-    flex: none;
-    width: 25%;
-  }
-}
-
 #nav {
   background-color: @bright;
 }
@@ -382,6 +365,7 @@ article {
 .keep-reading {
   margin-top: 15px;
   text-align: right;
+  font-style: italic;
 
   a {
     font-weight: normal;
@@ -449,35 +433,5 @@ article {
 
   .top-spacer {
     display: none;
-  }
-
-  .content .columns {
-    display: block;
-
-    .quarter {
-      width: 100%;
-    }
-  }
-
-  footer {
-    margin-top: 0px;
-  }
-}
-
-@media screen and (max-width: 768px) and (orientation: portrait) {
-
-  img.post-img.half,
-  img.post-img.third,
-  img.post-img.quarter {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 844px) and (orientation: landscape) {
-
-  img.post-img.half,
-  img.post-img.third,
-  img.post-img.quarter {
-    width: 50%;
   }
 }

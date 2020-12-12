@@ -1,0 +1,45 @@
+
+img {
+  vertical-align: middle;
+}
+
+/* centers an image and gives it some spacing above and below it */
+img.post-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: auto;
+  max-width: 75%;
+}
+
+img.post-img.half {
+  width: 50%;
+}
+
+img.post-img.third {
+  width: 33%;
+}
+
+img.post-img.quarter {
+  width: 25%;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+
+  img.post-img.half,
+  img.post-img.third,
+  img.post-img.quarter {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 844px) and (orientation: landscape) {
+
+  img.post-img.half,
+  img.post-img.third,
+  img.post-img.quarter {
+    width: 50%;
+  }
+}

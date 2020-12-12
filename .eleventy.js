@@ -38,6 +38,31 @@ module.exports = (eleventyConfig) => {
     };
   });
 
+  eleventyConfig.addLiquidFilter("paginate", (data, currentPage) => {
+    const wingSize = 2;
+    const wingSpan = wingSize * 2 + 1;
+    const totalPages = data.length;
+
+    let firstPage = currentPage - wingSize;
+    let lastPage = currentPage + wingSize;
+
+    // If we're early enough in the pager this will slide before 0, so reset
+    if (firstPage <= 0) {
+      firstPage = 0;
+      lastPage = wingSpan;
+    }
+
+    // If we're late enough in the pager this will slide past our total, so reset
+    if (lastPage >= totalPages - 1) {
+      firstPage = totalPages - wingSpan;
+      lastPage = totalPages;
+    }
+
+    return data
+      .map((href, page) => ({ href, page: page + 1 }))
+      .slice(firstPage, lastPage + 1);
+  });
+
   return {
     dir: {
       input: "./", // Equivalent to Jekyll's source property

@@ -9,6 +9,8 @@ permalink: /2019/02/28/react-pouchdb-components/
 
 Last night I released a new library to [GitHub](https://github.com/stanlemon/react-pouchdb) and [npm](https://www.npmjs.com/package/@stanlemon/react-pouchdb) called React PouchDB components. I'm excited to share this library, which started as an experiment to illustrate to my friend [Jon](http://jonkohlmeier.net) how easy it could be to leverage [PouchDB](http://pouchdb.com) in [React](https://reactjs.org). After enough tooling around I suspected that the pieces could be extracted and shared more broadly.
 
+<!-- excerpt -->
+
 There are a number of different ways to deal with state in React, everything from the simple [`setState()`](https://reactjs.org/docs/state-and-lifecycle.html) to [redux](http://redux.js.org). Most sites need remote data, and so as a developer your options become a little more complex, leveraging promises inside of `componentDidMount()` or tools like [redux-thunk](https://www.github.com/reduxjs/redux-thunk). These are all great, but what I wanted was a simple way to fetch data into PouchDB and for it to be declarative.
 
 Here's what I imagined...

@@ -9,6 +9,8 @@ permalink: /2019/08/01/how-to-start-budgeting/
 
 It can be difficult to know where to start budgeting. There are entire companies built around the art of budgeting, everything from Intuit’s once ubiquitous Quicken software to classic envelope budgeting, where you use actual physical envelopes loaded with cash. In some respects a whole industry of financial self help experts like Dave Ramsey have popped up with the sales pitch of helping you budget. The truth is budgeting doesn’t have to be hard and there’s a really easy way to start.
 
+<!-- excerpt -->
+
 I am not going to sell you an ideology, method or software. I am a big believer in budgeting, or maybe more accurately knowing what you have and then only spending what you have. To get there you don’t have to attend a conference, buy a book or sign up for a software subscription. It’s actually pretty straight forward.
 
 First let’s take a step back and think about what the goal of budgeting is: it’s to give yourself permission to spend money. That may sound weird at first, but without a budget you’re running wild and free never quite knowing whether or not you should or should not spend money on something. Budgeting is a tool that basically says, “Yeah Stan, it’s OK to buy this right now.” Or, “Sorry Stan, not right now, you need to save up for this one.”

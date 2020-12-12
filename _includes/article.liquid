@@ -1,14 +1,12 @@
 <article>
   <div class="columns is-vbottom">
-    <div class="column">
+    <div>
       <h2>
         <a href="{{ url }}">{{ title }}</a>
       </h2>
       <h4>by Stan Lemon</h4>
     </div>
-    <div class="column quarter post-date">
-      <h3>{{ date | date: "%b %d, %Y" }}</h3>
-    </div>
+    <h3 class="post-date">{{ date | date: "%b %d, %Y" }}</h3>
   </div>
 
   <hr>
@@ -17,7 +15,7 @@
 
   {% if keepReading %}
     <div class="keep-reading">
-      <em><a href="{{ site.url }}{{ url }}">Keep Reading</a></em>
+      <a href="{{ site.url }}{{ url }}">Keep Reading</a>
     </div>
   {% endif %}
 

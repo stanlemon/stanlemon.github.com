@@ -27,34 +27,60 @@ permalink: "/{% if pagination.pageNumber>0 %}page/{{ pagination.pageNumber | plu
   {% include article with site: site, url: page.url, title: page.data.title, date: page.data.date, content: pageContent, keepReading: page.data.page.excerpt %}
 {% endfor %}
 
+{% assign pages = pagination.hrefs | paginate: pagination.pageNumber %}
+
 <nav class="text-center">
-  <ul class="pagination">
-    {% if pagination.href.previous %}
-      <li>
-        <a href="{{ site.url }}{{ pagination.href.previous }}">&laquo; Prev</a>
-      </li>
-    {% else %}
-      <li>
-        <span>&laquo; Prev</span>
-      </li>
+  <ul class="pagination columns">
+    {% if pagination.pageNumber > 2 %}
+      {% if pagination.href.previous %}
+        <li>
+          <a href="{{ site.url }}{{ pagination.href.previous }}">
+            <i class="fas fa-angle-double-left" title="Previous"></i>
+          </a>
+        </li>
+      {% else %}
+        <li class="disabled">
+          <i class="fas fa-angle-double-left" title="Previous"></i>
+        </li>
+      {% endif %}
+
+      {% if page.url == pagination.hrefs.first %}
+        <li class="edge active"><a>1</a></li>
+      {% else %}
+        <li class="edge"><a href="{{ site.url }}{{ pagination.hrefs.first }}">1</a></li>
+      {% endif %}
+
+      <li class="gap"><span>...</span></li>
     {% endif %}
 
-    {% for href in pagination.hrefs %}
-      {% if page.url == href %}
-        <li class="active"><a>{{ forloop.index }}</a></li>
+    {% for data in pages %}
+      {% if page.url == data.href %}
+        <li class="active"><a>{{data.page}}</a></li>
       {% else %}
-        <li><a href="{{ site.url }}{{ href }}">{{ forloop.index }}</a></li>
+        <li><a href="{{site.url}}{{data.href}}">{{data.page}}</a></li>
       {% endif %}
     {% endfor %}
 
-    {% if pagination.href.next %}
-      <li>
-        <a href="{{ site.url }}{{ pagination.next.previous }}">Next &raquo;</a>
-      </li>
-    {% else %}
-      <li>
-        <span>Next &raquo;</span>
-      </li>
+    {% if pagination.pageNumber < 12 %}
+      <li class="gap"><span>...</span></li>
+
+      {% if page.url == pagination.hrefs.last %}
+        <li class="active edge"><a>{{pagination.hrefs.size}}</a></li>
+      {% else %}
+        <li class="edge"><a href="{{ site.url }}{{ pagination.hrefs | last }}">{{pagination.hrefs.size}}</a></li>
+      {% endif %}
+
+      {% if pagination.href.next %}
+        <li>
+          <a href="{{ site.url }}{{ pagination.next.previous }}">
+            <i class="fa fa-angle-double-right" title="Next"></i>
+          </a>
+        </li>
+      {% else %}
+        <li class="disabled">
+          <i class="fas fa-angle-double-right" title="Next"></i>
+        </li>
+      {% endif %}
     {% endif %}
   </ul>
 </nav>

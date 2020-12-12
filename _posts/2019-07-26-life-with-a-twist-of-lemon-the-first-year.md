@@ -9,6 +9,8 @@ permalink: /2019/07/26/life-with-a-twist-of-lemon-the-first-year/
 
 For close to a year now my friend [Jon](http://jonkohlmeier.net) and I have been recording our podcast, [Life with a Twist of Lemon](https://twistoflemonpod.com). Jon and I have been friends for a long time, and he had been advocating for us to do a podcast for a while when I finally caved, contingent on one condition: **I would do nothing.** I knew if Jon was serious this wouldn’t be a problem, and we could simply replace one of our usual phone calls with a high-quality microphone and it wouldn’t be more time out of my day. To sweeten the deal, Jon suggested we use my name in the title. *As if I could resist!*
 
+<!-- excerpt -->
+
 We really had no idea what the podcast would be about. There was no plan. We were just going to talk. It’d be like when the NSA ease drops in our phone conversations. Lo and behold themes would emerge.
 
 This week Jon and I released an [episode reflecting back on the year’s highlights](https://twistoflemonpod.com/one-year-with-a-twist-of-lemon/). I thought in the spirit of our anniversary celebration I would list out my top 5 episodes, the ones you really shouldn’t miss.
