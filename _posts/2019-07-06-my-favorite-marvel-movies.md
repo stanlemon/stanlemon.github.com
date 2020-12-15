@@ -3,7 +3,7 @@ layout: post
 title: My Favorite Marvel Movies
 date: 2019-07-06T11:01-04:00
 categories:
-  - Movies
+  - Entertainment
 permalink: /2019/07/06/my-favorite-marvel-movies/
 ---
 

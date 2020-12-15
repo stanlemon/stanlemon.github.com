@@ -3,7 +3,7 @@ layout: post
 title: The Star Trek Litmus Test
 date: 2016-07-24T14:00-04:00
 categories:
-  - Movies
+  - Entertainment
 permalink: /2016/07/24/the-star-trek-litmus-test/
 ---
 I recently went on a bit of a Twitter rant with a friend over the release of Star Trek Beyond. This is the third installment in the reboot, and unequivocally the worst.  My original tweet which sparked the discussion read, "Beyond was a good action movie, but it wasn't Star Trek."

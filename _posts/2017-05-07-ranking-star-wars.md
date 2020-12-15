@@ -3,12 +3,14 @@ layout: post
 title: Ranking Star Wars
 date: 2017-05-07T15:06-04:00
 categories:
-  - Movies
+  - Entertainment
 permalink: /2017/05/07/ranking-star-wars/
 ---
 Recently a friend of mine, [Rev. George Borghardt](https://twitter.com/revborghardt) asked the internet to rank Star Wars movies, best to last. Presumably this was inspired by a discussion he and I had over some of Kentucky's finest just the week before.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Arrange the Star Wars Movies from your favorite to your least favorite! Mine List: V, VI, VII, Rogue One, IV, III, I, II</p>&mdash; George Borghardt (@revborghardt) <a href="https://twitter.com/revborghardt/status/861035823055093760">May 7, 2017</a></blockquote>
+> Arrange the Star Wars Movies from your favorite to your least favorite! Mine List: V, VI, VII, Rogue One, IV, III, I, II
+>
+> &mdash; George Borghardt (@revborghardt) [May 7, 2017](https://twitter.com/revborghardt/status/861035823055093760)
 
 Some folks try to skimp on this and throw out Phantom Menace, Attack of the Clones and Revenge of the Sith as if they're not "Star Wars", but here's the deal: **They are.** I don't think anyone in their right mind would dispute that they are of lesser quality than the original trilogy, Force Awakens and Rogue One. Nonetheless, they are canon!  I generally take the stance that the acting is horrible, but the underlying story is a valuable contribution to the galaxy. I'll go even further by saying that I'm a huge fan of The Clone Wars TV Show, and you don't get that without the prequels, which thus makes their cinematic presence worth it.
 
