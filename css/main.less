@@ -36,10 +36,10 @@ body {
   margin: 0px;
   line-height: 1.65em;
   padding-top: 50px;
-  color: #222;
-  background-color: #efefef;
+  color: @textColor;
+  background-color: @backgroundColor;
   font-size: 15px;
-  font-family: -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: @fontFamily;
 }
 
 a,
@@ -69,9 +69,7 @@ pre {
 }
 
 h1 {
-  font-weight: 500;
   font-size: 55px;
-  line-height: 1;
 }
 
 h2 {
@@ -100,50 +98,31 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: inherit;
+  font-family: @headerFontFamily;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
-}
-
-h1,
-h2,
-h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-h4,
-h5,
-h6 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+blockquote p:first-child,
+blockquote ul:first-child,
+blockquote ol:first-child {
+  margin-top: 0;
 }
 
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  font-size: 17.5px;
-  border-left: 5px solid #eee;
+  font-size: 1.2em;
+  border-left: 10px solid @backgroundColor;
 }
 
 blockquote p:last-child,
 blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-.navbar a {
-  font-family: 'Oswald', arial narrow, sans-serif;
-}
-
-h2 a,
-h2 a:hover {
-  text-decoration: none;
 }
 
 ul,
@@ -161,7 +140,7 @@ ol ol {
 
 hr {
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid @backgroundColor;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -172,20 +151,20 @@ footer {
   padding-right: 10px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #cecece;
+  background-color: @footerBackgroundColor;
 
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     margin-top: 0px;
   }
 
   // This reverses the default column behavior
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     .columns {
       display: flex;
     }
   }
 
-  @media screen and (max-width: 370px) {
+  @media (max-width: 370px) {
     .columns {
       display: block;
     }
@@ -194,7 +173,7 @@ footer {
   .copyright {
     text-align: right;
 
-    @media screen and (max-width: 370px) {
+    @media (max-width: 370px) {
       text-align: center;
     }
   }
@@ -215,7 +194,7 @@ footer {
     margin-bottom: 0px;
     list-style: none;
 
-    @media screen and (max-width: 374px) {
+    @media (max-width: 374px) {
       text-align: center;
     }
 
@@ -227,9 +206,9 @@ footer {
   }
 }
 
-#masthead {
-  background-color: #000044;
-  color: #aaaacc;
+.masthead {
+  color: @mastheadTextColor;
+  background-color: @dark;
 
   .title {
     padding-top: 50px;
@@ -237,9 +216,6 @@ footer {
   }
 
   h1 {
-    font-size: 55px;
-    line-height: 1;
-    color: #fefeff;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -266,42 +242,8 @@ footer {
 }
 
 .top-spacer {
-  background-color: #ffffff;
+  background-color: @contentBackgroundColor;
   height: 40px;
-}
-
-.navbar-bright {
-  background-color: @bright;
-  color: #fff;
-  margin-bottom: 0;
-  border-width: 0;
-}
-
-.navbar-bright a,
-.navbar-bright .navbar-brand,
-#masthead h4 {
-  color: #ccccdd;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-}
-
-/* first covers the brand icon */
-.navbar-bright a:hover,
-.navbar-bright li>a:hover {
-  background-color: #000044;
-}
-
-.navbar-toggle {
-  border-width: 0;
-}
-
-.navbar-toggle:hover {
-  background-color: #fff;
-}
-
-.navbar-toggle:hover .icon-bar {
-  background-color: @bright;
 }
 
 .title,
@@ -312,9 +254,9 @@ footer {
 .content {
   border-color: transparent;
   border-radius: 0;
-  background-color: #fff;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  background-color: @contentBackgroundColor;
+  -webkit-box-shadow: 0 1px 1px @contentBoxShadow;
+  box-shadow: 0 1px 1px @contentBoxShadow;
 }
 
 figcaption {
@@ -323,7 +265,7 @@ figcaption {
   margin-top: -20px;
   margin-bottom: 25px;
   font-size: .9em;
-  color: #666;
+  color: @textColorMuted;
 }
 
 article {
@@ -357,10 +299,6 @@ article {
   border: 0;
 }
 
-#nav {
-  background-color: @bright;
-}
-
 .keep-reading {
   margin-top: 15px;
   text-align: right;
@@ -371,19 +309,14 @@ article {
   }
 }
 
-@media screen and (min-width: 768px) {
-
-  #nav {
-    max-height: 1000px;
-    overflow: visible;
-  }
-
+@media (min-width: 768px) {
   .title {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .post-date {
+  .article-date {
+    white-space: nowrap;
     text-align: right;
   }
 
@@ -393,33 +326,8 @@ article {
   }
 }
 
-@media screen and (max-width: 767px) {
-  #nav {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-    position: absolute;
-    border-top: .5px #666 solid;
-    -moz-transition: -moz-transform .5s;
-    -o-transition: -o-transform .5s;
-    -webkit-transition: -webkit-transform .5s;
-    -moz-transform-origin: top;
-    -ms-transform-origin: top;
-    -o-transform-origin: top;
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    transition: transform .4s;
-  }
-
-  .updown {
-    -moz-transform: scaleY(0);
-    -ms-transform: scaleY(0);
-    -o-transform: scaleY(0);
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-  }
-
-  #masthead {
+@media (max-width: 767px) {
+  .masthead {
     .byline {
       margin-top: 10px;
       display: block;
@@ -432,5 +340,59 @@ article {
 
   .top-spacer {
     display: none;
+  }
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #040404;
+  }
+  
+  .top-spacer, .content, footer {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .content {
+    a, a:visited, a:active, a:hover {
+      color: #000091;
+    }
+  }
+}
+*/
+
+@media print {
+  body {
+    padding: 20px;
+  }
+  body, .masthead, footer {
+    background-color: #fff;
+    color: #000;
+  }
+  .navbar, .top-spacer, .lead, .article-author, hr, footer ul, .pagination {
+    display: none !important;
+  }
+  .masthead {
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px #000 solid;
+  }
+  .masthead .title, .content {
+    padding: 0px;
+  }
+  .container {
+    width: 100%;
+  }
+  .content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  p {
+    margin-block-start: 0em;
+    margin-block-end: 1.3em;
+  }  
+  footer .copyright {
+    text-align: center;
   }
 }

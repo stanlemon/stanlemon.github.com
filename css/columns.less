@@ -9,25 +9,19 @@
     align-items: baseline;
   }
 
+  &.is-equal > * {
+    flex-basis: 0;
+  }
+
   >* {
     display: block;
-    flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 1;
   }
-
-  .column.quarter {
-    flex: none;
-    width: 25%;
-  }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .columns {
     display: block;
-
-    .quarter {
-      width: 100%;
-    }
   }
 }

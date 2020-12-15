@@ -30,30 +30,26 @@
 </head>
 <body>
 
-<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+<header class="navbar" role="banner">
   <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div id="nav" role="navigation" class="updown">
-      <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="https://saralemon.com/" target="_window">Mrs</a></li>
-        <li><a href="https://twistoflemonpod.com/" target="_window">Podcast</a></li>
-        <li><a href="https://eepurl.com/gvEkEL" target="_window">Subscribe</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-    </div>
+    <button class="navbar-toggle" type="button">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <ul class="nav updown" role="navigation">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="https://saralemon.com/" target="_window">Mrs</a></li>
+      <li><a href="https://twistoflemonpod.com/" target="_window">Podcast</a></li>
+      <li><a href="https://eepurl.com/gvEkEL" target="_window">Subscribe</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
   </div>
 </header>
 
-<div id="masthead">  
+<div class="masthead">  
   <div class="title container">
     <h1>
       {{ site.name }}<span class="byline"> by {{ site.author }}</span>
