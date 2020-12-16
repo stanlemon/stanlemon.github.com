@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Death of Streaming TV
-date: 2020-12-16T10:00-04:00
+date: 2020-12-16T18:00-04:00
 categories:
   - Life
   - Entertainment
@@ -11,6 +11,8 @@ permalink: /2020/12/16/the-death-of-streaming-tv/
 Hulu is increasing the cost of its monthly live TV subscription service. A service that started at $40/month in 2017 will end 2020 at $65/month (or $70/month if you have the no ads for on demand streaming). Live TV streaming services have been increasing their monthly subscription costs over the last few years, gnawing away at one of their main competitive advantages. When these services first became available they seemed like great alternatives to the big cable providers like Comcast. Cable TV is expensive and often comes with tons of channels that I don’t want. Streaming offered a simpler list of valuable channels at a much more compelling price. That’s not true anymore, though.
 
 <!-- excerpt -->
+
+<img src="{{site.url}}/assets/death-of-streaming-tv.jpg" srcset="{{site.url}}/assets/death-of-streaming-tv.jpg, {{site.url}}/assets/death-of-streaming-tv@2x.jpg 2x" alt="Hulu on Roku TV with a Roku remote and the dedicated Hulu button." class="post-img" />
 
 I don’t watch a ton of TV. My need for live television revolves around sports. I’m just close enough to the Southeastern edge of Indianapolis that over the air broadcasts can be sketchy, and NBC is nearly impossible to get. Most seasons I need CBS, NBC, FOX, ESPN and the NFL Network. This year I also caught some presidential debates on other channels, but normally the only reason I watch live TV is for football. If you look around it’s actually pretty hard to find both ESPN and the NFL Network available to stream on the same service, so Hulu Live was a sweet deal. Granted, I get a bunch of other channels I don’t need and will never watch, but that’s just the penalty of a bundle, right? I used to dream of a streaming service where I could pick the channels I want: a build your lineup sort of experience. For awhile that was the holy grail of streaming, but I’ve given up hope of ever getting that. Alas, I’m left here paying for Lifetime when all I really want is football! The past few years Hulu TV fulfilled my needs because it was cheaper than Cable, I could cancel it after football, and it was an all around good app experience. 
 
