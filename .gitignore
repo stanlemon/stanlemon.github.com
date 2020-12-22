@@ -1,8 +1,12 @@
+## Development Environment
 .DS_Store
 .vscode
 
 ## Dependencies
 node_modules/
 
-## Generated Site Data
+## Generated 11ty Site Data
 _site
+
+###Environment Variables
+.env

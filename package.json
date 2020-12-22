@@ -6,18 +6,22 @@
   "license": "MIT",
   "main": ".eleventy.js",
   "scripts": {
-    "serve": "SITE_URL=http://localhost:8081 eleventy --serve  --port 8081",
-    "build": "eleventy",
-    "less": "lessc --source-map-no-annotation ./css/main.less ./_site/css/main.css; cp ./node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 ./_site/css/",
-    "clean": "rm -rf ./_site/**"
+    "serve": "eleventy --serve  --port 3000",
+    "build": "npm-run-all clean site less fonts",
+    "site": "eleventy",
+    "less": "lessc --source-map-no-annotation ./css/main.less ./_site/css/main.css",
+    "fonts": "copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 ./_site/css/",
+    "clean": "rimraf ./_site/**"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
-    "prismjs": "^1.22.0"
-  },
-  "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
-    "less": "^3.12.2"
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "copyfiles": "^2.4.1",
+    "dotenv": "^8.2.0",
+    "less": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "prismjs": "^1.22.0",
+    "rimraf": "^3.0.2"
   }
 }

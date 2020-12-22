@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = () => ({
   name: "lemonbytes",
   title: "lemonbytes by Stan Lemon",
