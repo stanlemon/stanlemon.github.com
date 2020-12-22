@@ -19,7 +19,6 @@ In another life I would have been an economist. I absolutely love the NPR podcas
 
 I loved this book in elementary school and I was tickled when it appeared on a reading list for my kids this year. I read this out loud to them every Saturday after breakfast. We laughed and cried together in this fun story about a very large family that takes place in the 1920’s. If you’ve never read this one, give it a try. It’s just good fun.
 
-
 ### #8 [Franklin and Winston by Jon Meacham](https://amzn.to/3qVOdo9)
 
 Winston Churchill is a legend, known for his strong presence and impressive oratorical skills. If you’ve ever watched The Crown or the Darkest Hour you know how intriguing this character is. Meacham, the famed biographer of Thomas Jefferson and Andrew Jackson, looks at Churchill’s more vulnerable side as he analyzes the relationship that formed between Churchill and FDR during World War II.
