@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Recommended Books from 2020
-date: 2020-12-23T10:00-04:00
+date: 2020-12-22T10:00-04:00
 categories:
   - Life
-permalink: /2020/12/23/recommended-books-from-2020/
+permalink: /2020/12/22/recommended-books-from-2020/
 ---
 
 I did not set out to read 63 books in 2020 but, like so much this year, it just sort of happened. I was pretty convinced that after 40 books last year I had peaked and I would never read more in a single year. Was I ever wrong! I read a ton of really fantastic books this year, [the full list of which you can see on Goodreads](https://www.goodreads.com/user_challenges/20194804), but I thought it would be interesting to pull out my top 10. That exercise proved to be really hard, even more so when I attempted to put them in order. Nonetheless, here they are!
@@ -48,7 +48,6 @@ Leadership books are essentially my Harlequin novels. This book came across my (
 
 On Juneteenth Apple made a number of movies free, including Just Mercy. I wasn’t familiar with the movie but I like Michael B. Jordan. The book follows the legal work Bryan Stevenson does in Alabama for death row inmates. Like the movie it closely follows the case of Walter McMillian, who was wrongly convicted of murder. It’s often terrifying to read, but it was a good reminder of just how much inequity actually exists in our country.
 
-
 ### #1 [To Kill a Mockingbird by Harper Lee](https://amzn.to/3a8lG8L)
 
 Somehow I escaped school without ever reading this book. I was familiar with it, but had never actually taken the time. Part of my quest in 2020 was to read books I had missed out by graduating from High School early. After finishing Just Mercy it made sense to read this one. Everyone should read this book. It’s impossible to put down the story of Scout, Jim, and Atticus Finch as they confront racism in Monroeville, Alabama. Unfortunately, it felt incredibly relevant in 2020.
@@ -59,6 +58,6 @@ Somehow I escaped school without ever reading this book. I was familiar with it,
 
 This piece of fiction is based off of some historical events and explores the Jim Crow South in Florida. It’s a heart wrenching story with an unexpected twist at the end. This one won the Pulitzer this year and it was well deserved. Once I started reading it I couldn’t put it down.
 
-### [Becoming by Michelle Obama](https://amzn.to/2KpSdwt)
+### [The Luckiest Man: Life with John McCain by Mark Salter](https://amzn.to/2WzvMaS)
 
-I was too busy in 2008 to give this poor woman a chance, so I felt I owed it to her in 2020 to give her book a read. Truth is, this was exceptionally well written and it made me sympathetic for her time in the political spotlight. I gained a lot of respect for her and I recommend this book to everyone.
+I've always been fascinated by John McCain, the maverick of the Senate with a supposed independent streak and a heroic heritage of military service, including his capture in Vietnam. This book was written by his former Chief of Staff (through the 2008 presidential election) and is a close up analysis of the man. Salter doesn't hold any punches as he's both loving and critical of the famed senator. McCain is fascinating and this gave a deeper perspective on him than I've read before. If you have the chance to read this, follow it up with the HBO documentary on McCain entitled, "For Whom the Bell Tolls," which is named after McCain's favorite book by Ernest Hemingway.
