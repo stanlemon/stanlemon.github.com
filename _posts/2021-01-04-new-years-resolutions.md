@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 2021 New Years Resolutions
-date: 2021-02-01T10:00-04:00
+date: 2021-01-04T10:00-04:00
 categories:
   - Life
-permalink: /2021/01/02/new-years-resolutions/
+permalink: /2021/01/04/new-years-resolutions/
 ---
 
 I’ve got mixed feelings about New Years Resolutions. They typically seem gimmicky and too often are unrealistic even under the best of circumstances. Both [last year](https://twistoflemonpod.com/goals-for-2020/) and again [this year](https://twistoflemonpod.com/headed-into-a-new-year/) Jon and I discussed New Years Resolutions on [our podcast](https://twistoflemonpod.com/) through the lens of goal setting and in the context of what habits we wanted to establish.
@@ -25,6 +25,8 @@ So what about 2021? After such a rough year, my goals for 2021 are about finding
 * I want to take two family vacations away from the house.
 
 Some things are already in motion, like the first family vacation. I’ve already got a reservation to rent an RV around my and my wife’s 15th wedding anniversary. The other things require some waiting, but they’ll happen. I’m sure of it because this list is going on the wall in my office.
+
+<img src="{{site.url}}/assets/2021-resolutions-sign.jpg" srcset="{{site.url}}/assets/2021-resolutions-sign.jpg, {{site.url}}/assets/2021-resolutions-sign@2x.jpg 2x" alt="My resolutions are on my wall and in my face every day this year." class="post-img" />
 
 I know I want to continue habits I’ve previously established:
 
