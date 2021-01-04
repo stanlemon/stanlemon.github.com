@@ -9,6 +9,8 @@ permalink: /2021/01/04/new-years-resolutions/
 
 I’ve got mixed feelings about New Years Resolutions. They typically seem gimmicky and too often are unrealistic even under the best of circumstances. Both [last year](https://twistoflemonpod.com/goals-for-2020/) and again [this year](https://twistoflemonpod.com/headed-into-a-new-year/) Jon and I discussed New Years Resolutions on [our podcast](https://twistoflemonpod.com/) through the lens of goal setting and in the context of what habits we wanted to establish.
 
+<!-- excerpt -->
+
 I like habits because they often involve some ceremony, and ceremony is good. Ceremony gives you something by which to define a routine, and all good habits are born from routine. I think too often it’s the lack of ceremony that causes so many New Years resolutions to end in disaster. If we simply trust in our will power to make it to the gym or eat better we’re going to have days where we utterly fail. Whereas a good ceremony is like clockwork and survives, even when our motivation doesn’t.
 
 At the start of the year I was actually feeling pretty good about my habits. In 2019 I crushed my goals, and had both the ceremony to maintain them and the celebration when I achieved them. When 2020 started I was struggling to identify clear goals. I wanted to ride my bike more, having essentially taken a year off from long road cycling. I also wanted to build a better morning routine, but I wasn’t really sure what I wanted that routine to consist of. When Jon and I discussed this on the podcast he suggested I write more and we set a goal for one blog post a month.
