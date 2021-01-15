@@ -12,5 +12,8 @@ module.exports = () => ({
   },
   google_analytics: "UA-33072694-1",
   // If an env variable (local dev) has been set, use it, otherwise default (prod)
-  url: process.env.SITE_URL ? process.env.SITE_URL : "https://stanlemon.com",
+  url:
+    process.env.SITE_URL !== undefined
+      ? process.env.SITE_URL
+      : "https://stanlemon.com",
 });
