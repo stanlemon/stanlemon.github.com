@@ -8,6 +8,8 @@ permalink: /2021/01/22/review-of-the-apple-one-bundle/
 ---
 It amazes me that I meet folks who haven’t heard of the [Apple One bundle](https://www.apple.com/apple-one/). Nonetheless I’ve met a lot of people who missed Apple’s announcement and subsequent rollout at the end of October 2020. The Apple One Bundle takes the various services Apple has built out over the last few years and packages them up into a single billing structure. With the Apple One Bundle you’re charged once a month for all of the services in your bundle. Prior to this every Apple service you signed up for had a different billing date and a separate transaction.By bundling more than one service you also receive discounts on the total cost of having these services. But is the Apple One Bundle worth it?
 
+<!-- excerpt -->
+
 * Current pricing for Apple services by themselves look like this:
   * iCloud storage per month runs 50gb for $.99, 200gb for $2.99 and 2tb for $9.99
   * Music runs $9.99/month for an individual and $14.99 for a Family of up to 5.
