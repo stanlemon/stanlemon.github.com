@@ -9,7 +9,10 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("assets");
 
   eleventyConfig.addCollection("posts", (collection) => {
-    return collection.getFilteredByGlob("_posts/*.md");
+    return collection.getFilteredByGlob("_posts/*.md").filter((post) => {
+      // If frontmatter has an attribute draft and it is explicitly set to true, filter it out
+      return post.data.draft !== true;
+    });
   });
 
   eleventyConfig.setFrontMatterParsingOptions({
