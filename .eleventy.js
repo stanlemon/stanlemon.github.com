@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const SyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const MarkdownIt = require("markdown-it");
 
@@ -11,7 +13,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addCollection("posts", (collection) => {
     return collection.getFilteredByGlob("_posts/*.md").filter((post) => {
       // If frontmatter has an attribute draft and it is explicitly set to true, filter it out
-      return post.data.draft !== true;
+      return !!process.env.SHOW_DRAFTS || post.data.draft !== true;
     });
   });
 
