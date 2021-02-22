@@ -6,7 +6,7 @@ categories:
   - Life
   - Religion
   - Technology
-permalink: /2021/03/04/sanctus-org-javascript-edition
+permalink: /2021/03/04/sanctus-org-javascript-edition/
 draft: true
 ---
 
