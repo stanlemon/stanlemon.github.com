@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Sanctus.org JavaScript Edition
-date: 2021-03-04T10:00-04:00
+date: 2021-03-03T04:00-04:00
 categories:
   - Life
   - Religion
   - Technology
-permalink: /2021/03/04/sanctus-org-javascript-edition/
-draft: true
+permalink: /2021/03/03/sanctus-org-javascript-edition/
 ---
 
 [Sanctus.org](https://sanctus.org) is a hobby project of mine. It started when I was in college at Concordia University, River Forest. My dorm floor started praying Matins in the morning before classes together. This was before the Lutheran Service Book had been published. We relied upon a set of Word documents to pick daily readings. I thought it would be neat to have a webpage that did this for us. My dorm mates helped type data and shortly thereafter I released the first version of the site.
