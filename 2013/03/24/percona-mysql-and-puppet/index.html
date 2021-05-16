@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta charset="utf-8">
+  <title>Percona, MySQL and Puppet - lemonbytes by Stan Lemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="canonical" href="https://stanlemon.com/2013/03/24/percona-mysql-and-puppet/">
+  <link rel="alternate" type="application/rss+xml" title="lemonbytes by Stan Lemon" href="https://stanlemon.com/feed.xml" />
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">  
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<header class="navbar" role="banner">
+  <div class="container">
+    <button class="navbar-toggle" type="button">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <ul class="nav updown" role="navigation">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="https://saralemon.com/" target="_window">Mrs</a></li>
+      <li><a href="https://twistoflemonpod.com/" target="_window">Podcast</a></li>
+      <li><a href="https://eepurl.com/gvEkEL" target="_window">Subscribe</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="masthead">  
+  <div class="title container">
+    <h1>
+      lemonbytes<span class="byline"> by Stan Lemon</span>
+      <p class="lead">husband, dad, steelers fan and software engineer</p>
+    </h1>
+  </div>
+  
+  <div class="container">
+    <div class="top-spacer"> </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="">Percona, MySQL and Puppet</a>
+      </h2>
+      <h4 class="article-author">by Stan Lemon</h4>
+    </div>
+    <h3 class="article-date">Mar 24, 2013</h3>
+  </div>
+
+  <hr>
+
+  <p>MySQL is one of the most widely used database servers for web development.  It's <em>free</em>, has a wide range of support and is easy to get up and going.  Add to this native bindings in just about every language and you've got a pretty powerful databasing tool at your hands.  <a href="http://www.percona.com">Percona</a> is a MySQL consulting company with a super-awesome distribution of MySQL tuned for performance. For the most part Percona packages should be a drop-in replacement with MySQL. When it comes to system administration tasks I like to throw <a href="https://puppetlabs.com">Puppet</a> at the problem, it makes it easier to replay the configuration down the road and I can track the configuration changes in git. But there's a problem when you change the package name for the defacto-standard <a href="https://github.com/puppetlabs/puppetlabs-mysql">Puppet MySQL module</a>.  The referencing of the service and the default pid file in the Percona distribution and subsequently the reload following install fails, as well as anything downstream of those items. This was unsatisfactory to me so I poked around to figure out a way to make this work, <a href="http://projects.puppetlabs.com/issues/19562">despite the bug in module</a>. Below is a Puppet manifest with some hackey'ness if you're using Percona that will get it working and allow you to use the rest of the Puppet MySQL module without problems.</p>
+<p>https://gist.github.com/stanlemon/5178407</p>
+
+
+  
+
+  <hr>
+</article>
+
+
+<p class="text-center">
+  <em><a href="https://eepurl.com/gvEkEL">Do you want to get new posts from <strong>lemonbytes</strong> directly in your inbox? Subscribe today!</a></em>
+</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container columns is-vcentered">
+    <ul>
+      <li>
+        <a href="http://twitter.com/stanlemon">
+          <i class="fab fa-twitter fa-2x" title="Twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://linkedin.com/in/stanlemon">
+          <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://github.com/stanlemon">
+          <i class="fab fa-github fa-2x" title="GitHub"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://stanlemon.com/feed.xml">
+          <i class="fas fa-rss-square fa-2x" title="Subscribe via RSS"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      &copy; 2021 Stan Lemon
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+  const nav = document.querySelector('.nav');
+  document.querySelector('.navbar-toggle').addEventListener("click", function() {
+    nav.classList.toggle('updown');
+  });
+</script>
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-33072694-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</body>
+</html>

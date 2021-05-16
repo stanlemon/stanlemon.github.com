@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta charset="utf-8">
+  <title>Keeping Your Internet Safe with NextDNS - lemonbytes by Stan Lemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="canonical" href="https://stanlemon.com/2021/01/15/keeping-your-internet-safe-with-nextdns/">
+  <link rel="alternate" type="application/rss+xml" title="lemonbytes by Stan Lemon" href="https://stanlemon.com/feed.xml" />
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">  
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<header class="navbar" role="banner">
+  <div class="container">
+    <button class="navbar-toggle" type="button">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <ul class="nav updown" role="navigation">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="https://saralemon.com/" target="_window">Mrs</a></li>
+      <li><a href="https://twistoflemonpod.com/" target="_window">Podcast</a></li>
+      <li><a href="https://eepurl.com/gvEkEL" target="_window">Subscribe</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="masthead">  
+  <div class="title container">
+    <h1>
+      lemonbytes<span class="byline"> by Stan Lemon</span>
+      <p class="lead">husband, dad, steelers fan and software engineer</p>
+    </h1>
+  </div>
+  
+  <div class="container">
+    <div class="top-spacer"> </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="">Keeping Your Internet Safe with NextDNS</a>
+      </h2>
+      <h4 class="article-author">by Stan Lemon</h4>
+    </div>
+    <h3 class="article-date">Jan 15, 2021</h3>
+  </div>
+
+  <hr>
+
+  <p>The internet is like the Wild Wild West, without the awesome soundtrack and dance moves of Will Smith. The truth is it’s a really dangerous place, for kids as well as adults. It gets harder every day to know what is safe and understand the consequences of interacting with all of the digital services that make up our world. As a father of three who are increasingly becoming connected it’s even harder, because the last thing I want is them stumbling into a snake’s nest. I’ve tried a number of things over the years, but I feel like for the first time my home internet is safe for me, my wife and my kids. Let me introduce you to <a href="https://nextdns.io">NextDNS</a>.</p>
+<img src="https://stanlemon.com/assets/nextdns-rokutv.jpg" srcset="https://stanlemon.com/assets/nextdns-rokutv.jpg, https://stanlemon.com/assets/nextdns-rokutv@2x.jpg 2x" alt="On the right hand side of the Roku home screen there is usually an ad." class="post-img" />
+<p>It’s worth mentioning what pushed me over the edge to revisit my current ad blocking and tracker blocking strategy. Around the time the new Borat movie was released Amazon was buying ads everywhere, and one evening I turned on our Roku TV to find a picture of Borat in a Mankini plastered in the ad spot to the right of my Roku channels. My kids were in the room, but fortunately were paying attention to other things. To say I was mad would be an understatement. I was determined to find a way to block ads on the Roku TV. Many friends recommended setting up a <a href="https://pi-hole.net">pi-hole</a>, but that involved more work than I wanted to take on. After much trial and error I’m happy to report <a href="https://nextdns.io">NextDNS</a> blocks the ad section on the Roku and also covers a ton of other nefarious ads and trackers. Thanks to <a href="https://nextdns.io">NextDNS</a> my home internet is much safer for me and my family.</p>
+<ul>
+<li>Bottom line: Internet safety for you and your family is really hard.</li>
+<li>There are essentially three categories you need to protect on: Tracking, ads and domains.</li>
+<li>Tracking can get down right creepy. Everyone needs to make a personal decision about how much they want various websites to profile them. I’m somewhere between nothing and nothing.</li>
+<li>A few years back Apple introduced ad blockers to much fanfare. The problem is that much of our engagement with content actually happens in Apps where these ad blockers have no ability to protect you.</li>
+<li>Many ad blockers also block tracking too. The thing is, most people I know do not have ad blockers installed on their computers and definitely not on their mobile devices.</li>
+<li>It is worth mentioning that not all ad blockers are created equal. Some actually do their own tracking and that’s how they make money. Buyer beware!</li>
+<li>While some ad blockers are nefarious, many are not. My favorite has been Better, which I had been using on my Mac, iPhone and iPad.</li>
+<li>Deploying an ad blocker app to your whole family is manual and a true headache.</li>
+<li>Apple recently bundled tracking protection into its Safari web browser, which is great, but that does not extend into apps.</li>
+<li>Not all ads are bad, and some are genuinely necessary for content providers to make money to continue to produce content. Unless you’re comfortable paying for all of your content on the internet you have to tolerate (and accept?) some ads, or the services that provide free ad-based content will cease to do so.</li>
+<li>Many content providers have little visibility into what sort of ad garbage might be tacked onto their content. This is especially true for free games in the App Store. Another example would be my local newspaper’s app, which has some of the most egregious and self-compromising ads.</li>
+<li>Many routers now ship with various content filters. These can be handy, but they’re more likely to be a pain to setup. Plus, this is not the primary business of these products and the quality of their content filters are just not top tier in my opinion.</li>
+<li>Disney actually has a product in this space called <a href="https://meetcircle.com">Circle</a>, specifically for kids’ use of the internet. It’s expensive ($9.99/month plus the central device). I think this product is more accessible than many but it’s still not Disney’s primary business and leaves a lot to be desired.</li>
+<li>Services like <a href="http://opendns.com">OpenDNS</a> have been around for a long time and provide a decent way for blocking things like pornography at your network level. They don’t offer a great solution once your mobile device leaves the nest. It’s not great at dealing with tracking and ads, either. And the interface for working with OpenDNS is painfully dated and difficult to use.</li>
+<li>In comes <a href="https://nextdns.io">NextDNS</a>, a competitor to services like OpenDNS that also deals with stopping trackers and blocking ads.</li>
+<li>Spoiler alert: <a href="https://nextdns.io">NextDNS</a> is awesome.</li>
+<li><a href="https://nextdns.io">NextDNS</a> is free for up to 300k DNS requests a month. In my household I blew through this in 12 days, but it’s a great way to grease the gears, and if you happen to be beneath that total request account, then the service is essentially free. There is simply no reason not to try it out.</li>
+<li><a href="https://nextdns.io">NextDNS</a> runs a bank-breaking $20/year for your home network and associated devices. This is half a trip to Burger King for my family.</li>
+<li><a href="https://nextdns.io">NextDNS</a> provides traditional domain category blocking, so you can shut down requests to porn, gambling and other things.</li>
+<li><a href="https://nextdns.io">NextDNS</a> provides a variety of additional security features, such as enforcing Safe Search with search engines like Google and forcing YouTube restricted mode.</li>
+<li><a href="https://nextdns.io">NextDNS</a> has advanced security features such as Cryptojacking protection, something that most people have never heard of but on which <a href="https://nextdns.io">NextDNS</a> has you covered.</li>
+<li><a href="https://nextdns.io">NextDNS</a> also include Native Tracking Protection, which stops hardware like my Sonos and Roku from capturing low level tracking data. Apple actually does some of this tracking too (though it’s anonymized when it hits Apple’s servers), but I’ve found that some Apps really choke when it’s enabled. I’m looking at you, Pokemon TCG and Marvel Unlimited.</li>
+<li>I’ve stopped using ad blockers on my devices because <a href="https://nextdns.io">NextDNS</a> has me covered.</li>
+<li>Using <a href="https://nextdns.io">NextDNS</a> at the router level, everyone in my family got tracking and ad protection. My kids largely don’t have access to the web because they interact mostly through apps which I have to approve before they can install them. <a href="https://nextdns.io">NextDNS</a> was an upgrade to our internet security because of how broadly I could apply it to all of my family’s devices.</li>
+<li>My plan is to install the <a href="https://apps.apple.com/ca/app/nextdns/id1463342498">NextDNS iOS app</a> on each iPhone, iPad and iPod touch in the house. This is a hassle the first time, but it uses a VPN profile to ensure that the device is forced to route through <a href="https://nextdns.io">NextDNS</a> DNS services when they leave the nest. I can still control <a href="https://nextdns.io">NextDNS</a> centrally, and the app also allows me to identify each device so that I can see what’s happening from <a href="https://nextdns.io">NextDNS</a> logs. The setup effort involved here is well worth it in my opinion.</li>
+<li><a href="https://apps.apple.com/app/nextdns/id1464122853">NextDNS also has a Mac app</a> that covers the same use case, and it’s installed on the one personal Mac we have in the house. I imagine they have a Windows app, too, for those who use that OS.</li>
+<li>Side Note: <a href="https://help.nextdns.io/t/g9hmv0a/how-to-install-and-trust-nextdns-root-ca">It’s worth taking the time to install the NextDNS root certificate on your devices, too.</a></li>
+<li><a href="https://nextdns.io">NextDNS</a> has some seriously awesome technology, but they also have awesome explanations of what they do. Take, for example, <a href="https://nextdns.io/privacy">this absurdly easy to understand privacy policy</a>.</li>
+<li>Tangentially related to this is that if you’ve just been using whatever random DNS servers your ISP has configured (whether that’s Comcast, etc. or your cellular provider like Verizon) you’re exposing a lot of data and it’s probably impacting your network performance. Over the years, services like OpenDNS or <a href="https://developers.google.com/speed/public-dns/">Google’s DNS</a> or <a href="https://www.cloudflare.com/learning/dns/what-is-1.1.1.1/">Cloudflare’s 1.1.1.1</a> have offered faster DNS lookups without all of the additional security protections of NextDNS. Cloudflare actually has a decent mobile setup to cover you when you leave the nest, but otherwise once you went mobile you were on your own. <a href="https://nextdns.io">NextDNS</a> has you covered on this front and as far as I can tell is competitive with the other big DNS providers. It’s definitively faster than the defaults my AT&amp;T Broadband connection provides.</li>
+<li>For the first time since I gave my kids devices I really feel like our internet is safe. <a href="https://nextdns.io">NextDNS</a> has thought about things I never considered and is protecting the household at multiple layers.</li>
+<li>If you’re like me and you’re not comfortable with wide open access to the internet for your kids, this is the absolute best thing you can do for them.</li>
+<li>If you’re like me and you’d rather not have every action you take on the internet be tracked, this is the absolute best way to stop that.</li>
+<li>If you’re like me and you’re tired of excessive and inappropriate ads on everything from your news app, to the web, to your Roku, then this is the absolute best way to stop that.</li>
+<li>Seriously, give <a href="https://nextdns.io">NextDNS</a> a shot. You won’t regret it!</li>
+</ul>
+<p>I did not receive anything in return for this review, and none of the links I’m providing to <a href="https://nextdns.io">NextDNS</a> are affiliate links. I simply believe in the service.</p>
+<figure>
+<img src="https://stanlemon.com/assets/nextdns-security.jpg" srcset="https://stanlemon.com/assets/nextdns-security.jpg, https://stanlemon.com/assets/nextdns-security@2x.jpg 2x" alt="NextDNS offers several layers of security, many of which are very advanced and mitigate serious risks." class="post-img" />
+<figcaption>NextDNS offers several layers of security, many of which are very advanced and mitigate serious risks.</figcaption>
+</figure>
+<figure>
+<img src="https://stanlemon.com/assets/nextdns-privacy.jpg" srcset="https://stanlemon.com/assets/nextdns-privacy.jpg, https://stanlemon.com/assets/nextdns-privacy@2x.jpg 2x" alt="NextDNS ad & tracker blocking is the best I've ever used." class="post-img" />
+<figcaption>NextDNS ad & tracker blocking is the best I've ever used.</figcaption>
+</figure>
+<figure>
+<img src="https://stanlemon.com/assets/nextdns-parental-control.jpg" srcset="https://stanlemon.com/assets/nextdns-parental-control.jpg, https://stanlemon.com/assets/nextdns-parental-control@2x.jpg 2x" alt="NextDNS parental controls let you block entire categories as well as individual sites and services." class="post-img" />
+<figcaption>NextDNS parental controls let you block entire categories as well as individual sites and services.</figcaption>
+</figure>
+<figure>
+<img src="https://stanlemon.com/assets/nextdns-analytics.jpg" srcset="https://stanlemon.com/assets/nextdns-analytics.jpg, https://stanlemon.com/assets/nextdns-analytics@2x.jpg 2x" alt="NextDNS analytics give a nice overview of exactly what's happening with your internet traffic." class="post-img" />
+<figcaption>NextDNS analytics give a nice overview of exactly what's happening with your internet traffic.</figcaption>
+</figure>
+<figure>
+<img src="https://stanlemon.com/assets/nextdns-logs.jpg" srcset="https://stanlemon.com/assets/nextdns-logs.jpg, https://stanlemon.com/assets/nextdns-logs@2x.jpg 2x" alt="NextDNS lets you see the individual requests mit blocks. As you can see my Roku is a bit out of control with the tracker requests." class="post-img" />
+<figcaption>NextDNS lets you see the individual requests mit blocks. As you can see my Roku is a bit out of control with the tracker requests.</figcaption>
+</figure>
+
+
+  
+
+  <hr>
+</article>
+
+
+<p class="text-center">
+  <em><a href="https://eepurl.com/gvEkEL">Do you want to get new posts from <strong>lemonbytes</strong> directly in your inbox? Subscribe today!</a></em>
+</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container columns is-vcentered">
+    <ul>
+      <li>
+        <a href="http://twitter.com/stanlemon">
+          <i class="fab fa-twitter fa-2x" title="Twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://linkedin.com/in/stanlemon">
+          <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://github.com/stanlemon">
+          <i class="fab fa-github fa-2x" title="GitHub"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://stanlemon.com/feed.xml">
+          <i class="fas fa-rss-square fa-2x" title="Subscribe via RSS"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      &copy; 2021 Stan Lemon
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+  const nav = document.querySelector('.nav');
+  document.querySelector('.navbar-toggle').addEventListener("click", function() {
+    nav.classList.toggle('updown');
+  });
+</script>
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-33072694-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</body>
+</html>

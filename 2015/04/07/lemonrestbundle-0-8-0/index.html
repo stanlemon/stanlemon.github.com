@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta charset="utf-8">
+  <title>LemonRestBundle 0.8.0 - lemonbytes by Stan Lemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="canonical" href="https://stanlemon.com/2015/04/07/lemonrestbundle-0-8-0/">
+  <link rel="alternate" type="application/rss+xml" title="lemonbytes by Stan Lemon" href="https://stanlemon.com/feed.xml" />
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">  
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<header class="navbar" role="banner">
+  <div class="container">
+    <button class="navbar-toggle" type="button">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <ul class="nav updown" role="navigation">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="https://saralemon.com/" target="_window">Mrs</a></li>
+      <li><a href="https://twistoflemonpod.com/" target="_window">Podcast</a></li>
+      <li><a href="https://eepurl.com/gvEkEL" target="_window">Subscribe</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="masthead">  
+  <div class="title container">
+    <h1>
+      lemonbytes<span class="byline"> by Stan Lemon</span>
+      <p class="lead">husband, dad, steelers fan and software engineer</p>
+    </h1>
+  </div>
+  
+  <div class="container">
+    <div class="top-spacer"> </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="">LemonRestBundle 0.8.0</a>
+      </h2>
+      <h4 class="article-author">by Stan Lemon</h4>
+    </div>
+    <h3 class="article-date">Apr 07, 2015</h3>
+  </div>
+
+  <hr>
+
+  <p><a href="http://github.com/stanlemon/rest-bundle">LemonRestBundle 0.8.0</a> has been released. The theme for this version is <strong>compatibility</strong>. While several significant bugs have been fixed since the last release, the focus has been primarily on ensuring that the bundle is compatible with a wide range of versions of PHP, Symfony and Doctrine. Additionally the bundle now comes with support for MongoDB and better support for other implementations of Doctrine.</p>
+<h4>Compatibility with PHP</h4>
+<p>LemonRestBundle now supports PHP 5.3, 5.4, 5.5, 5.6. Additionally the primary ORM test suite passes when using Doctrine 2.5 on HHVM and HHVM nightlies. Tests are also actively being run against PHP 7, though compatibility will not be guaranteed until after it is stable.</p>
+<h4>Compatibility with Symfony</h4>
+<p>LemonRestBundle now supports Symfony versions 2.3, 2.4, 2.5 and 2.6. Additionally, preliminary support has been made for 2.7. While 2.7 is not currently running in Travis CI, if you use it in your projects it will work.</p>
+<h4>Compatibility with Doctrine ORM</h4>
+<p>LemonRestBundle now support Doctrine ORM 2.3, 2.4 and 2.5 In general it is recommended you use 2.5 whenever possible.</p>
+<h4>Compatibility with Doctrine MongoDB ODM</h4>
+<p>LemonRestBundle now works with <a href="http://doctrine-mongodb-odm.readthedocs.org/en/latest/">Doctrine MongoDB ODM</a>! There are tests specifically for the mongo implementation and they are running in TravisCI.</p>
+<p>Except where indidcated, all of these versions and combinations of these versions are being tested against automatically in TravisCI. <a href="https://travis-ci.org/stanlemon/rest-bundle">You can always check the builds out here.</a></p>
+<p><em>Update to the latest version of LemonRestBundle and let me know what you think!</em></p>
+
+
+  
+
+  <hr>
+</article>
+
+
+<p class="text-center">
+  <em><a href="https://eepurl.com/gvEkEL">Do you want to get new posts from <strong>lemonbytes</strong> directly in your inbox? Subscribe today!</a></em>
+</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container columns is-vcentered">
+    <ul>
+      <li>
+        <a href="http://twitter.com/stanlemon">
+          <i class="fab fa-twitter fa-2x" title="Twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://linkedin.com/in/stanlemon">
+          <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://github.com/stanlemon">
+          <i class="fab fa-github fa-2x" title="GitHub"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://stanlemon.com/feed.xml">
+          <i class="fas fa-rss-square fa-2x" title="Subscribe via RSS"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      &copy; 2021 Stan Lemon
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+  const nav = document.querySelector('.nav');
+  document.querySelector('.navbar-toggle').addEventListener("click", function() {
+    nav.classList.toggle('updown');
+  });
+</script>
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-33072694-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</body>
+</html>

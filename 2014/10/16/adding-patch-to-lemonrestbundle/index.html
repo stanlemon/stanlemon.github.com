@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta charset="utf-8">
+  <title>Adding PATCH to LemonRestBundle - lemonbytes by Stan Lemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="canonical" href="https://stanlemon.com/2014/10/16/adding-patch-to-lemonrestbundle/">
+  <link rel="alternate" type="application/rss+xml" title="lemonbytes by Stan Lemon" href="https://stanlemon.com/feed.xml" />
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">  
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<header class="navbar" role="banner">
+  <div class="container">
+    <button class="navbar-toggle" type="button">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <ul class="nav updown" role="navigation">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="https://saralemon.com/" target="_window">Mrs</a></li>
+      <li><a href="https://twistoflemonpod.com/" target="_window">Podcast</a></li>
+      <li><a href="https://eepurl.com/gvEkEL" target="_window">Subscribe</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="masthead">  
+  <div class="title container">
+    <h1>
+      lemonbytes<span class="byline"> by Stan Lemon</span>
+      <p class="lead">husband, dad, steelers fan and software engineer</p>
+    </h1>
+  </div>
+  
+  <div class="container">
+    <div class="top-spacer"> </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="">Adding PATCH to LemonRestBundle</a>
+      </h2>
+      <h4 class="article-author">by Stan Lemon</h4>
+    </div>
+    <h3 class="article-date">Oct 17, 2014</h3>
+  </div>
+
+  <hr>
+
+  <p>Work on <a href="http://github.com/stanlemon/rest-bundle">LemonRestBundle</a> continues, last night I merged in support for PATCH. This is an interesting beast because there are some strong opinions on the proper way to implement PATCH in a REST API. Initially I assumed I would just avoid it rather than subject myself to the judgment of poor implementation. However, the more I researched PATCH the more I realized that I wanted to add it, and furthermore the strong opinions were largely academic in nature. The <a href="https://tools.ietf.org/html/rfc6902">JSON Patch specification</a> is rather powerful but also complex, I've yet to find a consuming client that actually supports this standard. What I see a lot of is more akin to the <a href="http://tools.ietf.org/html/draft-ietf-appsawg-json-merge-patch-07">JSON Merge Patch specification</a>, and this is exactly what I've decided to add. Truthfully the bulk of the work in my implementation happens in JMS Serializer. I need to do more extensive testing on object nesting but the basic implementation works right now. One issue to keep in mind is the current setup requires you to specify the object id when in the PATCH request. I hope to fix this in the future, but for now that's the requirement.</p>
+<p>I've also recently added the ability to customize the Criteria object for searches.  The Criteria object is basically a collection of the query parameters and it gets used by the ObjectManager to add filtering to the findBy() command used for making collections of a given resource. Out of a set of query parameters the default implementation separates out some data for limit, offset, order by and order direction and then provides those in a standard way to the ObjectManager. The limiting factor in the initial implementation is that you might not have liked the fields I was using for limit, offset, etc. Customizing the Criteria object gives you full control over how this is handled. You can read more about how to configure this in the bundle's documentation.</p>
+<p>I've been experimenting with generating <a href="http://swagger.io">Swagger</a> docs within my bundle. I would expect this to materialize in the next week or so.  The technical details are already available to generate the docs, it's the descriptive data that isn't there yet and I'm still evaluating the best way to make that possible. Ultimately I'd love to have the bundle help it's users generate documentation for their APIs, eliminating yet one more detail in the management of a REST API.</p>
+<p>Last but not least there I think it's safe to expect support for versioning, again this will largely be driven off of JMS Serializer's version exclusion groups.</p>
+<p>Work on the bundle continues to move forward. Several folks have made contributions, all of which I am really grateful for! If you have a suggestion, recommendation or spotted a bug of any sort please open an issue over on GitHub.</p>
+
+
+  
+
+  <hr>
+</article>
+
+
+<p class="text-center">
+  <em><a href="https://eepurl.com/gvEkEL">Do you want to get new posts from <strong>lemonbytes</strong> directly in your inbox? Subscribe today!</a></em>
+</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container columns is-vcentered">
+    <ul>
+      <li>
+        <a href="http://twitter.com/stanlemon">
+          <i class="fab fa-twitter fa-2x" title="Twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://linkedin.com/in/stanlemon">
+          <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://github.com/stanlemon">
+          <i class="fab fa-github fa-2x" title="GitHub"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://stanlemon.com/feed.xml">
+          <i class="fas fa-rss-square fa-2x" title="Subscribe via RSS"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      &copy; 2021 Stan Lemon
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+  const nav = document.querySelector('.nav');
+  document.querySelector('.navbar-toggle').addEventListener("click", function() {
+    nav.classList.toggle('updown');
+  });
+</script>
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-33072694-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</body>
+</html>

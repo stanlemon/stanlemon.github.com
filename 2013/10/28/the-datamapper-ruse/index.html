@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta charset="utf-8">
+  <title>The DataMapper Ruse - lemonbytes by Stan Lemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="canonical" href="https://stanlemon.com/2013/10/28/the-datamapper-ruse/">
+  <link rel="alternate" type="application/rss+xml" title="lemonbytes by Stan Lemon" href="https://stanlemon.com/feed.xml" />
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">  
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<header class="navbar" role="banner">
+  <div class="container">
+    <button class="navbar-toggle" type="button">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <ul class="nav updown" role="navigation">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="https://saralemon.com/" target="_window">Mrs</a></li>
+      <li><a href="https://twistoflemonpod.com/" target="_window">Podcast</a></li>
+      <li><a href="https://eepurl.com/gvEkEL" target="_window">Subscribe</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="masthead">  
+  <div class="title container">
+    <h1>
+      lemonbytes<span class="byline"> by Stan Lemon</span>
+      <p class="lead">husband, dad, steelers fan and software engineer</p>
+    </h1>
+  </div>
+  
+  <div class="container">
+    <div class="top-spacer"> </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="">The DataMapper Ruse</a>
+      </h2>
+      <h4 class="article-author">by Stan Lemon</h4>
+    </div>
+    <h3 class="article-date">Oct 29, 2013</h3>
+  </div>
+
+  <hr>
+
+  <p>There were some great articles today about ORMs, specifically &quot;<a href="http://programmingarehard.com/2013/10/21/is-orm-abstraction-a-pipe-dream.html">Is ORM abstraction a pipe dream?</a>&quot; by David Adam and then &quot;<a href="http://paul-m-jones.com/archives/4757">Publish Your Failure; or, The Way Of All Frameworks</a>&quot; by Paul Jones (the man who led me to good BBQ in Memphis).</p>
+<p>I've been thinking about ORMs a lot lately and I've been wanting to write something about what I consider to be the DataMapper farce. I should be clear up front, I'm big Doctrine 2 fan.  <strong>BIG.</strong> It's my ORM of choice every single time, or maybe it was... On principal I love Doctrine 2. My days as a Java developer made me grow fond of Hibernate and with time I've come to really appreciate object hydration via the DataMapper pattern alongside the Repository pattern.  What I've appreciated most is the fact that I can write a model with no implicit dependencies, meaning my class &quot;Foo&quot; does not extend <em>ActiveFoo</em> or <em>QueryFoo</em> or <em>BaseFoo</em> or <em>FooTable</em> or <em>GatewayFoo</em> or <em>FooPeer</em> or <em>MagicHotSauceFoo</em>, it simply stands on it's own.  In the case of Doctrine 2 my model usually gets some love from annotations or maybe Yaml if I'm looking to spice up my day.</p>
+<p>Here's the thing I've been contemplating though and why I think this notion of portability is fundamentally a ruse (<em>for now</em>). In the PHP universe what other library provides a DataMapper implementation that would allow you to freely move from Doctrine 2? If I choose to write stand alone models I am either stuck doing some sort of hydration myself (<em>all kinds of time consuming icky</em>) or I am using Doctrine 2.  So this idea that ActiveRecord locks you in and Doctrine 2 doesn't, is, well simply not true...  Short of a viable alternative Doctrine 2 has a monopoly on the DataMapper pattern, making it as 'locked in' as using Propel or any other ActiveRecord-styled ORM.</p>
+<p>Now don't get me wrong...  This doesn't change the fact that I will likely continue to gravitate toward's Doctrine 2.  I am going to hang tight and hope for some healthy competition that will allow me to write my models portable enough to swap in Doctrine 2 for odd days of the week and LibraryX for even days.</p>
+
+
+  
+
+  <hr>
+</article>
+
+
+<p class="text-center">
+  <em><a href="https://eepurl.com/gvEkEL">Do you want to get new posts from <strong>lemonbytes</strong> directly in your inbox? Subscribe today!</a></em>
+</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container columns is-vcentered">
+    <ul>
+      <li>
+        <a href="http://twitter.com/stanlemon">
+          <i class="fab fa-twitter fa-2x" title="Twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://linkedin.com/in/stanlemon">
+          <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://github.com/stanlemon">
+          <i class="fab fa-github fa-2x" title="GitHub"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://stanlemon.com/feed.xml">
+          <i class="fas fa-rss-square fa-2x" title="Subscribe via RSS"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      &copy; 2021 Stan Lemon
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+  const nav = document.querySelector('.nav');
+  document.querySelector('.navbar-toggle').addEventListener("click", function() {
+    nav.classList.toggle('updown');
+  });
+</script>
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-33072694-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</body>
+</html>
