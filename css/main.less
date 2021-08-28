@@ -20,15 +20,11 @@
 @import "_variables.less";
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -55,7 +51,7 @@ a:focus {
 
 a:focus {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 5px auto;
   outline-offset: -2px;
 }
 
@@ -256,7 +252,6 @@ footer {
   border-color: transparent;
   border-radius: 0;
   background-color: @contentBackgroundColor;
-  -webkit-box-shadow: 0 1px 1px @contentBoxShadow;
   box-shadow: 0 1px 1px @contentBoxShadow;
 }
 
@@ -273,7 +268,7 @@ article {
   margin-bottom: 30px;
 
   a {
-    font-weight: 550;
+    font-weight: 600;
   }
 
   strong {
