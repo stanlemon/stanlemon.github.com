@@ -45,6 +45,7 @@
 .pagination>.active>*:focus {
   z-index: 2;
   color: #fff;
+  pointer-events: none; // Disables clicks
   cursor: default;
   background-color: @bright;
   border-color: @bright;
@@ -63,7 +64,9 @@
 // iPhone 8 and smaller hide the gaps and edges
 @media (max-width: 412px) {
   .pagination {
-    .gap, .edge {
+
+    .gap,
+    .edge {
       display: none;
     }
   }

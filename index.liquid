@@ -45,7 +45,7 @@ permalink: "/{% if pagination.pageNumber>0 %}page/{{ pagination.pageNumber | plu
       {% endif %}
 
       {% if page.url == pagination.hrefs.first %}
-        <li class="edge active"><a>1</a></li>
+        <li class="edge active"><a href="{{ site.url }}{{ pagination.hrefs.first }}">1</a></li>
       {% else %}
         <li class="edge"><a href="{{ site.url }}{{ pagination.hrefs.first }}">1</a></li>
       {% endif %}
@@ -55,7 +55,7 @@ permalink: "/{% if pagination.pageNumber>0 %}page/{{ pagination.pageNumber | plu
 
     {% for data in pages %}
       {% if page.url == data.href %}
-        <li class="active"><a>{{data.page}}</a></li>
+        <li class="active"><a href="{{site.url}}{{data.href}}">{{data.page}}</a></li>
       {% else %}
         <li><a href="{{site.url}}{{data.href}}">{{data.page}}</a></li>
       {% endif %}
@@ -65,7 +65,7 @@ permalink: "/{% if pagination.pageNumber>0 %}page/{{ pagination.pageNumber | plu
       <li class="gap"><span>...</span></li>
 
       {% if page.url == pagination.hrefs.last %}
-        <li class="active edge"><a>{{pagination.hrefs.size}}</a></li>
+        <li class="active edge"><a href="{{ site.url }}{{ pagination.hrefs | last }}">{{pagination.hrefs.size}}</a></li>
       {% else %}
         <li class="edge"><a href="{{ site.url }}{{ pagination.hrefs | last }}">{{pagination.hrefs.size}}</a></li>
       {% endif %}
