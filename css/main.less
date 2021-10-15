@@ -72,11 +72,13 @@ h2 {
   font-size: 30px;
 }
 
-h3 {
+h3,
+.article-date {
   font-size: 24px;
 }
 
-h4 {
+h4,
+.article-author {
   font-size: 18px;
 }
 
@@ -182,7 +184,7 @@ footer {
 
   a:hover {
     text-decoration: none;
-  }  
+  }
 
   ul {
     display: block;
@@ -198,7 +200,7 @@ footer {
       display: inline-block;
       padding-right: 5px;
       padding-left: 5px;
-    }  
+    }
   }
 }
 
@@ -226,7 +228,7 @@ footer {
 
     @media (min-width: 768px) {
       font-size: 21px;
-    }    
+    }
   }
 
   .byline {
@@ -344,7 +346,7 @@ article {
   body {
     background-color: #040404;
   }
-  
+
   .top-spacer, .content, footer {
     background-color: #000;
     color: #fff;
@@ -362,32 +364,49 @@ article {
   body {
     padding: 20px;
   }
-  body, .masthead, footer {
+
+  body,
+  .masthead,
+  footer {
     background-color: #fff;
     color: #000;
   }
-  .navbar, .top-spacer, .lead, .article-author, hr, footer ul, .pagination {
+
+  .navbar,
+  .top-spacer,
+  .lead,
+  .article-author,
+  hr,
+  footer ul,
+  .pagination {
     display: none !important;
   }
+
   .masthead {
     padding-bottom: 10px;
     margin-bottom: 5px;
     border-bottom: 1px #000 solid;
   }
-  .masthead .title, .content {
+
+  .masthead .title,
+  .content {
     padding: 0px;
   }
+
   .container {
     width: 100%;
   }
+
   .content {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+
   p {
     margin-block-start: 0em;
     margin-block-end: 1.3em;
-  }  
+  }
+
   footer .copyright {
     text-align: center;
   }
