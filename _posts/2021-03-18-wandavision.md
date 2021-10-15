@@ -5,6 +5,8 @@ date: 2021-03-18T10:00-04:00
 categories:
   - Entertainment
 permalink: /2021/03/18/wandavision/
+metadata:
+  description: WandaVision is a weird and quirky show, but I like it.
 ---
 
 **Spoiler Alert:** _I'm going to discuss the TV show WandaVision in its entirety. If you haven’t seen the show yet go watch and then come back here._

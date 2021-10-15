@@ -4,6 +4,9 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if metadata.description -%}
+  <meta name="description" content="{{ metadata.description }}">
+  {%- endif %}
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
 

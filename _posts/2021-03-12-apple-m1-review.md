@@ -5,6 +5,8 @@ date: 2021-03-12T17:00-04:00
 categories:
   - Technology
 permalink: /2021/03/12/apple-m1-review/
+metadata:
+  description: Apple's M1 chip has made their computers exciting again.
 ---
 
 Last summer during the [World Wide Developer Conference (WWDC)](https://developer.apple.com/wwdc20/), Apple announced the introduction of a new processor and architecture for the Mac. I cannot overstate the significance of this change. It’s a big deal. In November Apple started shipping Mac laptops and the Mac mini with this new processor named the M1. The reviews were shocking because almost everyone loved the new processor. Even the most ardent critics of Apple, like [The Verge](https://www.theverge.com/21569603/apple-macbook-air-m1-review-price-specs-features-arm-silicon), gushed over this new Mac. I was left scratching my head… could it be that good? Well, the answer is yes.
