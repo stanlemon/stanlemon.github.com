@@ -1,6 +1,7 @@
 {
   "name": "lemonbytes by Stan Lemon",
   "theme_color": "#111166",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "\/android-icon-36x36.png",
