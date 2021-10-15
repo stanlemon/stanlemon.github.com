@@ -7,45 +7,21 @@
   "scope": "/",
   "icons": [
     {
-      "src": "\/assets/icons/android-icon-36x36.png",
-      "sizes": "36x36",
+      "src": "\/assets/icons/lemon-slice@512.png.png",
+      "sizes": "512x512",
       "type": "image\/png",
-      "density": "0.75",
       "purpose": "any maskable"
     },
     {
-      "src": "\/assets/icons/android-icon-48x48.png",
-      "sizes": "48x48",
+      "src": "\/assets/icons/lemon-slice@256.png.png",
+      "sizes": "256x256",
       "type": "image\/png",
-      "density": "1.0",
       "purpose": "any maskable"
     },
     {
-      "src": "\/assets/icons/android-icon-72x72.png",
-      "sizes": "72x72",
+      "src": "\/assets/icons/lemon-slice@128.png.png",
+      "sizes": "128x128",
       "type": "image\/png",
-      "density": "1.5",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "\/assets/icons/android-icon-96x96.png",
-      "sizes": "96x96",
-      "type": "image\/png",
-      "density": "2.0",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "\/assets/icons/android-icon-144x144.png",
-      "sizes": "144x144",
-      "type": "image\/png",
-      "density": "3.0",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "\/assets/icons/android-icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image\/png",
-      "density": "4.0",
       "purpose": "any maskable"
     }
   ]
