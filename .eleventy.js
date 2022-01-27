@@ -30,14 +30,12 @@ module.exports = (eleventyConfig) => {
       },
       render: (scope, hash) => {
         // Resolve variables
-        const value = liquidEngine.evalValue(this.str, scope);
+        const value = liquidEngine.evalValueSync(this.str, scope);
         // Render markdown content
         const content = markdown.render(value);
         // Render the variable as liquid
-        return liquidEngine.parseAndRender(
+        return liquidEngine.parseAndRenderSync(
           content,
-          scope.contexts[0],
-          scope.opts
         );
       },
     };
@@ -66,6 +64,10 @@ module.exports = (eleventyConfig) => {
     return data
       .map((href, page) => ({ href, page: page + 1 }))
       .slice(firstPage, lastPage + 1);
+  });
+
+  eleventyConfig.setLiquidOptions({
+    dynamicPartials: false,
   });
 
   return {

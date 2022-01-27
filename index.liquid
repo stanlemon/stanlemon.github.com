@@ -26,7 +26,7 @@ metadata:
     {%- assign pageContent = page.templateContent -%}
   {%- endif -%}
 
-  {% include article with site: site, url: page.url, title: page.data.title, date: page.data.date, content: pageContent, keepReading: page.data.page.excerpt %}
+  {% include article, site: site, url: page.url, title: page.data.title, date: page.data.date, content: pageContent, keepReading: page.data.page.excerpt %}
 {% endfor %}
 
 {% assign pages = pagination.hrefs | paginate: pagination.pageNumber %}
