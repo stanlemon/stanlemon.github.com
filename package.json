@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.2.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "copyfiles": "^2.4.1",
     "dotenv": "^14.3.2",
