@@ -10,7 +10,7 @@
   },
   "scripts": {
     "serve": "eleventy --serve  --port 3000",
-    "build": "npm-run-all clean site less fonts",
+    "build": "npm-run-all site less fonts",
     "site": "eleventy",
     "less": "lessc --source-map-no-annotation ./css/main.less ./_site/css/main.css",
     "fonts": "copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 ./_site/css/",
