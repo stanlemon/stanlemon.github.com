@@ -5,6 +5,7 @@ date: 2013-03-20T06:00-04:00
 categories:
   - Life
 permalink: /2013/03/20/square-footage/
+active: false
 ---
 When we first started house hunting in Indiana I was grateful that MLS listed the total square footage of homes. Back in Pittsburgh MLS didn't do this and we always found that a bit puzzling.  In our (original) assessment it was easier to see if a house had the mass we needed for our family based upon this number.
 

@@ -5,6 +5,7 @@ date: 2019-08-17T13:17-04:00
 categories:
   - Finance
 permalink: /2019/08/17/budgeting-the-nfpla-way/
+active: false
 ---
 
 Lately I’ve been writing a lot about personal finance, especially topics related to budgeting. Lots of people think we’re on the verge of a recession, but my eyes have been set solely on the NFL, where my favorite team, the Pittsburgh Steelers, are gearing up for a run at another Lombardi. I love football, and the idea of a players' strike is entirely disconcerting to me. So while the finance world is worrying about a recession, I’m worried about whether or not the 2021 season will get played.
@@ -27,7 +28,7 @@ CBS Sports posted an article this week citing communication from the NFL Players
 
 Some of these seem ridiculous to the average Joe, like "_Consider selling a car you have not driven in the past six months._". Do normal people just have extra cars lying around? I think we might be surprised how many do!
 
-Here's the gist of these talking points: Consider having less stuff, but whatever you do, don't spend **all** of your money! 
+Here's the gist of these talking points: Consider having less stuff, but whatever you do, don't spend **all** of your money!
 
 This seems like it would be really hard to do for an NFL player with a deal yielding several million dollars a year, but NFL players are no more immune to the urge to _spend what we have_ than the blue collar factory worker or the software engineer with a blog.
 

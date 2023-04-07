@@ -5,6 +5,7 @@ date: 2019-02-25T19:05-05:00
 categories:
   - Finance
 permalink: /2019/02/25/a-budget-with-consequences/
+active: false,
 ---
 
 _Author's Note: I originally wrote this during the government shutdown earlier this year, but thankfully that's now over and I can maintain my streak of not writing about politics._
