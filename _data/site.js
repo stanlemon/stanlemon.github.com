@@ -10,7 +10,6 @@ module.exports = () => ({
     github: "stanlemon",
     linkedin: "stanlemon",
   },
-  google_analytics: "UA-33072694-1",
   // If an env variable (local dev) has been set, use it, otherwise default (prod)
   url:
     process.env.SITE_URL !== undefined
