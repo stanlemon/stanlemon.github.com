@@ -4,18 +4,10 @@ pagination:
   data: collections.posts
   reverse: true
   size: 5
-permalink: "/{% if pagination.pageNumber>0 %}page/{{ pagination.pageNumber | plus: 1 }}{% endif %}/index.html"
+permalink: "/page/{{ pagination.pageNumber | plus: 1 }}"
 metadata:
-  description: A collection of articles written by Stan Lemon.
+  description: Blog posts by Stan Lemon.
 ---
-
-<div><strong>Some favorite posts to check out:</strong></div>
-<ul>
-  <li><a href="{{ site.url }}/2019/08/08/how-we-paid-off-our-mortgage/">How We Paid Off Our Mortgage</a> <em>(for the finance nerd)</em></li>
-  <li><a href="{{ site.url }}/2019/07/26/life-with-a-twist-of-lemon-the-first-year/">Life with a Twist of Lemon - The First Year</a> <em>(for the person with nothing to do)</em></li>
-  <li><a href="{{ site.url }}/2019/02/28/react-pouchdb-components/">React PouchDB Components</a> <em>(for the programmer)</em></li>
-  <li><a href="{{ site.url }}/2019/07/06/my-favorite-marvel-movies/">My Favorite Marvel Movies</a> <em>(for the pop culture nerd)</em></li>
-</ul>
 
 {%- for page in pagination.items -%}
   {%- if page.data.page.excerpt -%}

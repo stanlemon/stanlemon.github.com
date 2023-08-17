@@ -7,7 +7,7 @@
   {% if metadata.description -%}
   <meta name="description" content="{{ metadata.description }}">
   {%- endif %}
-  <meta name="theme-color" content="#111166"/>
+  <meta name="theme-color" content="#FEAE0F"/>
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
 
@@ -29,60 +29,36 @@
   <link rel="manifest" href="/assets/icons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
-<div class="navbar" role="navigation">
-  <div class="container">
-    <button class="navbar-toggle" type="button">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <ul class="nav updown">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about/">About</a></li>
-      <li><a href="https://saralemon.com/" rel="noopener" target="_blank">Mrs</a></li>
-      <li><a href="https://twistoflemonpod.com/" rel="noopener" target="_blank">Podcast</a></li>
-      <li><a href="https://eepurl.com/gvEkEL" rel="noopener" target="_blank">Subscribe</a></li>
-      <li><a href="/contact/">Contact</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="masthead" role="banner">
-  <div class="title container">
-    <h1>
-      {{ site.name }}<span class="byline"> by {{ site.author }}</span>
-    </h1>
-    <div class="lead">{{ site.description }}</div>
-  </div>
-
-  <div class="container">
-    <div class="top-spacer"> </div>
-  </div>
-</div>
-
 <div class="container" role="main">
   <div class="content">
+    <a href="{{site.url}}/">
+      <img src="{{site.url}}/assets/lemon-with-leaves@2x.png" class="post-img" />
+    </a>
+
     {{ content }}
   </div>
 </div>
 
 <footer>
-  <div class="container columns is-vcentered">
+  <div class="text-center">
     <ul>
       <li>
-        <a href="http://linkedin.com/in/{{ site.social.linkedin }}" rel="noopener" target="_blank">
+        <a href="{{ site.social.mastadon }}" rel="noopener" target="_blank" alt="On the rare occasion I do social media, you can find me on the iOSDev.space Mastadon isntance.">
+          <i class="fa-brands fa-mastodon fa-2x" title="Mastadon"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/{{ site.social.linkedin }}" rel="noopener" target="_blank" alt="You can find about me professionally on LinkedIn ">
           <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
         </a>
       </li>
       <li>
-        <a href="http://github.com/{{ site.social.github }}" rel="noopener" target="_blank">
+        <a href="https://github.com/{{ site.social.github }}" rel="noopener" target="_blank" alt="You can find some of my coding projects on GitHub">
           <i class="fab fa-github fa-2x" title="GitHub"></i>
         </a>
       </li>
@@ -92,14 +68,5 @@
         </a>
       </li>
     </ul>
-    <div class="copyright">
-      &copy; {{ "now" | date:"%Y" }} Stan Lemon
-    </div>
   </div>
 </footer>
-<script>
-  const nav = document.querySelector('.nav');
-  document.querySelector('.navbar-toggle').addEventListener("click", function() {
-    nav.classList.toggle('updown');
-  });
-</script>

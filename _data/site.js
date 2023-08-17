@@ -1,12 +1,12 @@
 require("dotenv").config();
 
 module.exports = () => ({
-  name: "lemonbytes",
-  title: "lemonbytes by Stan Lemon",
+  name: "Stan Lemon",
+  title: "Stan Lemon",
   author: "Stan Lemon",
   description: "husband, dad, steelers fan and software developer",
   social: {
-    twitter: "stanlemon",
+    mastadon: "https://iosdev.space/@stanlemon",
     github: "stanlemon",
     linkedin: "stanlemon",
   },
@@ -14,5 +14,5 @@ module.exports = () => ({
   url:
     process.env.SITE_URL !== undefined
       ? process.env.SITE_URL
-      : "https://stanlemon.com",
+      : "",
 });
