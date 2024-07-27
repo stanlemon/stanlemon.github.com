@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Composer on Elastic Beanstalk - Stan Lemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="theme-color" content="#FEAE0F"/>
+  <link rel="canonical" href="/2013/03/21/composer-on-elastic-beanstalk/">
+  <link rel="alternate" type="application/rss+xml" title="Stan Lemon" href="/feed.xml" />
+
+  <link rel="preload" as="font" href="/assets/fonts/oswald.woff" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<div class="container" role="main">
+  <div class="content">
+    <a href="/">
+      <img src="/assets/lemon-with-leaves@2x.png" class="post-img" />
+    </a>
+
+    
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="">Composer on Elastic Beanstalk</a>
+      </h2>
+    </div>
+    <h4 class="article-date">Mar 21, 2013</h4>
+  </div>
+
+  <hr>
+
+  <p><a href="http://aws.amazon.com/elasticbeanstalk/">Amazon's Elastic Beanstalk</a> is another git-driven deployment service, this time directly to EC2 and RDS instances on Amazon Web Services.  It's similar to what Red Hat is doing with OpenShift conceptually.</p>
+<p>If you are a PHP developer like myself your first question is probably, will it install my <a href="http://getcomposer.org">composer dependencies</a> for me?  The answer is <strong>YES</strong>.</p>
+<p>Here's the kicker, and quite frankly this does not make any sense to me...  If you have stubbed your <em>vendor</em> folder in place, so you've either touched <em>./vendor/empty</em> or <em>./vendor/.gitkeep</em>, you are going to have to removed it.  Elastic Beanstalk will use composer based upon the presence of a <em>composer.json</em> or <em>composer.lock</em> file, but if it sees the <em>vendor</em> folder it bails out and doesn't execute the install command. Again, I really don't know why this is and I could not find any documentation about it.  Yet this exactly what I needed to do to get my dependencies installed.</p>
+
+
+  
+
+  <hr>
+</article>
+
+
+<p class="text-center">
+  <em><a href="https://eepurl.com/gvEkEL">Do you want to get new posts from <strong>lemonbytes</strong> directly in your inbox? Subscribe today!</a></em>
+</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="text-center">
+    <ul>
+      <li>
+        <a href="https://github.com/stanlemon" rel="noopener" target="_blank" alt="You can find some of my coding projects on GitHub">
+          <i class="fab fa-github fa-2x" title="GitHub"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/stanlemon" rel="noopener" target="_blank" alt="You can find about me professionally on LinkedIn ">
+          <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/feed.xml">
+          <i class="fas fa-rss-square fa-2x" title="Subscribe via RSS"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://iosdev.space/@stanlemon" rel="noopener" target="_blank" alt="On the rare occasion I do social media, you can find me on the iOSDev.space Mastadon isntance.">
+          <i class="fa-brands fa-mastodon fa-2x" title="Mastadon"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
