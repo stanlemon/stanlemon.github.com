@@ -5,9 +5,6 @@
   "author": "Stan Lemon",
   "license": "MIT",
   "main": ".eleventy.js",
-  "engines": {
-    "node": ">=16.0.0"
-  },
   "scripts": {
     "serve": "eleventy --serve  --port 3000",
     "build": "npm-run-all clean site less fonts",
