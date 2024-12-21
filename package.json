@@ -1,6 +1,6 @@
 {
   "name": "stanlemon-com",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Stan Lemon's personal website.",
   "author": "Stan Lemon",
   "license": "MIT",
@@ -16,11 +16,11 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@fortawesome/fontawesome-free": "^6.7.1",
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "copyfiles": "^2.4.1",
     "dotenv": "^16.4.7",
     "less": "^4.2.1",
-    "npm-run-all2": "^7.0.1",
+    "npm-run-all2": "^7.0.2",
     "prismjs": "^1.29.0",
     "rimraf": "^6.0.1"
   }
