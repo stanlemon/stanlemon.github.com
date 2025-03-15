@@ -1,6 +1,6 @@
 {
   "name": "stanlemon-com",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Stan Lemon's personal website.",
   "author": "Stan Lemon",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "dotenv": "^16.4.7",
     "less": "^4.2.2",
     "npm-run-all2": "^7.0.2",
-    "prismjs": "^1.29.0",
+    "prismjs": "^1.30.0",
     "rimraf": "^6.0.1"
   }
 }
