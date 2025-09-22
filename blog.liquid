@@ -29,12 +29,12 @@ metadata:
       {% if pagination.href.previous %}
         <li>
           <a href="{{ site.url }}{{ pagination.href.previous }}">
-            <i class="fas fa-angle-double-left" title="Previous"></i>
+            <i class="fa-solid fa-angles-left" title="Previous"></i>
           </a>
         </li>
       {% else %}
         <li class="disabled">
-          <i class="fas fa-angle-double-left" title="Previous"></i>
+          <i class="fa-solid fa-angles-left" title="Previous"></i>
         </li>
       {% endif %}
 
@@ -67,12 +67,12 @@ metadata:
       {% if pagination.href.next %}
         <li>
           <a href="{{ site.url }}{{ pagination.next.previous }}">
-            <i class="fa fa-angle-double-right" title="Next"></i>
+            <i class="fa-solid fa-angles-right" title="Next"></i>
           </a>
         </li>
       {% else %}
         <li class="disabled">
-          <i class="fas fa-angle-double-right" title="Next"></i>
+          <i class="fa-solid fa-angles-right" title="Next"></i>
         </li>
       {% endif %}
     {% endif %}
