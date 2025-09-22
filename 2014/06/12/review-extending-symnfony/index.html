@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Review: Extending Symnfony - Stan Lemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="theme-color" content="#FEAE0F"/>
+  <link rel="canonical" href="/2014/06/12/review-extending-symnfony/">
+  <link rel="alternate" type="application/rss+xml" title="Stan Lemon" href="/feed.xml" />
+
+  <link rel="preload" as="font" href="/assets/fonts/oswald.woff" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<div class="container" role="main">
+  <div class="content">
+    <a href="/">
+      <img src="/assets/lemon-with-leaves@2x.png" class="post-img" />
+    </a>
+
+    
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="">Review: Extending Symnfony</a>
+      </h2>
+    </div>
+    <h4 class="article-date">Jun 12, 2014</h4>
+  </div>
+
+  <hr>
+
+  <p><a href="http://www.packtpub.com/extending-symfony-2-web-application-framework/book">Extending Symnfony</a> by Sébastien Armand is a tutorial-style introduction to a variety of the ways that you can extend a Symfony 2 full stack installation. I’m a big fan of Symfony 2 and I’ve done a fair amount of app building with it, so I was interested in Armand’s book and seeing what new things I could discover about hooking into sf2.</p>
+<p>The book is filled with code samples, far more than you’ll find in most other technical books. Most of these code samples are also complete, which anyone who has traversed the official Symfony 2 cookbooks will greatly appreciate. Unfortunately, these code samples sometimes cross pages in inconvenient ways, and none of them include syntax highlighting which can make it hard to read at times.</p>
+<p>Armand tackles six (sort of eight) areas of Symfony 2 development where developers can tap in and extend existing functionality of Symfony 2. First and foremost he kicks off his tutorials with covering service definitions and listeners. These topics seem like they could have been separate chapters to me, but nonetheless he does a good job of giving real world examples of how to tie these things in. He especially does well with event listeners - the secret weapon of the Symfony 2 stack (in my opinion anyhow).</p>
+<p>Armand’s approach to extending symfony is project-based, meaning that through the book you’re working on building an app that handles some details for meet ups between users. You can think of it like the old Symfony 1 Askeet tutorial. This is a huge advantage of Armand’s book over other Symfony 2 texts you’ll find in the wild. Actual applications create context and drive home the concepts. As an added bonus, in this book you are NOT building yet another task manager!</p>
+<p>The Security chapter covers some of the more difficult areas of Symfony 2. Anyone who has dealt with Security in sf2 knows that, while extremely powerful, it can also be extremely challenging. Armand’s examples are helpful, especially as he tackles an OAuth implementation. Armand uses the Friends of Symfony UserBundle to get going, but unfortunately didn’t cover with too much depth getting started with this super handy bundle. The examples in the book are priceless, but I look forward to future revisions that cover the new SimpleAuth implementation in Symfony 2. The only other thing I wished Armand would have covered was securing an api with tokens and a custom user provider for doing this. He shows how a cookie can be used with an event listener, but truthfully there are better ways of tackling this problem in Symfony 2 that are more consistent with its security model.</p>
+<p>One of the most valuable chapters in this book is the Doctrine chapter. Doctrine 2’s official documentation lacks a lot of context. By being a project-based tutorial, Armand actually shows you how to write a custom data type, custom DQL function, and a custom filter, rather than stumble through the Doctrine 2 docs and hope you got close. This chapter in and of itself is a valuable resource for those times when you need to do these things.</p>
+<p>The final chapter discusses bundles briefly. This is one area of the book I felt could have been fleshed out a bit more. Armand covers the basics, but part of me felt like this chapter almost belonged at the beginning of the book instead of the tail end. The other thing that was missing from this chapter was bundle inheritance which, while a tricky subject, is a huge part of extending a Symfony 2 application.</p>
+<p>All in all I think this is a solid book on tapping into some of the more powerful features of Symfony 2 and it’s counterpart Doctrine 2. The book is at times a little oddly organized, but the code samples and tip are worthy any web developers time. If you’re looking to dive into some of the things in the book’s table of contents get yourself a copy and profit from Armand’s tutorials and extensive code samples.</p>
+
+
+  
+
+  <hr>
+</article>
+
+
+<p class="text-center">
+  <em><a href="https://eepurl.com/gvEkEL">Do you want to get new posts from <strong>lemonbytes</strong> directly in your inbox? Subscribe today!</a></em>
+</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="text-center">
+    <ul>
+      <li>
+        <a href="https://github.com/stanlemon" rel="noopener" target="_blank" alt="You can find some of my coding projects on GitHub">
+          <i class="fa-brands fa-github fa-2x" title="GitHub"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/stanlemon" rel="noopener" target="_blank" alt="You can find about me professionally on LinkedIn ">
+          <i class="fa-brands fa-linkedin fa-2x" title="LinkedIn"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/feed.xml">
+          <i class="fa-solid fa-square-rss fa-2x" title="Subscribe via RSS"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://iosdev.space/@stanlemon" rel="noopener" target="_blank" alt="On the rare occasion I do social media, you can find me on the iOSDev.space Mastadon isntance.">
+          <i class="fa-brands fa-mastodon fa-2x" title="Mastadon"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
