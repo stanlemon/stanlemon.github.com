@@ -1,10 +1,8 @@
-@import "../node_modules/@fortawesome/fontawesome-free/less/_variables.less";
-
-@fa-font-path: "/css";
-
-@import "../node_modules/@fortawesome/fontawesome-free/less/fontawesome.less";
-@import "../node_modules/@fortawesome/fontawesome-free/less/brands.less";
-@import "../node_modules/@fortawesome/fontawesome-free/less/solid.less";
+// Font Awesome 7 provides CSS distributions instead of Less.
+// Import the compiled CSS so that it is bundled into the generated stylesheet.
+@import (less) "../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css";
+@import (less) "../node_modules/@fortawesome/fontawesome-free/css/brands.css";
+@import (less) "../node_modules/@fortawesome/fontawesome-free/css/solid.css";
 
 .fa-2x {
   font-size: 4em;
