@@ -1,6 +1,6 @@
 {
   "name": "stanlemon-com",
-  "version": "3.0.20",
+  "version": "3.0.21",
   "description": "Stan Lemon's personal website.",
   "author": "Stan Lemon",
   "license": "MIT",
@@ -16,7 +16,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
-    "dotenv": "^17.2.2",
+    "dotenv": "^17.2.3",
     "less": "^4.4.1",
     "npm-run-all2": "^8.0.4",
     "prismjs": "^1.30.0",
