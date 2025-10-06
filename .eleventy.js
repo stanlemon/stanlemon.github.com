@@ -9,6 +9,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(SyntaxHighlight);
 
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@fortawesome/fontawesome-free/webfonts": "webfonts",
+  });
 
   eleventyConfig.addCollection("posts", (collection) => {
     return collection.getFilteredByGlob("_posts/**/*.md")
