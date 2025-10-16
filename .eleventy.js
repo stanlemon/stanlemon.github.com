@@ -23,6 +23,35 @@ module.exports = (eleventyConfig) => {
     ;
   });
 
+  eleventyConfig.addCollection("pinnedPosts", (collection) => {
+    const sixMonthsAgo = new Date();
+    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+
+    return collection.getFilteredByGlob("_posts/**/*.md")
+      .filter((post) => {
+        const postDate = new Date(post.data.date);
+        // Exclude posts from the last 6 months (they'll appear in recentPosts)
+        return post.data.pinned === true &&
+               post.data.active !== false &&
+               postDate < sixMonthsAgo &&
+               (!!process.env.SHOW_DRAFTS || post.data.draft !== true);
+      });
+  });
+
+  eleventyConfig.addCollection("recentPosts", (collection) => {
+    const sixMonthsAgo = new Date();
+    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+
+    return collection.getFilteredByGlob("_posts/**/*.md")
+      .filter((post) => {
+        const postDate = new Date(post.data.date);
+        return postDate >= sixMonthsAgo &&
+               post.data.active !== false &&
+               (!!process.env.SHOW_DRAFTS || post.data.draft !== true);
+      })
+      .sort((a, b) => b.data.date - a.data.date);
+  });
+
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: "<!-- excerpt -->",

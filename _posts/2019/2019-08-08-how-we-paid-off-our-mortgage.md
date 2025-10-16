@@ -5,6 +5,7 @@ date: 2019-08-08T21:00-04:00
 categories:
   - Finance
 permalink: /2019/08/08/how-we-paid-off-our-mortgage/
+pinned: true
 ---
 
 <img src="{{site.url}}/assets/mortgage-paid.jpg" srcset="{{site.url}}/assets/mortgage-paid.jpg, {{site.url}}/assets/mortgage-paid@2x.jpg 2x" alt="Mrs. Lemon and I standing in front of our home with our mortgage visualization fully colored in because we had just paid the mortgage off." class="post-img" />

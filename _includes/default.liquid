@@ -31,6 +31,17 @@
   <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
 
   <link rel="stylesheet" href="/css/main.css">
+
+  {% if site.googleAnalyticsId -%}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.googleAnalyticsId }}');
+  </script>
+  {%- endif %}
 </head>
 <body>
 
@@ -48,25 +59,31 @@
   <div class="text-center">
     <ul>
       <li>
-        <a href="https://github.com/{{ site.social.github }}" rel="noopener" target="_blank" alt="You can find some of my coding projects on GitHub">
+        <a href="https://github.com/{{ site.social.github }}" rel="noopener" target="_blank" alt="You can find some of my coding projects on GitHub" class="social-github">
           <i class="fa-brands fa-github fa-2x" title="GitHub"></i>
         </a>
       </li>
       <li>
-        <a href="https://linkedin.com/in/{{ site.social.linkedin }}" rel="noopener" target="_blank" alt="You can find about me professionally on LinkedIn ">
+        <a href="https://linkedin.com/in/{{ site.social.linkedin }}" rel="noopener" target="_blank" alt="You can find about me professionally on LinkedIn" class="social-linkedin">
           <i class="fa-brands fa-linkedin fa-2x" title="LinkedIn"></i>
         </a>
       </li>
       <li>
-        <a href="{{site.url}}/feed.xml">
-          <i class="fa-solid fa-square-rss fa-2x" title="Subscribe via RSS"></i>
+        <a href="https://instagram.com/{{ site.social.instagram }}" rel="noopener" target="_blank" alt="Follow me on Instagram" class="social-instagram">
+          <i class="fa-brands fa-instagram fa-2x" title="Instagram"></i>
         </a>
       </li>
       <li>
-        <a href="{{ site.social.mastadon }}" rel="noopener" target="_blank" alt="On the rare occasion I do social media, you can find me on the iOSDev.space Mastadon isntance.">
-          <i class="fa-brands fa-mastodon fa-2x" title="Mastadon"></i>
+        <a href="https://threads.net/@{{ site.social.threads }}" rel="noopener" target="_blank" alt="Follow me on Threads" class="social-threads">
+          <i class="fa-brands fa-threads fa-2x" title="Threads"></i>
+        </a>
+      </li>
+      <li>
+        <a href="{{site.url}}/feed.xml" class="social-rss">
+          <i class="fa-solid fa-square-rss fa-2x" title="Subscribe via RSS"></i>
         </a>
       </li>
     </ul>
+    <p class="copyright">&copy; {{ "now" | date: "%Y" }} Stan Lemon. All rights reserved.</p>
   </div>
 </footer>

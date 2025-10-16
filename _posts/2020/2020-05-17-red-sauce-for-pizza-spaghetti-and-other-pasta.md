@@ -5,6 +5,7 @@ date: 2020-05-17T15:00-04:00
 categories:
   - Life
 permalink: /2020/05/17/red-sauce-for-pizza-spaghetti-and-other-pasta/
+pinned: true
 ---
 
 When I made my [Pizza Night at the Lemon's](/2020/04/19/pizza-night-at-the-lemons/) post and video I mentioned I would share my red sauce (aka "pizza" sauce) recipe shortly thereafter. Well, here it is!  This recipe came about due to the difficulties my wife and I had finding a good pizza sauce for our pizza. Prior to this recipe we also never ate pasta, for similar reasons. It seemed like whenever we found a good sauce we would snatch up as much as the grocery store had and then it would disappear after that, leaving us to experiment and find a different brand.  Finally we were doing a stint with Blue Apron and came across a [Calzone recipe](https://www.blueapron.com/recipes/three-cheese-calzones-with-broccoli-rabe-broccolini-tomato-sauce) that had a rather delightful sauce to it.  Blue Apron ships their seasoning packets already measured so we didn't know the composition other than the unknown aleppo pepper and italian seasoning (typically oregano, basil and rosemary). So we set out to reproduce this sauce, along with some modifications and came up with what follows. This is our red sauce, we use it for pizza, spaghetti and any other pasta dish we put together. The batch here is more then you need for pizza night, so you can either save the extra for next week or freeze it if you like, we've done both! Enjoy!

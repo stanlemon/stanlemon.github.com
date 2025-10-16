@@ -13,3 +13,21 @@ My [wife](https://saralemon.com) and I live in Indianapolis, Indiana with our th
 I built an *iOS, watchOS and macOS* app for my kids called [Dollar & Sense](http://dollarandsense.app), which we use to track their chores savings. You can download it on the [App Store](https://apps.apple.com/us/app/dollar-sense/id1631766637?itsct=apps_box_badge&itscg=30200). It's completely *free*.
 
 Occasionally I'll [post things I've written](/page/1).
+
+{% if collections.pinnedPosts.size > 0 %}
+
+### Some of my favorites
+{%- for post in collections.pinnedPosts %}
+- [{{ post.data.title }}]({{ post.url }})
+{%- endfor %}
+
+{% endif %}
+
+{% if collections.recentPosts.size > 0 %}
+
+### Recent
+{%- for post in collections.recentPosts %}
+- [{{ post.data.title }}]({{ post.url }}) - {{ post.data.date | date: "%B %d, %Y" }}
+{%- endfor %}
+
+{% endif %}
