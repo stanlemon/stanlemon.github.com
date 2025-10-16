@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stanley Lemon Day
-date: 2025-10-15T21:00-04:00
+date: 2025-10-15T10:00-04:00
 categories:
   - Life
 permalink: /2025/10/15/stanley-lemon-day/
