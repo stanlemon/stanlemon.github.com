@@ -10,7 +10,7 @@ pinned: true
 
 <img src="{{site.url}}/assets/stanley-lemon-day.jpg" srcset="{{site.url}}/assets/stanley-lemon-day.jpg, {{site.url}}/assets/stanley-lemon-day@2x.jpg 2x" alt="Stan Lemon wearing his October 15th is Stanley Lemon Day shirt with cameos from Sara and Lucy" class="post-img" />
 
-Growing up, I lived about a block from my elementary school, and by 2nd grade, I was walking to and from school on my own each day. To get to Turner Elementary, I had to cross Washington St., which isn't a particularly busy road, but had enough traffic that the school hired a crossing guard. The crossing guard that year was Mr. Kenneth Beardsley, a retired letter carrier for the US Postal Service. He was a truly remarkable man and very friendly to all the kids, keeping them safe each day. I enjoyed talking to Mr. Beardsley and would hang around during his shift, chatting with him in between letting kids cross the road. At one point, he jokingly told me I was a Jr. Crossing Guard, and that made my world.
+Growing up, I lived about a block from my elementary school, and by 2nd grade, I was walking to and from school on my own each day. To get to Turner Elementary, I had to cross National St., which isn't a particularly busy road, but had enough traffic that the school hired a crossing guard. The crossing guard that year was Mr. Kenneth Beardsley, a retired letter carrier for the US Postal Service. He was a truly remarkable man and very friendly to all the kids, keeping them safe each day. I enjoyed talking to Mr. Beardsley and would hang around during his shift, chatting with him in between letting kids cross the road. At one point, he jokingly told me I was a Jr. Crossing Guard, and that made my world.
 
 <!-- excerpt -->
 
