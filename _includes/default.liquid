@@ -7,6 +7,9 @@
   {% if metadata.description -%}
   <meta name="description" content="{{ metadata.description }}">
   {%- endif %}
+  {% if metadata.keywords -%}
+  <meta name="keywords" content="{{ metadata.keywords }}">
+  {%- endif %}
   <meta name="theme-color" content="#FEAE0F"/>
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
