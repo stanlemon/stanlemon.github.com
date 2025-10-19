@@ -1,0 +1,34 @@
+---
+layout: null
+pagination:
+  data: collections.posts
+  reverse: true
+  size: 500000000
+permalink: /sitemap.xml
+---
+{%- assign mostRecentPost = pagination.items | last -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://stanlemon.com/</loc>
+    <lastmod>{{ mostRecentPost.data.date | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  {% for post in pagination.items %}
+  <url>
+    <loc>https://stanlemon.com{{ post.url }}</loc>
+    <lastmod>{{ post.data.date | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% endfor %}
+  {% for i in (1..17) %}
+  <url>
+    <loc>https://stanlemon.com/page/{{ i }}/</loc>
+    <lastmod>{{ mostRecentPost.data.date | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+</urlset>
