@@ -5,6 +5,9 @@ date: 2018-09-08T12:45-04:00
 categories:
   - Podcast
 permalink: /2018/09/08/life-with-a-twist-of-lemon/
+metadata:
+  description: For more than a couple of years now my friend Jon Kohlmeier has been trying to persuade me to start a podcast with him.
+  keywords: podcast, twist of lemon, REST API, Apple, iOS, Facebook
 ---
 
 <img src="{{site.url}}/assets/life-with-a-twist-of-lemon.jpg" srcset="/assets/life-with-a-twist-of-lemon.jpg, /assets/life-with-a-twist-of-lemon@2x.jpg 2x" alt="Life with a Twist of Lemon" class="post-img" />

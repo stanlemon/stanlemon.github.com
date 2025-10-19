@@ -5,6 +5,9 @@ date: 2013-12-09T21:57-05:00
 categories:
   - Technology
 permalink: /2013/12/09/2-factor-this/
+metadata:
+  description: A lot of services across the web are amping up security in lieu of recent breaches.
+  keywords: tech, gadgets, review, PHP, Git, Apple, Dropbox
 ---
 A lot of services across the web are amping up security in lieu of [recent breaches](http://abcnews.go.com/Technology/hacker-group-stole-million-stolen-facebook-google-passwords/story?id=21109910). One technique to do this is called [two factor authentication](https://help.github.com/articles/about-two-factor-authentication). It’s a name that perfectly describes the technique, but explains absolutely nothing.
 

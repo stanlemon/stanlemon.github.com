@@ -6,7 +6,8 @@ categories:
   - Technology
 permalink: /2021/04/02/kinivio-hdmi-switch/
 metadata:
-  description: The Kinivio HDMI switch is a solid contender if you need such a thing.
+  description: "The Kinivio HDMI switch is a solid contender if you need such a thing."
+  keywords: tech, gadgets, review, AWS, Star Wars, Star Trek, Avengers
 ---
 
 I have a first world problem. Actually, I have many. One of them is moving HDMI cables around from device to device. At any given moment on my office desk I have a desktop, two laptops and an Xbox. But I only have one monitor. This means that switching between devices can be awkward, as I unplug an HDMI cable from one and move it to the other. Admittedly this isn’t so bad with the laptops because of my USB-C hub. The desktop and Xbox are a pain, in part because their plugs are on the back and getting to them is awkward. The [Kinivio HDMI Switch](https://amzn.to/3tl1Iy9) is the answer to my problem.

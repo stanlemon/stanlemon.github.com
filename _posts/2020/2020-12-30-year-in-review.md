@@ -5,6 +5,9 @@ date: 2020-12-30T10:00-04:00
 categories:
   - Life
 permalink: /2020/12/30/year-in-review/
+metadata:
+  description: What a mess of a year.
+  keywords: personal, family, lifestyle, REST API, iPhone, Apple, HomePod
 ---
 
 What a mess of a year! If a global pandemic wasn’t enough to ruin it, throw in civil unrest and a nightmare election cycle and you’ve got 2020 in a nutshell. When the year started our family was already home-based, with me working remotely and my children being home schooled by my wife. We had a ton of activities outside of the house, all of which came to a screeching halt in March and many remaining in pause to some extent through the balance of the year. Staying home all the time sucks. Not being able to see people regularly sucks. The only thing worse than that though, is the hyper-politicization of **everything**. First it was political to say the virus is real, next it was political to wear a mask, then it was political to say racism is bad and here we are at the end of an awful election cycle where how you cast your vote became political! If we could make something political in 2020 we did. On top of all that relationships became sacrificed to your political leanings. Don’t agree with a friend? That’s fine, you can find a replacement. Have a disagreement with a family member? No big deal, just stop talking to them. It’s December **finally** and looking in the rear view mirror I’ve realized that as awful of a year as it’s been it hasn’t been a total bust.

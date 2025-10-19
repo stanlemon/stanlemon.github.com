@@ -5,6 +5,9 @@ date: 2015-12-05T15:06-05:00
 categories:
   - Technology
 permalink: /2015/12/05/bluetooth-and-the-survival-of-the-fittest/
+metadata:
+  description: I am a strong believer that the power of the internet is best leveraged when it is used for funny memes, pictures of cats, and that really amazing video about Tom Brady’s balls.
+  keywords: tech, gadgets, review, AWS, Git
 ---
 I am a strong believer that the power of the internet is best leveraged when it is used for funny memes, pictures of cats, and that really amazing video about Tom Brady’s balls. However, I feel that I need to break from my strong belief about the internet for a moment and instead bend it to my will and rant.
 

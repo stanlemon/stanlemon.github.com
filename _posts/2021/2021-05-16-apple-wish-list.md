@@ -6,7 +6,8 @@ categories:
   - Technology
 permalink: /2021/05/16/apple-wish-list/
 metadata:
-  description: My wish list for Apple's next set of big announcements (2021 edition).
+  description: "My wish list for Apple's next set of big announcements (2021 edition)."
+  keywords: tech, gadgets, review, iPhone, Apple, Apple M1, macOS Big Sur
 ---
 
 Apple wish lists are nothing new. Over the years, Apple has released better software on a pretty consistent schedule. Sometimes those releases have things we expect. Other times they surprise even fanboys like me. Most Apple wish lists cover big-ticket items. This is not that list. This wish list is a bunch of little things that I encounter in my day-to-day use of Apple products. If I’m lucky, an Apple developer will spot my list and add some of them to the next macOS and iOS release. Most likely not, but a guy can hope! Apple’s World Wide Developer Conference (WWDC) is just around the corner, so I figured that now was as a good time as any to share this list.

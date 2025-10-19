@@ -5,6 +5,9 @@ date: 2020-12-22T10:00-04:00
 categories:
   - Life
 permalink: /2020/12/22/recommended-books-from-2020/
+metadata:
+  description: I did not set out to read 64 (and counting) books in 2020 but, like so much this year, it just sort of happened.
+  keywords: personal, family, lifestyle, REST API, Apple, iOS, Chernobyl
 ---
 
 I did not set out to read 64 (*and counting*) books in 2020 but, like so much this year, it just sort of happened. I was pretty convinced that after 40 books last year I had peaked and I would never read more in a single year. Was I ever wrong! I read a ton of really fantastic books this year, [the full list of which you can see on Goodreads](https://www.goodreads.com/user_challenges/20194804), but I thought it would be interesting to pull out my top 10. That exercise proved to be really hard, even more so when I attempted to put them in order. Nonetheless, here they are!

@@ -6,6 +6,9 @@ categories:
   - Life
 permalink: /2025/10/15/stanley-lemon-day/
 pinned: true
+metadata:
+  description: Growing up, I lived about a block from my elementary school, and by 2nd grade, I was walking to and from school on my own each day.
+  keywords: personal, family, lifestyle, HBO
 ---
 
 <img src="{{site.url}}/assets/stanley-lemon-day.jpg" srcset="{{site.url}}/assets/stanley-lemon-day.jpg, {{site.url}}/assets/stanley-lemon-day@2x.jpg 2x" alt="Stan Lemon wearing his October 15th is Stanley Lemon Day shirt with cameos from Sara and Lucy" class="post-img" />

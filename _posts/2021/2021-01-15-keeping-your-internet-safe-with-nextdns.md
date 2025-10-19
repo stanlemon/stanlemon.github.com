@@ -6,6 +6,9 @@ categories:
   - Life
   - Technology
 permalink: /2021/01/15/keeping-your-internet-safe-with-nextdns/
+metadata:
+  description: The internet is like the Wild Wild West, without the awesome soundtrack and dance moves of Will Smith.
+  keywords: personal, family, lifestyle, AWS, Git, REST API, iPhone
 ---
 
 The internet is like the Wild Wild West, without the awesome soundtrack and dance moves of Will Smith. The truth is it’s a really dangerous place, for kids as well as adults. It gets harder every day to know what is safe and understand the consequences of interacting with all of the digital services that make up our world. As a father of three who are increasingly becoming connected it’s even harder, because the last thing I want is them stumbling into a snake’s nest. I’ve tried a number of things over the years, but I feel like for the first time my home internet is safe for me, my wife and my kids. Let me introduce you to [NextDNS](https://nextdns.io).

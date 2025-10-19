@@ -5,6 +5,9 @@ date: 2020-04-19T13:00-04:00
 categories:
   - Life
 permalink: /2020/04/19/what-the-last-episode-of-seinfeld-and-the-flu-have-in-common/
+metadata:
+  description: After nine seasons 76 million people tuned into watch the last episode of the TV Show Seinfeld.
+  keywords: personal, family, lifestyle, Seinfeld, testing
 ---
 
 After nine seasons 76 million people tuned into watch the last episode of the TV Show Seinfeld. That episode was a profound middle finger to the audience of Seinfeld, basically telling every dedicated fan that after all those years the show was pointless. It was an extremely polarizing episode, some loved it, some hated it. But 76 million viewers! Do you ever wonder how they came up with that number? Did NBC have some magical way of tracking every TV with a wire or antenna that tuned in for the finale? No, they did not. Instead they used statistical sampling to come up with that number. This is how most ratings and viewership "estimates" work; a company like Nielsen polls a set of people who are representative of the total viewership, and then they multiply it out. If you sample 1000 people, which is supposed to represent a 100 million human beings, you’re going to multiply it by 100,000 to get your best guess at the actual number of viewers. This sort of estimation in statistical analysis is hugely important in understanding what’s going on today with numbers about viruses like the flu and the novel coronavirus.

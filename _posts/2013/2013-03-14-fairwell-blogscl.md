@@ -5,6 +5,9 @@ date: 2013-03-14T21:00-04:00
 categories:
   - Developer
 permalink: /2013/03/14/fairwell-blogscl/
+metadata:
+  description: In the summer of 2004 I was a single college student with far too much free time on my hands.
+  keywords: software development, programming, web development, coding, PHP, iOS, WordPress
 ---
 In the summer of 2004 I was a single college student with far too much free time on my hands. I had started writing web software in 2002 with my friend Erich Musick, now a super-star developer ninja at Microsoft.  At the time we were focussed on making plain old websites and solving the difficult challenges of managing content with consistent templates and automatic linking.  Life was easy back then.  Erich had this nifty news manager system written in Perl and he used it like a blog.  Meanwhile I was conquering server side includes while rigging together Apache on my Windows XP laptop.  Again, life was easy. Always striving to be unique I took a different path and started exploring PHP.  I had a singular goal of replicating Erich's new manager in my own special way.  What resulted was a rickety and clunky news management system that ran a pseudo-blog on my website into the summer of 2003.
 

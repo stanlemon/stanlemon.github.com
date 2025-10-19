@@ -5,6 +5,9 @@ date: 2013-09-01T22:04-04:00
 categories:
   - Developer
 permalink: /2013/09/01/cut-the-waste/
+metadata:
+  description: Back in February my family moved from Pittsburgh to Southern Indiana.
+  keywords: software development, programming, web development, coding, AWS, REST API, iOS
 ---
 Back in February my family moved from Pittsburgh to Southern Indiana.  When we made the move we didn't actually know where we would end up. We put most of our worldly goods into storage and settled in with my in-laws for an extended stay while we shopped for a house.  Whenever we've moved in the past we go through a process of purging the stuff we don't use.  Trash bags get filled, car loads get taken to Good Will and we lighten the load for wherever it is we are moving to. This most recent move brought more purging then we've done in the past, by about an order of magnitude.  Our house in Pittsburgh had an unfinished basement that was perfect for storage, so we quickly consumed every square inch of space with junk.  When we moved most all of the basement's contents stayed in Pittsburgh one way or another.
 

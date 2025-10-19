@@ -5,6 +5,9 @@ date: 2019-07-26T08:01-04:00
 categories:
   - Podcast
 permalink: /2019/07/26/life-with-a-twist-of-lemon-the-first-year/
+metadata:
+  description: For close to a year now my friend Jon and I have been recording our podcast, Life with a Twist of Lemon.
+  keywords: podcast, twist of lemon, AWS, Avengers Endgame, mortgage, budgeting
 ---
 
 For close to a year now my friend [Jon](http://jonkohlmeier.net) and I have been recording our podcast, [Life with a Twist of Lemon](https://twistoflemonpod.com). Jon and I have been friends for a long time, and he had been advocating for us to do a podcast for a while when I finally caved, contingent on one condition: **I would do nothing.** I knew if Jon was serious this wouldn’t be a problem, and we could simply replace one of our usual phone calls with a high-quality microphone and it wouldn’t be more time out of my day. To sweeten the deal, Jon suggested we use my name in the title. *As if I could resist!*

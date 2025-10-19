@@ -5,6 +5,9 @@ date: 2014-05-22T21:31-04:00
 categories:
   - Life
 permalink: /2014/05/22/a-review-of-pley-renting-legos/
+metadata:
+  description: I recently decided to signup for Pley, a service that supplies lego sets by mail for a monthly membership price.
+  keywords: personal, family, lifestyle, AWS, Apple
 ---
 I recently decided to signup for [Pley](http://pley.com), a service that supplies lego sets by mail for a monthly membership price.  They advertise that you're safe to lose a piece or two and that the kits are always sanitary using their special _FDA grade_ process.  Unfortunately I found both of these claims to be **false**.
 
