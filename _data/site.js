@@ -15,7 +15,7 @@ module.exports = () => ({
   url:
     process.env.SITE_URL !== undefined
       ? process.env.SITE_URL
-      : "",
+      : "https://stanlemon.com",
   // Google Analytics tracking ID
   googleAnalyticsId: "G-LRTQMGFLV3",
 });

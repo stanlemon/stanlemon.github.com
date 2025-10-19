@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": ".eleventy.js",
   "scripts": {
-    "serve": "eleventy --serve  --port 3000",
+    "serve": "SITE_URL='' eleventy --serve  --port 3000",
     "build": "npm-run-all clean site less fonts",
     "site": "eleventy",
     "less": "lessc --source-map-no-annotation ./css/main.less ./_site/css/main.css",
@@ -15,13 +15,14 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "copyfiles": "^2.4.1",
     "dotenv": "^17.2.3",
     "less": "^4.4.2",
     "npm-run-all2": "^8.0.4",
     "prismjs": "^1.30.0",
-    "rimraf": "^6.0.1",
-    "@fortawesome/fontawesome-free": "^6.7.2",
-    "copyfiles": "^2.4.1"
+    "rimraf": "^6.0.1"
   }
 }
