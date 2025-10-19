@@ -1,7 +1,7 @@
 ---
 layout: default
 metadata:
-  description: Stan Lemon
+  description: Stan Lemon is a husband, dad, Steelers fan and software developer from Indianapolis. Read about technology, software development, budgeting, and life with a family.
 ---
 
 <div class="text-center">

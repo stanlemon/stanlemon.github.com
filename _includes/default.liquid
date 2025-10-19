@@ -7,9 +7,37 @@
   {% if metadata.description -%}
   <meta name="description" content="{{ metadata.description }}">
   {%- endif %}
+  <meta name="author" content="{{ site.author }}">
   <meta name="theme-color" content="#FEAE0F"/>
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="{% if title %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+  <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}">
+  {% if metadata.description -%}
+  <meta property="og:description" content="{{ metadata.description }}">
+  {%- else -%}
+  <meta property="og:description" content="{{ site.description }}">
+  {%- endif %}
+  <meta property="og:image" content="{{ site.url }}/assets/lemon-with-leaves@2x.png">
+  <meta property="og:site_name" content="{{ site.title }}">
+  {% if date -%}
+  <meta property="article:published_time" content="{{ date | date: "%Y-%m-%dT%H:%M:%S%z" }}">
+  <meta property="article:author" content="{{ site.author }}">
+  {%- endif %}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{{ page.url | prepend: site.url }}">
+  <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}">
+  {% if metadata.description -%}
+  <meta name="twitter:description" content="{{ metadata.description }}">
+  {%- else -%}
+  <meta name="twitter:description" content="{{ site.description }}">
+  {%- endif %}
+  <meta name="twitter:image" content="{{ site.url }}/assets/lemon-with-leaves@2x.png">
 
   <link rel="preload" as="font" href="/assets/fonts/oswald.woff" type="font/woff2" crossorigin="anonymous">
 
@@ -32,6 +60,43 @@
 
   <link rel="stylesheet" href="/css/main.css">
 
+  <!-- Structured Data / JSON-LD -->
+  {% if title and date %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ title }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author }}"
+    },
+    "datePublished": "{{ date | date: "%Y-%m-%dT%H:%M:%S%z" }}",
+    "description": "{{ metadata.description | default: site.description }}",
+    "image": "{{ site.url }}/assets/lemon-with-leaves@2x.png",
+    "url": "{{ page.url | prepend: site.url }}",
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ site.author }}"
+    }
+  }
+  </script>
+  {% else %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}/",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author }}"
+    }
+  }
+  </script>
+  {% endif %}
+
   {% if site.googleAnalyticsId -%}
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}"></script>
@@ -48,7 +113,7 @@
 <div class="container" role="main">
   <div class="content">
     <a href="{{site.url}}/">
-      <img src="{{site.url}}/assets/lemon-with-leaves@2x.png" class="post-img" />
+      <img src="{{site.url}}/assets/lemon-with-leaves@2x.png" class="post-img" alt="Stan Lemon's logo - a lemon with leaves" />
     </a>
 
     {{ content }}
