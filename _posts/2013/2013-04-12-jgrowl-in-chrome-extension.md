@@ -7,7 +7,8 @@ categories:
 permalink: /2013/04/12/jgrowl-in-chrome-extension/
 metadata:
   description: The other day someone on StackOverflow asked how to integrate jGrowl into a Chrome extension.
-  keywords: software development, programming, web development, coding, jGrowl, Git
+
+  keywords: software development, programming, coding, jGrowl, Git
 ---
 The other day someone on StackOverflow asked how to integrate [jGrowl](http://github.com/stanlemon/jGrowl) into a Chrome extension.  They had a pretty good start, but missed some important details.  I've uploaded a complete working Chrome extension with jGrowl to Github as part of my response to the question.
 

@@ -7,7 +7,8 @@ categories:
 permalink: /2013/10/24/a-slice-of-bundle-please/
 metadata:
   description: PHP has more frameworks then I have fingers and toes, and that diversity gives developers and architects alike a lot of choices when it comes to solving a problem.
-  keywords: software development, programming, web development, coding, PHP, Symfony, Composer
+
+  keywords: software development, programming, coding, PHP, Symfony, Composer
 ---
 PHP has more frameworks then I have fingers and toes, and that diversity gives developers and architects alike a lot of choices when it comes to solving a problem. It can also be a total headache sifting through the options and making sense of what seems like chaos. As of late I've found myself using Symfony 2 to solve my problems and I am increasingly a fan of it's underlying architecture and the freedom it gives developers to work in slices or components of an application.
 

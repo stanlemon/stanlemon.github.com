@@ -2,7 +2,8 @@
 layout: default
 metadata:
   description: Stan Lemon - husband, dad, Steelers fan and software developer. Personal blog featuring tech, family life, and reviews.
-  keywords: Stan Lemon, software developer, Indianapolis, Steelers, Dollar & Sense app, personal blog, technology, family
+
+  keywords: Stan Lemon, software development, Indianapolis, Steelers, Dollar & Sense app, personal blog, technology, family
 ---
 
 <div class="text-center">

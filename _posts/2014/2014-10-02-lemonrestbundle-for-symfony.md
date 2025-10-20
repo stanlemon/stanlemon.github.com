@@ -7,7 +7,8 @@ categories:
 permalink: /2014/10/02/lemonrestbundle-for-symfony/
 metadata:
   description: For a little while now I’ve been working on a bundle for Symfony to easily create REST apis for Doctrine entities.
-  keywords: software development, programming, web development, coding, PHP, Symfony, Doctrine ORM
+
+  keywords: software development, programming, coding, PHP, Symfony, Doctrine ORM
 ---
 For a little while now I’ve been working on a bundle for Symfony to easily create REST apis for [Doctrine](http://www.doctrine-project.org/projects/orm.html) entities. My goal was to be able to create a REST api with nothing more than a Doctrine entity and it’s metadata, including custom metadata from bundles like [JMS Serializer](http://jmsyst.com/libs/serializer). I wanted to invest very little time in the actual api part, and get to writing applications that used it. I’ve hit this wall before, and inevitably what happens is I make a valiant effort at rolling a REST api and then get distracted or bored and walk away leaving the project to rot.
 

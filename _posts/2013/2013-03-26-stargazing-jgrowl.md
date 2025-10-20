@@ -7,7 +7,8 @@ categories:
 permalink: /2013/03/26/stargazing-jgrowl/
 metadata:
   description: I get a fair number of emails about jGrowl each week.
-  keywords: software development, programming, web development, coding, JavaScript, jGrowl, Git
+
+  keywords: software development, programming, coding, JavaScript, jGrowl, Git
 ---
 I get a fair number of emails about jGrowl each week. Two common requests are 1.) Can you include a compressed version? 2.) Do you have a CDN?
 

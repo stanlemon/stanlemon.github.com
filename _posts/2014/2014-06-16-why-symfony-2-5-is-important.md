@@ -7,7 +7,8 @@ categories:
 permalink: /2014/06/16/why-symfony-2-5-is-important/
 metadata:
   description: Symfony 2.5 was released on June 1.
-  keywords: software development, programming, web development, coding, Symfony, Git, deployment
+
+  keywords: software development, programming, coding, Symfony, Git, deployment
 ---
 [Symfony 2.5 was released on June 1](http://symfony.com/blog/symfony-2-5-0-released). I've been following blogs and listening to podcasts about the release and there are a lot of really awesome additions in this release. But there is one feature in particular that I don't believe is getting enough attention and deserves some.
 
