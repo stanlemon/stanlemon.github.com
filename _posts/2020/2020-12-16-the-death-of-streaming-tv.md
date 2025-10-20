@@ -8,7 +8,8 @@ categories:
 permalink: /2020/12/16/the-death-of-streaming-tv/
 metadata:
   description: Hulu is increasing the cost of its monthly live TV subscription service.
-  keywords: personal, family, lifestyle, AWS, Pittsburgh Steelers
+
+  keywords: personal, family, lifestyle, AWS, Steelers
 ---
 
 Hulu is increasing the cost of its monthly live TV subscription service. A service that started at $40/month in 2017 will end 2020 at $65/month (or $70/month if you have the no ads for on demand streaming). Live TV streaming services have been increasing their monthly subscription costs over the last few years, gnawing away at one of their main competitive advantages. When these services first became available they seemed like great alternatives to the big cable providers like Comcast. Cable TV is expensive and often comes with tons of channels that I don’t want. Streaming offered a simpler list of valuable channels at a much more compelling price. That’s not true anymore, though.
