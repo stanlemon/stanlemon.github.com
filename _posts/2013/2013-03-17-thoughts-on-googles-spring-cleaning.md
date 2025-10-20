@@ -8,7 +8,8 @@ permalink: /2013/03/17/thoughts-on-googles-spring-cleaning/
 metadata:
   description: Google announced its latest round of spring cleaning.
 
-  keywords: software development, programming, coding, iPhone, Google
+
+  keywords: coding, iPhone, Google
 ---
 [Google announced its latest round of spring cleaning.](http://googleblog.blogspot.com/2013/03/a-second-spring-of-cleaning.html)  The most troubling part of the news announcement is the loss of Google Reader.  I've been using Reader since 2005 when it first started. I had tried a variety of one-off RSS readers prior to it and Google Reader was perfect for me because it was "_in the cloud"_ before that was even in-vogue. Fast forward eight years and I'm still maintaining the same list of feeds, though now I consume it through native app clients on the Mac, iPhone and iPad. I haven't used the actual web site for it in a long time.
 

@@ -9,7 +9,8 @@ metadata:
   description: Yesterday I talked about running composer on Amazon's Elastic Beanstalk.
 
 
-  keywords: software development, programming, coding, AWS, Composer
+
+  keywords: coding, AWS, Composer
 ---
 Yesterday I talked about running [composer](http://getcomposer.org) on Amazon's Elastic Beanstalk.  There it is builtin and works out of the box for you.  If you are on [OpenShift](http://openshift.com) (my preferred PaaS) composer does not come out of the box.  [Matthew Weier O'Phinney](http://www.mwop.net) has posted an article on the steps he took to get composer installing his project's dependencies, and that's definitely a worthy read.  However, my deployment hook for OpenShift is a little bit different and I wanted to share that.
 

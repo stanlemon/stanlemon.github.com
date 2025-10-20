@@ -8,7 +8,8 @@ permalink: /2013/04/27/the-demise-of-posterous/
 metadata:
   description: I have written elsewhere about my frustrations over the demise of Posterous.
 
-  keywords: software development, programming, coding, Git, Posterous
+
+  keywords: coding, Git, Posterous
 ---
 I have written elsewhere about my frustrations over the demise of Posterous. It's now three days away and I have received yet another email reminding me to get my content off their site. Fortunately this time Posterous has a plan and a tool to enable its users to vacate its system. The whole mess bums me out thought. While not a prolific blogger, I really enjoyed the service and found their original model of email-to-blog profoundly simple and elegant. The problem is Posterous was a service without a plan or stream of income.
 

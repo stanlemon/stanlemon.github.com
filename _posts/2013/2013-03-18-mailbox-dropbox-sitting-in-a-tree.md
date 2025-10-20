@@ -7,7 +7,8 @@ categories:
 permalink: /2013/03/18/mailbox-dropbox-sitting-in-a-tree/
 metadata:
   description: Mailbox has garnered a lot of attention since it rolled out.
-  keywords: tech, gadgets, review, AWS, Posterous, Dropbox, Google
+
+  keywords: technology, review, AWS, Posterous, Dropbox, Google
 ---
 [Mailbox](http://www.mailboxapp.com) has garnered a lot of attention since it rolled out.  My concern from day 1, as has been with many a similar service, is how is it being paid for?  These startup services rollout free with no plan in place to make money.  Some of these startups are gunning to be bought out or "_funded_" by venture capitalists, and others are hoping for bright lights and a revelation on high to show them the secret to success (here's looking at you Twitter).  The truth is they lack a plan to become financially solvent and while cloud computing is cheaper then the alternative, it's still expensive.  It's no wonder then that these startups belly-up or disappear into the annals of the world wide web. I've been particularly upset about two as of late, [Posterous](http://blog.posterous.com/thanks-from-posterous) a year ago and more recently [Sparrow](http://www.sparrowmailapp.com). In both of these cases the buyouts were about grabbing talent and had nothing to do with building the product.  In the end the consumers got screwed by dreams too big to pay be paid for.
 

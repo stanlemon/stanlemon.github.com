@@ -9,7 +9,8 @@ active: false
 metadata:
   description: Lately I’ve been writing a lot about personal finance, especially topics related to budgeting.
 
-  keywords: finance, budgeting, money, Steelers
+
+  keywords: finance, budgeting, Steelers
 ---
 
 Lately I’ve been writing a lot about personal finance, especially topics related to budgeting. Lots of people think we’re on the verge of a recession, but my eyes have been set solely on the NFL, where my favorite team, the Pittsburgh Steelers, are gearing up for a run at another Lombardi. I love football, and the idea of a players' strike is entirely disconcerting to me. So while the finance world is worrying about a recession, I’m worried about whether or not the 2021 season will get played.

@@ -8,7 +8,8 @@ permalink: /2019/01/23/react-relay-and-mutations/
 metadata:
   description: "A working example of what I'm going to describe here can be found at https://github.com/stanlemon/example-relay-app."
 
-  keywords: software development, programming, coding, JavaScript, React, Node.js
+
+  keywords: coding, JavaScript, React, Node.js
 ---
 
 A working example of what I'm going to describe here can be found at https://github.com/stanlemon/example-relay-app.

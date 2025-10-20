@@ -7,7 +7,8 @@ categories:
 permalink: /2013/12/22/why-i-left-facebook/
 metadata:
   description: On Thursday, December 20th I decided to deactivate my Facebook account.
-  keywords: tech, gadgets, review, React, Facebook, HBO
+
+  keywords: technology, review, React, Facebook, HBO
 ---
 On Thursday, December 20th I decided to deactivate my Facebook account. In full disclosure I am not committed to leaving it deactivated forever. I made this move against the recommendation of my wife and closest friends. Nonetheless I have committed to being Facebook-free for the remainder of 2013.
 

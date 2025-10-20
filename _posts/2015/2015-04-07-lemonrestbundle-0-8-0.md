@@ -8,7 +8,8 @@ permalink: /2015/04/07/lemonrestbundle-0-8-0/
 metadata:
   description: LemonRestBundle 0.8.0 has been released.
 
-  keywords: software development, programming, coding, PHP, Symfony, Doctrine ORM
+
+  keywords: coding, PHP, Symfony, Doctrine ORM
 ---
 [LemonRestBundle 0.8.0](http://github.com/stanlemon/rest-bundle) has been released. The theme for this version is **compatibility**. While several significant bugs have been fixed since the last release, the focus has been primarily on ensuring that the bundle is compatible with a wide range of versions of PHP, Symfony and Doctrine. Additionally the bundle now comes with support for MongoDB and better support for other implementations of Doctrine.
 

@@ -9,7 +9,8 @@ metadata:
   description: Amazon Web Services is like the godfather of cloud computing.
 
 
-  keywords: software development, programming, coding, PHP, AWS
+
+  keywords: coding, PHP, AWS
 ---
 Amazon Web Services is like the godfather of cloud computing.  In PCI or HIPPA/HI-TECH compliant environments though it doesn't quite cut it.  There are a bunch of fancy letters indicating various certifications that seal the compliance deal for those looking to provide services in the cloud under those regulations.  Fortunately Amazon developed the GovCloud as a compliant region to meet those needs.  GovCloud requires special approval from Amazon to get started with it.  I've been "tinkering" around with GovCloud for a little while now and have come across some _gotchas_ that I wanted to document and share, if for no other reason then to save the next poor soul from all that googling around...
 

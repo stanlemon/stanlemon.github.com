@@ -8,7 +8,8 @@ permalink: /2019/08/01/how-to-start-budgeting/
 active: false
 metadata:
   description: It can be difficult to know where to start budgeting.
-  keywords: finance, budgeting, money, React, Google, mortgage
+
+  keywords: finance, budgeting, React, Google, mortgage
 ---
 
 It can be difficult to know where to start budgeting. There are entire companies built around the art of budgeting, everything from Intuit’s once ubiquitous Quicken software to classic envelope budgeting, where you use actual physical envelopes loaded with cash. In some respects a whole industry of financial self help experts like Dave Ramsey have popped up with the sales pitch of helping you budget. The truth is budgeting doesn’t have to be hard and there’s a really easy way to start.

@@ -8,7 +8,8 @@ permalink: /2013/08/24/project-based-interviews/
 metadata:
   description: I recently read, "I will not do your tech interview." by Ike Ellis and it got me to thinking about the interviews I have been in, both as an interviewer and an interviewee.
 
-  keywords: software development, programming, coding, AWS, OpenShift, Git
+
+  keywords: coding, AWS, OpenShift, Git
 ---
 I recently read, "[I will not do your tech interview.](https://medium.com/lessons-learned/80ba19c55883)" by Ike Ellis and it got me to thinking about the interviews I have been in, both as an interviewer and an interviewee.
 
