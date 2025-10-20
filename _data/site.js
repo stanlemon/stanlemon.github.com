@@ -10,6 +10,7 @@ module.exports = () => ({
     linkedin: "stanlemon",
     instagram: "stanlemon",
     threads: "stanlemon",
+    youtube: "@stanlemon",
   },
   // If an env variable (local dev) has been set, use it, otherwise default (prod)
   url:
