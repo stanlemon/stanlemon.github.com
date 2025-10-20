@@ -1,0 +1,46 @@
+# Stan Lemon's Personal Website
+
+> husband, dad, steelers fan and software developer
+
+## About
+
+This is Stan Lemon's personal website and blog. Stan lives in Indianapolis, Indiana with his wife and three kids. He studied Theology and Biblical Languages at Concordia University River Forest before transitioning to software development.
+
+## Key Pages
+
+- Home: https://stanlemon.com/
+- Blog: https://stanlemon.com/page/1
+- RSS Feed: https://stanlemon.com/feed.xml
+
+## Topics
+
+Stan writes about:
+- Software development and technology
+- iOS/macOS app development
+- Personal finance and budgeting
+- Family life
+- Pittsburgh Steelers football
+- Star Wars
+
+## Projects
+
+- Dollar & Sense: An iOS, watchOS and macOS app for tracking kids' chores and savings (https://apps.apple.com/us/app/dollar-sense/id1631766637)
+- Pickem!: A football picks app (http://pickem.stanlemon.com)
+
+## Social Media
+
+- GitHub: https://github.com/stanlemon
+- LinkedIn: https://linkedin.com/in/stanlemon
+- Instagram: https://instagram.com/stanlemon
+- Threads: https://threads.net/@stanlemon
+
+## Site Structure
+
+The blog contains posts dating back to 2013, covering topics like:
+- Software architecture and development practices
+- Apple products and technology reviews
+- Budgeting and personal finance advice
+- Family stories and personal reflections
+- Tech tutorials and how-tos
+
+All blog posts are available through the paginated blog index and RSS feed.
