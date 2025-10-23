@@ -5,7 +5,7 @@ metadata:
 
 
 
-  keywords: Stan Lemon, coding, Indianapolis, Steelers, Dollar & Sense app, personal, technology, family
+  keywords: coding, Indianapolis, Steelers, Dollar & Sense app, personal, technology, family
 ---
 
 <div class="text-center">
