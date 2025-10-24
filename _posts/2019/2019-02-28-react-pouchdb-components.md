@@ -7,8 +7,6 @@ categories:
 permalink: /2019/02/28/react-pouchdb-components/
 metadata:
   description: Last night I released a new library to GitHub and npm called React PouchDB components.
-
-
   keywords: coding, React, PouchDB, Git
 ---
 

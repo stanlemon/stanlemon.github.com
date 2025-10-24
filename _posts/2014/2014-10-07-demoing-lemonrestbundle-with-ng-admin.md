@@ -7,8 +7,6 @@ categories:
 permalink: /2014/10/07/demoing-lemonrestbundle-with-ng-admin/
 metadata:
   description: tl;dr You can try out LemonRestBundle with ng-admin here.
-
-
   keywords: coding, Symfony, Composer, Doctrine ORM
 ---
 tl;dr [You can try out LemonRestBundle with ng-admin here.](http://restdemo-stanlemon.rhcloud.com/#)

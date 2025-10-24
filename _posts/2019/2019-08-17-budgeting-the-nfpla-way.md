@@ -8,8 +8,6 @@ permalink: /2019/08/17/budgeting-the-nfpla-way/
 active: false
 metadata:
   description: Lately I’ve been writing a lot about personal finance, especially topics related to budgeting.
-
-
   keywords: finance, budgeting, Steelers
 ---
 

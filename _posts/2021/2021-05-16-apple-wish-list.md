@@ -7,9 +7,6 @@ categories:
 permalink: /2021/05/16/apple-wish-list/
 metadata:
   description: "My wish list for Apple's next set of big announcements (2021 edition)."
-
-
-
   keywords: technology, review, iPhone, Apple, macOS
 ---
 

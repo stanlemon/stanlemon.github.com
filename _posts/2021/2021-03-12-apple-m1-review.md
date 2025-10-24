@@ -7,8 +7,6 @@ categories:
 permalink: /2021/03/12/apple-m1-review/
 metadata:
   description: "Apple's M1 chip has made their computers exciting again."
-
-
   keywords: technology, review, REST API, iPhone, Apple
 ---
 

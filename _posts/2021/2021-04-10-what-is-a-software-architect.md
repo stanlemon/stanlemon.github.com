@@ -7,7 +7,6 @@ categories:
 permalink: /2021/04/10/what-is-a-software-architect/
 metadata:
   description: "A software architect is a partner and hopefully an engineer's best resource."
-
   keywords: technology, review, leadership
 ---
 

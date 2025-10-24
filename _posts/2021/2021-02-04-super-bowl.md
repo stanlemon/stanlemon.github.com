@@ -7,7 +7,6 @@ categories:
 permalink: /2021/02/04/super-bowl/
 metadata:
   description: After 10 months I'm ready for the Super Bowl.
-
   keywords: personal, family, lifestyle, REST API, Steelers, Super Bowl
 ---
 

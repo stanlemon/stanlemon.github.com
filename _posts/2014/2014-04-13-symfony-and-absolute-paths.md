@@ -7,8 +7,6 @@ categories:
 permalink: /2014/04/13/symfony-and-absolute-paths/
 metadata:
   description: My love affair with Symfony 2 has hit a rocky spot.
-
-
   keywords: coding, PHP, Symfony, Bamboo CI
 ---
 My love affair with [Symfony](http://symfony.com) 2 has hit a rocky spot. I have an atomic deployment system for a Symfony 2 app that I've been working on.  Basically it works like this... The app gets built on my CI server, [Bamboo](https://www.atlassian.com/software/bamboo). That build results in an artifact, a tarball of the entire application.  This tarball is intended to represent the final product, meaning tests have all been run - they passed - and any compilation steps have been executed.  But I've got a problem.  It comes when I try to warm the cache or more generally if I run any Symfony console command on the build system before the artifact is made. This includes things like installing [Assetic](http://symfony.com/doc/current/cookbook/assetic/index.html) dependencies.  To work around my problem I've been making sure my 'cache' folder is empty before I build the tarball.  I wind up crossing my fingers on the deploy step and trusting that things will work themselves out when the cache is warmed and the container is compiled on the application server.  This is a horrible solute.  It's one I'm forced to deal with because of the way Symfony 2 dumps it's dependency injection container.  The container dump compiles references to _%kernel.root\_dir%_ which is an absolute path to the application root. That path is different on my CI server than it is on my production application server. If I compile the container on the CI server I wind up with a dump file that has the wrong absolute paths, resulting in a non-function app.

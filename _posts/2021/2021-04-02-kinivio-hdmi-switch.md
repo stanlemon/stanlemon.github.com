@@ -7,8 +7,6 @@ categories:
 permalink: /2021/04/02/kinivio-hdmi-switch/
 metadata:
   description: "The Kinivio HDMI switch is a solid contender if you need such a thing."
-
-
   keywords: technology, review, AWS, Star Wars, Star Trek, Marvel
 ---
 

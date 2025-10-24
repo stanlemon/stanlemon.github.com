@@ -7,7 +7,6 @@ categories:
 permalink: /2021/01/30/the-return-of-magsafe/
 metadata:
   description: There is a rumor that MagSafe is returning to the Mac.
-
   keywords: technology, review, iPhone, Apple, MagSafe
 ---
 

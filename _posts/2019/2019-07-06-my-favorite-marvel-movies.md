@@ -7,7 +7,6 @@ categories:
 permalink: /2019/07/06/my-favorite-marvel-movies/
 metadata:
   description: I’m a big fan of the Marvel Cinematic Universe.
-
   keywords: entertainment, review, REST API, Star Wars, Star Trek, Marvel
 ---
 

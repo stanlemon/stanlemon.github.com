@@ -8,7 +8,6 @@ categories:
 permalink: /2020/12/16/the-death-of-streaming-tv/
 metadata:
   description: Hulu is increasing the cost of its monthly live TV subscription service.
-
   keywords: personal, family, lifestyle, AWS, Steelers
 ---
 

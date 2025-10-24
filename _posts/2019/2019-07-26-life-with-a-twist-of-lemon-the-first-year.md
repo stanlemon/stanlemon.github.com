@@ -7,7 +7,6 @@ categories:
 permalink: /2019/07/26/life-with-a-twist-of-lemon-the-first-year/
 metadata:
   description: For close to a year now my friend Jon and I have been recording our podcast, Life with a Twist of Lemon.
-
   keywords: podcast, twist of lemon, AWS, Marvel, mortgage, budgeting
 ---
 

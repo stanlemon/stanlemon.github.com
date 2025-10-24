@@ -8,7 +8,6 @@ permalink: /2019/08/08/how-we-paid-off-our-mortgage/
 pinned: true
 metadata:
   description: Awhile back I wrote an article about visualizing my mortgage after my buddy Jon and I discussed buying a house on our podcast.
-
   keywords: finance, budgeting, AWS, REST API, Facebook, mortgage
 ---
 

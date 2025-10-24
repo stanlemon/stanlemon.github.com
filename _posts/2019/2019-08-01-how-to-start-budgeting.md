@@ -8,7 +8,6 @@ permalink: /2019/08/01/how-to-start-budgeting/
 active: false
 metadata:
   description: It can be difficult to know where to start budgeting.
-
   keywords: finance, budgeting, React, Google, mortgage
 ---
 

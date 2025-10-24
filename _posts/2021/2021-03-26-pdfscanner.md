@@ -7,7 +7,6 @@ categories:
 permalink: /2021/03/26/pdfscanner/
 metadata:
   description: "Everyone makes PDFs, but no one makes them as easily as those who use PDFScanner."
-
   keywords: technology, review, Git, iPhone, Apple, iOS
 ---
 

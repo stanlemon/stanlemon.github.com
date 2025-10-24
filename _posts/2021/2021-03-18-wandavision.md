@@ -7,8 +7,6 @@ categories:
 permalink: /2021/03/18/wandavision/
 metadata:
   description: "WandaVision is a weird and quirky show, but I like it."
-
-
   keywords: entertainment, review, Git, HBO, Marvel
 ---
 

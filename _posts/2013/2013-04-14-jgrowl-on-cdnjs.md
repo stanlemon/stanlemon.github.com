@@ -7,8 +7,6 @@ categories:
 permalink: /2013/04/14/jgrowl-on-cdnjs/
 metadata:
   description: jGrowl is officially on cdnjs.
-
-
   keywords: coding, jGrowl, Git
 ---
 [jGrowl](https://github.com/stanlemon/jGrowl) is officially on [cdnjs](http://cdnjs.com).  This means that if you want to use [jGrowl](https://github.com/stanlemon/jGrowl) you don't even have to download it anymore.  Simply add this code to your page and get started:
