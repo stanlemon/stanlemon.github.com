@@ -9,6 +9,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(SyntaxHighlight);
 
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("llms.txt");
 
   eleventyConfig.addCollection("posts", (collection) => {
     return collection.getFilteredByGlob("_posts/**/*.md")

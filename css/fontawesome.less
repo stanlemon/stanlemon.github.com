@@ -1,11 +1,34 @@
-@import "../node_modules/@fortawesome/fontawesome-free/less/_variables.less";
+// FontAwesome 7 no longer provides LESS files, so we import the CSS directly
+@import (inline) "../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css";
+@import (inline) "../node_modules/@fortawesome/fontawesome-free/css/brands.css";
+@import (inline) "../node_modules/@fortawesome/fontawesome-free/css/solid.css";
 
-@fa-font-path: "/css";
+// Override font path to use local fonts
+@font-face {
+  font-family: "Font Awesome 7 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/css/fa-regular-400.woff2") format("woff2");
+}
 
-@import "../node_modules/@fortawesome/fontawesome-free/less/fontawesome.less";
-@import "../node_modules/@fortawesome/fontawesome-free/less/brands.less";
-@import "../node_modules/@fortawesome/fontawesome-free/less/solid.less";
+@font-face {
+  font-family: "Font Awesome 7 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/css/fa-solid-900.woff2") format("woff2");
+}
 
+@font-face {
+  font-family: "Font Awesome 7 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/css/fa-brands-400.woff2") format("woff2");
+}
+
+// Custom override for fa-2x size
 .fa-2x {
   font-size: 4em;
 }
