@@ -6,7 +6,8 @@ categories:
   - Technology
 permalink: /2021/04/10/what-is-a-software-architect/
 metadata:
-  description: A software architect is a partner and hopefully an engineer's best resource.
+  description: "A software architect is a partner and hopefully an engineer's best resource."
+  keywords: technology, review, leadership
 ---
 
 More than a few people have written about being a software architect. It's a surprisingly diverse role in the industry. The title rarely means the same thing from one company to the next. The stereotype is someone who designs stuff and then hurls it over the fence to engineers, who do the actual work of building it. If that's the only kind of software architect you've met, you've been short-changed.

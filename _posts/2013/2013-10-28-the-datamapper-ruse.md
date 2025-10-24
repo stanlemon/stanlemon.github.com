@@ -5,6 +5,9 @@ date: 2013-10-28T23:01-04:00
 categories:
   - Developer
 permalink: /2013/10/28/the-datamapper-ruse/
+metadata:
+  description: There were some great articles today about ORMs, specifically "Is ORM abstraction a pipe dream?" by David Adam and then "Publish Your Failure; or, The Way Of All Frameworks" by ...
+  keywords: coding, PHP, Doctrine ORM
 ---
 There were some great articles today about ORMs, specifically "[Is ORM abstraction a pipe dream?](http://programmingarehard.com/2013/10/21/is-orm-abstraction-a-pipe-dream.html)" by David Adam and then "[Publish Your Failure; or, The Way Of All Frameworks](http://paul-m-jones.com/archives/4757)" by Paul Jones (the man who led me to good BBQ in Memphis).
 

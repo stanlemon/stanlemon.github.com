@@ -5,6 +5,9 @@ date: 2021-01-31T10:00-04:00
 categories:
   - Technology
 permalink: /2021/01/30/the-return-of-magsafe/
+metadata:
+  description: There is a rumor that MagSafe is returning to the Mac.
+  keywords: technology, review, iPhone, Apple, MagSafe
 ---
 
 There is a [rumor](https://www.macrumors.com/2021/01/15/new-macbook-pro-models-magsafe-ports/) that MagSafe is returning to the Mac. Even [Mark Gurman](https://www.bloomberg.com/news/articles/2021-01-22/apple-aapl-plans-new-macbook-air-with-magsafe-macbook-pro-with-sd-card-slot) buys into this rumor. _I **hope** it’s not true._

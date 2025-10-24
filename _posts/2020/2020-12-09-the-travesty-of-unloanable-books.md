@@ -6,6 +6,9 @@ categories:
   - Life
   - Technology
 permalink: /2020/12/09/the-travesty-of-unloanable-books/
+metadata:
+  description: Recently my oldest daughter, Lucy, asked me if she could let a friend borrow a book she had.
+  keywords: personal, family, lifestyle, AWS, Git, REST API, iPhone
 ---
 
 Recently my oldest daughter, Lucy, asked me if she could let a friend borrow a book she had. “Of course”, I said, ”why wouldn’t you be able to?” What I didn’t realize at first is that she was referring to a book we had recently bought on Amazon Kindle, which she had plowed through in record time. It was the latest book in a series that this particular friend of hers had first introduced to her. Her friend was waiting for her physical copy to arrive, and Lucy was anxious to start talking to her about the story. I had to explain to Lucy that it was almost certainly not possible. Lucy was disappointed, and perhaps I was even more so.

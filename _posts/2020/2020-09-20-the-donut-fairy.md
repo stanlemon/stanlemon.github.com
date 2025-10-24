@@ -5,6 +5,9 @@ date: 2020-09-20T21:20-04:00
 categories:
   - Life
 permalink: /2020/09/20/the-donut-fairy/
+metadata:
+  description: Evelyn is the household donut connoisseur.
+  keywords: personal, family, lifestyle
 ---
 
 <img src="{{site.url}}/assets/the-donut-fairy.jpeg" srcset="{{site.url}}/assets/the-donut-fairy.jpeg, {{site.url}}/assets/the-donut-fairy@2x.jpeg 2x" alt="Dunkin Donuts delivered to the house via Door Dash" class="post-img" />

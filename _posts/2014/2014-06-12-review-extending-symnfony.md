@@ -5,6 +5,9 @@ date: 2014-06-12T15:38-04:00
 categories:
   - Developer
 permalink: /2014/06/12/review-extending-symnfony/
+metadata:
+  description: Extending Symnfony by Sébastien Armand is a tutorial-style introduction to a variety of the ways that you can extend a Symfony 2 full stack installation.
+  keywords: coding, Symfony, Doctrine ORM, REST API
 ---
 [Extending Symnfony](http://www.packtpub.com/extending-symfony-2-web-application-framework/book) by Sébastien Armand is a tutorial-style introduction to a variety of the ways that you can extend a Symfony 2 full stack installation. I’m a big fan of Symfony 2 and I’ve done a fair amount of app building with it, so I was interested in Armand’s book and seeing what new things I could discover about hooking into sf2.
 

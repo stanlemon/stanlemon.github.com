@@ -5,6 +5,9 @@ date: 2021-02-04T10:00-04:00
 categories:
   - Life
 permalink: /2021/02/04/super-bowl/
+metadata:
+  description: After 10 months I'm ready for the Super Bowl.
+  keywords: personal, family, lifestyle, REST API, Steelers, Super Bowl
 ---
 
 After 10 months I'm ready for the Super Bowl. I'm not as excited about it as I thought I would be, though. Despite not having pre-season games, this season felt a lot longer than normal. Perhaps it's because games got moved around each week. Or maybe it's because I never knew who was actually going to play for my team.

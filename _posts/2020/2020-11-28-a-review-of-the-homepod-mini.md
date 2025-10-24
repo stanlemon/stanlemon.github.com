@@ -7,6 +7,9 @@ categories:
   - Technology
   - Apple
 permalink: /2020/11/28/a-review-of-the-homepod-mini/
+metadata:
+  description: The HomePod Mini is the culmination of a long hard road for Siri.
+  keywords: personal, family, lifestyle, AWS, iPhone, Apple, HomePod
 ---
 
 The HomePod Mini is the culmination of a long hard road for Siri. For those of us loyal Mac-addicts and Apple fanboys it's the fruition of a long slog to the ubiquitous smart assistant that many of us have been hoping for. Finally we have a smart speaker that lives up to the dream and at a price that any Mac aficionado can deploy into their home.

@@ -6,6 +6,9 @@ categories:
   - Life
   - Faith
 permalink: /2020/12/06/christmas-play-list/
+metadata:
+  description: When I was younger I griped a lot about Christmas music and lighting the tree before Christmas Day.
+  keywords: personal, family, lifestyle, Apple
 ---
 
 When I was younger I griped a lot about Christmas music and lighting the tree before Christmas Day. Christmas is a season on the <a href="http://sanctus.org/2020/12">church calendar</a> and it doesn't start until the 25th. The next 12 days then, are where we can bust out the Christmas music and celebrate. That period before Christmas, which is usually most of December, is Advent and in the Christian tradition is a penitential season. During Advent we're prayerfully waiting in hopeful anticipation for the baby Jesus.

@@ -7,6 +7,9 @@ categories:
   - Technology
   - Apple
 permalink: /2020/12/03/apple-card/
+metadata:
+  description: In March, 2019 Apple released their “Apple Card”, a credit card with a truly Apple experience.
+  keywords: personal, family, lifestyle, REST API, iPhone, Apple, HomePod
 ---
 
 In March, 2019 Apple released their “Apple Card”, a credit card with a truly Apple experience. Apple has been in the electronic payments business for a while now, first by letting you store credit cards securely on your devices in the Wallet app to use via Apple Pay and then with Apple Cash, a PayPal/Venmo type service for sending cash between people. The introduction of the Apple Card was a natural progression for Apple but, unlike other companies who have their own credit cards, this is not just an Apple-branded Master card, it’s an entire experience from start to finish.

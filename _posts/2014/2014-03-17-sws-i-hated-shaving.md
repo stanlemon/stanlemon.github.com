@@ -5,5 +5,8 @@ date: 2014-03-17T18:50-04:00
 categories:
   - Life
 permalink: /2014/03/17/sws-i-hated-shaving/
+metadata:
+  description: Today's post on Shave with Swagger discusses why I hated shaving.
+  keywords: personal, family, lifestyle, WordPress, wet shaving
 ---
 Today's post on [_Shave with Swagger_](http://shavewithswagger.wordpress.com) discusses why [I hated shaving](http://shavewithswagger.wordpress.com/2014/03/17/i-hated-shaving/).  Keep an eye out, later this week Mark and I will cover "the basics" of what you need to get started wet shaving.

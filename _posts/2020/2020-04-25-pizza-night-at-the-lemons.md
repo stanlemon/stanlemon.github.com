@@ -6,6 +6,9 @@ categories:
   - Life
 permalink: /2020/04/19/pizza-night-at-the-lemons/
 pinned: true
+metadata:
+  description: As long as my wife and I have been married we've been making our own pizza, every Friday night.
+  keywords: personal, family, lifestyle, Git, REST API, iOS
 ---
 
 As long as my wife and I have been married we've been making our own pizza, every Friday night. I grew up in a suburb of Chicago where pizza and Friday nights were pretty much synonymous. Ordering pizza from your local parlour was just what you did. For my family most Fridays we ordered pizza from Campagna's, which made a crispy and often very salty thin crust. Later in life we'd frequent Dominick's and then [Pal Joey's](https://www.paljoeys.com), which sadly is the only one of these restaurants still in business today.

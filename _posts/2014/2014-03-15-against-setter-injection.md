@@ -5,6 +5,9 @@ date: 2014-03-15T09:25-04:00
 categories:
   - Developer
 permalink: /2014/03/15/against-setter-injection/
+metadata:
+  description: I recently read Richard Miller's post  Avoiding Setter Injection and I in large part agree with his sentiments.
+  keywords: coding, Git
 ---
 I recently read Richard Miller's post  [Avoiding Setter Injection](http://richardmiller.co.uk/2014/03/12/avoiding-setter-injection/) and I in large part agree with his sentiments. My conversion to constructor injection over setter injection is a fairly recent one and when I was initially deliberating the differences I found a lot of explanations online with little concrete code to show why this practice is less productive to good object oriented design. I thought I would try to illustrate with some concrete code examples I agree with Miller that ultimately constructor injection is a more worthy approach and why you should avoid using setter injection whenever possible.
 

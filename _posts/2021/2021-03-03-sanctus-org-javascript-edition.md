@@ -7,6 +7,9 @@ categories:
   - Religion
   - Technology
 permalink: /2021/03/03/sanctus-org-javascript-edition/
+metadata:
+  description: Sanctus.org is a hobby project of mine.
+  keywords: personal, family, lifestyle, PHP, JavaScript, Git, REST API
 ---
 
 [Sanctus.org](https://sanctus.org) is a hobby project of mine. It started when I was in college at Concordia University, River Forest. My dorm floor started praying Matins in the morning before classes together. This was before the Lutheran Service Book had been published. We relied upon a set of Word documents to pick daily readings. I thought it would be neat to have a webpage that did this for us. My dorm mates helped type data and shortly thereafter I released the first version of the site.

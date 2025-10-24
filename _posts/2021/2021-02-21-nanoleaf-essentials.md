@@ -6,6 +6,9 @@ categories:
   - Life
   - Technology
 permalink: /2021/02/21/nanoleaf-essentials/
+metadata:
+  description: I’d like to think I have a modest yet informed smart home game.
+  keywords: personal, family, lifestyle, AWS, REST API, Apple, HomePod
 ---
 
 I’d like to think I have a modest yet informed smart home game. We are an [Apple HomeKit](https://www.tomsguide.com/us/apple-homekit-faq,review-4195.html) house. I love Apple’s position on security, especially when it comes to technology for my home. While HomeKit is great it can make it challenging to find affordable devices. I’ve used smart plugs for a long time and recently decided I wanted to try bulbs. Each of my master bedroom lamps plugged into a smart plug. I use HomeKit automation to turn them on in the morning. The problem is they come on at full brightness and make waking up a bit jarring. What I wanted was for them to increase brightness over a half-hour. So I decided to look for dimmable smart bulbs.

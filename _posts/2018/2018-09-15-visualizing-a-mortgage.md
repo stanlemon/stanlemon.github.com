@@ -6,6 +6,9 @@ categories:
   - Podcast
   - Finance
 permalink: /2018/09/15/visualizing-a-mortgage/
+metadata:
+  description: In Episode 8 of Life with a Twist of Lemon my friend Jon asked me about buying a house and for part of that discussion we talked about mortgages.
+  keywords: podcast, twist of lemon, mortgage
 ---
 
 <img src="{{site.url}}/assets/visualizing-a-mortgage.jpg" srcset="/assets/visualizing-a-mortgage.jpg, /assets/visualizing-a-mortgage@2x.jpg 2x" alt="A drawing of the Lemon home representing our mortgage and showing our progress paying it off." class="post-img" />

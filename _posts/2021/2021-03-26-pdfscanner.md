@@ -6,7 +6,8 @@ categories:
   - Technology
 permalink: /2021/03/26/pdfscanner/
 metadata:
-  description: Everyone makes PDFs, but no one makes them as easily as those who use PDFScanner.
+  description: "Everyone makes PDFs, but no one makes them as easily as those who use PDFScanner."
+  keywords: technology, review, Git, iPhone, Apple, iOS
 ---
 
 I admit late to the party on this one, but [PDFScanner](https://www.pdfscannerapp.com) is a must-have for any macOS user who scans documents. [PDFScanner](https://www.pdfscannerapp.com) isn’t a new app, but it’s new to me. Over the years I’ve tried the native software that comes with my HP Scanner with much disappointment. I default back to using macOS Preview’s Import functionality. Most of the time it works. When it doesn’t, it’s spectacular though. Preview does little to help compress PDFs. This might not be a problem if you have a lot of storage but it is not ideal. [PDFScanner](https://www.pdfscannerapp.com) is a solution to all of these problems.

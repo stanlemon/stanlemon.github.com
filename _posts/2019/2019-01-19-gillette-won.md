@@ -5,6 +5,9 @@ date: 2019-01-19T13:30-05:00
 categories:
   - Life
 permalink: /2019/01/19/gillette-won/
+metadata:
+  description: I do my best to avoid social media, and even when I do participate I consume a pretty narrow set of content.
+  keywords: personal, family, lifestyle, JavaScript, React, REST API, Apple
 ---
 
 I do my best to avoid social media, and even when I do participate I consume a pretty narrow set of content. For example, my twitter is highly curated to focus on Indianapolis municipal happenings, Apple product rumors and javascript news. On the rare occasion I login to Facebook it’s mostly to respond to messages on my podcast page or to look at old pictures of Chicago North Western trains. I rely on my lovely wife and podcast cohort Jon to keep me in the know on the latest and greatest internet fads, at least the ones that stir up enough trouble to warrant a text. It really is a top notch curation system.
