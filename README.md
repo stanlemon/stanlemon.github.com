@@ -1,4 +1,4 @@
-# lemonbytes
+# Stan Lemon's Website
 
 Personal website and blog of Stan Lemon, built with [Eleventy](https://www.11ty.dev).
 
