@@ -7,27 +7,21 @@ img {
 body:not(.homepage) .header-wrapper {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background: linear-gradient(to bottom,
+    #fff 0%,
+    #fff 80%,
+    rgba(255, 255, 255, 0.8) 90%,
+    rgba(255, 255, 255, 0) 100%);
   z-index: 100;
-  transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   padding: 25px 0;
-}
-
-/* Add fade effect at bottom of sticky header */
-body:not(.homepage) .header-wrapper::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 20px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-  pointer-events: none;
+  padding-bottom: 40px;
 }
 
 /* Shrink the wrapper padding on scroll */
 body:not(.homepage) .header-wrapper.shrink {
   padding: 10px 0;
+  padding-bottom: 30px;
 }
 
 /* centers an image and gives it some spacing above and below it */
