@@ -12,6 +12,14 @@ img.post-img {
   margin-bottom: 25px;
   height: auto;
   max-width: 75%;
+  transition: max-width 0.3s ease-in-out, margin-top 0.3s ease-in-out, margin-bottom 0.3s ease-in-out;
+}
+
+/* Shrink the header image on scroll (non-homepage pages only) */
+img.post-img.shrink {
+  max-width: 40%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 img.post-img.half {

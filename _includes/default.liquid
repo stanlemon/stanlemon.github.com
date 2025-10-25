@@ -111,7 +111,7 @@
   </script>
   {%- endif %}
 </head>
-<body>
+<body{% if page.url == "/" %} class="homepage"{% endif %}>
 
 <div class="container" role="main">
   <div class="content">
@@ -160,3 +160,5 @@
     <p class="copyright">&copy; {{ "now" | date: "%Y" }} Stan Lemon. All rights reserved.</p>
   </div>
 </footer>
+
+<script src="{{site.url}}/assets/shrink-header.js"></script>
