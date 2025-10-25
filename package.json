@@ -7,10 +7,8 @@
   "main": ".eleventy.js",
   "scripts": {
     "serve": "SITE_URL='' eleventy --serve  --port 3000",
-    "build": "npm-run-all clean site fonts",
+    "build": "npm-run-all clean site",
     "site": "eleventy",
-    "less": "lessc --source-map-no-annotation ./css/main.less ./_site/css/main.css",
-    "fonts": "copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/*.woff* ./_site/css/",
     "clean": "rimraf ./_site/**"
   },
   "dependencies": {

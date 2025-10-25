@@ -55,6 +55,11 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("llms.txt");
 
+  // Copy FontAwesome font files to css directory
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@fortawesome/fontawesome-free/webfonts": "css"
+  });
+
   // Watch Less files for changes during development
   eleventyConfig.addWatchTarget('./css/*.less');
 

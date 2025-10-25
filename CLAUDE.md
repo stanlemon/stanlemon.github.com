@@ -41,7 +41,8 @@ This is Stan Lemon's personal website/blog, built with [Eleventy](https://www.11
 ├── _site/              # Generated static site (git ignored)
 ├── assets/             # Static assets (images, fonts, etc.)
 ├── css/                # Less stylesheets
-│   ├── main.less       # Main stylesheet
+│   ├── main.11ty.js    # Eleventy template that compiles Less
+│   ├── main.less       # Main stylesheet (entry point)
 │   └── images.less     # Image styling rules
 ├── .eleventy.js        # Eleventy configuration
 ├── blog.liquid         # Blog listing page template
@@ -63,9 +64,7 @@ npm run build
 
 # Individual build steps
 npm run clean        # Remove _site directory
-npm run site         # Run Eleventy build
-npm run less         # Compile Less to CSS
-npm run fonts        # Copy FontAwesome fonts
+npm run site         # Run Eleventy build (includes Less compilation and font copying)
 ```
 
 ### Development Server
@@ -86,9 +85,18 @@ npm run build
 Main Eleventy configuration containing:
 - Custom Liquid tags (`image`, `liquidify`)
 - Collections (`posts`, `pinnedPosts`, `recentPosts`)
-- Passthrough file copies
+- Passthrough file copies (assets, fonts, etc.)
+- Watch targets (Less files)
 - Front matter parsing options
 - Custom filters (`paginate`)
+
+### css/main.11ty.js
+JavaScript template that compiles Less during Eleventy builds:
+- Reads `css/main.less` as input
+- Compiles to CSS using the Less library
+- Outputs to `/css/main.css` in the build
+- Compresses CSS when `NODE_ENV=production`
+- Maintains source map support for debugging
 
 ### _data/site.js
 Global site data:
@@ -204,17 +212,18 @@ article figure {
 ## Styling
 
 ### Less Compilation
-CSS is compiled separately from HTML:
-```bash
-npm run less
-```
-
-This compiles `css/main.less` to `_site/css/main.css` with source maps disabled.
+Less is integrated directly into Eleventy's build pipeline via `css/main.11ty.js`. This JavaScript template:
+- Compiles `css/main.less` during Eleventy builds
+- Outputs to `_site/css/main.css`
+- Compresses CSS when `NODE_ENV=production`
+- Automatically watches Less files during development (`npm run serve`)
+- Triggers browser reload when Less files change
 
 ### Main Stylesheet Structure
 - `main.less` - Main stylesheet with imports
 - `images.less` - Image-specific styles
-- Variables and mixins defined in main.less
+- Variables and mixins defined in `_variables.less`
+- Compiled via `css/main.11ty.js` during build
 
 ## CI/CD
 
@@ -315,9 +324,10 @@ If build fails, investigate and fix the root cause rather than papering over err
 - Check quote matching in tag parameters
 
 ### CSS Not Updating
-- Run `npm run less` manually
-- Check for Less syntax errors
-- Clear `_site/` and rebuild
+- Less is automatically compiled during builds
+- Check for Less syntax errors in build output
+- Ensure `.eleventy.js` has `addWatchTarget('./css/*.less')`
+- Clear `_site/` and rebuild with `npm run build`
 
 ### Images Not Generating
 - Verify source image path is correct (relative to post location)
