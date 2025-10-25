@@ -1,15 +1,14 @@
-name: Test Build
+name: CI/CD
 on:
   push:
     branches:
       - '**'
-      - '!master'
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
         with:
           persist-credentials: false
 
@@ -27,5 +26,21 @@ jobs:
             ${{ runner.OS }}-npm-
             ${{ runner.OS }}-
 
-      - run: npm ci
-      - run: npm run build
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Tests
+        run: npm test
+
+      - name: Build Site
+        run: npm run build
+
+      - name: Deploy 🚀
+        if: github.ref == 'refs/heads/master'
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          CLEAN: true
+          SINGLE_COMMIT: true
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: _site

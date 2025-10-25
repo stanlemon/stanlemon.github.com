@@ -6,8 +6,9 @@
   "license": "MIT",
   "main": ".eleventy.js",
   "scripts": {
+    "test": "node --test test/**/*.test.js",
     "serve": "SITE_URL='' eleventy --serve  --port 3000",
-    "build": "npm-run-all clean site",
+    "build": "npm-run-all test clean site",
     "site": "eleventy",
     "clean": "rimraf ./_site/**"
   },
@@ -21,7 +22,6 @@
     "dotenv": "^17.2.3",
     "less": "^4.4.2",
     "npm-run-all2": "^8.0.4",
-    "prismjs": "^1.30.0",
     "rimraf": "^6.0.1"
   }
 }

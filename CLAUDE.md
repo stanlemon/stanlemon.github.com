@@ -21,7 +21,6 @@ This is Stan Lemon's personal website/blog, built with [Eleventy](https://www.11
 - `@11ty/eleventy-plugin-rss` - RSS feed generation
 - `@11ty/eleventy-plugin-syntaxhighlight` - Code syntax highlighting
 - `@fortawesome/fontawesome-free` - Icon library
-- `prismjs` - Additional syntax highlighting
 - `dotenv` - Environment variable management
 
 ## Directory Structure
@@ -227,21 +226,28 @@ Less is integrated directly into Eleventy's build pipeline via `css/main.11ty.js
 
 ## CI/CD
 
-### GitHub Actions Workflows
+### GitHub Actions Workflow
 
-**test.yml** (All branches except master):
-- Runs on every push to non-master branches
+**ci.yml** (All branches):
+- Runs on every push to any branch
 - Installs dependencies
-- Runs `npm run build`
-- Verifies build succeeds
+- Runs tests (`npm test`)
+- Builds the site (`npm run build`)
+- Deploys to GitHub Pages (only on `master` branch)
 
-**build-and-deploy.yml** (Master branch only):
-- Runs on push to master
-- Builds the site
-- Deploys to GitHub Pages
+### Testing
 
-### No Linting/Testing
-This project currently has no automated tests or linting. Build verification is the primary quality gate.
+This project uses Node's native test runner for validation:
+- **39 comprehensive tests** covering all custom JavaScript logic
+- Tests run automatically before every build
+- Test files located in `test/` directory
+- Business logic extracted to `lib/` directory for testability
+
+**Test Coverage**:
+- Collection filters (posts, pinnedPosts, recentPosts)
+- Pagination logic
+- Image tag argument parsing
+- Less CSS compilation
 
 ## Environment Variables
 
