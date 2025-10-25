@@ -111,13 +111,15 @@
   </script>
   {%- endif %}
 </head>
-<body>
+<body{% if page.url == "/" %} class="homepage"{% endif %}>
 
 <div class="container" role="main">
   <div class="content">
-    <a href="{{site.url}}/">
-      <img src="{{site.url}}/assets/lemon-with-leaves@2x.png" class="post-img" alt="Stan Lemon's logo - a lemon with leaves" />
-    </a>
+    <div class="header-wrapper">
+      <a href="{{site.url}}/">
+        <img src="{{site.url}}/assets/lemon-with-leaves@2x.png" class="post-img" alt="Stan Lemon's logo - a lemon with leaves" />
+      </a>
+    </div>
 
     {{ content }}
   </div>
@@ -160,3 +162,5 @@
     <p class="copyright">&copy; {{ "now" | date: "%Y" }} Stan Lemon. All rights reserved.</p>
   </div>
 </footer>
+
+<script src="{{site.url}}/assets/shrink-header.js"></script>
