@@ -13,6 +13,18 @@ body:not(.homepage) .header-wrapper {
   padding: 25px 0;
 }
 
+/* Add fade effect at bottom of sticky header */
+body:not(.homepage) .header-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  pointer-events: none;
+}
+
 /* Shrink the wrapper padding on scroll */
 body:not(.homepage) .header-wrapper.shrink {
   padding: 10px 0;
@@ -26,13 +38,13 @@ img.post-img {
   margin-top: 0;
   margin-bottom: 0;
   height: auto;
-  max-width: 75%;
+  max-width: 60%;
   transition: max-width 0.3s ease-in-out;
 }
 
 /* Shrink the header image on scroll (non-homepage pages only) */
 body:not(.homepage) img.post-img.shrink {
-  max-width: 40%;
+  max-width: 30%;
 }
 
 /* Homepage keeps original spacing */
