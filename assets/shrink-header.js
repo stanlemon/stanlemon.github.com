@@ -7,8 +7,10 @@
     return;
   }
 
-  const header = document.querySelector('.post-img');
-  if (!header) {
+  const headerWrapper = document.querySelector('.header-wrapper');
+  const headerImg = document.querySelector('.post-img');
+
+  if (!headerWrapper || !headerImg) {
     return;
   }
 
@@ -21,9 +23,11 @@
         const scrolled = window.scrollY > scrollThreshold;
 
         if (scrolled) {
-          header.classList.add('shrink');
+          headerWrapper.classList.add('shrink');
+          headerImg.classList.add('shrink');
         } else {
-          header.classList.remove('shrink');
+          headerWrapper.classList.remove('shrink');
+          headerImg.classList.remove('shrink');
         }
 
         ticking = false;

@@ -3,23 +3,42 @@ img {
   vertical-align: middle;
 }
 
+/* Sticky header wrapper for non-homepage pages */
+body:not(.homepage) .header-wrapper {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  transition: padding 0.3s ease-in-out;
+  padding: 25px 0;
+}
+
+/* Shrink the wrapper padding on scroll */
+body:not(.homepage) .header-wrapper.shrink {
+  padding: 10px 0;
+}
+
 /* centers an image and gives it some spacing above and below it */
 img.post-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
   height: auto;
   max-width: 75%;
-  transition: max-width 0.3s ease-in-out, margin-top 0.3s ease-in-out, margin-bottom 0.3s ease-in-out;
+  transition: max-width 0.3s ease-in-out;
 }
 
 /* Shrink the header image on scroll (non-homepage pages only) */
-img.post-img.shrink {
+body:not(.homepage) img.post-img.shrink {
   max-width: 40%;
-  margin-top: 15px;
-  margin-bottom: 15px;
+}
+
+/* Homepage keeps original spacing */
+body.homepage img.post-img {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 img.post-img.half {
