@@ -11,11 +11,11 @@ metadata:
   keywords: personal, family, lifestyle, HBO
 ---
 
-<img src="{{site.url}}/assets/stanley-lemon-day.jpg" srcset="{{site.url}}/assets/stanley-lemon-day.jpg, {{site.url}}/assets/stanley-lemon-day@2x.jpg 2x" alt="Stan Lemon wearing his October 15th is Stanley Lemon Day shirt with cameos from Sara and Lucy" class="post-img" />
-
 Growing up, I lived about a block from my elementary school, and by 2nd grade, I was walking to and from school on my own each day. To get to Turner Elementary, I had to cross National St., which isn't a particularly busy road, but had enough traffic that the school hired a crossing guard. The crossing guard that year was Mr. Kenneth Beardsley, a retired letter carrier for the US Postal Service. He was a truly remarkable man and very friendly to all the kids, keeping them safe each day. I enjoyed talking to Mr. Beardsley and would hang around during his shift, chatting with him in between letting kids cross the road. At one point, he jokingly told me I was a Jr. Crossing Guard, and that made my world.
 
 <!-- excerpt -->
+
+{% image "./assets/stanley-lemon-day.jpg", "Stan Lemon wearing his October 15th is Stanley Lemon Day shirt with cameos from Sara and Lucy" %}
 
 While National St. wasn't busy, some people would fly down that road. Around this time, the speed limit was 35mph. One evening, I vented to my Dad about how crazy some people were and told him the police should make people drive more safely. Dad probed that thought and asked me what they meant in practice, and together we concluded that National St. needed a lower speed limit. He then encouraged me to be the change and suggested that I petition the city government to institute a school speed zone. This was in the early 90s, and the speed zones you know and love around schools today were not a thing at all.
 

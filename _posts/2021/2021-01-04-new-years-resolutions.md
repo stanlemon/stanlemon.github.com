@@ -31,7 +31,7 @@ So what about 2021? After such a rough year, my goals for 2021 are about finding
 
 Some things are already in motion, like the first family vacation. I’ve already got a reservation to rent an RV around my and my wife’s 15th wedding anniversary. The other things require some waiting, but they’ll happen. I’m sure of it because this list is going on the wall in my office.
 
-<img src="{{site.url}}/assets/2021-resolutions-sign.jpg" srcset="{{site.url}}/assets/2021-resolutions-sign.jpg, {{site.url}}/assets/2021-resolutions-sign@2x.jpg 2x" alt="My resolutions are on my wall and in my face every day this year." class="post-img" />
+{% image "./assets/2021-resolutions-sign.jpg", "My resolutions are on my wall and in my face every day this year." %}
 
 I know I want to continue habits I’ve previously established:
 
@@ -45,11 +45,11 @@ And there are a few new things I want to establish:
 * Bike 2x10 miles a week starting in May.
 * Practice the clarinet twice a week.
 
-<img src="{{site.url}}/assets/2021-resolutions-iphone.jpg" srcset="{{site.url}}/assets/2021-resolutions-iphone.jpg, {{site.url}}/assets/2021-resolutions-iphone@2x.jpg 2x" alt="My iPhone is no longer next to the bed, so I need to get out of bed to take a look at it." class="post-img" />
+{% image "./assets/2021-resolutions-iphone.jpg", "My iPhone is no longer next to the bed, so I need to get out of bed to take a look at it." %}
 
 What are my ceremonies you ask? First I’m moving my cell phone and kindle across the bedroom, so that in the morning I will have to get out of bed to look at them. The bike ride goal is tricky because I won’t start it until it’s warmer outside, so I’ve decided to create a recurring event in my calendar. My calendar is sacred to me, so having this scheduled will force me to do it or worst case reschedule it. I'm hoping to do the same thing with practicing the clarinet.
 
-<img src="{{site.url}}/assets/2021-resolutions-biking.jpg" srcset="{{site.url}}/assets/2021-resolutions-biking.jpg, {{site.url}}/assets/2021-resolutions-biking@2x.jpg 2x" alt="Scheduling bicycle rides in my calendar." class="post-img" />
+{% image "./assets/2021-resolutions-biking.jpg", "Scheduling bicycle rides in my calendar." %}
 
 To conclude, if you want to do the New Years Resolutions thing here is my advice:
 

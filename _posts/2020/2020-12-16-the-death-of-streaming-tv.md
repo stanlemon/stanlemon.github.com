@@ -15,7 +15,7 @@ Hulu is increasing the cost of its monthly live TV subscription service. A servi
 
 <!-- excerpt -->
 
-<img src="{{site.url}}/assets/death-of-streaming-tv.jpg" srcset="{{site.url}}/assets/death-of-streaming-tv.jpg, {{site.url}}/assets/death-of-streaming-tv@2x.jpg 2x" alt="Hulu on Roku TV with a Roku remote and the dedicated Hulu button." class="post-img" />
+{% image "./assets/death-of-streaming-tv.jpg", "Hulu on Roku TV with a Roku remote and the dedicated Hulu button." %}
 
 I don’t watch a ton of TV. My need for live television revolves around sports. I’m just close enough to the Southeastern edge of Indianapolis that over the air broadcasts can be sketchy, and NBC is nearly impossible to get. Most seasons I need CBS, NBC, FOX, ESPN and the NFL Network. This year I also caught some presidential debates on other channels, but normally the only reason I watch live TV is for football. If you look around it’s actually pretty hard to find both ESPN and the NFL Network available to stream on the same service, so Hulu Live was a sweet deal. Granted, I get a bunch of other channels I don’t need and will never watch, but that’s just the penalty of a bundle, right? I used to dream of a streaming service where I could pick the channels I want: a build your lineup sort of experience. For awhile that was the holy grail of streaming, but I’ve given up hope of ever getting that. Alas, I’m left here paying for Lifetime when all I really want is football! The past few years Hulu TV fulfilled my needs because it was cheaper than Cable, I could cancel it after football, and it was an all around good app experience. 
 

@@ -16,7 +16,7 @@ Recently my oldest daughter, Lucy, asked me if she could let a friend borrow a b
 <!-- excerpt -->
 
 <figure>
-<img src="{{site.url}}/assets/kindle-by-fireplace.jpg" srcset="{{site.url}}/assets/kindle-by-fireplace.jpg, {{site.url}}/assets/kindle-by-fireplace@2x.jpg 2x" alt="Money: The True Story of a Made-Up Thing was one of my favorite 2020 reads and I so badly want to loan it to my friend Jon." class="post-img half" />
+{% image "./assets/kindle-by-fireplace.jpg", "Money: The True Story of a Made-Up Thing was one of my favorite 2020 reads and I so badly want to loan it to my friend Jon." %}
 <figcaption><a href="https://amzn.to/37CtUTW" target="_blan">Money: The True Story of a Made-Up Thing</a> was one of my favorite 2020 reads and I so badly want to loan it to my friend Jon.</figcaption>
 </figure>
 

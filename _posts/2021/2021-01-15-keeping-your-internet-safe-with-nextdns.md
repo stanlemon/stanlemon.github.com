@@ -15,7 +15,7 @@ The internet is like the Wild Wild West, without the awesome soundtrack and danc
 
 <!-- excerpt -->
 
-<img src="{{site.url}}/assets/nextdns-rokutv.jpg" srcset="{{site.url}}/assets/nextdns-rokutv.jpg, {{site.url}}/assets/nextdns-rokutv@2x.jpg 2x" alt="On the right hand side of the Roku home screen there is usually an ad." class="post-img" />
+{% image "./assets/nextdns-rokutv.jpg", "On the right hand side of the Roku home screen there is usually an ad." %}
 
 It’s worth mentioning what pushed me over the edge to revisit my current ad blocking and tracker blocking strategy. Around the time the new Borat movie was released Amazon was buying ads everywhere, and one evening I turned on our Roku TV to find a picture of Borat in a Mankini plastered in the ad spot to the right of my Roku channels. My kids were in the room, but fortunately were paying attention to other things. To say I was mad would be an understatement. I was determined to find a way to block ads on the Roku TV. Many friends recommended setting up a [pi-hole](https://pi-hole.net), but that involved more work than I wanted to take on. After much trial and error I’m happy to report [NextDNS](https://nextdns.io) blocks the ad section on the Roku and also covers a ton of other nefarious ads and trackers. Thanks to [NextDNS](https://nextdns.io) my home internet is much safer for me and my family.
 
@@ -57,26 +57,26 @@ It’s worth mentioning what pushed me over the edge to revisit my current ad bl
 I did not receive anything in return for this review, and none of the links I’m providing to [NextDNS](https://nextdns.io) are affiliate links. I simply believe in the service.
 
 <figure>
-<img src="{{site.url}}/assets/nextdns-security.jpg" srcset="{{site.url}}/assets/nextdns-security.jpg, {{site.url}}/assets/nextdns-security@2x.jpg 2x" alt="NextDNS offers several layers of security, many of which are very advanced and mitigate serious risks." class="post-img" />
+{% image "./assets/nextdns-security.jpg", "NextDNS offers several layers of security, many of which are very advanced and mitigate serious risks." %}
 <figcaption>NextDNS offers several layers of security, many of which are very advanced and mitigate serious risks.</figcaption>
 </figure>
 
 <figure>
-<img src="{{site.url}}/assets/nextdns-privacy.jpg" srcset="{{site.url}}/assets/nextdns-privacy.jpg, {{site.url}}/assets/nextdns-privacy@2x.jpg 2x" alt="NextDNS ad & tracker blocking is the best I've ever used." class="post-img" />
+{% image "./assets/nextdns-privacy.jpg", "NextDNS ad & tracker blocking is the best I've ever used." %}
 <figcaption>NextDNS ad & tracker blocking is the best I've ever used.</figcaption>
 </figure>
 
 <figure>
-<img src="{{site.url}}/assets/nextdns-parental-control.jpg" srcset="{{site.url}}/assets/nextdns-parental-control.jpg, {{site.url}}/assets/nextdns-parental-control@2x.jpg 2x" alt="NextDNS parental controls let you block entire categories as well as individual sites and services." class="post-img" />
+{% image "./assets/nextdns-parental-control.jpg", "NextDNS parental controls let you block entire categories as well as individual sites and services." %}
 <figcaption>NextDNS parental controls let you block entire categories as well as individual sites and services.</figcaption>
 </figure>
 
 <figure>
-<img src="{{site.url}}/assets/nextdns-analytics.jpg" srcset="{{site.url}}/assets/nextdns-analytics.jpg, {{site.url}}/assets/nextdns-analytics@2x.jpg 2x" alt="NextDNS analytics give a nice overview of exactly what's happening with your internet traffic." class="post-img" />
+{% image "./assets/nextdns-analytics.jpg", "NextDNS analytics give a nice overview of exactly what's happening with your internet traffic." %}
 <figcaption>NextDNS analytics give a nice overview of exactly what's happening with your internet traffic.</figcaption>
 </figure>
 
 <figure>
-<img src="{{site.url}}/assets/nextdns-logs.jpg" srcset="{{site.url}}/assets/nextdns-logs.jpg, {{site.url}}/assets/nextdns-logs@2x.jpg 2x" alt="NextDNS lets you see the individual requests mit blocks. As you can see my Roku is a bit out of control with the tracker requests." class="post-img" />
+{% image "./assets/nextdns-logs.jpg", "NextDNS lets you see the individual requests mit blocks. As you can see my Roku is a bit out of control with the tracker requests." %}
 <figcaption>NextDNS lets you see the individual requests mit blocks. As you can see my Roku is a bit out of control with the tracker requests.</figcaption>
 </figure>

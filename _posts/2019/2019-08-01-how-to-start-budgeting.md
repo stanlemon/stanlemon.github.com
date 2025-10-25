@@ -31,15 +31,15 @@ If you’re gainfully employed identifying your income should be pretty straight
 
 For the sake of illustrating my point let’s say my after taxes pay check is $2,000. This means that for any given month my total budget is $4,000, and thus I’m going to write this at the very top of my budget.
 ￼
-<img alt="A drawing of income for a budget" class="post-img" src="{{site.url}}/assets/how-to-start-budgeting-income.png" srcset="{{site.url}}/assets/how-to-start-budgeting-income.png, {{site.url}}/assets/how-to-start-budgeting-income@2x.png 2x" />
+{% image "./assets/how-to-start-budgeting-income.png", "A drawing of income for a budget" %}
 
 Next I need to think about all the things that I spend money on every month, like my cell phone bill, my mortgage and my car insurance.  Your list might look something like this:
 
-<img alt="A drawing of expenses for a budget" class="post-img" src="{{site.url}}/assets/how-to-start-budgeting-expenses.png" srcset="{{site.url}}/assets/how-to-start-budgeting-expenses.png, {{site.url}}/assets/how-to-start-budgeting-expenses@2x.png 2x" />
+{% image "./assets/how-to-start-budgeting-expenses.png", "A drawing of expenses for a budget" %}
 ￼
 These expenses never change, or at least not until something radical happens like I get rid of my car or cancel Netflix. There’s another category of recurring transactions that can be harder to pin down and those are your utilities, such as gas, water, electric and sewer. If your utility company offers a budget plan you should use it. The budget plan is designed to standardize your monthly payment and cover the spikes that can occur seasonally when, say, it’s cold outside and you need more gas for your furnace. If your utility company does not offer a budget plan then my best recommendation is to use one of three things: (1) Your highest bill, (2) Your average bill, or my personal favorite (3) Your average bill plus its standard deviation.
 ￼
-<img alt="A spreadsheet table of numbers showing standard deviation" class="post-img" src="{{site.url}}/assets/how-to-start-budgeting-std-dev.png" srcset="{{site.url}}/assets/how-to-start-budgeting-std-dev.png, {{site.url}}/assets/how-to-start-budgeting-std-dev@2x.png 2x" />
+{% image "./assets/how-to-start-budgeting-std-dev.png", "A spreadsheet table of numbers showing standard deviation" %}
 
 You’re probably thinking, standard deviation, are you kidding me?!? Nope. Here’s the thing, if you use the highest bill then most months you’re over budgeting. If you use the average then most months you’re under budgeting. You need to give yourself some sort of buffer, and the standard deviation can help do that in a rationale way. If you don’t want to mess with the math though, simply average your bill out over 12 months and call it a day.
 
@@ -47,11 +47,11 @@ You’re probably thinking, standard deviation, are you kidding me?!? Nope. Here
 
 Once you’ve dealt with your utilities you’re down to the truly variable stuff, such as groceries, eating out and auto fuel. Most people have no clue how much they spend in these categories each month. If you start budgeting you will eventually, but for now don’t sweat it because again, you’re just getting started.
 
-Let’s take a look at the whole budget together now:
+Let's take a look at the whole budget together now:
 
-<img alt="A drawing of a full budget" class="post-img" src="{{site.url}}/assets/how-to-start-budgeting-full-budget.png" srcset="{{site.url}}/assets/how-to-start-budgeting-full-budget.png, {{site.url}}/assets/how-to-start-budgeting-full-budget@2x.png 2x" />
-￼
-Based upon our back of the napkin math here, we appear to have $2,873.01 leftover after our recurring expenses. Now the trick is to make sure you don’t spend more than that!
+{% image "./assets/how-to-start-budgeting-full-budget.png", "A drawing of a full budget" %}
+
+Based upon our back of the napkin math here, we appear to have $2,873.01 leftover after our recurring expenses. Now the trick is to make sure you don't spend more than that!
 
 The easiest way to track your spending is with fewer accounts. Many items, like the mortgage (or rent) and utilities often require you to write a check, use bill pay from your checking account or do an electronic funds transfer. If you are a debit account user than using one account is easier than if you’re using a credit card, because all of your payments can come from the same place. If you’re a credit card user you can try to put those fixed costs onto your checking account and then make sure your credit card balance never exceeds the amount you’ve budgeted for as ‘leftovers’ (the part circled in yellow above).
 

@@ -2,11 +2,54 @@ require("dotenv").config();
 
 const SyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const MarkdownIt = require("markdown-it");
+const Image = require("@11ty/eleventy-img");
 
 const markdown = new MarkdownIt({ html: true });
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(SyntaxHighlight);
+
+  // Image tag for responsive images
+  eleventyConfig.addLiquidTag("image", (liquidEngine) => {
+    return {
+      parse: function(tagToken) {
+        // Store raw args string
+        this.args = tagToken.args;
+      },
+      render: async function(scope, hash) {
+        // Parse the raw arguments string
+        const argStr = this.args.trim();
+
+        // Match quoted strings - extract content between quotes
+        const quoteMatches = argStr.match(/"([^"]+)"|'([^']+)'/g);
+
+        if (!quoteMatches || quoteMatches.length < 2) {
+          throw new Error(`image tag requires src and alt: {% image "src", "alt" %}`);
+        }
+
+        // Remove quotes from matched strings
+        const cleanArgs = quoteMatches.map(m => m.replace(/^["']|["']$/g, ''));
+        const src = cleanArgs[0];
+        const alt = cleanArgs[1];
+
+        let metadata = await Image(src, {
+          widths: [300, 600, 1200],
+          formats: ["webp", "jpeg"],
+          outputDir: "./_site/img/",
+          urlPath: "/img/",
+        });
+
+        let imageAttributes = {
+          alt,
+          sizes: "100vw",
+          loading: "lazy",
+          decoding: "async",
+        };
+
+        return Image.generateHTML(metadata, imageAttributes);
+      }
+    };
+  });
 
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("robots.txt");

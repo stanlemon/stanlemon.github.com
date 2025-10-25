@@ -25,7 +25,9 @@ I went through the trial and the first set I got was a total bust. The [Desert S
 > 
 > Here is a note we received from on of our Pleyers:
 > 
-> ![Tal's letter:can you separate piece]({{site.url}}/assets/talsletter.png)
+>
+{% image "./assets/talsletter.png", "Tal's letter: can you separate piece" %}
+>
 > 
 > We appreciate you taking a few extra minutes to separate each piece so that other children can enjoy the set equally.
 > 

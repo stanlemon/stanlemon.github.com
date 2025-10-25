@@ -19,7 +19,7 @@ The go-to for smart bulbs is [Phillips Hue](https://www.philips-hue.com/en-us). 
 
 That leads me to [Nanoleaf](https://nanoleaf.me). I’d never heard of this company before. They’re not on Amazon, but they are on the Apple website. From what I gather they primarily make decorative lightings like tiles and strings. They also have a line called Essentials, which includes an A19 socket bulb. This is exactly what I wanted. I wasn’t interested in a multi-color bulb, but that’s all they make. I wanted to control the bright white to cool spectrum and the multi-color bulbs let me do that.
 
-<img src="{{site.url}}/assets/nanoleaf-essentials.jpg" srcset="{{site.url}}/assets/nanoleaf-essentials.jpg, {{site.url}}/assets/nanoleaf-essentials@2x.jpg 2x" alt="My nightstand lamp's nanoleaf essentials bulb, green with full brightness.." class="post-img" />
+{% image "./assets/nanoleaf-essentials.jpg", "My nightstand lamp's nanoleaf essentials bulb, green with full brightness." %}
 
 What made the [Nanoleaf](https://nanoleaf.me) bulbs special was the inclusion of the Thread protocol. Most likely you’ve never heard of Thread. Thread is for Internet of Things devices. It is low power and works in a mesh. If you have other Thread enabled devices they benefit from proximity to each other. It so happens that my HomePod Minis support Thread. Because it uses Thread, the [Nanoleaf](https://nanoleaf.me) bulbs are as close to instantaneous as possible. There will always be a delay with wireless products. With the [Nanoleaf](https://nanoleaf.me) it's barely perceptible.
 
