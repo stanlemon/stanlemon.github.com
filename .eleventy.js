@@ -108,15 +108,16 @@ module.exports = (eleventyConfig) => {
       parse: (tagToken, remainingTokens) => {
         this.str = tagToken.args;
       },
-      render: (scope, hash) => {
+      render: async (scope, hash) => {
         // Resolve variables
         const value = liquidEngine.evalValueSync(this.str, scope);
-        // Render markdown content
-        const content = markdown.render(value);
-        // Render the variable as liquid
-        return liquidEngine.parseAndRenderSync(
-          content,
+        // Render the variable as liquid first (now async-compatible)
+        const liquidRendered = await liquidEngine.parseAndRender(
+          value,
+          scope
         );
+        // Then render markdown content
+        return markdown.render(liquidRendered);
       },
     };
   });
