@@ -55,6 +55,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("llms.txt");
 
+  // Watch Less files for changes during development
+  eleventyConfig.addWatchTarget('./css/*.less');
+
   eleventyConfig.addCollection("posts", (collection) => {
     return collection.getFilteredByGlob("_posts/**/*.md")
       // Filter out drafts
