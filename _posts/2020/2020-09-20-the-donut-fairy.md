@@ -10,11 +10,11 @@ metadata:
   keywords: personal, family, lifestyle
 ---
 
-{% image "./assets/the-donut-fairy.jpeg", "Dunkin Donuts delivered to the house via Door Dash" %}
-
-Evelyn is the household donut connoisseur. She’s the one responsible for getting me out of bed early to go get donuts, and she also usually decides where to get the donuts. She’ll tell you the best donuts in Indianapolis are at Long’s Bakery, but that Jack’s Donuts is closer; and if you want one of the cinnamon twists they’re bigger at Jacks, but Long’s has the better cake donuts. She’s got it all down; this is her thing.
+Evelyn is the household donut connoisseur. She's the one responsible for getting me out of bed early to go get donuts, and she also usually decides where to get the donuts. She'll tell you the best donuts in Indianapolis are at Long's Bakery, but that Jack's Donuts is closer; and if you want one of the cinnamon twists they're bigger at Jacks, but Long's has the better cake donuts. She's got it all down; this is her thing.
 
 <!-- excerpt -->
+
+{% image "./assets/the-donut-fairy.jpeg", "Dunkin Donuts delivered to the house via Door Dash" %}
 
 One day Henry (age 8) is sitting back watching reruns of the epic show Myth Busters on Hulu. This is one of the few shows we watch that has ads. Evelyn, his little sister (age 6), is his sidekick and was happily sitting at his side watching Myth Busters when an ad for Dunkin Donuts came up. I can count the number of times Evelyn has had donuts from Dunkin on both hands, it’s maybe 7. Only one of those occurred in Indianapolis, the others were at Grandma Lemon’s house during a visit and a few times on the road when Mom & Dad needed coffee.
 
