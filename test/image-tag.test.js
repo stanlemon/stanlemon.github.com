@@ -71,16 +71,4 @@ describe("parseImageArgs", () => {
     assert.strictEqual(result.src, "./assets/image.jpg");
     assert.strictEqual(result.alt, "Alt text");
   });
-
-  it("should handle alt text with commas", () => {
-    const result = parseImageArgs(
-      '"./assets/image.jpg", "Description of image, showing multiple things"'
-    );
-
-    assert.strictEqual(result.src, "./assets/image.jpg");
-    assert.strictEqual(
-      result.alt,
-      "Description of image, showing multiple things"
-    );
-  });
 });

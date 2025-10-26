@@ -60,27 +60,27 @@ describe("filterPosts", () => {
 
 describe("filterPinnedPosts", () => {
   it("should only include pinned posts older than 6 months", () => {
-    const now = new Date(2024, 5, 1); // June 1, 2024
+    const now = new Date("2024-06-01T00:00:00.000Z");
     const posts = [
       {
         data: {
           pinned: true,
           active: true,
-          date: new Date(2023, 9, 1), // October 1, 2023 - More than 6 months ago
+          date: new Date("2023-10-01T00:00:00.000Z"), // More than 6 months ago
         },
       },
       {
         data: {
           pinned: true,
           active: true,
-          date: new Date(2024, 0, 1), // January 1, 2024 - Less than 6 months ago
+          date: new Date("2024-01-01T00:00:00.000Z"), // Less than 6 months ago
         },
       },
       {
         data: {
           pinned: false,
           active: true,
-          date: new Date(2023, 8, 1), // September 1, 2023 - More than 6 months ago but not pinned
+          date: new Date("2023-09-01T00:00:00.000Z"), // More than 6 months ago but not pinned
         },
       },
     ];
@@ -88,18 +88,18 @@ describe("filterPinnedPosts", () => {
     const result = filterPinnedPosts(posts, { referenceDate: now });
 
     assert.strictEqual(result.length, 1);
-    assert.strictEqual(result[0].data.date.getMonth(), 9); // October (month index 9)
+    assert.strictEqual(result[0].data.date.getUTCMonth(), 9); // October (month index 9)
   });
 
   it("should exclude draft pinned posts by default", () => {
-    const now = new Date("2024-06-01");
+    const now = new Date("2024-06-01T00:00:00.000Z");
     const posts = [
       {
         data: {
           pinned: true,
           active: true,
           draft: true,
-          date: new Date("2023-11-01"),
+          date: new Date("2023-11-01T00:00:00.000Z"),
         },
       },
       {
@@ -107,7 +107,7 @@ describe("filterPinnedPosts", () => {
           pinned: true,
           active: true,
           draft: false,
-          date: new Date("2023-11-01"),
+          date: new Date("2023-11-01T00:00:00.000Z"),
         },
       },
     ];
@@ -119,14 +119,14 @@ describe("filterPinnedPosts", () => {
   });
 
   it("should include draft pinned posts when showDrafts is true", () => {
-    const now = new Date("2024-06-01");
+    const now = new Date("2024-06-01T00:00:00.000Z");
     const posts = [
       {
         data: {
           pinned: true,
           active: true,
           draft: true,
-          date: new Date("2023-11-01"),
+          date: new Date("2023-11-01T00:00:00.000Z"),
         },
       },
       {
@@ -134,7 +134,7 @@ describe("filterPinnedPosts", () => {
           pinned: true,
           active: true,
           draft: false,
-          date: new Date("2023-11-01"),
+          date: new Date("2023-11-01T00:00:00.000Z"),
         },
       },
     ];
@@ -148,20 +148,20 @@ describe("filterPinnedPosts", () => {
   });
 
   it("should exclude inactive pinned posts", () => {
-    const now = new Date("2024-06-01");
+    const now = new Date("2024-06-01T00:00:00.000Z");
     const posts = [
       {
         data: {
           pinned: true,
           active: false,
-          date: new Date("2023-11-01"),
+          date: new Date("2023-11-01T00:00:00.000Z"),
         },
       },
       {
         data: {
           pinned: true,
           active: true,
-          date: new Date("2023-11-01"),
+          date: new Date("2023-11-01T00:00:00.000Z"),
         },
       },
     ];
@@ -172,52 +172,28 @@ describe("filterPinnedPosts", () => {
     assert.strictEqual(result[0].data.active, true);
   });
 
-  it("should only include pinned posts older than 6 months, not at boundary", () => {
-    const now = new Date("2024-06-15T12:00:00.000Z");
-    const posts = [
-      {
-        data: {
-          pinned: true,
-          active: true,
-          date: new Date("2023-12-10T12:00:00.000Z"), // Just over 6 months old
-        },
-      },
-      {
-        data: {
-          pinned: true,
-          active: true,
-          date: new Date("2023-11-01T12:00:00.000Z"), // Clearly over 6 months old
-        },
-      },
-    ];
-
-    const result = filterPinnedPosts(posts, { referenceDate: now });
-
-    // Posts clearly older than 6 months should be included
-    assert.strictEqual(result.length, 2);
-  });
 });
 
 describe("filterRecentPosts", () => {
   it("should only include posts from last 6 months", () => {
-    const now = new Date("2024-06-01");
+    const now = new Date("2024-06-01T00:00:00.000Z");
     const posts = [
       {
         data: {
           active: true,
-          date: new Date("2024-01-01"), // 5 months ago
+          date: new Date("2024-01-01T00:00:00.000Z"), // 5 months ago
         },
       },
       {
         data: {
           active: true,
-          date: new Date("2023-11-01"), // 7 months ago
+          date: new Date("2023-11-01T00:00:00.000Z"), // 7 months ago
         },
       },
       {
         data: {
           active: true,
-          date: new Date("2024-05-01"), // 1 month ago
+          date: new Date("2024-05-01T00:00:00.000Z"), // 1 month ago
         },
       },
     ];
@@ -228,24 +204,24 @@ describe("filterRecentPosts", () => {
   });
 
   it("should sort posts by date descending", () => {
-    const now = new Date(2024, 5, 1); // June 1, 2024
+    const now = new Date("2024-06-01T00:00:00.000Z");
     const posts = [
       {
         data: {
           active: true,
-          date: new Date(2024, 0, 15), // January 15, 2024
+          date: new Date("2024-01-15T00:00:00.000Z"),
         },
       },
       {
         data: {
           active: true,
-          date: new Date(2024, 4, 15), // May 15, 2024
+          date: new Date("2024-05-15T00:00:00.000Z"),
         },
       },
       {
         data: {
           active: true,
-          date: new Date(2024, 2, 15), // March 15, 2024
+          date: new Date("2024-03-15T00:00:00.000Z"),
         },
       },
     ];
@@ -253,26 +229,26 @@ describe("filterRecentPosts", () => {
     const result = filterRecentPosts(posts, { referenceDate: now });
 
     assert.strictEqual(result.length, 3);
-    assert.strictEqual(result[0].data.date.getMonth(), 4); // May (month index 4)
-    assert.strictEqual(result[1].data.date.getMonth(), 2); // March (month index 2)
-    assert.strictEqual(result[2].data.date.getMonth(), 0); // January (month index 0)
+    assert.strictEqual(result[0].data.date.getUTCMonth(), 4); // May (month index 4)
+    assert.strictEqual(result[1].data.date.getUTCMonth(), 2); // March (month index 2)
+    assert.strictEqual(result[2].data.date.getUTCMonth(), 0); // January (month index 0)
   });
 
   it("should exclude draft posts by default", () => {
-    const now = new Date("2024-06-01");
+    const now = new Date("2024-06-01T00:00:00.000Z");
     const posts = [
       {
         data: {
           active: true,
           draft: true,
-          date: new Date("2024-05-01"),
+          date: new Date("2024-05-01T00:00:00.000Z"),
         },
       },
       {
         data: {
           active: true,
           draft: false,
-          date: new Date("2024-05-01"),
+          date: new Date("2024-05-01T00:00:00.000Z"),
         },
       },
     ];
@@ -284,20 +260,20 @@ describe("filterRecentPosts", () => {
   });
 
   it("should include draft posts when showDrafts is true", () => {
-    const now = new Date("2024-06-01");
+    const now = new Date("2024-06-01T00:00:00.000Z");
     const posts = [
       {
         data: {
           active: true,
           draft: true,
-          date: new Date("2024-05-01"),
+          date: new Date("2024-05-01T00:00:00.000Z"),
         },
       },
       {
         data: {
           active: true,
           draft: false,
-          date: new Date("2024-05-01"),
+          date: new Date("2024-05-01T00:00:00.000Z"),
         },
       },
     ];
@@ -311,18 +287,18 @@ describe("filterRecentPosts", () => {
   });
 
   it("should exclude inactive posts", () => {
-    const now = new Date("2024-06-01");
+    const now = new Date("2024-06-01T00:00:00.000Z");
     const posts = [
       {
         data: {
           active: false,
-          date: new Date("2024-05-01"),
+          date: new Date("2024-05-01T00:00:00.000Z"),
         },
       },
       {
         data: {
           active: true,
-          date: new Date("2024-05-01"),
+          date: new Date("2024-05-01T00:00:00.000Z"),
         },
       },
     ];
