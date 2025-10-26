@@ -3,15 +3,48 @@ img {
   vertical-align: middle;
 }
 
+/* Sticky header wrapper for non-homepage pages */
+body:not(.homepage) .header-wrapper {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom,
+    #fff 0%,
+    #fff 80%,
+    rgba(255, 255, 255, 0.8) 90%,
+    rgba(255, 255, 255, 0) 100%);
+  z-index: 100;
+  transition: padding 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  padding: 25px 0;
+  padding-bottom: 40px;
+}
+
+/* Shrink the wrapper padding on scroll */
+body:not(.homepage) .header-wrapper.shrink {
+  padding: 10px 0;
+  padding-bottom: 30px;
+}
+
 /* centers an image and gives it some spacing above and below it */
 img.post-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
+  max-width: 60%;
+  transition: max-width 0.3s ease-in-out;
+}
+
+/* Shrink the header image on scroll (non-homepage pages only) */
+body:not(.homepage) img.post-img.shrink {
+  max-width: 30%;
+}
+
+/* Homepage keeps original spacing */
+body.homepage img.post-img {
   margin-top: 25px;
   margin-bottom: 25px;
-  height: auto;
-  max-width: 75%;
 }
 
 img.post-img.half {
