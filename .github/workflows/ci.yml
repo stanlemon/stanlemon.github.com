@@ -21,16 +21,13 @@ jobs:
         uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: ~/.npm
-          key: ${{ runner.OS }}-npm-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.OS }}-npm-v2-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.OS }}-npm-
+            ${{ runner.OS }}-npm-v2-
             ${{ runner.OS }}-
 
       - name: Install dependencies
-        run: npm ci
-
-      - name: Rebuild sharp
-        run: npm rebuild sharp
+        run: npm ci --include=optional
 
       - name: Run Tests
         run: npm test
