@@ -29,6 +29,13 @@ jobs:
       - name: Install dependencies
         run: npm ci --include=optional
 
+      - name: Debug sharp installation
+        run: |
+          echo "Checking for sharp binaries..."
+          ls -la node_modules/@img/ || echo "No @img directory found"
+          npm list sharp || echo "Sharp not in dependency tree"
+          node -e "try { require('sharp'); console.log('Sharp loaded successfully'); } catch(e) { console.log('Sharp failed to load:', e.message); }"
+
       - name: Run Tests
         run: npm test
 
