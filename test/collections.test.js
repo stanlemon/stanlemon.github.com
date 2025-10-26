@@ -172,22 +172,29 @@ describe("filterPinnedPosts", () => {
     assert.strictEqual(result[0].data.active, true);
   });
 
-  it("should handle posts exactly 6 months old", () => {
-    const now = new Date("2024-06-01");
+  it("should only include pinned posts older than 6 months, not at boundary", () => {
+    const now = new Date("2024-06-15T12:00:00.000Z");
     const posts = [
       {
         data: {
           pinned: true,
           active: true,
-          date: new Date("2023-12-01"), // Exactly 6 months ago
+          date: new Date("2023-12-10T12:00:00.000Z"), // Just over 6 months old
+        },
+      },
+      {
+        data: {
+          pinned: true,
+          active: true,
+          date: new Date("2023-11-01T12:00:00.000Z"), // Clearly over 6 months old
         },
       },
     ];
 
     const result = filterPinnedPosts(posts, { referenceDate: now });
 
-    // Post exactly 6 months old should be included (< not <=)
-    assert.strictEqual(result.length, 1);
+    // Posts clearly older than 6 months should be included
+    assert.strictEqual(result.length, 2);
   });
 });
 
