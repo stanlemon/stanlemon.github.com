@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Stan Lemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Blog posts by Stan Lemon.">
+  
+  <meta name="author" content="Stan Lemon">
+  <meta name="theme-color" content="#FEAE0F"/>
+  <link rel="canonical" href="https://stanlemon.com/page/16/">
+  <link rel="alternate" type="application/rss+xml" title="Stan Lemon" href="https://stanlemon.com/feed.xml" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stanlemon.com/page/16/">
+  <meta property="og:title" content="Stan Lemon">
+  <meta property="og:description" content="Blog posts by Stan Lemon.">
+  <meta property="og:image" content="https://stanlemon.com/assets/lemon-with-leaves@2x.png">
+  <meta property="og:site_name" content="Stan Lemon">
+  
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://stanlemon.com/page/16/">
+  <meta name="twitter:title" content="Stan Lemon">
+  <meta name="twitter:description" content="Blog posts by Stan Lemon.">
+  <meta name="twitter:image" content="https://stanlemon.com/assets/lemon-with-leaves@2x.png">
+
+  <link rel="preload" as="font" href="/assets/fonts/oswald.woff" type="font/woff" crossorigin="anonymous">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Structured Data / JSON-LD -->
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Stan Lemon",
+    "description": "husband, dad, steelers fan and software developer",
+    "url": "https://stanlemon.com/",
+    "author": {
+      "@type": "Person",
+      "name": "Stan Lemon"
+    }
+  }
+  </script>
+  
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRTQMGFLV3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LRTQMGFLV3');
+  </script>
+</head>
+<body>
+
+<div class="container" role="main">
+  <div class="content">
+    <div class="header-wrapper">
+      <a href="https://stanlemon.com/">
+        <img src="https://stanlemon.com/assets/lemon-with-leaves@2x.png" class="post-img" alt="Stan Lemon's logo - a lemon with leaves" />
+      </a>
+    </div>
+
+    <article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="/2013/03/22/composer-on-openshift/">Composer on OpenShift</a>
+      </h2>
+    </div>
+    <h4 class="article-date">Mar 22, 2013</h4>
+  </div>
+
+  <hr>
+
+  <p>Yesterday I talked about running <a href="http://getcomposer.org">composer</a> on Amazon's Elastic Beanstalk.  There it is builtin and works out of the box for you.  If you are on <a href="http://openshift.com">OpenShift</a> (my preferred PaaS) composer does not come out of the box.  <a href="http://www.mwop.net">Matthew Weier O'Phinney</a> has posted an article on the steps he took to get composer installing his project's dependencies, and that's definitely a worthy read.  However, my deployment hook for OpenShift is a little bit different and I wanted to share that.</p>
+<p>There were two things I wanted to accomplish.  First, I did not want <em>composer.phar</em> in source control.  Second, I wanted to take advantage of composer's ability to cache dependencies to speedup my deployment process up.  So here is what I use in my <em>./.openshift/action_hooks/deploy</em> script:</p>
+<p>https://gist.github.com/stanlemon/5177925</p>
+<p><em>As a bonus here's a tip about markers... OpenShift will restart Apache and Zend Server with every deployment. You may not want or need to do this. If you don't, simply touch a file to ./.openshift/markers/hot_deply and then next time you push your changes up OpenShift will leave all those services running when it deploys.</em></p>
+
+
+  
+
+  <hr>
+</article>
+
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="/2013/03/21/composer-on-elastic-beanstalk/">Composer on Elastic Beanstalk</a>
+      </h2>
+    </div>
+    <h4 class="article-date">Mar 21, 2013</h4>
+  </div>
+
+  <hr>
+
+  <p><a href="http://aws.amazon.com/elasticbeanstalk/">Amazon's Elastic Beanstalk</a> is another git-driven deployment service, this time directly to EC2 and RDS instances on Amazon Web Services.  It's similar to what Red Hat is doing with OpenShift conceptually.</p>
+<p>If you are a PHP developer like myself your first question is probably, will it install my <a href="http://getcomposer.org">composer dependencies</a> for me?  The answer is <strong>YES</strong>.</p>
+<p>Here's the kicker, and quite frankly this does not make any sense to me...  If you have stubbed your <em>vendor</em> folder in place, so you've either touched <em>./vendor/empty</em> or <em>./vendor/.gitkeep</em>, you are going to have to removed it.  Elastic Beanstalk will use composer based upon the presence of a <em>composer.json</em> or <em>composer.lock</em> file, but if it sees the <em>vendor</em> folder it bails out and doesn't execute the install command. Again, I really don't know why this is and I could not find any documentation about it.  Yet this exactly what I needed to do to get my dependencies installed.</p>
+
+
+  
+
+  <hr>
+</article>
+
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="/2013/03/19/naked-domain-workaround/">Naked Domain Workaround</a>
+      </h2>
+    </div>
+    <h4 class="article-date">Mar 19, 2013</h4>
+  </div>
+
+  <hr>
+
+  <p>I've become a pretty big fan of Red Hat's <a href="http://openshift.com">OpenShift</a> platform.  I <strong>love</strong> the idea of doing deployments based off of DVCS operations. Almost two years ago when I was working for Wizzard Software we came up with a deployment process not to far off from this concept.  We were a Mercurial based team so the DVCS system was different, but we basically issuing pull's from repositories on the effected systems and out rolled new software that way.  OpenShift is a whole lot better then that though, because it's push triggered and deploys to the cloud and Red Hat has a bunch of awesome hooks tied in to make it even more powerful.  Did I mention it's <em>FREE</em>?  Yes, free hosting driven by git in the cloud - it doesn't get much better then this!</p>
+<p>But what happens if you want to add a custom domain name to <a href="http://openshift.com">OpenShift</a>?  In order to do this you have to do two things, first add the appropriate aliases to your <a href="http://openshift.com">OpenShift</a> application, <a href="https://openshift.redhat.com/community/blogs/custom-url-names-for-your-paas-applications-host-forwarding-and-cnames-the-openshift-way">see here for more information</a>. Second is to edit your DNS records and add CNAME records to point to the OpenShift subdomain for your application.  As with many things in the cloud, IP addresses are ever-changing so you cannot count on them when setting up your domain.  If you're lucky enough to have <a href="http://namecheap.com">NameCheap</a> as your registrar this isn't a problem, because they let you add a CNAME record as your apex (not sure how they do this, but just go with it... it works!). If you are on <a href="http://godaddy.com">GoDaddy</a> or a similar DNS service (like <a href="http://aws.amazon.com/route53/">Route 53</a>) you aren't so lucky.</p>
+<p>Fortunately, Satoru systems has a naked domain redirect service <em>over at <a href="http://wwwizer.com">wwwizer</a></em> that fills this need.  They basically give you an IP address to use for your A record and their system automatically redirects it to &quot;www.domain.com&quot; where &quot;domain.com&quot; is the apex entry. It's dead simple to use. Best of all, this too is <em>FREE</em>.</p>
+<p>As with all cloud systems, you never know how long you can get these services before they are bought out, shutdown or just run out of money, so don't use them with mission critical systems. But if you're a hobbyist or have a pet-project this is a great way to get it out on the web without incurring a lot of costs.</p>
+<p><a href="http://wwwizer.com/naked-domain-redirect">Check out wwwizer's naked domain redirect service.</a></p>
+
+
+  
+
+  <hr>
+</article>
+
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="/2013/03/18/mailbox-dropbox-sitting-in-a-tree/">Mailbox & Dropbox Sitting in a Tree</a>
+      </h2>
+    </div>
+    <h4 class="article-date">Mar 18, 2013</h4>
+  </div>
+
+  <hr>
+
+  <p><a href="http://www.mailboxapp.com">Mailbox</a> has garnered a lot of attention since it rolled out.  My concern from day 1, as has been with many a similar service, is how is it being paid for?  These startup services rollout free with no plan in place to make money.  Some of these startups are gunning to be bought out or &quot;<em>funded</em>&quot; by venture capitalists, and others are hoping for bright lights and a revelation on high to show them the secret to success (here's looking at you Twitter).  The truth is they lack a plan to become financially solvent and while cloud computing is cheaper then the alternative, it's still expensive.  It's no wonder then that these startups belly-up or disappear into the annals of the world wide web. I've been particularly upset about two as of late, <a href="http://blog.posterous.com/thanks-from-posterous">Posterous</a> a year ago and more recently <a href="http://www.sparrowmailapp.com">Sparrow</a>. In both of these cases the buyouts were about grabbing talent and had nothing to do with building the product.  In the end the consumers got screwed by dreams too big to pay be paid for.</p>
+<p>So I can't help but wonder what will happen with <a href="http://www.mailboxapp.com">Mailbox</a>.  An announcement was just recently made that cloud-sync kingpin <a href="https://blog.dropbox.com/2013/03/welcome-mailbox/">Dropbox has bought them</a>. I should disclose that I do have a Mailbox account and that I have not completely bought into their way of doing Email just yet.  I'm not trying to knock it, it's just a dramatic change from the way I've managed my inbox and I am still adjusting.  I'm giving it a shot though.  <a href="http://db.tt/eLppmBW">I should also disclose that I am huge fan of Dropbox.</a>  Nonetheless I can't help but wonder what Dropbox's purpose is in buying Mailbox.  To the best of my knowledge there is no income stream for Mailbox, only what I am speculating is an ever-growing <a href="http://aws.amazon.com/ec2">EC2</a> bill.  The product models are completely different too.  So is it a talent grab?  It doesn't seem so, at least Dropbox's post does not give that indication.  Nonetheless I am skeptical...</p>
+<p>I wouldn't count on Mailbox being eternally available. I hope I'm wrong, but I feel like we've learned all too recently <a href="http://www.usatoday.com/story/tech/personal/2013/03/13/google-reader-shutdown/1986337/">not to depend on free cloud services</a> for the kitchen sink.  Our data needs to be portable and we as consumers need to be startup-proof.  That means go ahead and use a service like Posterous, but make sure you can walk away from it when they shut it down.  And if they don't offer data portability, don't sign up.  With services like Mailbox that augment the way you do things, just make sure you can still function when they are gone.  In short:  <em>D__on't put all your eggs in one basket, be startup-proof</em>.</p>
+
+
+  
+
+  <hr>
+</article>
+
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      <h2 class="article-title">
+        <a href="/2013/03/17/thoughts-on-googles-spring-cleaning/">Thoughts on Google's Spring Cleaning</a>
+      </h2>
+    </div>
+    <h4 class="article-date">Mar 17, 2013</h4>
+  </div>
+
+  <hr>
+
+  <p><a href="http://googleblog.blogspot.com/2013/03/a-second-spring-of-cleaning.html">Google announced its latest round of spring cleaning.</a>  The most troubling part of the news announcement is the loss of Google Reader.  I've been using Reader since 2005 when it first started. I had tried a variety of one-off RSS readers prior to it and Google Reader was perfect for me because it was &quot;<em>in the cloud&quot;</em> before that was even in-vogue. Fast forward eight years and I'm still maintaining the same list of feeds, though now I consume it through native app clients on the Mac, iPhone and iPad. I haven't used the actual web site for it in a long time.</p>
+<p>A lot of people are worried about what will happen when Reader shuts it's doors. <a href="https://www.change.org/petitions/google-keep-google-reader-running">There is even a big online petition going to ask Google to keep the service.</a> Some have predicted that this will be the end of RSS as we know. Quite frankly I'm not too worried about losing Google Reader.  My list of feeds has thinned out over time as I've begun using services like Twitter more.  Where I once subscribed to feeds for news and sports I am now following various outlets on twitter. Most of my friends who still blog tweet when they post to, and quite often I am clicking over to an article because I saw it on a tweet first. That being said RSS still has it's place in my mind. Not everyone does the twitter thing and they shouldn't have to. The best part of RSS is still that it's an open and parsable standard.  It's friend OPML is great and also pretty portable.  These are two things Twitter won't give you.</p>
+<p>So what am I going to do?  Mostly wait.  I've been using <a href="http://reederapp.com">Reeder</a> for consuming Google Reader data for a long time now and the developer of that fantastic app says <a href="https://twitter.com/reederapp/status/311995748482945025">it's not going away just because Google Reader is</a>.  This gives me hope that Marco Arment might be right and that this is an <a href="http://www.marco.org/2013/03/13/google-reader-sunset">opportunity for guys to build new replacement service</a>.</p>
+
+
+  
+
+  <hr>
+</article>
+
+
+
+
+
+<nav class="text-center">
+  <ul class="pagination columns">
+    
+      
+        <li>
+          <a href="https://stanlemon.com/page/15/">
+            <i class="fa-solid fa-angles-left" title="Previous"></i>
+          </a>
+        </li>
+      
+
+      
+        <li class="edge"><a href="https://stanlemon.com/page/1/">1</a></li>
+      
+
+      <li class="gap"><span>...</span></li>
+    
+
+    
+      
+        <li><a href="https://stanlemon.com/page/13/">13</a></li>
+      
+    
+      
+        <li><a href="https://stanlemon.com/page/14/">14</a></li>
+      
+    
+      
+        <li><a href="https://stanlemon.com/page/15/">15</a></li>
+      
+    
+      
+        <li class="active"><a href="https://stanlemon.com/page/16/">16</a></li>
+      
+    
+      
+        <li><a href="https://stanlemon.com/page/17/">17</a></li>
+      
+    
+
+    
+  </ul>
+</nav>
+
+  </div>
+</div>
+
+<footer>
+  <div class="text-center">
+    <ul>
+      <li>
+        <a href="https://github.com/stanlemon" rel="noopener" target="_blank" aria-label="You can find some of my coding projects on GitHub" class="social-github">
+          <i class="fa-brands fa-github fa-2x" title="GitHub"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/stanlemon" rel="noopener" target="_blank" aria-label="You can find about me professionally on LinkedIn" class="social-linkedin">
+          <i class="fa-brands fa-linkedin fa-2x" title="LinkedIn"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/stanlemon" rel="noopener" target="_blank" aria-label="Follow me on Instagram" class="social-instagram">
+          <i class="fa-brands fa-instagram fa-2x" title="Instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://threads.net/@stanlemon" rel="noopener" target="_blank" aria-label="Follow me on Threads" class="social-threads">
+          <i class="fa-brands fa-threads fa-2x" title="Threads"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@stanlemon" rel="noopener" target="_blank" aria-label="Watch my videos on YouTube" class="social-youtube">
+          <i class="fa-brands fa-youtube fa-2x" title="YouTube"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://stanlemon.com/feed.xml" aria-label="Subscribe via RSS" class="social-rss">
+          <i class="fa-solid fa-square-rss fa-2x" title="Subscribe via RSS"></i>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">&copy; 2025 Stan Lemon. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://stanlemon.com/assets/shrink-header.js"></script>
