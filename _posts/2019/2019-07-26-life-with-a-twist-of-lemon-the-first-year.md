@@ -26,17 +26,22 @@ This week Jon and I released an [episode reflecting back on the year’s highlig
 
 --------
 
-### [#5 January 3, 2019 - The Budget Episode](https://twistoflemonpod.com/episode-25-the-budget-episode/)
+## [#5 January 3, 2019 - The Budget Episode](https://twistoflemonpod.com/episode-25-the-budget-episode/)
+
 In this episode we talked about budgeting, the things we do and how we structure our finances each month. This is just good listening in my opinion and is arguably one of our more timeless episodes.
 
-### [#4 September 6, 2018 - If you don’t buy milkshakes with your money, save for a house!](https://twistoflemonpod.com/episode-8-if-you-dont-buy-milkshakes-with-your-money-save-for-a-house/)
-Our most listened to episodes started with a twist:  There were no milkshakes!  Jon was in pursuit of a house and peppered me with questions about what to expect.  After recording I ended up resurrecting my blogging career and posted about how my wife and I visualized our mortgage (https://stanlemon.com/2018/09/15/visualizing-a-mortgage/).
+## [#4 September 6, 2018 - If you don’t buy milkshakes with your money, save for a house!](https://twistoflemonpod.com/episode-8-if-you-dont-buy-milkshakes-with-your-money-save-for-a-house/)
 
-### [#3 March 14, 2019 - A Philosophical Debate regarding Grilled Cheese](https://twistoflemonpod.com/a-philisophical-debate-regarding-grilled-cheese/)
+Our most listened to episodes started with a twist:  There were no milkshakes!  Jon was in pursuit of a house and peppered me with questions about what to expect.  After recording I ended up resurrecting my blogging career and posted about how my wife and I [visualized our mortgage](https://stanlemon.com/2018/09/15/visualizing-a-mortgage/).
+
+## [#3 March 14, 2019 - A Philosophical Debate regarding Grilled Cheese](https://twistoflemonpod.com/a-philisophical-debate-regarding-grilled-cheese/)
+
 Much to my surprise this turned out to be the most controversial episode we’ve recorded. Shortly after this one was released my cell phone blew up with messages appalled by my grilled cheese criteria. I’m still defending my position on this one, and I’m still right.
 
-### [#2 May 2, 2019 - Patrick Sturdivant: The First Listener (and our review of Endgame)](https://twistoflemonpod.com/patrick-sturdivant-the-first-listener-and-our-review-of-endgame/)
+## [#2 May 2, 2019 - Patrick Sturdivant: The First Listener (and our review of Endgame)](https://twistoflemonpod.com/patrick-sturdivant-the-first-listener-and-our-review-of-endgame/)
+
 This episode was literally months in the making! We recorded it with our friend Patrick after watching Endgame twice. It made for a long night, but pretty good podcast listening. (This is also where we lost Jon’s mom as a listener.)
 
-### [#1 October 18, 2018 - Milkshakes power our productivity](https://twistoflemonpod.com/episode-14-milkshakes-power-our-productivity/)
+## [#1 October 18, 2018 - Milkshakes power our productivity](https://twistoflemonpod.com/episode-14-milkshakes-power-our-productivity/)
+
 This is good clean Milkshake fun, with our very first guest – my very own daughter, Lucy Lemon. It’s in this episode where Lucy established the rubrics for milkshake straws, which has become part of our Milkshake method evaluation system ever since.

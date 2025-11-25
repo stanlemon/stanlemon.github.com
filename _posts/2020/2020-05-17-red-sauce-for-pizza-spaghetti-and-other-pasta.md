@@ -22,7 +22,7 @@ When I made my [Pizza Night at the Lemon's](/2020/04/19/pizza-night-at-the-lemon
 </div>
 <br />
 
-### Ingredients:
+## Ingredients
 
 * 1lb 12oz can of crushed tomatoes
 * 2 tablespoons olive oil (or enough to cover the bottom of the pan)
@@ -36,12 +36,12 @@ When I made my [Pizza Night at the Lemon's](/2020/04/19/pizza-night-at-the-lemon
 
 _If you don't have aleppo pepper that's ok, just skip it, [but consider ordering some for your spice cabinet](https://amzn.to/2SsCdea)._
 
-#### Optional:
+### Optional
 
 * Dash of cayenne pepper
 * 1/4 teaspoon [ground fennel](https://amzn.to/369n5bh)
 
-### Directions
+## Directions
 
 Begin with a medium sized pot, like 2.5 Quarts, pour about 2 tablespoons of olive oil into it, or enough to provide nice coverage over the bottom of the hot. Heat on medium.  You'll know when the oil is hot enough because if you flick a drop of water at it, it will pop.
 

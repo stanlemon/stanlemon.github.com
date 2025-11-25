@@ -13,25 +13,25 @@ metadata:
 
   
 
-#### Compatibility with PHP
+## Compatibility with PHP
 
 LemonRestBundle now supports PHP 5.3, 5.4, 5.5, 5.6. Additionally the primary ORM test suite passes when using Doctrine 2.5 on HHVM and HHVM nightlies. Tests are also actively being run against PHP 7, though compatibility will not be guaranteed until after it is stable.
 
   
 
-#### Compatibility with Symfony
+## Compatibility with Symfony
 
 LemonRestBundle now supports Symfony versions 2.3, 2.4, 2.5 and 2.6. Additionally, preliminary support has been made for 2.7. While 2.7 is not currently running in Travis CI, if you use it in your projects it will work.
 
   
 
-#### Compatibility with Doctrine ORM
+## Compatibility with Doctrine ORM
 
 LemonRestBundle now support Doctrine ORM 2.3, 2.4 and 2.5 In general it is recommended you use 2.5 whenever possible.
 
   
 
-#### Compatibility with Doctrine MongoDB ODM
+## Compatibility with Doctrine MongoDB ODM
 
 LemonRestBundle now works with [Doctrine MongoDB ODM](http://doctrine-mongodb-odm.readthedocs.org/en/latest/)! There are tests specifically for the mongo implementation and they are running in TravisCI.
 

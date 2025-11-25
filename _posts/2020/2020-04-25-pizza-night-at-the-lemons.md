@@ -34,7 +34,7 @@ For this recipe you're going to need a scale, because all of my measurements are
 
 I use a mixer to combine my ingredients, but you can absolutely do this by hand too. Combine all of the ingredients and work them together until you have a smooth dough. In my Kitchen Aide mixer I start at speed 1 for 1-2 minutes and then increase it to speed 2 for another 6-8 minutes. In total you're going to mix the dough for 8-10 minutes, but the important thing is the texture. If you're doing this by hand, try not to add too much additional flour from your work service to the dough. Gently work it, folding the dough over itself again and again until you get a smooth and consistent dough.
 
-### Ingredients:
+## Ingredients
 
 * Active Yeast 9g
 * Water 372g
@@ -45,7 +45,7 @@ I use a mixer to combine my ingredients, but you can absolutely do this by hand 
 
 _See notes below for additional information on ingredients._
 
-### Directions
+## Directions
 
 After you've combined the ingredients, divide the dough into two even balls. I used my scale to weigh them and make sure they're equal. Then place the dough balls onto a lightly floured plate, cover it with plastic wrap and place it into your fridge for 5-8 hours. During this time the dough will rise, but thanks to the refrigeration it'll rise a little bit slower and develop a richer flavor profile.
 
@@ -59,7 +59,7 @@ Transfer your pizza into your hot 550 degree oven and set a timer for 6 minutes.
 
 When cutting a pizza I'm a big fan of the [Kitchy](https://amzn.to/2x5SRc0) which is sharp, easy to use and a breeze to clean.
 
-### Notes
+## Notes
 
 * I highly recommend [Saf Instant yeast](https://shop.kingarthurflour.com/items/saf-red-instant-yeast-16-oz), this stuff just works. If you have Fleischman's that's ok, but next time you're out shopping keep an eye out for Saf.
 * [00 flour](https://amzn.to/3bI2rRG) is what gives my pizza that pizza-parlour smell and flavor that is so distinct from other flour. It's highly refined and finely milled Italian flour, often used in making pasta, but really puts your pizza over the top.
