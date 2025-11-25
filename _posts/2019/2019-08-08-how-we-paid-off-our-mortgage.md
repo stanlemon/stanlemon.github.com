@@ -15,7 +15,7 @@ Awhile back I wrote an article about [visualizing my mortgage]({{site.url}}/2018
 
 <!-- excerpt -->
 
-{% image "./assets/mortgage-paid.jpg", "Mrs. Lemon and I standing in front of our home with our mortgage visualization fully colored in because we had just paid the mortgage off." %}
+{% image "./assets/mortgage-paid.jpg", "Mrs. Lemon and I in front of our home with our mortgage visualization fully colored in." %}
 
 Since my post many friends and *frenemies* alike have asked us two questions. First, how did we do it? Second, did we use Dave Ramsey’s methods? The answer to the second question is no, we did not explicitly use Dave Ramsey’s methods. Some of his principles and methods look very similar to our own though, so it’s possible we’ve been unintentionally using parts of them for the better part of a decade. The first question is harder to answer and does not have a quick and straight forward answer, so I figured I’d write a post about it.
 
