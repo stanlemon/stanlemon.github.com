@@ -63,7 +63,9 @@
 
   <link rel="stylesheet" href="/css/main.css">
 
+  {% unless page.url == "/" %}
   <script defer src="{{site.url}}/assets/shrink-header.js"></script>
+  {% endunless %}
 
   <!-- Structured Data / JSON-LD -->
   {% if title and date %}
@@ -121,7 +123,7 @@
   <div class="content">
     <div class="header-wrapper">
       <a href="{{site.url}}/">
-        {% image "./assets/lemon-with-leaves@2x.png", "Stan Lemon's logo - a lemon with leaves", "post-img" %}
+        {% image "./assets/lemon-with-leaves@2x.png", "Stan Lemon's logo - a lemon with leaves", "post-img", '{"loading":"eager","fetchpriority":"high"}' %}
       </a>
     </div>
 
@@ -134,37 +136,37 @@
     <ul>
       <li>
         <a href="https://github.com/{{ site.social.github }}" rel="noopener" target="_blank" aria-label="You can find some of my coding projects on GitHub" class="social-github">
-          <i class="fa-brands fa-github fa-2x" title="GitHub" aria-hidden="true"></i>
+          {% faIcon "brands", "github" %}
           <span class="sr-only">GitHub profile</span>
         </a>
       </li>
       <li>
         <a href="https://linkedin.com/in/{{ site.social.linkedin }}" rel="noopener" target="_blank" aria-label="You can find about me professionally on LinkedIn" class="social-linkedin">
-          <i class="fa-brands fa-linkedin fa-2x" title="LinkedIn" aria-hidden="true"></i>
+          {% faIcon "brands", "linkedin" %}
           <span class="sr-only">LinkedIn profile</span>
         </a>
       </li>
       <li>
         <a href="https://instagram.com/{{ site.social.instagram }}" rel="noopener" target="_blank" aria-label="Follow me on Instagram" class="social-instagram">
-          <i class="fa-brands fa-instagram fa-2x" title="Instagram" aria-hidden="true"></i>
+          {% faIcon "brands", "instagram" %}
           <span class="sr-only">Instagram feed</span>
         </a>
       </li>
       <li>
         <a href="https://threads.net/@{{ site.social.threads }}" rel="noopener" target="_blank" aria-label="Follow me on Threads" class="social-threads">
-          <i class="fa-brands fa-threads fa-2x" title="Threads" aria-hidden="true"></i>
+          {% faIcon "brands", "threads" %}
           <span class="sr-only">Threads profile</span>
         </a>
       </li>
       <li>
         <a href="https://www.youtube.com/{{ site.social.youtube }}" rel="noopener" target="_blank" aria-label="Watch my videos on YouTube" class="social-youtube">
-          <i class="fa-brands fa-youtube fa-2x" title="YouTube" aria-hidden="true"></i>
+          {% faIcon "brands", "youtube" %}
           <span class="sr-only">YouTube channel</span>
         </a>
       </li>
       <li>
         <a href="{{site.url}}/feed.xml" aria-label="Subscribe via RSS" class="social-rss">
-          <i class="fa-solid fa-square-rss fa-2x" title="Subscribe via RSS" aria-hidden="true"></i>
+          {% faIcon "solid", "square-rss" %}
           <span class="sr-only">RSS feed</span>
         </a>
       </li>

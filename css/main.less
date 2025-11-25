@@ -8,9 +8,6 @@
 
 @import "navigation.less";
 
-// FontAwesome
-@import "fontawesome.less";
-
 // Google fonts
 @import (less) "googlefonts.css";
 
@@ -176,6 +173,12 @@ footer {
     font-size: 0.85em;
     color: @textColorMuted;
     margin-top: 20px;
+  }
+
+  .social-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: inline-block;
   }
 
   a:link,
@@ -377,25 +380,6 @@ article {
     display: none;
   }
 }
-
-/*
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #040404;
-  }
-
-  .top-spacer, .content, footer {
-    background-color: #000;
-    color: #fff;
-  }
-
-  .content {
-    a, a:visited, a:active, a:hover {
-      color: #000091;
-    }
-  }
-}
-*/
 
 @media print {
   body {

@@ -80,6 +80,32 @@ describe("parseImageArgs", () => {
     assert.strictEqual(result.className, "my-class");
   });
 
+  it("should parse optional JSON options", () => {
+    const args = `"./assets/image.jpg", "Alt text", "my-class", '{"loading":"eager","fetchpriority":"high"}'`;
+    const result = parseImageArgs(args);
+
+    assert.strictEqual(result.src, "./assets/image.jpg");
+    assert.strictEqual(result.alt, "Alt text");
+    assert.strictEqual(result.className, "my-class");
+    assert.deepStrictEqual(result.options, { loading: "eager", fetchpriority: "high" });
+  });
+
+  it("should throw when options JSON is invalid", () => {
+    const args = `"./assets/image.jpg", "Alt text", "my-class", '{invalid'`;
+    assert.throws(
+      () => parseImageArgs(args),
+      /image tag options must be valid JSON/
+    );
+  });
+
+  it("should throw when options JSON is not an object", () => {
+    const args = `"./assets/image.jpg", "Alt text", "my-class", '[1,2,3]'`;
+    assert.throws(
+      () => parseImageArgs(args),
+      /Options must be a JSON object/
+    );
+  });
+
   it("should handle className with single quotes", () => {
     const result = parseImageArgs("'./assets/image.jpg', 'Alt text', 'my-class'");
 

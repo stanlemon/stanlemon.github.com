@@ -6,11 +6,14 @@ const Image = require("@11ty/eleventy-img");
 const { parseImageArgs } = require("./lib/image-tag");
 const { filterPosts, filterPinnedPosts, filterRecentPosts } = require("./lib/collections");
 const { paginate } = require("./lib/filters");
+const { registerFontAwesomeShortcodes } = require("./lib/fontawesome");
 
 const markdown = new MarkdownIt({ html: true });
 
-module.exports = (eleventyConfig) => {
+module.exports = function configureEleventy(eleventyConfig) {
   eleventyConfig.addPlugin(SyntaxHighlight);
+
+  registerFontAwesomeShortcodes(eleventyConfig);
 
   // Image tag for responsive images
   eleventyConfig.addLiquidTag("image", (liquidEngine) => {
@@ -20,7 +23,7 @@ module.exports = (eleventyConfig) => {
         this.args = tagToken.args;
       },
       render: async function(scope, hash) {
-        const { src, alt, className } = parseImageArgs(this.args);
+        const { src, alt, className, options } = parseImageArgs(this.args);
 
         let metadata = await Image(src, {
           widths: [300, 600, 1200],
@@ -29,12 +32,28 @@ module.exports = (eleventyConfig) => {
           urlPath: "/img/",
         });
 
+        const allowedOptionKeys = ["loading", "decoding", "fetchpriority", "sizes"];
+        const sanitizedOptions = {};
+
+        if (options) {
+          for (const key of allowedOptionKeys) {
+            if (options[key]) {
+              sanitizedOptions[key] = options[key];
+            }
+          }
+        }
+
         let imageAttributes = {
           alt,
           sizes: "100vw",
           loading: "lazy",
           decoding: "async",
+          ...sanitizedOptions,
         };
+
+        if (imageAttributes.loading === "eager" && !imageAttributes.fetchpriority) {
+          imageAttributes.fetchpriority = "high";
+        }
 
         if (className) {
           imageAttributes.class = className;
@@ -48,11 +67,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("llms.txt");
-
-  // Copy FontAwesome font files to css directory
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@fortawesome/fontawesome-free/webfonts": "css"
-  });
 
   // Watch Less files for changes during development
   eleventyConfig.addWatchTarget('./css/*.less');
