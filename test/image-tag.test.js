@@ -71,4 +71,36 @@ describe("parseImageArgs", () => {
     assert.strictEqual(result.src, "./assets/image.jpg");
     assert.strictEqual(result.alt, "Alt text");
   });
+
+  it("should parse optional className parameter", () => {
+    const result = parseImageArgs('"./assets/image.jpg", "Alt text", "my-class"');
+
+    assert.strictEqual(result.src, "./assets/image.jpg");
+    assert.strictEqual(result.alt, "Alt text");
+    assert.strictEqual(result.className, "my-class");
+  });
+
+  it("should handle className with single quotes", () => {
+    const result = parseImageArgs("'./assets/image.jpg', 'Alt text', 'my-class'");
+
+    assert.strictEqual(result.src, "./assets/image.jpg");
+    assert.strictEqual(result.alt, "Alt text");
+    assert.strictEqual(result.className, "my-class");
+  });
+
+  it("should handle className with multiple CSS classes", () => {
+    const result = parseImageArgs('"./assets/image.jpg", "Alt text", "class1 class2 class3"');
+
+    assert.strictEqual(result.src, "./assets/image.jpg");
+    assert.strictEqual(result.alt, "Alt text");
+    assert.strictEqual(result.className, "class1 class2 class3");
+  });
+
+  it("should return undefined className when not provided", () => {
+    const result = parseImageArgs('"./assets/image.jpg", "Alt text"');
+
+    assert.strictEqual(result.src, "./assets/image.jpg");
+    assert.strictEqual(result.alt, "Alt text");
+    assert.strictEqual(result.className, undefined);
+  });
 });

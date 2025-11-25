@@ -20,7 +20,7 @@ module.exports = (eleventyConfig) => {
         this.args = tagToken.args;
       },
       render: async function(scope, hash) {
-        const { src, alt } = parseImageArgs(this.args);
+        const { src, alt, className } = parseImageArgs(this.args);
 
         let metadata = await Image(src, {
           widths: [300, 600, 1200],
@@ -35,6 +35,10 @@ module.exports = (eleventyConfig) => {
           loading: "lazy",
           decoding: "async",
         };
+
+        if (className) {
+          imageAttributes.class = className;
+        }
 
         return Image.generateHTML(metadata, imageAttributes);
       }
