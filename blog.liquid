@@ -32,6 +32,7 @@ metadata:
         <li>
           <a href="{{ site.url }}{{ pagination.href.previous }}">
             <i class="fa-solid fa-angles-left" title="Previous"></i>
+            <span class="sr-only">Previous</span>
           </a>
         </li>
       {% else %}
@@ -68,8 +69,9 @@ metadata:
 
       {% if pagination.href.next %}
         <li>
-          <a href="{{ site.url }}{{ pagination.next.previous }}">
+          <a href="{{ site.url }}{{ pagination.href.next }}">
             <i class="fa-solid fa-angles-right" title="Next"></i>
+            <span class="sr-only">Next</span>
           </a>
         </li>
       {% else %}
