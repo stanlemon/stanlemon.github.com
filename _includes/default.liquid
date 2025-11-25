@@ -115,7 +115,9 @@
 </head>
 <body{% if page.url == "/" %} class="homepage"{% endif %}>
 
-<div class="container" role="main">
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<main id="main-content" class="container">
   <div class="content">
     <div class="header-wrapper">
       <a href="{{site.url}}/">
@@ -125,7 +127,7 @@
 
     {{ content }}
   </div>
-</div>
+</main>
 
 <footer>
   <div class="text-center">
