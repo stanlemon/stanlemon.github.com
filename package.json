@@ -4,7 +4,8 @@
   "description": "Stan Lemon's personal website.",
   "author": "Stan Lemon",
   "license": "MIT",
-  "main": ".eleventy.js",
+  "type": "module",
+  "main": "eleventy.config.js",
   "scripts": {
     "test": "node --test test/**/*.test.js",
     "serve": "SITE_URL='' eleventy --serve  --port 3000",

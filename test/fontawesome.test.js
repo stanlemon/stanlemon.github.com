@@ -1,7 +1,6 @@
-const { describe, it, mock } = require("node:test");
-const assert = require("node:assert");
-
-const { getFontAwesomeSvg, registerFontAwesomeShortcodes } = require("../lib/fontawesome");
+import { describe, it, mock } from "node:test";
+import assert from "node:assert";
+import { getFontAwesomeSvg, registerFontAwesomeShortcodes } from "../lib/fontawesome.js";
 
 describe("FontAwesome helper", () => {
   it("should return svg markup with default class and accessibility attrs", () => {

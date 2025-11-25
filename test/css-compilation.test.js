@@ -1,9 +1,9 @@
-const { describe, it } = require("node:test");
-const assert = require("node:assert");
+import { describe, it } from "node:test";
+import assert from "node:assert";
+import CssTemplate from "../css/main.11ty.js";
 
 describe("CSS Compilation", () => {
   it("should export a class with data and render methods", () => {
-    const CssTemplate = require("../css/main.11ty.js");
     const instance = new CssTemplate();
 
     assert.ok(typeof instance.data === "function", "should have data method");
@@ -11,7 +11,6 @@ describe("CSS Compilation", () => {
   });
 
   it("should configure correct permalink", () => {
-    const CssTemplate = require("../css/main.11ty.js");
     const instance = new CssTemplate();
     const data = instance.data();
 
@@ -20,7 +19,6 @@ describe("CSS Compilation", () => {
   });
 
   it("should render valid CSS output", async () => {
-    const CssTemplate = require("../css/main.11ty.js");
     const instance = new CssTemplate();
     const css = await instance.render();
 
@@ -34,7 +32,6 @@ describe("CSS Compilation", () => {
   });
 
   it("should compile without errors", async () => {
-    const CssTemplate = require("../css/main.11ty.js");
     const instance = new CssTemplate();
 
     // Should not throw

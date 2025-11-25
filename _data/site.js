@@ -1,6 +1,8 @@
-require("dotenv").config();
+import dotenv from "dotenv";
 
-module.exports = () => {
+dotenv.config();
+
+export default function loadSiteData() {
   const envSiteUrl = process.env.SITE_URL;
   const siteUrl = envSiteUrl && envSiteUrl.trim().length > 0 ? envSiteUrl : "https://stanlemon.com";
 
@@ -21,4 +23,4 @@ module.exports = () => {
     // Google Analytics tracking ID
     googleAnalyticsId: "G-LRTQMGFLV3",
   };
-};
+}

@@ -60,7 +60,7 @@ The rest of your post content...
 - `_data/` - Global site data
 - `assets/` - Static assets (images, etc.)
 - `css/` - Less stylesheets
-- `.eleventy.js` - Build configuration
+- `eleventy.config.js` - Build configuration (ESM)
 
 ## Key Features
 
@@ -72,6 +72,7 @@ The rest of your post content...
 - 📡 RSS feed
 - 💻 Syntax highlighting for code
 - 📌 Pinned posts on homepage
+- 📦 Native ES modules (`"type": "module"`) across custom build logic
 
 ## Deployment
 
@@ -87,4 +88,4 @@ MIT - See [LICENSE](./LICENSE) if present.
 
 ---
 
-**Repository**: https://github.com/stanlemon/stanlemon.github.com
+**Repository**: [github.com/stanlemon/stanlemon.github.com](https://github.com/stanlemon/stanlemon.github.com)

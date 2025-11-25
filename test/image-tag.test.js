@@ -1,6 +1,6 @@
-const { describe, it } = require("node:test");
-const assert = require("node:assert");
-const { parseImageArgs } = require("../lib/image-tag");
+import { describe, it } from "node:test";
+import assert from "node:assert";
+import { parseImageArgs } from "../lib/image-tag.js";
 
 describe("parseImageArgs", () => {
   it("should parse double-quoted arguments", () => {

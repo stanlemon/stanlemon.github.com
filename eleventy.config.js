@@ -1,31 +1,30 @@
-require("dotenv").config();
+import dotenv from "dotenv";
+import SyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import MarkdownIt from "markdown-it";
+import Image from "@11ty/eleventy-img";
+import { parseImageArgs } from "./lib/image-tag.js";
+import { filterPosts, filterPinnedPosts, filterRecentPosts } from "./lib/collections.js";
+import { paginate } from "./lib/filters.js";
+import { registerFontAwesomeShortcodes } from "./lib/fontawesome.js";
 
-const SyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const MarkdownIt = require("markdown-it");
-const Image = require("@11ty/eleventy-img");
-const { parseImageArgs } = require("./lib/image-tag");
-const { filterPosts, filterPinnedPosts, filterRecentPosts } = require("./lib/collections");
-const { paginate } = require("./lib/filters");
-const { registerFontAwesomeShortcodes } = require("./lib/fontawesome");
+dotenv.config();
 
 const markdown = new MarkdownIt({ html: true });
 
-module.exports = function configureEleventy(eleventyConfig) {
+export default function configureEleventy(eleventyConfig) {
   eleventyConfig.addPlugin(SyntaxHighlight);
 
   registerFontAwesomeShortcodes(eleventyConfig);
 
-  // Image tag for responsive images
   eleventyConfig.addLiquidTag("image", (liquidEngine) => {
     return {
-      parse: function(tagToken) {
-        // Store raw args string
+      parse(tagToken) {
         this.args = tagToken.args;
       },
-      render: async function(scope, hash) {
+      async render() {
         const { src, alt, className, options } = parseImageArgs(this.args);
 
-        let metadata = await Image(src, {
+        const metadata = await Image(src, {
           widths: [300, 600, 1200],
           formats: ["webp", "jpeg"],
           outputDir: "./_site/img/",
@@ -43,7 +42,7 @@ module.exports = function configureEleventy(eleventyConfig) {
           }
         }
 
-        let imageAttributes = {
+        const imageAttributes = {
           alt,
           sizes: "100vw",
           loading: "lazy",
@@ -60,7 +59,7 @@ module.exports = function configureEleventy(eleventyConfig) {
         }
 
         return Image.generateHTML(metadata, imageAttributes);
-      }
+      },
     };
   });
 
@@ -68,8 +67,7 @@ module.exports = function configureEleventy(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("llms.txt");
 
-  // Watch Less files for changes during development
-  eleventyConfig.addWatchTarget('./css/*.less');
+  eleventyConfig.addWatchTarget("./css/*.less");
 
   eleventyConfig.addCollection("posts", (collection) => {
     const posts = collection.getFilteredByGlob("_posts/**/*.md");
@@ -91,21 +89,14 @@ module.exports = function configureEleventy(eleventyConfig) {
     excerpt_separator: "<!-- excerpt -->",
   });
 
-  // Treat a variable or string as liquid and render it (rather than simply print it)
   eleventyConfig.addLiquidTag("liquidify", (liquidEngine) => {
     return {
-      parse: (tagToken, remainingTokens) => {
+      parse(tagToken) {
         this.str = tagToken.args;
       },
-      render: async (scope, hash) => {
-        // Resolve variables
+      async render(scope) {
         const value = liquidEngine.evalValueSync(this.str, scope);
-        // Render the variable as liquid first (now async-compatible)
-        const liquidRendered = await liquidEngine.parseAndRender(
-          value,
-          scope
-        );
-        // Then render markdown content
+        const liquidRendered = await liquidEngine.parseAndRender(value, scope);
         return markdown.render(liquidRendered);
       },
     };
@@ -119,8 +110,8 @@ module.exports = function configureEleventy(eleventyConfig) {
 
   return {
     dir: {
-      input: "./", // Equivalent to Jekyll's source property
-      output: "./_site", // Equivalent to Jekyll's destination property
+      input: "./",
+      output: "./_site",
     },
   };
-};
+}

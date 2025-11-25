@@ -1,6 +1,6 @@
-const { describe, it } = require("node:test");
-const assert = require("node:assert");
-const { paginate } = require("../lib/filters");
+import { describe, it } from "node:test";
+import assert from "node:assert";
+import { paginate } from "../lib/filters.js";
 
 describe("paginate filter", () => {
   it("should return correct pages for first page", () => {

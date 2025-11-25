@@ -1,6 +1,6 @@
-const { describe, it } = require("node:test");
-const assert = require("node:assert");
-const { filterPosts, filterPinnedPosts, filterRecentPosts } = require("../lib/collections");
+import { describe, it } from "node:test";
+import assert from "node:assert";
+import { filterPosts, filterPinnedPosts, filterRecentPosts } from "../lib/collections.js";
 
 describe("filterPosts", () => {
   it("should filter out draft posts by default", () => {
