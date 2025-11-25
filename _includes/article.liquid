@@ -1,9 +1,15 @@
 <article>
   <div class="columns is-vbottom">
     <div>
+      {% if headingLevel == 1 %}
+      <h1 class="article-title">
+        <a href="{{ url }}">{{ title }}</a>
+      </h1>
+      {% else %}
       <h2 class="article-title">
         <a href="{{ url }}">{{ title }}</a>
       </h2>
+      {% endif %}
     </div>
     <h4 class="article-date">{{ date | date: "%b %d, %Y" }}</h4>
   </div>
