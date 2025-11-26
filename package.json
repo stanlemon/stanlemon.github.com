@@ -10,7 +10,7 @@
     "test": "node --test test/**/*.test.js",
     "serve": "SITE_URL='' eleventy --serve  --port 3000",
     "build": "npm-run-all test clean site",
-    "site": "eleventy",
+    "site": "NODE_ENV=production eleventy",
     "clean": "rimraf ./_site/**"
   },
   "dependencies": {

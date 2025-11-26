@@ -38,7 +38,11 @@ describe("eleventy.config", () => {
       mock.addPassthroughCopyCalls.map(([path]) => path),
       ["assets", "robots.txt", "llms.txt"]
     );
-    assert.deepStrictEqual(mock.addWatchTargetCalls, [["./css/*.less"]]);
+    const watchTargets = mock.addWatchTargetCalls
+      .map(([target]) => target)
+      .sort((a, b) => a.localeCompare(b));
+    const expectedWatchTargets = ["./css/*.less", "./css/above-the-fold.css"].sort((a, b) => a.localeCompare(b));
+    assert.deepStrictEqual(watchTargets, expectedWatchTargets);
     assert.deepStrictEqual(mock.setFrontMatterParsingOptionsCalls[0][0], {
       excerpt: true,
       excerpt_separator: "<!-- excerpt -->",
@@ -70,6 +74,10 @@ describe("eleventy.config", () => {
       assert.strictEqual(typeof callback, "function", "Collection callbacks should be functions");
     }
 
-    assert.strictEqual(mock.addShortcodeCalls.length, 1, "Font Awesome shortcode should be registered");
+    const shortcodeNames = mock.addShortcodeCalls
+      .map(([name]) => name)
+      .sort((a, b) => a.localeCompare(b));
+    const expectedShortcodeNames = ["criticalCss", "faIcon"].sort((a, b) => a.localeCompare(b));
+    assert.deepStrictEqual(shortcodeNames, expectedShortcodeNames);
   });
 });

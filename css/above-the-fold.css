@@ -1,0 +1,142 @@
+/* Critical path CSS for initial paint */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65em;
+  color: #222;
+  background-color: #fff;
+  font-family: -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a,
+a:visited {
+  font-weight: 600;
+  text-decoration: none;
+  color: #558000;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+main {
+  display: block;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 730px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+}
+
+.content {
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.header-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body:not(.homepage) .header-wrapper {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 80%,
+    rgba(255, 255, 255, 0.8) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 100;
+  transition: padding 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  padding: 25px 0 40px;
+}
+
+body:not(.homepage) .header-wrapper.shrink {
+  padding: 10px 0 30px;
+}
+
+img.post-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
+  max-width: 60%;
+  transition: max-width 0.3s ease-in-out;
+}
+
+body:not(.homepage) img.post-img.shrink {
+  max-width: 30%;
+}
+
+body.homepage img.post-img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+img.post-img.half {
+  width: 50%;
+}
+
+img.post-img.third {
+  width: 33%;
+}
+
+img.post-img.quarter {
+  width: 25%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}

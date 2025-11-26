@@ -2,6 +2,9 @@ import dotenv from "dotenv";
 import SyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import MarkdownIt from "markdown-it";
 import Image from "@11ty/eleventy-img";
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { parseImageArgs } from "./lib/image-tag.js";
 import { filterPosts, filterPinnedPosts, filterRecentPosts } from "./lib/collections.js";
 import { paginate } from "./lib/filters.js";
@@ -10,11 +13,23 @@ import { registerFontAwesomeShortcodes } from "./lib/fontawesome.js";
 dotenv.config();
 
 const markdown = new MarkdownIt({ html: true });
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const criticalCssPath = join(__dirname, "css", "above-the-fold.css");
+let criticalCssCache;
+
+function getCriticalCss() {
+  if (!criticalCssCache) {
+    criticalCssCache = readFileSync(criticalCssPath, "utf8");
+  }
+  return criticalCssCache;
+}
 
 export default function configureEleventy(eleventyConfig) {
   eleventyConfig.addPlugin(SyntaxHighlight);
 
   registerFontAwesomeShortcodes(eleventyConfig);
+  eleventyConfig.addShortcode("criticalCss", () => getCriticalCss());
 
   eleventyConfig.addLiquidTag("image", (liquidEngine) => {
     return {
@@ -26,7 +41,7 @@ export default function configureEleventy(eleventyConfig) {
 
         const metadata = await Image(src, {
           widths: [300, 600, 1200],
-          formats: ["webp", "jpeg"],
+          formats: ["webp", "jpeg", "png"],
           outputDir: "./_site/img/",
           urlPath: "/img/",
         });
@@ -68,6 +83,7 @@ export default function configureEleventy(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("llms.txt");
 
   eleventyConfig.addWatchTarget("./css/*.less");
+  eleventyConfig.addWatchTarget("./css/above-the-fold.css");
 
   eleventyConfig.addCollection("posts", (collection) => {
     const posts = collection.getFilteredByGlob("_posts/**/*.md");
