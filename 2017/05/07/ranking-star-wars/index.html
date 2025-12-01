@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Ranking Star Wars - Stan Lemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Recently a friend of mine, Rev.">
+  <meta name="keywords" content="entertainment, review, REST API, Star Wars, Marvel">
+  <meta name="author" content="Stan Lemon">
+  <meta name="theme-color" content="#FEAE0F"/>
+  <link rel="canonical" href="https://stanlemon.com/2017/05/07/ranking-star-wars/">
+  <link rel="alternate" type="application/rss+xml" title="Stan Lemon" href="https://stanlemon.com/feed.xml" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://stanlemon.com/2017/05/07/ranking-star-wars/">
+  <meta property="og:title" content="Ranking Star Wars">
+  <meta property="og:description" content="Recently a friend of mine, Rev.">
+  <meta property="og:image" content="https://stanlemon.com/assets/lemon-with-leaves@2x.png">
+  <meta property="og:site_name" content="Stan Lemon">
+  <meta property="article:published_time" content="2017-05-07T19:06:00+0000">
+  <meta property="article:author" content="Stan Lemon">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://stanlemon.com/2017/05/07/ranking-star-wars/">
+  <meta name="twitter:title" content="Ranking Star Wars">
+  <meta name="twitter:description" content="Recently a friend of mine, Rev.">
+  <meta name="twitter:image" content="https://stanlemon.com/assets/lemon-with-leaves@2x.png">
+
+  <link rel="preload" as="font" href="/assets/fonts/oswald.woff" type="font/woff" crossorigin="anonymous">
+
+  <style>
+    /* Critical path CSS for initial paint */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65em;
+  color: #222;
+  background-color: #fff;
+  font-family: -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a,
+a:visited {
+  font-weight: 600;
+  text-decoration: none;
+  color: #558000;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+main {
+  display: block;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 730px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+}
+
+.content {
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.header-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body:not(.homepage) .header-wrapper {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 80%,
+    rgba(255, 255, 255, 0.8) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 100;
+  transition: padding 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  padding: 25px 0 40px;
+}
+
+body:not(.homepage) .header-wrapper.shrink {
+  padding: 10px 0 30px;
+}
+
+img.post-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
+  max-width: 60%;
+  transition: max-width 0.3s ease-in-out;
+}
+
+body:not(.homepage) img.post-img.shrink {
+  max-width: 30%;
+}
+
+body.homepage img.post-img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+img.post-img.half {
+  width: 50%;
+}
+
+img.post-img.third {
+  width: 33%;
+}
+
+img.post-img.quarter {
+  width: 25%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+  </style>
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  
+  <script defer src="https://stanlemon.com/assets/shrink-header.js"></script>
+  
+
+  <!-- Structured Data / JSON-LD -->
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Ranking Star Wars",
+    "author": {
+      "@type": "Person",
+      "name": "Stan Lemon"
+    },
+    "datePublished": "2017-05-07T19:06:00+0000",
+    "description": "Recently a friend of mine, Rev.",
+    "image": "https://stanlemon.com/assets/lemon-with-leaves@2x.png",
+    "url": "https://stanlemon.com/2017/05/07/ranking-star-wars/",
+    "publisher": {
+      "@type": "Person",
+      "name": "Stan Lemon"
+    }
+  }
+  </script>
+  
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRTQMGFLV3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LRTQMGFLV3');
+  </script>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<main id="main-content" class="container">
+  <div class="content">
+    <div class="header-wrapper">
+      <a href="https://stanlemon.com/">
+        <picture><source type="image/webp" srcset="/img/sTTzo6hJyp-300.webp 300w, /img/sTTzo6hJyp-600.webp 600w, /img/sTTzo6hJyp-1200.webp 1200w" sizes="100vw"><img src="/img/sTTzo6hJyp-300.png" alt="Stan Lemon's logo - a lemon with leaves" loading="eager" decoding="async" fetchpriority="high" class="post-img" width="1200" height="834" srcset="/img/sTTzo6hJyp-300.png 300w, /img/sTTzo6hJyp-600.png 600w, /img/sTTzo6hJyp-1200.png 1200w" sizes="100vw"></picture>
+      </a>
+    </div>
+
+    
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      
+      <h1 class="article-title">
+        <a href="">Ranking Star Wars</a>
+      </h1>
+      
+    </div>
+    <div class="article-date">May 07, 2017</div>
+  </div>
+
+  <hr>
+
+  <p>Recently a friend of mine, <a href="https://twitter.com/revborghardt">Rev. George Borghardt</a> asked the internet to rank Star Wars movies, best to last. Presumably this was inspired by a discussion he and I had over some of Kentucky's finest just the week before.</p>
+<blockquote>
+<p>Arrange the Star Wars Movies from your favorite to your least favorite! Mine List: V, VI, VII, Rogue One, IV, III, I, II</p>
+<p>— George Borghardt (@revborghardt) <a href="https://twitter.com/revborghardt/status/861035823055093760">May 7, 2017</a></p>
+</blockquote>
+<p>Some folks try to skimp on this and throw out Phantom Menace, Attack of the Clones and Revenge of the Sith as if they're not &quot;Star Wars&quot;, but here's the deal: <strong>They are.</strong> I don't think anyone in their right mind would dispute that they are of lesser quality than the original trilogy, Force Awakens and Rogue One. Nonetheless, they are canon!  I generally take the stance that the acting is horrible, but the underlying story is a valuable contribution to the galaxy. I'll go even further by saying that I'm a huge fan of The Clone Wars TV Show, and you don't get that without the prequels, which thus makes their cinematic presence worth it.</p>
+<p>I'm going to cut to the chase, give you my list, and then explain why below.  Here they are from best to worst:</p>
+<ol>
+<li>Empire Strikes Back</li>
+<li>Rogue One</li>
+<li>A New Hope</li>
+<li>Return of the Jedi</li>
+<li>Force Awakens</li>
+<li>Revenge of the Sith</li>
+<li>Attack of the Clones</li>
+<li>Phantom Menace</li>
+</ol>
+<hr>
+<p><strong>Spoiler Alert:</strong> If you haven't seen <strong>ALL</strong> of the Star Wars movies then this is <strong>not</strong> the blog article you're looking for.</p>
+<hr>
+<p>I've never seen a respectable ordering of Star Wars movies where Empire wasn't first.  If you put Return of the Jedi ahead of it, say because you like Ewoks, then I would contend, you're not serious about Star Wars. There, I've said it!  But seriously, this is the movie that gave us AT-ATs, Bespin and Han Solo in carbonite! It's the movie that's awesome, even without a trench run and a moon-like killing machine. The characters are developed; they're building chemistry, and the story unfolds with you on the edge of your seat through every scene. Seriously, I just love this movie!</p>
+<p>Some people are going to be shocked that I've put Rogue One so high, so let me defend myself a little here.  First off it's worth noting I might still be high on Stardust, but I really loved this movie! I felt the story itself was bold and well-developed. The movie as a whole stands on its own laurels.  The soundtrack is exquisite, especially considering that John Williams didn't score it! Chirrut has become my favorite Star Wars character (supplanting Chewie after years in first place).  There isn't a character in this movie I felt was poorly cast, and each was an excellent contribution to not only the film, but the franchise as a whole.  K2SO was a hoot and a half. Alan Tudyk did a fantastic job, and my only regret is that this is his only chapter in the universe. Speaking of which, they killed them all! This controversial way to end the movie was bold, and the clean bookends only enhanced the awesomeness of this tale. The battle scene at Scarif is amazing; easily the most thrilling CGI in the franchise. The little easter eggs from Rebels were delightful. The closing scene with Vader was truly ruthless, and the conclusion of this movie is a beautiful tie in to A New Hope - far more wonderful than I would have ever expected.  I'll say this in conclusion, I wasn't born by the time Return of the Jedi first appeared in theaters. I caught the theatrical re-release and while I loved them, only Force Awakens and Rogue One have been the Star Wars of my generation. Of the two, Rogue One is the movie that I walked away with goosebumps, excited about what this far away galaxy had in store for both me and my kids.</p>
+<p>Again, I might be high on stardust, so I reserve the right to revisit this when I come down from cloud city.</p>
+<p>I put A New Hope next, which might surprise some people but my reasoning is simple - this movie created the galaxy we know and love! The cinematography is amazing in this film, just stop and admire the camera art - it's stunning. This movie opens and we're immediately immersed in the story.  Stuff has happened, there's a history to the tale that's being told, a move unlike anything I can think of from its time. We get introduced to this evil machine man, our villain in the early moments, along with our heroine Princess Leia and the two comedic droids that transcend all of the Star Wars universe (seriously, they're the only characters in ALL of the films and show!). Most importantly there is nothing hokey about this movie (which is why it displaces the next film in my ordering); it's a true original and that's why I've ranked it here.</p>
+<p>Return of the Jedi is great, but it's admittedly a little hokey at times. The ewoks, enough said.  But I do love this movie, and it's an excellent conclusion to the original trilogy.  This movie opens with Luke &quot;a Jedi knight&quot; (no longer a padawan still discovering the ways of the force) taking on the vile gangster Jaba the Hutt.  If you were watching this for the first time when it came out this was your first introduction to Jaba!  Unlike Empire, Return leans on a Death Star, which is not in and of itself bad, but is also why Return falls behind A New Hope for me.  If Return had been the first in the franchise I would have ranked it above A New Hope, but alas it's not and thus why it falls in this spot.</p>
+<p>Force Awakens was an awesome reboot to this franchise. I love Rey's character, and Finn is an awesome wing man in this film.  While the movie starts a bit slow, it's an honest homage to the art which is A New Hope, all the way down to blowing up Star Killer Base with an X-Wing. Kylo Ren, by all measures, appears to be a formidable villain. I won't belabor all the excellent aspects of this movie, I'll just say this: Force Awakens is my generation's A New Hope, and in that vein it served it's purpose, but it's hardly an original story to the Star Wars Trilogy. While it bests the prequels (easily) it doesn't break above any of the original movies for me.</p>
+<p>Revenge of the Sith is dark, so much so that George Lucas supposedly insisted it be rated PG-13, when all other Star Wars films had just been PG. Anakin is as creepy as ever, but the supporting cast is top notch.  This movie opens with a battle over Coruscant with some amazing camera angles, and then we get a glimpse into Anakin's struggle with the dark side as he slays Count Dooku.  Order 66 is a shocking scene that answers a long time question of the Star Wars universe: What happened to the Jedi? Lastly, Anakin's fall to the Dark Side, followed by his mutilation and finally his mechanical restoration concludes the prequels in the spirit of the original trilogy. We see the twins finding their homes in the galaxy, answering one of those burning questions from Return of the Jedi. Then to top it off, we get a glimpse of Lord Vader and the Emperor watching the construction of the ultimate weapon - a proper way to transition to A New Hope. This is a great capstone to the original trilogy.  For most of my life I believed that this is where Star Wars ended and I was pretty happy with that. If Force Awakens were never to have come out this would have been an excellent ending to an epic franchise.</p>
+<p>The thing I remember the most about Attack of the Clones was that stupid scene on Naboo with Anakin and Padme frolicking through the field. This was Hayden Christensen's entrance into the Star Wars universe and his creepiness alone ruins the prequels for many people. But the truth is this movie tells us a lot about the Clones themselves, and sets up The Clone Wars TV show, which was truly fantastic. We also get our first glimpse into how Anakin struggles with the dark side as he slaughters the sand people on Tatooine. This glimpse helps the viewer transition from the cute little kid of the Phantom Menace into the evil tyrant of A New Hope. The battle scene on Geonosis is pretty much awesome, with Yoda commanding the Clones, &quot;A perimeter around the survivors create!&quot; Anakin gets his butt kicked in this one, but the scene is tensely awkward, with the only redeeming point being Yoda coming in and one upping Dooku in a way that only Yoda could. There's a glimpse of the Death Star in this one, a nugget into the backstory of the amazing killing machine that sets the scene for the original trilogy. If it wasn't for the Naboo scene it would be a close race with Revenge, but in the end it's hard not to call this movie cheesy.</p>
+<p>Phantom Menace is the one unnecessary film in the franchise, and thus it should be no surprise it's in last place.  Its limited value is in Qui Gon and Maul, let me explain.  Qui Gon becomes critical in The Clone Wars to understanding how it is that Obi Wan comes back to Luke in the original trilogy. If you don't care how or why that is, then this point is moot. Ultimately the Qui Gon / Obi Wan communing through the living force is not super critical to the story line, it's just another facet told.  Onto Maul, he was the face of this movie's release in many respects. It seemed like every movie poster featured him when Phantom came out. He was scary and the face of the Dark Side and yet in reality his on screen presence was pretty pathetic. But Maul got a second life (almost literally) in The Clone Wars that continued on into Rebels.  Some of the best stories in those two shows involve Maul and so, while Phantom Menace is unequivocally last on my list, it's worth noting the significance it had on the animated series (which kick butt by the way). Now again, you can get by without this film and often when I'm telling folks what order to watch these I leave this one out, in hopes that it won't soil their perception of this awesome set of movies.  I would mention the ridiculousness of Jar Jar at this point, but the internet is filled with far better Jar Jar Hate than I could accomplish here.</p>
+<hr>
+<p>Ordering these movies is difficult. It's like asking, which is better: Godfather or Godfather II?  In the end you're forced to say they're both great and you can't bare to choose.  That's how I feel about the original trilogy. It's almost painful to order them, and I even find myself second guessing whether I did it wrong.  With great movies like Force Awakens and Rogue One coming out, it gets even harder! That said, I've done it and I even feel pretty good about it, too!  <em>But whatever you do, please don't ask me to rank the Marvel movies!</em></p>
+
+
+  
+
+  <hr>
+</article>
+
+
+<p class="text-center">
+  <em><a href="https://eepurl.com/gvEkEL">Do you want to get new posts from my website directly in your inbox? Subscribe today!</a></em>
+</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="text-center">
+    <ul>
+      <li>
+        <a href="https://github.com/stanlemon" rel="noopener" target="_blank" aria-label="You can find some of my coding projects on GitHub" class="social-github">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+          <span class="sr-only">GitHub profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/stanlemon" rel="noopener" target="_blank" aria-label="You can find about me professionally on LinkedIn" class="social-linkedin">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/></svg>
+          <span class="sr-only">LinkedIn profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/stanlemon" rel="noopener" target="_blank" aria-label="Follow me on Instagram" class="social-instagram">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          <span class="sr-only">Instagram feed</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://threads.net/@stanlemon" rel="noopener" target="_blank" aria-label="Follow me on Threads" class="social-threads">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8 29.2 14.1 50.6 35.2 61.8 61.4 15.7 36.5 17.2 95.8-30.3 143.2-36.2 36.2-80.3 52.5-142.6 53l-.3 0c-70.2-.5-124.1-24.1-160.4-70.2-32.3-41-48.9-98.1-49.5-169.6l0-.5C17 184.3 33.6 127.2 65.9 86.2 102.2 40.1 156.2 16.5 226.4 16l.3 0c70.3 .5 124.9 24 162.3 69.9 18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4-29.2-35.8-73-54.2-130.5-54.6-57 .5-100.1 18.8-128.2 54.4-26.2 33.3-39.8 81.5-40.3 143.2 .5 61.7 14.1 109.9 40.3 143.3 28 35.6 71.2 53.9 128.2 54.4 51.4-.4 85.4-12.6 113.7-40.9 32.3-32.2 31.7-71.8 21.4-95.9-6.1-14.2-17.1-26-31.9-34.9-3.7 26.9-11.8 48.3-24.7 64.8-17.1 21.8-41.4 33.6-72.7 35.3-23.6 1.3-46.3-4.4-63.9-16-20.8-13.8-33-34.8-34.3-59.3-2.5-48.3 35.7-83 95.2-86.4 21.1-1.2 40.9-.3 59.2 2.8-2.4-14.8-7.3-26.6-14.6-35.2-10-11.7-25.6-17.7-46.2-17.8l-.7 0c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1l.8 0c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2 .1 0zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3 25.6-1.4 54.6-11.4 59.5-73.2-13.2-2.9-27.8-4.4-43.4-4.4-4.8 0-9.6 .1-14.4 .4-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"/></svg>
+          <span class="sr-only">Threads profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@stanlemon" rel="noopener" target="_blank" aria-label="Watch my videos on YouTube" class="social-youtube">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"/></svg>
+          <span class="sr-only">YouTube channel</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://stanlemon.com/feed.xml" aria-label="Subscribe via RSS" class="social-rss">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM96 136c0-13.3 10.7-24 24-24 137 0 248 111 248 248 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24 83.9 0 152 68.1 152 152 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104-13.3 0-24-10.7-24-24zm0 120a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+          <span class="sr-only">RSS feed</span>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">&copy; 2025 Stan Lemon. All rights reserved.</p>
+  </div>
+</footer>

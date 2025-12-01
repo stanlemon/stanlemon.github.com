@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Keeping Your Internet Safe with NextDNS - Stan Lemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The internet is like the Wild Wild West, without the awesome soundtrack and dance moves of Will Smith.">
+  <meta name="keywords" content="personal, family, lifestyle, AWS, Git, REST API, iPhone">
+  <meta name="author" content="Stan Lemon">
+  <meta name="theme-color" content="#FEAE0F"/>
+  <link rel="canonical" href="https://stanlemon.com/2021/01/15/keeping-your-internet-safe-with-nextdns/">
+  <link rel="alternate" type="application/rss+xml" title="Stan Lemon" href="https://stanlemon.com/feed.xml" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://stanlemon.com/2021/01/15/keeping-your-internet-safe-with-nextdns/">
+  <meta property="og:title" content="Keeping Your Internet Safe with NextDNS">
+  <meta property="og:description" content="The internet is like the Wild Wild West, without the awesome soundtrack and dance moves of Will Smith.">
+  <meta property="og:image" content="https://stanlemon.com/assets/lemon-with-leaves@2x.png">
+  <meta property="og:site_name" content="Stan Lemon">
+  <meta property="article:published_time" content="2021-01-15T14:00:00+0000">
+  <meta property="article:author" content="Stan Lemon">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://stanlemon.com/2021/01/15/keeping-your-internet-safe-with-nextdns/">
+  <meta name="twitter:title" content="Keeping Your Internet Safe with NextDNS">
+  <meta name="twitter:description" content="The internet is like the Wild Wild West, without the awesome soundtrack and dance moves of Will Smith.">
+  <meta name="twitter:image" content="https://stanlemon.com/assets/lemon-with-leaves@2x.png">
+
+  <link rel="preload" as="font" href="/assets/fonts/oswald.woff" type="font/woff" crossorigin="anonymous">
+
+  <style>
+    /* Critical path CSS for initial paint */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65em;
+  color: #222;
+  background-color: #fff;
+  font-family: -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a,
+a:visited {
+  font-weight: 600;
+  text-decoration: none;
+  color: #558000;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+main {
+  display: block;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 730px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+}
+
+.content {
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.header-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body:not(.homepage) .header-wrapper {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 80%,
+    rgba(255, 255, 255, 0.8) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 100;
+  transition: padding 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  padding: 25px 0 40px;
+}
+
+body:not(.homepage) .header-wrapper.shrink {
+  padding: 10px 0 30px;
+}
+
+img.post-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
+  max-width: 60%;
+  transition: max-width 0.3s ease-in-out;
+}
+
+body:not(.homepage) img.post-img.shrink {
+  max-width: 30%;
+}
+
+body.homepage img.post-img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+img.post-img.half {
+  width: 50%;
+}
+
+img.post-img.third {
+  width: 33%;
+}
+
+img.post-img.quarter {
+  width: 25%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+  </style>
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  
+  <script defer src="https://stanlemon.com/assets/shrink-header.js"></script>
+  
+
+  <!-- Structured Data / JSON-LD -->
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Keeping Your Internet Safe with NextDNS",
+    "author": {
+      "@type": "Person",
+      "name": "Stan Lemon"
+    },
+    "datePublished": "2021-01-15T14:00:00+0000",
+    "description": "The internet is like the Wild Wild West, without the awesome soundtrack and dance moves of Will Smith.",
+    "image": "https://stanlemon.com/assets/lemon-with-leaves@2x.png",
+    "url": "https://stanlemon.com/2021/01/15/keeping-your-internet-safe-with-nextdns/",
+    "publisher": {
+      "@type": "Person",
+      "name": "Stan Lemon"
+    }
+  }
+  </script>
+  
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRTQMGFLV3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LRTQMGFLV3');
+  </script>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<main id="main-content" class="container">
+  <div class="content">
+    <div class="header-wrapper">
+      <a href="https://stanlemon.com/">
+        <picture><source type="image/webp" srcset="/img/sTTzo6hJyp-300.webp 300w, /img/sTTzo6hJyp-600.webp 600w, /img/sTTzo6hJyp-1200.webp 1200w" sizes="100vw"><img src="/img/sTTzo6hJyp-300.png" alt="Stan Lemon's logo - a lemon with leaves" loading="eager" decoding="async" fetchpriority="high" class="post-img" width="1200" height="834" srcset="/img/sTTzo6hJyp-300.png 300w, /img/sTTzo6hJyp-600.png 600w, /img/sTTzo6hJyp-1200.png 1200w" sizes="100vw"></picture>
+      </a>
+    </div>
+
+    
+<article>
+  <div class="columns is-vbottom">
+    <div>
+      
+      <h1 class="article-title">
+        <a href="">Keeping Your Internet Safe with NextDNS</a>
+      </h1>
+      
+    </div>
+    <div class="article-date">Jan 15, 2021</div>
+  </div>
+
+  <hr>
+
+  <p>The internet is like the Wild Wild West, without the awesome soundtrack and dance moves of Will Smith. The truth is it’s a really dangerous place, for kids as well as adults. It gets harder every day to know what is safe and understand the consequences of interacting with all of the digital services that make up our world. As a father of three who are increasingly becoming connected it’s even harder, because the last thing I want is them stumbling into a snake’s nest. I’ve tried a number of things over the years, but I feel like for the first time my home internet is safe for me, my wife and my kids. Let me introduce you to <a href="https://nextdns.io">NextDNS</a>.</p>
+<p><picture><source type="image/webp" srcset="/img/bUy8_tk1a3-300.webp 300w, /img/bUy8_tk1a3-600.webp 600w, /img/bUy8_tk1a3-1000.webp 1000w" sizes="100vw"><source type="image/png" srcset="/img/bUy8_tk1a3-300.png 300w, /img/bUy8_tk1a3-600.png 600w, /img/bUy8_tk1a3-1000.png 1000w" sizes="100vw"><img src="/img/bUy8_tk1a3-300.jpeg" alt="On the right hand side of the Roku home screen there is usually an ad." loading="lazy" decoding="async" width="1000" height="576" srcset="/img/bUy8_tk1a3-300.jpeg 300w, /img/bUy8_tk1a3-600.jpeg 600w, /img/bUy8_tk1a3-1000.jpeg 1000w" sizes="100vw"></picture></p>
+<p>It’s worth mentioning what pushed me over the edge to revisit my current ad blocking and tracker blocking strategy. Around the time the new Borat movie was released Amazon was buying ads everywhere, and one evening I turned on our Roku TV to find a picture of Borat in a Mankini plastered in the ad spot to the right of my Roku channels. My kids were in the room, but fortunately were paying attention to other things. To say I was mad would be an understatement. I was determined to find a way to block ads on the Roku TV. Many friends recommended setting up a <a href="https://pi-hole.net">pi-hole</a>, but that involved more work than I wanted to take on. After much trial and error I’m happy to report <a href="https://nextdns.io">NextDNS</a> blocks the ad section on the Roku and also covers a ton of other nefarious ads and trackers. Thanks to <a href="https://nextdns.io">NextDNS</a> my home internet is much safer for me and my family.</p>
+<ul>
+<li>Bottom line: Internet safety for you and your family is really hard.</li>
+<li>There are essentially three categories you need to protect on: Tracking, ads and domains.</li>
+<li>Tracking can get down right creepy. Everyone needs to make a personal decision about how much they want various websites to profile them. I’m somewhere between nothing and nothing.</li>
+<li>A few years back Apple introduced ad blockers to much fanfare. The problem is that much of our engagement with content actually happens in Apps where these ad blockers have no ability to protect you.</li>
+<li>Many ad blockers also block tracking too. The thing is, most people I know do not have ad blockers installed on their computers and definitely not on their mobile devices.</li>
+<li>It is worth mentioning that not all ad blockers are created equal. Some actually do their own tracking and that’s how they make money. Buyer beware!</li>
+<li>While some ad blockers are nefarious, many are not. My favorite has been Better, which I had been using on my Mac, iPhone and iPad.</li>
+<li>Deploying an ad blocker app to your whole family is manual and a true headache.</li>
+<li>Apple recently bundled tracking protection into its Safari web browser, which is great, but that does not extend into apps.</li>
+<li>Not all ads are bad, and some are genuinely necessary for content providers to make money to continue to produce content. Unless you’re comfortable paying for all of your content on the internet you have to tolerate (and accept?) some ads, or the services that provide free ad-based content will cease to do so.</li>
+<li>Many content providers have little visibility into what sort of ad garbage might be tacked onto their content. This is especially true for free games in the App Store. Another example would be my local newspaper’s app, which has some of the most egregious and self-compromising ads.</li>
+<li>Many routers now ship with various content filters. These can be handy, but they’re more likely to be a pain to setup. Plus, this is not the primary business of these products and the quality of their content filters are just not top tier in my opinion.</li>
+<li>Disney actually has a product in this space called <a href="https://meetcircle.com">Circle</a>, specifically for kids’ use of the internet. It’s expensive ($9.99/month plus the central device). I think this product is more accessible than many but it’s still not Disney’s primary business and leaves a lot to be desired.</li>
+<li>Services like <a href="http://opendns.com">OpenDNS</a> have been around for a long time and provide a decent way for blocking things like pornography at your network level. They don’t offer a great solution once your mobile device leaves the nest. It’s not great at dealing with tracking and ads, either. And the interface for working with OpenDNS is painfully dated and difficult to use.</li>
+<li>In comes <a href="https://nextdns.io">NextDNS</a>, a competitor to services like OpenDNS that also deals with stopping trackers and blocking ads.</li>
+<li>Spoiler alert: <a href="https://nextdns.io">NextDNS</a> is awesome.</li>
+<li><a href="https://nextdns.io">NextDNS</a> is free for up to 300k DNS requests a month. In my household I blew through this in 12 days, but it’s a great way to grease the gears, and if you happen to be beneath that total request account, then the service is essentially free. There is simply no reason not to try it out.</li>
+<li><a href="https://nextdns.io">NextDNS</a> runs a bank-breaking $20/year for your home network and associated devices. This is half a trip to Burger King for my family.</li>
+<li><a href="https://nextdns.io">NextDNS</a> provides traditional domain category blocking, so you can shut down requests to porn, gambling and other things.</li>
+<li><a href="https://nextdns.io">NextDNS</a> provides a variety of additional security features, such as enforcing Safe Search with search engines like Google and forcing YouTube restricted mode.</li>
+<li><a href="https://nextdns.io">NextDNS</a> has advanced security features such as Cryptojacking protection, something that most people have never heard of but on which <a href="https://nextdns.io">NextDNS</a> has you covered.</li>
+<li><a href="https://nextdns.io">NextDNS</a> also include Native Tracking Protection, which stops hardware like my Sonos and Roku from capturing low level tracking data. Apple actually does some of this tracking too (though it’s anonymized when it hits Apple’s servers), but I’ve found that some Apps really choke when it’s enabled. I’m looking at you, Pokemon TCG and Marvel Unlimited.</li>
+<li>I’ve stopped using ad blockers on my devices because <a href="https://nextdns.io">NextDNS</a> has me covered.</li>
+<li>Using <a href="https://nextdns.io">NextDNS</a> at the router level, everyone in my family got tracking and ad protection. My kids largely don’t have access to the web because they interact mostly through apps which I have to approve before they can install them. <a href="https://nextdns.io">NextDNS</a> was an upgrade to our internet security because of how broadly I could apply it to all of my family’s devices.</li>
+<li>My plan is to install the <a href="https://apps.apple.com/ca/app/nextdns/id1463342498">NextDNS iOS app</a> on each iPhone, iPad and iPod touch in the house. This is a hassle the first time, but it uses a VPN profile to ensure that the device is forced to route through <a href="https://nextdns.io">NextDNS</a> DNS services when they leave the nest. I can still control <a href="https://nextdns.io">NextDNS</a> centrally, and the app also allows me to identify each device so that I can see what’s happening from <a href="https://nextdns.io">NextDNS</a> logs. The setup effort involved here is well worth it in my opinion.</li>
+<li><a href="https://apps.apple.com/app/nextdns/id1464122853">NextDNS also has a Mac app</a> that covers the same use case, and it’s installed on the one personal Mac we have in the house. I imagine they have a Windows app, too, for those who use that OS.</li>
+<li>Side Note: <a href="https://help.nextdns.io/t/g9hmv0a/how-to-install-and-trust-nextdns-root-ca">It’s worth taking the time to install the NextDNS root certificate on your devices, too.</a></li>
+<li><a href="https://nextdns.io">NextDNS</a> has some seriously awesome technology, but they also have awesome explanations of what they do. Take, for example, <a href="https://nextdns.io/privacy">this absurdly easy to understand privacy policy</a>.</li>
+<li>Tangentially related to this is that if you’ve just been using whatever random DNS servers your ISP has configured (whether that’s Comcast, etc. or your cellular provider like Verizon) you’re exposing a lot of data and it’s probably impacting your network performance. Over the years, services like OpenDNS or <a href="https://developers.google.com/speed/public-dns/">Google’s DNS</a> or <a href="https://www.cloudflare.com/learning/dns/what-is-1.1.1.1/">Cloudflare’s 1.1.1.1</a> have offered faster DNS lookups without all of the additional security protections of NextDNS. Cloudflare actually has a decent mobile setup to cover you when you leave the nest, but otherwise once you went mobile you were on your own. <a href="https://nextdns.io">NextDNS</a> has you covered on this front and as far as I can tell is competitive with the other big DNS providers. It’s definitively faster than the defaults my AT&amp;T Broadband connection provides.</li>
+<li>For the first time since I gave my kids devices I really feel like our internet is safe. <a href="https://nextdns.io">NextDNS</a> has thought about things I never considered and is protecting the household at multiple layers.</li>
+<li>If you’re like me and you’re not comfortable with wide open access to the internet for your kids, this is the absolute best thing you can do for them.</li>
+<li>If you’re like me and you’d rather not have every action you take on the internet be tracked, this is the absolute best way to stop that.</li>
+<li>If you’re like me and you’re tired of excessive and inappropriate ads on everything from your news app, to the web, to your Roku, then this is the absolute best way to stop that.</li>
+<li>Seriously, give <a href="https://nextdns.io">NextDNS</a> a shot. You won’t regret it!</li>
+</ul>
+<p>I did not receive anything in return for this review, and none of the links I’m providing to <a href="https://nextdns.io">NextDNS</a> are affiliate links. I simply believe in the service.</p>
+<figure>
+<picture><source type="image/webp" srcset="/img/5TgYWj0kAT-300.webp 300w, /img/5TgYWj0kAT-600.webp 600w, /img/5TgYWj0kAT-1000.webp 1000w" sizes="100vw"><source type="image/png" srcset="/img/5TgYWj0kAT-300.png 300w, /img/5TgYWj0kAT-600.png 600w, /img/5TgYWj0kAT-1000.png 1000w" sizes="100vw"><img src="/img/5TgYWj0kAT-300.jpeg" alt="NextDNS offers several layers of security, many of which are very advanced and mitigate serious risks." loading="lazy" decoding="async" width="1000" height="721" srcset="/img/5TgYWj0kAT-300.jpeg 300w, /img/5TgYWj0kAT-600.jpeg 600w, /img/5TgYWj0kAT-1000.jpeg 1000w" sizes="100vw"></picture>
+<figcaption>NextDNS offers several layers of security, many of which are very advanced and mitigate serious risks.</figcaption>
+</figure>
+<figure>
+<picture><source type="image/webp" srcset="/img/xMwQo8Sbk3-300.webp 300w, /img/xMwQo8Sbk3-600.webp 600w, /img/xMwQo8Sbk3-1000.webp 1000w" sizes="100vw"><source type="image/png" srcset="/img/xMwQo8Sbk3-300.png 300w, /img/xMwQo8Sbk3-600.png 600w, /img/xMwQo8Sbk3-1000.png 1000w" sizes="100vw"><img src="/img/xMwQo8Sbk3-300.jpeg" alt="NextDNS ad &amp; tracker blocking is the best I've ever used." loading="lazy" decoding="async" width="1000" height="709" srcset="/img/xMwQo8Sbk3-300.jpeg 300w, /img/xMwQo8Sbk3-600.jpeg 600w, /img/xMwQo8Sbk3-1000.jpeg 1000w" sizes="100vw"></picture>
+<figcaption>NextDNS ad & tracker blocking is the best I've ever used.</figcaption>
+</figure>
+<figure>
+<picture><source type="image/webp" srcset="/img/M6YyDjKAcA-300.webp 300w, /img/M6YyDjKAcA-600.webp 600w, /img/M6YyDjKAcA-1000.webp 1000w" sizes="100vw"><source type="image/png" srcset="/img/M6YyDjKAcA-300.png 300w, /img/M6YyDjKAcA-600.png 600w, /img/M6YyDjKAcA-1000.png 1000w" sizes="100vw"><img src="/img/M6YyDjKAcA-300.jpeg" alt="NextDNS parental controls let you block entire categories as well as individual sites and services." loading="lazy" decoding="async" width="1000" height="772" srcset="/img/M6YyDjKAcA-300.jpeg 300w, /img/M6YyDjKAcA-600.jpeg 600w, /img/M6YyDjKAcA-1000.jpeg 1000w" sizes="100vw"></picture>
+<figcaption>NextDNS parental controls let you block entire categories as well as individual sites and services.</figcaption>
+</figure>
+<figure>
+<picture><source type="image/webp" srcset="/img/s0pfP3YxBf-300.webp 300w, /img/s0pfP3YxBf-600.webp 600w, /img/s0pfP3YxBf-1000.webp 1000w" sizes="100vw"><source type="image/png" srcset="/img/s0pfP3YxBf-300.png 300w, /img/s0pfP3YxBf-600.png 600w, /img/s0pfP3YxBf-1000.png 1000w" sizes="100vw"><img src="/img/s0pfP3YxBf-300.jpeg" alt="NextDNS analytics give a nice overview of exactly what's happening with your internet traffic." loading="lazy" decoding="async" width="1000" height="796" srcset="/img/s0pfP3YxBf-300.jpeg 300w, /img/s0pfP3YxBf-600.jpeg 600w, /img/s0pfP3YxBf-1000.jpeg 1000w" sizes="100vw"></picture>
+<figcaption>NextDNS analytics give a nice overview of exactly what's happening with your internet traffic.</figcaption>
+</figure>
+<figure>
+<picture><source type="image/webp" srcset="/img/ZCkdTTJM61-300.webp 300w, /img/ZCkdTTJM61-600.webp 600w, /img/ZCkdTTJM61-1000.webp 1000w" sizes="100vw"><source type="image/png" srcset="/img/ZCkdTTJM61-300.png 300w, /img/ZCkdTTJM61-600.png 600w, /img/ZCkdTTJM61-1000.png 1000w" sizes="100vw"><img src="/img/ZCkdTTJM61-300.jpeg" alt="NextDNS lets you see the individual requests mit blocks. As you can see my Roku is a bit out of control with the tracker requests." loading="lazy" decoding="async" width="1000" height="796" srcset="/img/ZCkdTTJM61-300.jpeg 300w, /img/ZCkdTTJM61-600.jpeg 600w, /img/ZCkdTTJM61-1000.jpeg 1000w" sizes="100vw"></picture>
+<figcaption>NextDNS lets you see the individual requests mit blocks. As you can see my Roku is a bit out of control with the tracker requests.</figcaption>
+</figure>
+
+
+  
+
+  <hr>
+</article>
+
+
+<p class="text-center">
+  <em><a href="https://eepurl.com/gvEkEL">Do you want to get new posts from my website directly in your inbox? Subscribe today!</a></em>
+</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="text-center">
+    <ul>
+      <li>
+        <a href="https://github.com/stanlemon" rel="noopener" target="_blank" aria-label="You can find some of my coding projects on GitHub" class="social-github">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+          <span class="sr-only">GitHub profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/stanlemon" rel="noopener" target="_blank" aria-label="You can find about me professionally on LinkedIn" class="social-linkedin">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/></svg>
+          <span class="sr-only">LinkedIn profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/stanlemon" rel="noopener" target="_blank" aria-label="Follow me on Instagram" class="social-instagram">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          <span class="sr-only">Instagram feed</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://threads.net/@stanlemon" rel="noopener" target="_blank" aria-label="Follow me on Threads" class="social-threads">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8 29.2 14.1 50.6 35.2 61.8 61.4 15.7 36.5 17.2 95.8-30.3 143.2-36.2 36.2-80.3 52.5-142.6 53l-.3 0c-70.2-.5-124.1-24.1-160.4-70.2-32.3-41-48.9-98.1-49.5-169.6l0-.5C17 184.3 33.6 127.2 65.9 86.2 102.2 40.1 156.2 16.5 226.4 16l.3 0c70.3 .5 124.9 24 162.3 69.9 18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4-29.2-35.8-73-54.2-130.5-54.6-57 .5-100.1 18.8-128.2 54.4-26.2 33.3-39.8 81.5-40.3 143.2 .5 61.7 14.1 109.9 40.3 143.3 28 35.6 71.2 53.9 128.2 54.4 51.4-.4 85.4-12.6 113.7-40.9 32.3-32.2 31.7-71.8 21.4-95.9-6.1-14.2-17.1-26-31.9-34.9-3.7 26.9-11.8 48.3-24.7 64.8-17.1 21.8-41.4 33.6-72.7 35.3-23.6 1.3-46.3-4.4-63.9-16-20.8-13.8-33-34.8-34.3-59.3-2.5-48.3 35.7-83 95.2-86.4 21.1-1.2 40.9-.3 59.2 2.8-2.4-14.8-7.3-26.6-14.6-35.2-10-11.7-25.6-17.7-46.2-17.8l-.7 0c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1l.8 0c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2 .1 0zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3 25.6-1.4 54.6-11.4 59.5-73.2-13.2-2.9-27.8-4.4-43.4-4.4-4.8 0-9.6 .1-14.4 .4-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"/></svg>
+          <span class="sr-only">Threads profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@stanlemon" rel="noopener" target="_blank" aria-label="Watch my videos on YouTube" class="social-youtube">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"/></svg>
+          <span class="sr-only">YouTube channel</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://stanlemon.com/feed.xml" aria-label="Subscribe via RSS" class="social-rss">
+          <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM96 136c0-13.3 10.7-24 24-24 137 0 248 111 248 248 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24 83.9 0 152 68.1 152 152 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104-13.3 0-24-10.7-24-24zm0 120a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+          <span class="sr-only">RSS feed</span>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">&copy; 2025 Stan Lemon. All rights reserved.</p>
+  </div>
+</footer>
